@@ -56,6 +56,7 @@
         "cocur/slugify": "^4.3",
         "doctrine/annotations": "^2.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
+        "presta/sitemap-bundle": "^3.3",
         "seboettg/citeproc-php": "^2.5",
         "symfony/console": "5.4.*",
         "symfony/dotenv": "5.4.*",
