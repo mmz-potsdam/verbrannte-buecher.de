@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Willkommen</h2>
+    <div data-bs-theme="light" class="p-3 text-body bg-body rounded">
+        <p>Am 10. Mai 2023 jährt sich zum neunzigsten Mal der Tag der Bücherverbrennung im nationalsozialistischen Deutschland. Viele der Autorinnen und Autoren der damals verbrannten Bücher sind heute in Vergessenheit geraten.</p>
+        <p>In Erinnerung und im Gedenken an diesen Tag hat ein <a href="{{ path('about-project') }}#advisory-board">wissenschaftlicher Beirat</a> eine über 300 Titel umfassende <a href="{{ path('library') }}">„Bibliothek verbrannter Bücher“</a> zusammengestellt. Viele davon sind mittlerweile online frei zugänglich. 20 Titel haben wir anhand historischer Ausgaben digital neu ediert.</p>
+        <p>Ergänzt wird diese Bibliothek mit Hintergrundtexten zur Geschichte und Vorgeschichte der Bücherverbrennungen 1933 in Deutschland.</p>
+    </div>
+{% endblock %}
