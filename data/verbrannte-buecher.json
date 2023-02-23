@@ -40,7 +40,7 @@
             "language": "ger",
             "author": [
                 {
-                    "given": "M.",
+                    "given": "Meir",
                     "family": "Alberton"
                 }
             ],
@@ -665,10 +665,10 @@
             ]
         },
         {
-            "id": "J5D5C8FY",
-            "citation-label": "bauer_2017",
+            "id": "EAT44RFA",
+            "citation-label": "bauer_1924",
             "type": "book",
-            "title": "Ausgewählte Schriften",
+            "title": "Der Kampf um die Macht",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -676,14 +676,14 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Wien",
-            "publisher": "Thomas Gimesi",
+            "publisher": "Wiener Volksbuchhandlung",
             "issued": {
                 "date-parts": [
                     [
-                        2017
+                        1924
                     ]
                 ],
-                "literal": "2017"
+                "literal": "1924"
             },
             "page": null,
             "number-of-pages": "",
@@ -1763,29 +1763,29 @@
         },
         {
             "id": "SL48DZK6",
-            "citation-label": "bruckner_nd",
-            "type": "manuscript",
-            "title": "Schauspiele",
+            "citation-label": "bruckner_1928",
+            "type": "book",
+            "title": "Krankheit der Jugend. Schauspiel in drei Akten",
             "container-title": null,
-            "collection-title": null,
-            "collection-number": null,
-            "volume": null,
-            "number-of-volumes": null,
-            "edition": null,
-            "publisher-place": null,
-            "publisher": "",
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
-                        ""
+                        1928
                     ]
                 ],
-                "literal": ""
+                "literal": "1928"
             },
             "page": null,
-            "number-of-pages": null,
+            "number-of-pages": "",
             "DOI": null,
-            "ISBN": null,
+            "ISBN": "",
             "ISSN": null,
             "URL": "",
             "accessed": {
@@ -1891,32 +1891,32 @@
             ]
         },
         {
-            "id": "I2X6ARBX",
-            "citation-label": "bucharin_1918",
+            "id": "PHHKKRA7",
+            "citation-label": "bucharin_1928",
             "type": "book",
-            "title": "Das Programm der Kommunisten (Bolschewiki)",
+            "title": "Die internationale Lage und die Aufgaben der kommunistischen Internationale. Bericht der Delegation der KPSU (B) beim Ekki an den 15. Parteitag",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Zürich",
-            "publisher": "Union",
+            "publisher-place": "Hamburg",
+            "publisher": "Hoym",
             "issued": {
                 "date-parts": [
                     [
-                        1918
+                        1928
                     ]
                 ],
-                "literal": "1918"
+                "literal": "1928"
             },
             "page": null,
             "number-of-pages": "",
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11128186-8",
+            "URL": "http://dx.doi.org/10.17169/refubium-1956",
             "accessed": {
                 "date-parts": [
                     [
@@ -2161,30 +2161,30 @@
             ]
         },
         {
-            "id": "9VL7RL9I",
-            "citation-label": "deutsch_nd",
-            "type": "manuscript",
-            "title": "Schriften zur Zeit",
+            "id": "UJ4ACEJ6",
+            "citation-label": "deutsch_1927",
+            "type": "book",
+            "title": "Wehrmacht und Sozialdemokratie",
             "container-title": null,
-            "collection-title": null,
-            "collection-number": null,
-            "volume": null,
-            "number-of-volumes": null,
-            "edition": null,
-            "publisher-place": null,
-            "publisher": "",
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "J. H. W. Dietz Nachfolger",
             "issued": {
                 "date-parts": [
                     [
-                        ""
+                        1927
                     ]
                 ],
-                "literal": ""
+                "literal": "1927"
             },
             "page": null,
-            "number-of-pages": null,
+            "number-of-pages": "",
             "DOI": null,
-            "ISBN": null,
+            "ISBN": "",
             "ISSN": null,
             "URL": "",
             "accessed": {
@@ -2198,7 +2198,7 @@
             "language": "",
             "author": [
                 {
-                    "given": "",
+                    "given": "Julius",
                     "family": "Deutsch"
                 }
             ]
@@ -6168,30 +6168,30 @@
             ]
         },
         {
-            "id": "VS57J6FP",
-            "citation-label": "kaiser_nd",
-            "type": "manuscript",
-            "title": "Schauspiele",
+            "id": "SAPM7IVZ",
+            "citation-label": "kaiser_1918",
+            "type": "book",
+            "title": "Gas. Schauspiel in 5 Akten",
             "container-title": null,
-            "collection-title": null,
-            "collection-number": null,
-            "volume": null,
-            "number-of-volumes": null,
-            "edition": null,
-            "publisher-place": null,
-            "publisher": "",
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
-                        ""
+                        1918
                     ]
                 ],
-                "literal": ""
+                "literal": "1918"
             },
             "page": null,
-            "number-of-pages": null,
+            "number-of-pages": "",
             "DOI": null,
-            "ISBN": null,
+            "ISBN": "",
             "ISSN": null,
             "URL": "",
             "accessed": {
@@ -7815,7 +7815,7 @@
         },
         {
             "id": "KWMVLTW9",
-            "citation-label": "lenin_nd",
+            "citation-label": "lenin_1928",
             "type": "book",
             "title": "Sämtliche Werke. Ins Deutsche übertragen nach der 2. ergänzten und revidierten russischen Auflage",
             "container-title": null,
@@ -7829,10 +7829,10 @@
             "issued": {
                 "date-parts": [
                     [
-                        ""
+                        1928
                     ]
                 ],
-                "literal": ""
+                "literal": "1928"
             },
             "page": null,
             "number-of-pages": "",
@@ -10227,7 +10227,7 @@
             "number-of-volumes": "",
             "edition": null,
             "publisher-place": "Berlin",
-            "publisher": "Adalb. Schultz",
+            "publisher": "Adalbert Schultz",
             "issued": {
                 "date-parts": [
                     [
