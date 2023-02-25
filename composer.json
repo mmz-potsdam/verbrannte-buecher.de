@@ -24,6 +24,10 @@
             "url": "https://github.com/Donkfather/zotero-api"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/burki/wordpress-rest-api-client"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "citation-style-language/locales",
@@ -59,13 +63,17 @@
         "presta/sitemap-bundle": "^3.3",
         "seboettg/citeproc-php": "^2.5",
         "symfony/console": "5.4.*",
+        "symfony/css-selector": "5.4.*",
+        "symfony/dom-crawler": "5.4.*",
         "symfony/dotenv": "5.4.*",
         "symfony/flex": "^1.17|^2",
         "symfony/framework-bundle": "5.4.*",
+        "symfony/http-client": "5.4.*",
         "symfony/runtime": "5.4.*",
         "symfony/translation": "^5.4",
         "symfony/twig-bundle": "5.4.*",
-        "symfony/yaml": "5.4.*"
+        "symfony/yaml": "5.4.*",
+        "vnn/wordpress-rest-api-client": "dev-use_rest_route"
     },
     "autoload": {
         "psr-4": {

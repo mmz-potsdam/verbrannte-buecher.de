@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class BaseController extends AbstractController
 {
+    protected $wordpressBaseUrl = 'http://www.verbrannte-buecher.de';
     private $projectDir;
 
     public function __construct(string $projectDir)
