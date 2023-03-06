@@ -55,13 +55,11 @@ abstract class SchemaOrg
 
     /**
      * @var \DateTime
-     * @Serializer\Type("datetime")
      */
     protected $createdAt;
 
     /**
      * @var \DateTime
-     * @Serializer\Type("datetime")
      */
     protected $changedAt;
 

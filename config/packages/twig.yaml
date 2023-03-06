@@ -1,8 +1,11 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
     globals:
-        site_name: '%app.site.name%'
-    form_themes: ['bootstrap_5_horizontal_layout.html.twig']
+        siteName: '%app.site.name%'
+        siteTagline: ''
+        slugify: "@cocur_slugify"
+        public_dir: '%app.public_dir%'
+    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
 
 when@test:
     twig:

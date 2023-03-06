@@ -1,3 +1,44 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+# manually add certain routes from TeiEditionBundle
+'person-index':
+    path: /autor_in
+    controller: TeiEditionBundle\Controller\PersonController::indexAction
+    
+'person-by-gnd':
+    path: /autor_in/gnd/{gnd}
+    controller: TeiEditionBundle\Controller\PersonController::detailAction
+
+'place-by-tgn':
+    path: /ort/tgn/{tgn}
+    controller: TeiEditionBundle\Controller\PlaceController::detailAction
+
+'source-pdf':
+    path: /bibliothek/{uid}.pdf
+    controller: TeiEditionBundle\Controller\SourceController::sourceViewerAction
+    requirements:
+        uid: 'source\-\d+'
+ 
+source:
+    path: /bibliothek/{uid}
+    controller: TeiEditionBundle\Controller\SourceController::sourceViewerAction
+    requirements:
+        uid: 'source\-\d+'
+
+imginfo:
+    path: '/source/imginfo/{path}'
+    controller: TeiEditionBundle\Controller\SourceController::imgInfoAction
+    requirements:
+        path: '.*'
+
+tei2html:
+    path: '/source/tei2html/{path}'
+    controller: TeiEditionBundle\Controller\SourceController::tei2htmlAction
+    requirements:
+        path: '.*'
+
+'glossary-index':
+    path: /glossar
+    controller: TeiEditionBundle\Controller\GlossaryController::indexAction
+
+'bibliography-index':
+    path: /bibliothek
+    controller: TeiEditionBundle\Controller\LibraryController::indexAction

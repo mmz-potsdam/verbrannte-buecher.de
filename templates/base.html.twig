@@ -8,7 +8,7 @@
         <title>
             {% block title %}
             {% if pageMeta is defined and pageMeta.title is defined %}{{ pageMeta.title }} | {% endif %}
-            {{ site_name|trans({}, 'additional') }}
+            {{ siteName|trans({}, 'additional') }}
             {% endblock %}
         </title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
@@ -16,13 +16,22 @@
         {% block stylesheets %}
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+            <!-- For bootstrap 4, use fontawesome instead of glyphicon -->
+            <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" rel="stylesheet">
             {#{ encore_entry_link_tags('app') }#}
         {% endblock %}
+        <script src="{{ app.request.basepath }}/vendor/jquery-3.5.1.min.js"></script>
+        {% block javascripts %}
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+            {#{ encore_entry_script_tags('app') }#}
+        {% endblock %}
+        {% block head %}{% endblock %}
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ path('home') }}">{{ site_name|trans({}, 'additional') }}</a>
+                <a class="navbar-brand" href="{{ path('home') }}">{{ siteName|trans({}, 'additional') }}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="{{ 'Toggle navigation'|trans }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,7 +41,7 @@
                             <a class="nav-link{% if false %} active" aria-current="page{% endif %}" href="{{ path('library') }}">Bibliothek</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Autor:innen</a>
+                            <a class="nav-link" href="{{ path('person-index') }}">Autor:innen</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('history') }}">Geschichte</a>
@@ -65,12 +74,5 @@
         <div class="container my-5">
         {% block body %}{% endblock %}
         </div>
-        {% block javascripts %}
-            <script src="{{ app.request.basepath }}/vendor/jquery-3.5.1.slim.min.js"></script>
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
-            {#{ encore_entry_script_tags('app') }#}
-        {% endblock %}
-
     </body>
 </html>

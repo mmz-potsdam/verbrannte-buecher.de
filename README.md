@@ -38,19 +38,75 @@ Requirements
 
 - PHP 7.3 or 7.4 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
+- Java 1.8 (for XSLT and Solr, check with `java -version`)
+- `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 
-Adjust Local Settings
+### Adjust Local Settings
 
 - vi .env.local (not commited)
 
-Directory Permissions for cache and logs
+## Database
+
+- bin/console doctrine:database:create
+- bin/console doctrine:schema:create
+
+### Directory Permissions for cache and logs
 
 - sudo setfacl -R -m u:www-data:rwX ./var
 - sudo setfacl -dR -m u:www-data:rwX ./var
 
-Generate `public/css/base.css` and `public/css/print.css`
+### SCSS compilation
+In a `prod` environment, generate `public/css/base.css` and `public/css/print.css`
 
 - ./bin/console scss:compile
+
+Adding and updating Content
+---------------------------
+TEI files and page facsimiles are located in `data` in the
+corresponding `tei` or `img/source-xxxxx` folders.
+
+Follow the following commands to add the first source to the site:
+
+Add the author (Franz Kafka, by GND 118559230) to the `Person` table:
+
+    ./bin/console article:author --insert-missing data/tei/source-00001.de.xml
+
+Add the source
+
+    ./bin/console article:header --insert-missing data/tei/source-00001.de.xml
+
+Refresh the source (this will fetch every persName / orgName / placeName with GND or TGN identifier)
+
+    ./bin/console article:refresh data/tei/source-00001.de.xml
+
+If we have a source with page facsimile as hinted by
+
+    <classCode scheme="http://juedische-geschichte-online.net/doku/#genre">Quelle:Text</classCode>
+
+We can now generate the tiles
+
+    ./bin/console source:tiles data/tei/source-00001.de.xml
+
+(`convert` from the ImageMagick packaged is called to generate the tiles in `web/viewer/source-00001/`)
+
+And generate the METS-container needed for `iview`
+
+    ./bin/console source:mets data/tei/source-00001.de.xml > public/viewer/source-00001/source-00001.de.mets.xml
+
+You can now preview the source at
+
+    http://HOST/quelle/source-1
+
+If you make changes, you can update all the metadata by running again
+
+    ./bin/console article:refresh data/tei/source-00001.de.xml
+
+If you are happy with the display, you can publish it:
+
+    ./bin/console article:header --publish data/tei/source-00001.de.xml
+
+It should now show up connected to the author.
+
 
 Development Notes
 -----------------
@@ -62,4 +118,8 @@ Development Notes
 
 ### Translate templates
 
-    ./bin/console translation:extract --force de
+Tweaking the site
+-----------------
+### Translate messages and routes
+
+    ./bin/console translation:extract de --dir=./src/ --dir=vendor/igdj/tei-edition-bundle --output-dir=./translations --enable-extractor=jms_i18n_routing

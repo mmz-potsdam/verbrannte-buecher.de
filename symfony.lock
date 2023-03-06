@@ -1,4 +1,7 @@
 {
+    "boppy/solr-bundle": {
+        "version": "dev-solarium-6"
+    },
     "doctrine/annotations": {
         "version": "2.0",
         "recipe": {
@@ -11,11 +14,67 @@
             "./config/routes/annotations.yaml"
         ]
     },
+    "doctrine/doctrine-bundle": {
+        "version": "2.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.4",
+            "ref": "013b823e7fee65890b23e40f31e6667a1ac519ac"
+        },
+        "files": [
+            "./config/packages/doctrine.yaml",
+            "./src/Entity/.gitignore",
+            "./src/Repository/.gitignore"
+        ]
+    },
+    "eko/feedbundle": {
+        "version": "2.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.2",
+            "ref": "18200f71f86a12023fcd952546dad61850806c22"
+        },
+        "files": [
+            "./config/packages/eko_feed.yaml"
+        ]
+    },
+    "igdj/tei-edition-bundle": {
+        "version": "dev-solarium-6"
+    },
+    "jms/i18n-routing-bundle": {
+        "version": "3.1.0"
+    },
+    "jms/translation-bundle": {
+        "version": "1.7.0"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "v3.2.0"
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "v5.9.0"
+    },
     "liip/url-auto-converter-bundle": {
         "version": "dev-master"
     },
     "presta/sitemap-bundle": {
         "version": "v3.3.0"
+    },
+    "stof/doctrine-extensions-bundle": {
+        "version": "1.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.2",
+            "ref": "e805aba9eff5372e2d149a9ff56566769e22819d"
+        },
+        "files": [
+            "./config/packages/stof_doctrine_extensions.yaml"
+        ]
+    },
+    "sylius/theme-bundle": {
+        "version": "v2.1.1"
     },
     "symfony/apache-pack": {
         "version": "1.0",
@@ -109,6 +168,18 @@
         "files": [
             "./config/packages/twig.yaml",
             "./templates/base.html.twig"
+        ]
+    },
+    "symfony/validator": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "c32cfd98f714894c4f128bb99aa2530c1227603c"
+        },
+        "files": [
+            "./config/packages/validator.yaml"
         ]
     }
 }
