@@ -14,6 +14,16 @@ parameters:
         api-key: "%env(string:ZOTERO_API_KEY)%"
     app.xsl_converter.saxonc_enable: "%env(bool:SAXONC_ENABLE)%"
     app.xsl_converter_adapter.arguments: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
+    app.pdf-generator.arguments:
+        tempDir: "%kernel.project_dir%/var/cache/mpdf"
+        fontDir: [ "%kernel.project_dir%/data/font" ]
+        fontdata:
+            book_typeface:
+                R: 'NotoSerif-Regular.ttf'
+                B: 'NotoSerif-Bold.ttf'
+                I: 'NotoSerif-Italic.ttf'
+                BI: 'NotoSerif-BoldItalic.ttf'
+        default_font: book_typeface
     # for testing (https://doi.test.datacite.org/), use
     app.datacite.url: "https://mds.test.datacite.org/" # see https://support.datacite.org/docs/testing-guide
     # app.datacite.url: " https://mds.datacite.org/" # production
@@ -77,3 +87,6 @@ services:
     TeiEditionBundle\Utils\Xsl\XsltProcessor:
         calls:
             - [ setAdapter, [ "@= parameter('app.xsl_converter.saxonc_enable') ? service('app.xsl_converter.saxonc_adapter') : service('app.xsl_converter.commandline_adapter')" ]]
+
+    TeiEditionBundle\Utils\PdfGenerator:
+        arguments:    [ "%app.pdf-generator.arguments%" ]
