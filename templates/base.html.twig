@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ app.request.getLocale() }}{% if 'en' == app.request.getLocale() %}-us{% endif %}"
       prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile# place: http://ogp.me/ns/place# books: http://ogp.me/ns/books#"
-      data-bs-theme="dark">
+      data-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,65 +15,60 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="{{ app.request.basepath }}/vendor/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css">
             {#{ encore_entry_link_tags('app') }#}
         {% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ path('home') }}">{{ site_name|trans({}, 'additional') }}</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="{{ 'Toggle navigation'|trans }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        {#<h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>#}
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link{% if false %} active" aria-current="page{% endif %}" href="{{ path('library') }}">Bibliothek</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Autor:innen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ path('history') }}">Geschichte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pädagogik</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Über
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="{{ path('about-project') }}">Projekt</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="{{ path('about-related') }}">Weitere Initiativen</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        {#
-                        <form class="d-flex mt-3 mt-lg-0" role="search">
-                            <input class="form-control me-2" type="search" placeholder="{{ 'Search'|trans }}" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">{{ 'Search'|trans }}</button>
-                        </form>
-                        #}
-                    </div>
-                </div><!-- .offcanvas -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link{% if false %} active" aria-current="page{% endif %}" href="{{ path('library') }}">Bibliothek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autor:innen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('history') }}">Geschichte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pädagogik</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Über
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="{{ path('about-project') }}">Projekt</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="{{ path('about-related') }}">Weitere Initiativen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    {#
+                    <form class="d-flex mt-3 mt-lg-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="{{ 'Search'|trans }}" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">{{ 'Search'|trans }}</button>
+                    </form>
+                    #}
+                </div><!-- #navbarCollapse -->
             </div><!-- .container-fluid -->
         </nav>
         <div class="container my-5">
         {% block body %}{% endblock %}
         </div>
         {% block javascripts %}
+            <script src="{{ app.request.basepath }}/vendor/jquery-3.5.1.slim.min.js"></script>
             <!-- Latest compiled and minified JavaScript -->
-            <script src="{{ app.request.basepath }}/vendor/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+            <script src="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
             {#{ encore_entry_script_tags('app') }#}
         {% endblock %}
 
