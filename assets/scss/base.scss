@@ -210,7 +210,11 @@ body {
 
     a, a:hover {
         color: $color-color-link;
-  }
+    }
+}
+
+footer {
+    background-color: $color-background;
 }
 
 .navbar-dark {

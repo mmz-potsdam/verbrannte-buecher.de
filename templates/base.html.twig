@@ -83,5 +83,54 @@
         <div class="container my-5">
         {% block body %}{% endblock %}
         </div>
+
+        {% block footer %}
+        <footer class="page-footer font-small p-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <a href="https://www.mmz-potsdam.de/" target="_blank"><img src="{{ app.request.basepath }}/img/mmz-inverse.de.svg" style="padding-left: 10px; width: 100%; height: auto; max-height: 120px" alt="Moses Mendelssohn Zentrum" /></a>
+                    </div>
+                    {#
+                    <div class="offset-md-2 col-sm-6 col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    #}
+                    <div class="col-6 col-md-9">
+                        {# <h5 class="text-uppercase">Links</h5> #}
+                        <ul class="list-unstyled text-right">
+                            <li>
+                                <a href="#!">Kontakt</a>
+                            </li>
+                            <li>
+                                <a href="#!">Impressum</a>
+                            </li>
+                            <li>
+                                <a href="#">Datenschutz</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+            {#
+            <div class="footer-copyright text-center py-3"></div>
+            #}
+        </footer>
+        {% endblock %}
     </body>
 </html>
