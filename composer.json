@@ -102,10 +102,15 @@
         "symfony/framework-bundle": "5.4.*",
         "symfony/http-client": "5.4.*",
         "symfony/runtime": "5.4.*",
-        "symfony/translation": "^5.4",
+        "symfony/translation": "5.4.*",
         "symfony/twig-bundle": "5.4.*",
         "symfony/yaml": "5.4.*",
         "vnn/wordpress-rest-api-client": "dev-use_rest_route"
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "5.4.*",
+        "symfony/stopwatch": "5.4.*",
+        "symfony/web-profiler-bundle": "5.4.*"
     },
     "autoload": {
         "psr-4": {
