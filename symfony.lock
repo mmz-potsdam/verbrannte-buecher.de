@@ -1,4 +1,17 @@
 {
+    "armin/scssphp-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "dfcd909f037c7f1e2535bec00c1eba240d7aa513"
+        },
+        "files": [
+            "./config/packages/prod/scssphp.yaml",
+            "./config/packages/scssphp.yaml"
+        ]
+    },
     "boppy/solr-bundle": {
         "version": "dev-solarium-6"
     },

@@ -18,6 +18,13 @@
             <link rel="stylesheet" href="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css">
             <!-- For bootstrap 4, use fontawesome instead of glyphicon -->
             <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" rel="stylesheet">
+            {#
+                triggers scssphp, this one doesn't prepend app.request.basepath
+                since it overrides \Symfony\Bridge\Twig\Extension\AssetExtension
+                and doesn't prepend $this->getBasePath().ltrim($versionedPath, '/')
+                as in Symfony\Component\Asset\PathPackage
+            #}
+            <link href="{{ app.request.basepath }}{{ asset('css/base.css') }}" rel="stylesheet">
             {#{ encore_entry_link_tags('app') }#}
         {% endblock %}
         <script src="{{ app.request.basepath }}/vendor/jquery-3.5.1.min.js"></script>

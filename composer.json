@@ -84,6 +84,7 @@
         "php": "^7.3.0|^8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "armin/scssphp-bundle": "^1.2",
         "citation-style-language/locales": "@dev",
         "cocur/slugify": "^4.3",
         "doctrine/annotations": "^1.4|^2.0",
