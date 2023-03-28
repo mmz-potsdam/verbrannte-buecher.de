@@ -200,6 +200,7 @@
 
 /* general styles */
 html {
+    background-color: $color-background;
     color: $color-body-text;
     font-size: 18px;
 }
@@ -210,6 +211,13 @@ body {
     a, a:hover {
         color: $color-color-link;
   }
+}
+
+.navbar-dark {
+    background-color: $color-background;
+    .navbar-nav .nav-link {
+        color: $color-color-link;
+    }
 }
 
 /* see https://github.com/mnater/Hyphenopoly */
