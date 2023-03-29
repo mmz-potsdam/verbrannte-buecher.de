@@ -1,3 +1,7 @@
+app_logout:
+    path: /logout
+    methods: GET
+
 # manually add certain routes from TeiEditionBundle
 'person-index':
     path: /autor_in
