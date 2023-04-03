@@ -32,4 +32,12 @@ class DefaultController extends BaseController
     {
         return $this->render('Default/about-related.html.twig');
     }
+
+    /**
+     * @Route("/impressum", name="imprint")
+     */
+    public function imprintAction(Request $request)
+    {
+        return $this->render('Default/imprint.html.twig');
+    }
 }

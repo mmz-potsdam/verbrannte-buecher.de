@@ -38,32 +38,6 @@ class Builder
         $this->router = $router;
     }
 
-    /*
-    public function createTopMenu(array $options): ItemInterface
-    {
-        $menu = $this->factory->createItem('root');
-        if (array_key_exists('position', $options) && 'footer' == $options['position']) {
-            $menu->setChildrenAttributes([ 'id' => 'menu-top-footer', 'class' => 'small' ]);
-        }
-        else {
-            $menu->setChildrenAttributes([ 'id' => 'menu-top', 'class' => 'list-inline' ]);
-        }
-
-        // add menu items
-        $menu->addChild('contact', [
-                'label' => $this->translator->trans('Contact'), 'route' => 'contact',
-            ])
-            ->setAttribute('class', 'list-inline-item');
-
-        $menu->addChild('terms', [
-                'label' => $this->translator->trans('Terms and Conditions'), 'route' => 'terms',
-            ])
-            ->setAttribute('class', 'list-inline-item');
-
-        return $menu;
-    }
-    */
-
     public function createMainMenu(array $options): ItemInterface
     {
         $menu = $this->factory->createItem('main', [
@@ -141,6 +115,33 @@ class Builder
                     'class' => 'dropdown-item',
                 ],
             ]);
+
+        return $menu;
+    }
+
+    public function createFooterMenu(array $options): ItemInterface
+    {
+        $menu = $this->factory->createItem('footer', [
+            'childrenAttributes' => [
+                'class' => 'list-unstyled text-right',
+            ],
+        ]);
+
+        // add menu items
+        $menu->addChild('contact', [
+            'label' => $this->translator->trans('Kontakt'),
+            'uri' => $this->router->generate('imprint') . '#contact',
+        ]);
+
+        $menu->addChild('imprint', [
+            'label' => $this->translator->trans('Impressum'),
+            'route' => 'imprint',
+        ]);
+
+        $menu->addChild('privacy', [
+            'label' => $this->translator->trans('Datenschutz'),
+            'uri' => $this->router->generate('imprint') . '#data-protection',
+        ]);
 
         return $menu;
     }
