@@ -58,7 +58,7 @@ class Builder
             ],
         ]);
 
-        $menu->addChild('person-index', [
+        $menu->addChild('person', [
             'label' => $this->translator->trans('Autor:innen'),
             'route' => 'person-index',
             'attributes' => [
@@ -80,7 +80,7 @@ class Builder
             ],
         ]);
 
-        $menu->addChild('_about', [
+        $menu->addChild('about', [
             'label' => $this->translator->trans('Über'),
             'uri' => '#',
             'attributes' => [
@@ -98,7 +98,7 @@ class Builder
             ],
         ]);
 
-        $menu['_about']
+        $menu['about']
             ->addChild('about-project', [
                 'label' => $this->translator->trans('Projekt'),
                 'route' => 'about-project',
@@ -107,7 +107,7 @@ class Builder
                 ],
             ]);
 
-        $menu['_about']
+        $menu['about']
             ->addChild('about-related', [
                 'label' => $this->translator->trans('Weitere Initiativen'),
                 'route' => 'about-related',
@@ -115,6 +115,16 @@ class Builder
                     'class' => 'dropdown-item',
                 ],
             ]);
+
+
+        // attempt to set the current item for hierarchical entries
+        $currentRoute = $this->requestStack->getCurrentRequest()->get('_route');
+
+        if (!is_null($currentRoute)) {
+            if (preg_match('/^(history|about|person)\-/', $currentRoute, $matches)) {
+                $menu[$matches[1]]->setCurrent(true);
+            }
+        }
 
         return $menu;
     }
