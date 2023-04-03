@@ -217,10 +217,21 @@ footer {
     background-color: $color-background;
 }
 
-.navbar-dark {
+nav.navbar-dark {
     background-color: $color-background;
-    .navbar-nav .nav-link {
-        color: $color-color-link;
+    .navbar-nav .nav-item {
+        a.nav-link {
+            color: white;
+
+            &:hover {
+                color: $color-color-link;
+            }
+        }
+
+        &.active a.nav-link {
+            color: $color-color-link;
+            text-decoration: underline;
+        }
     }
 }
 

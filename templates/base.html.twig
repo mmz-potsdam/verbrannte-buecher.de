@@ -45,32 +45,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link{% if false %} active" aria-current="page{% endif %}" href="{{ path('library') }}">Bibliothek</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ path('person-index') }}">Autor:innen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ path('history') }}">Geschichte</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pädagogik</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                Über
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="{{ path('about-project') }}">Projekt</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="{{ path('about-related') }}">Weitere Initiativen</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    {{ knp_menu_render('main', { 'currentClass': 'active' }) }}
                     {#
                     <form class="d-flex mt-3 mt-lg-0" role="search">
                         <input class="form-control me-2" type="search" placeholder="{{ 'Search'|trans }}" aria-label="Search">

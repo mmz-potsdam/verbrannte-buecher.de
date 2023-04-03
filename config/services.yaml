@@ -90,3 +90,10 @@ services:
 
     TeiEditionBundle\Utils\PdfGenerator:
         arguments:    [ "%app.pdf-generator.arguments%" ]
+
+    App\Menu\Builder:
+        arguments: [ "@knp_menu.factory", "@translator.default", "@request_stack", "@router"  ]
+        tags:
+            # The alias is what is used to retrieve the menu
+            #- { name: knp_menu.menu_builder, method: createTopMenu, alias: top }
+            - { name: knp_menu.menu_builder, method: createMainMenu, alias: main }
