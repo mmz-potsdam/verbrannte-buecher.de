@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Geschichte</h1>
     <ul>
     {% for page,title in structure %}
         <li><a href="{{ path('history-page', { 'page' : page }) }}">{{ title }}</a></li>

@@ -1,0 +1,9 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block body %}
+    {#<h1>{{ pageTitle }}</h1>#}
+    <div class="row">
+        {% embed '@TeiEdition/Person/index-listing.html.twig' %}{% endembed %}
+        {% embed '@TeiEdition/Person/index-sidebar.html.twig' %}{% endembed %}
+    </div><!-- .row -->
+{% endblock %}

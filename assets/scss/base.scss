@@ -199,37 +199,54 @@
 
 
 /* general styles */
-html {
-    background-color: $color-background;
-    color: $color-body-text;
-    font-size: 18px;
+body, .text-body {
+    color: $color-body-text !important;
 }
 
 body {
-    font-family: $font-stack-sans;
+    background-color: $color-background;
 
-    a, a:hover {
+    font-family: $font-stack-sans;
+    font-size: 18px;
+
+    a{
         color: $color-color-link;
+        text-decoration: underline;
+        &:hover {
+            color: $color-color-spot;
+        }
     }
 }
 
 footer {
     background-color: $color-background;
+    a {
+        color: $color-color-spot;
+        text-decoration: none;
+        &:hover {
+            color: $color-body-text;
+            text-decoration: underline;
+        }
+    }
 }
 
 nav.navbar-dark {
     background-color: $color-background;
+
     .navbar-nav .nav-item {
+        position: relative;
+
         a.nav-link {
-            color: white;
+            color: $color-body-text;
+            text-decoration: none;
 
             &:hover {
-                color: $color-color-link;
+                color: $color-color-spot;
             }
         }
 
         &.active a.nav-link {
-            color: $color-color-link;
+            color: $color-color-spot;
             text-decoration: underline;
         }
     }
