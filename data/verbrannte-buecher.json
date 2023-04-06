@@ -67,7 +67,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "5",
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Arbeiterjugend-Verlag",
             "issued": {
@@ -193,55 +193,6 @@
             ]
         },
         {
-            "id": "CV6NXTES",
-            "citation-label": "asch_1930",
-            "type": "book",
-            "title": "Der 22. August",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "Ernst Rowohlt Verlag",
-            "issued": {
-                "date-parts": [
-                    [
-                        1930
-                    ]
-                ],
-                "literal": "1930"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Nathan",
-                    "family": "Asch"
-                }
-            ],
-            "translator": [
-                {
-                    "given": "Hermynia",
-                    "family": "Zur Mühlen"
-                }
-            ]
-        },
-        {
             "id": "CSFQJIJC",
             "citation-label": "asch_1926",
             "type": "book",
@@ -336,6 +287,55 @@
                 {
                     "given": "Siegfried",
                     "family": "Schmitz"
+                }
+            ]
+        },
+        {
+            "id": "CV6NXTES",
+            "citation-label": "asch_1930",
+            "type": "book",
+            "title": "Der 22. August",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Ernst Rowohlt",
+            "issued": {
+                "date-parts": [
+                    [
+                        1930
+                    ]
+                ],
+                "literal": "1930"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Nathan",
+                    "family": "Asch"
+                }
+            ],
+            "translator": [
+                {
+                    "given": "Hermynia",
+                    "family": "Zur Mühlen"
                 }
             ]
         },
@@ -492,7 +492,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Laubsche Verlagsbuchh.",
+            "publisher": "E. Laubsche Verlagsbuchhandlung",
             "issued": {
                 "date-parts": [
                     [
@@ -576,7 +576,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Zürich",
             "publisher": "Rascher",
             "issued": {
@@ -621,12 +621,12 @@
             "type": "book",
             "title": "Die Henker",
             "container-title": null,
-            "collection-title": "Öffentliches Leben : N. F",
+            "collection-title": "Öffentliches Leben : Neue Folge",
             "collection-number": "3",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Stuttgart [Eberhardstr. 10]",
+            "publisher-place": "Stuttgart",
             "publisher": "Verlag \"Öffentliches Leben\"",
             "issued": {
                 "date-parts": [
@@ -794,49 +794,6 @@
             ]
         },
         {
-            "id": "FBT3C8SC",
-            "citation-label": "becher_1926",
-            "type": "book",
-            "title": "[CH Cl-CH]3 As (Levisite) oder Der einzig gerechte Krieg",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Wien [VIII, Albertgasse 26]",
-            "publisher": "Agis-Verlag",
-            "issued": {
-                "date-parts": [
-                    [
-                        1926
-                    ]
-                ],
-                "literal": "1926"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Johannes Robert",
-                    "family": "Becher"
-                }
-            ]
-        },
-        {
             "id": "3Z2N85SX",
             "citation-label": "becher_1929",
             "type": "book",
@@ -880,6 +837,49 @@
             ]
         },
         {
+            "id": "FBT3C8SC",
+            "citation-label": "becher_1926",
+            "type": "book",
+            "title": "[CH Cl-CH]3 As (Levisite) oder Der einzig gerechte Krieg",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Wien",
+            "publisher": "Agis-Verlag",
+            "issued": {
+                "date-parts": [
+                    [
+                        1926
+                    ]
+                ],
+                "literal": "1926"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Johannes Robert",
+                    "family": "Becher"
+                }
+            ]
+        },
+        {
             "id": "SMPY4PYE",
             "citation-label": "beer_1924",
             "type": "book",
@@ -889,7 +889,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "[Neue Ausg. in 1 Bd.]",
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Verlag für Sozialwissenschaft",
             "issued": {
@@ -934,7 +934,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verlag",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -977,7 +977,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Fischer",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -1063,7 +1063,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Erich Reiß Verlag",
+            "publisher": "Erich Reiß",
             "issued": {
                 "date-parts": [
                     [
@@ -1098,7 +1098,7 @@
             "id": "8FA9N96R",
             "citation-label": "bernstein_1926",
             "type": "book",
-            "title": "Der Antisemitismus als Gruppenerscheinung. Versuch e. Soziologie des Judenhasses",
+            "title": "Der Antisemitismus als Gruppenerscheinung. Versuch einer Soziologie des Judenhasses",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -1243,9 +1243,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Ernst Rowohlt Verlag",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -1329,9 +1329,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Verl. d. Jugendinternationale",
+            "publisher": "Verlag der Jugendinternationale",
             "issued": {
                 "date-parts": [
                     [
@@ -1515,7 +1515,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -1556,7 +1556,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Wien",
             "publisher": "Internationaler Arbeiter-Verlag",
             "issued": {
@@ -1599,9 +1599,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -1644,7 +1644,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -2084,9 +2084,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -2213,9 +2213,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -2256,9 +2256,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -2391,9 +2391,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -2440,7 +2440,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Wien",
             "publisher": "P. Zsolnay",
             "issued": {
@@ -2583,9 +2583,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Malik-Verl.",
+            "publisher": "Malik-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -2634,7 +2634,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -2726,7 +2726,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Leipzig",
-            "publisher": "Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -2869,7 +2869,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Leipzig",
-            "publisher": "Ernst Oldenburg Verl.",
+            "publisher": "Ernst Oldenburg",
             "issued": {
                 "date-parts": [
                     [
@@ -2910,7 +2910,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Verlag für Literatur und Politik",
             "issued": {
@@ -2953,7 +2953,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -3083,49 +3083,6 @@
             ]
         },
         {
-            "id": "5QDCAXYS",
-            "citation-label": "feuchtwanger_1930",
-            "type": "book",
-            "title": "Erfolg. 3 Jahre Geschichte einer Provinz",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "G. Kiepenheuer",
-            "issued": {
-                "date-parts": [
-                    [
-                        1930
-                    ]
-                ],
-                "literal": "1930"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://d-nb.info/560470827",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Lion",
-                    "family": "Feuchtwanger"
-                }
-            ]
-        },
-        {
             "id": "GF2UVJQN",
             "citation-label": "feuchtwanger_1925",
             "type": "book",
@@ -3152,6 +3109,49 @@
             "ISBN": "",
             "ISSN": null,
             "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Lion",
+                    "family": "Feuchtwanger"
+                }
+            ]
+        },
+        {
+            "id": "5QDCAXYS",
+            "citation-label": "feuchtwanger_1930",
+            "type": "book",
+            "title": "Erfolg. 3 Jahre Geschichte einer Provinz",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Gustav Kiepenheuer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1930
+                    ]
+                ],
+                "literal": "1930"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://d-nb.info/560470827",
             "accessed": {
                 "date-parts": [
                     [
@@ -3309,7 +3309,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -3352,7 +3352,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "G. Reimer",
+            "publisher": "Georg Reimer",
             "issued": {
                 "date-parts": [
                     [
@@ -3393,9 +3393,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -3571,9 +3571,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -3659,7 +3659,7 @@
             "number-of-volumes": "3",
             "edition": "",
             "publisher-place": "München",
-            "publisher": "Langen",
+            "publisher": "Albert Langen",
             "issued": {
                 "date-parts": [
                     [
@@ -3700,7 +3700,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "Dokument. Aufl. 1.-5. Tsd.",
+            "edition": "",
             "publisher-place": "Heilbronn",
             "publisher": "Verlag Internationale Buchpresse",
             "issued": {
@@ -3786,7 +3786,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Internationaler Arbeiter-Verlag",
             "issued": {
@@ -3939,9 +3939,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -3982,9 +3982,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Agis-Verl.",
+            "publisher": "Agis-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -4068,7 +4068,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Universum-Bücherei für Alle",
             "issued": {
@@ -4162,7 +4162,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -4203,7 +4203,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Basel",
             "publisher": "Rhein-Verlag",
             "issued": {
@@ -4297,7 +4297,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "München",
-            "publisher": "Drei Masken Verlag",
+            "publisher": "Drei Masken-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -4338,7 +4338,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "München",
             "publisher": "Kurt Wolff",
             "issued": {
@@ -4424,7 +4424,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -4557,7 +4557,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -4594,13 +4594,13 @@
             "id": "FEX8TL5G",
             "citation-label": "guenther_1930",
             "type": "book",
-            "title": "Hier schreibt Berlin. Eine Anthologie von heute / Hrsg. Herbert Günther",
+            "title": "Hier schreibt Berlin. Eine Anthologie von heute",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Internationale Bibliothek",
             "issued": {
@@ -4823,7 +4823,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -4864,7 +4864,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "2. Aufl.",
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Internationaler Arbeiter-Verlag",
             "issued": {
@@ -4950,9 +4950,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -5076,49 +5076,6 @@
             ]
         },
         {
-            "id": "XDXMXR9Y",
-            "citation-label": "herzfelde_1932",
-            "type": "book",
-            "title": "Dreissig neue Erzähler des neuen Deutschland. Junge deutsche Prosa",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "Malik-Verl.",
-            "issued": {
-                "date-parts": [
-                    [
-                        1932
-                    ]
-                ],
-                "literal": "1932"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Wieland",
-                    "family": "Herzfelde"
-                }
-            ]
-        },
-        {
             "id": "V4XD3B6U",
             "citation-label": "herzfelde_1928",
             "type": "book",
@@ -5162,6 +5119,49 @@
             ]
         },
         {
+            "id": "XDXMXR9Y",
+            "citation-label": "herzfelde_1932",
+            "type": "book",
+            "title": "Dreissig neue Erzähler des neuen Deutschland. Junge deutsche Prosa",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Malik-Verlag",
+            "issued": {
+                "date-parts": [
+                    [
+                        1932
+                    ]
+                ],
+                "literal": "1932"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Wieland",
+                    "family": "Herzfelde"
+                }
+            ]
+        },
+        {
             "id": "KJBCDNWH",
             "citation-label": "heuss_1932",
             "type": "book",
@@ -5171,7 +5171,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "2. Aufl.",
+            "edition": "",
             "publisher-place": "Stuttgart",
             "publisher": "Union",
             "issued": {
@@ -5248,49 +5248,6 @@
             ]
         },
         {
-            "id": "RZUYZC2M",
-            "citation-label": "hirsch_1931",
-            "type": "book",
-            "title": "Kaiserwetter",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verl",
-            "issued": {
-                "date-parts": [
-                    [
-                        1931
-                    ]
-                ],
-                "literal": "1931"
-            },
-            "page": null,
-            "number-of-pages": "342",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Karl Jakob",
-                    "family": "Hirsch"
-                }
-            ]
-        },
-        {
             "id": "3G74887K",
             "citation-label": "hirsch_1929",
             "type": "book",
@@ -5329,6 +5286,49 @@
             "author": [
                 {
                     "given": "Leo",
+                    "family": "Hirsch"
+                }
+            ]
+        },
+        {
+            "id": "RZUYZC2M",
+            "citation-label": "hirsch_1931",
+            "type": "book",
+            "title": "Kaiserwetter",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1931
+                    ]
+                ],
+                "literal": "1931"
+            },
+            "page": null,
+            "number-of-pages": "342",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Karl Jakob",
                     "family": "Hirsch"
                 }
             ]
@@ -5482,7 +5482,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -5525,9 +5525,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -5568,9 +5568,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verlag",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -5803,7 +5803,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -5852,7 +5852,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -5901,9 +5901,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "[Ausg. 1929]",
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -6040,7 +6040,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "J. H. W. Dietz Nachf.",
+            "publisher": "J. H. W. Dietz Nachfolger",
             "issued": {
                 "date-parts": [
                     [
@@ -6083,7 +6083,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Der Malik-Verlag",
+            "publisher": "Malik-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -6126,7 +6126,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -6349,7 +6349,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "P. Zsolnay",
             "issued": {
@@ -6400,7 +6400,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Ullstein",
+            "publisher": "Ullstein A. G",
             "issued": {
                 "date-parts": [
                     [
@@ -6441,7 +6441,7 @@
             "collection-number": "2",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "5. Aufl",
+            "edition": "",
             "publisher-place": "Stuttgart",
             "publisher": "Dietz",
             "issued": {
@@ -6484,9 +6484,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "42.-51. Aufl",
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -6527,9 +6527,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verlag",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -6615,7 +6615,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -6690,49 +6690,6 @@
             ]
         },
         {
-            "id": "5YJULTMP",
-            "citation-label": "kisch_1930",
-            "type": "book",
-            "title": "Egon Erwin Kisch beehrt sich darzubieten. Paradies Amerika",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "E. Reiss Verl.",
-            "issued": {
-                "date-parts": [
-                    [
-                        1930
-                    ]
-                ],
-                "literal": "1930"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://archive.org/details/KischGW04",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Egon Erwin",
-                    "family": "Kisch"
-                }
-            ]
-        },
-        {
             "id": "BM5WSFZG",
             "citation-label": "kisch_1933",
             "type": "book",
@@ -6742,9 +6699,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Reiss Verl.",
+            "publisher": "Verlag Erich Reiss",
             "issued": {
                 "date-parts": [
                     [
@@ -6776,6 +6733,49 @@
             ]
         },
         {
+            "id": "5YJULTMP",
+            "citation-label": "kisch_1930",
+            "type": "book",
+            "title": "Egon Erwin Kisch beehrt sich darzubieten. Paradies Amerika",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Verlag Erich Reiss",
+            "issued": {
+                "date-parts": [
+                    [
+                        1930
+                    ]
+                ],
+                "literal": "1930"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://archive.org/details/KischGW04",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Egon Erwin",
+                    "family": "Kisch"
+                }
+            ]
+        },
+        {
             "id": "MWLGHNP8",
             "citation-label": "kleinberg_1927",
             "type": "book",
@@ -6787,7 +6787,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Dietz",
+            "publisher": "J. H. W. Dietz Nachfolger",
             "issued": {
                 "date-parts": [
                     [
@@ -6959,7 +6959,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Malik.Verlag",
+            "publisher": "Malik-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -7006,7 +7006,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin Grunewald",
             "publisher": "Horen-Verlag",
             "issued": {
@@ -7049,7 +7049,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Rowohlt",
             "issued": {
@@ -7126,25 +7126,25 @@
             ]
         },
         {
-            "id": "5I8KZC7W",
-            "citation-label": "kracauer_1930",
+            "id": "I3XPZDX3",
+            "citation-label": "kracauer_1928",
             "type": "book",
-            "title": "Die Angestellten. Aus dem neuesten Deutschland",
+            "title": "Ginster, von ihm selbst geschrieben",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Frankfurt a. M.",
-            "publisher": "Frankfurter Societäts-Druckerei",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
-                        1930
+                        1928
                     ]
                 ],
-                "literal": "1930"
+                "literal": "1928"
             },
             "page": null,
             "number-of-pages": "",
@@ -7169,25 +7169,25 @@
             ]
         },
         {
-            "id": "I3XPZDX3",
-            "citation-label": "kracauer_1928",
+            "id": "5I8KZC7W",
+            "citation-label": "kracauer_1930",
             "type": "book",
-            "title": "Ginster, von ihm selbst geschrieben",
+            "title": "Die Angestellten. Aus dem neuesten Deutschland",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verlag",
+            "edition": "",
+            "publisher-place": "Frankfurt am Main",
+            "publisher": "Frankfurter Societäts-Druckerei",
             "issued": {
                 "date-parts": [
                     [
-                        1928
+                        1930
                     ]
                 ],
-                "literal": "1928"
+                "literal": "1930"
             },
             "page": null,
             "number-of-pages": "",
@@ -7352,7 +7352,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Stolp",
-            "publisher": "Eulitz Verlag",
+            "publisher": "Eulitz",
             "issued": {
                 "date-parts": [
                     [
@@ -7395,7 +7395,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Wien",
-            "publisher": "Saturn Verlag",
+            "publisher": "Saturn",
             "issued": {
                 "date-parts": [
                     [
@@ -7437,7 +7437,7 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Frankfurt",
+            "publisher-place": "Frankfurt am Main",
             "publisher": "Frankfurter Societäts-Druckerei",
             "issued": {
                 "date-parts": [
@@ -7479,7 +7479,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "13.-20. Tsd.",
+            "edition": "",
             "publisher-place": "Hamburg",
             "publisher": "Janssen",
             "issued": {
@@ -7522,7 +7522,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "Revolutionsausg. 2., verm. u. verb. Aufl.",
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Cassirer",
             "issued": {
@@ -7694,7 +7694,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Zürich",
             "publisher": "Rascher",
             "issued": {
@@ -7731,7 +7731,7 @@
             "id": "3HMNFTPH",
             "citation-label": "lazarsfeld_1931",
             "type": "book",
-            "title": "Wie die Frau den Mann erlebt. Fremde Bekenntnisse und eigene Betrachtgungen",
+            "title": "Wie die Frau den Mann erlebt. Fremde Bekenntnisse und eigene Betrachtungen",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -7780,7 +7780,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Neuer Deutscher Verlag",
             "issued": {
@@ -7915,9 +7915,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -8556,8 +8556,8 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Wien [Wien XIII, Schloss Schönbrunn]",
-            "publisher": "\"Jungbrunnen\" [Sozialdem. Erziehungs- u. Schulverein \"Freie Schule - Kinderfreunde\"",
+            "publisher-place": "Wien",
+            "publisher": "\"Jungbrunnen\" [Sozialdem. Erziehungs- u. Schulverein \"Freie Schule - Kinderfreunde\"]",
             "issued": {
                 "date-parts": [
                     [
@@ -8598,9 +8598,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "6.-12. Aufl",
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -8643,7 +8643,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Der Malik-Verlag",
+            "publisher": "Malik-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -8825,7 +8825,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Jena",
             "publisher": "Diederichs",
             "issued": {
@@ -8855,49 +8855,6 @@
                 {
                     "given": "Hendrik",
                     "family": "Man"
-                }
-            ]
-        },
-        {
-            "id": "DE8U88H2",
-            "citation-label": "mann_1932",
-            "type": "book",
-            "title": "Das öffentliche Leben. Gesammelte Aufsätze",
-            "container-title": null,
-            "collection-title": "Gesammelte Werke",
-            "collection-number": "10",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin Wien Leipzig",
-            "publisher": "Zsolnay",
-            "issued": {
-                "date-parts": [
-                    [
-                        1932
-                    ]
-                ],
-                "literal": "1932"
-            },
-            "page": null,
-            "number-of-pages": "359",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Heinrich",
-                    "family": "Mann"
                 }
             ]
         },
@@ -8945,6 +8902,49 @@
             ]
         },
         {
+            "id": "DE8U88H2",
+            "citation-label": "mann_1932",
+            "type": "book",
+            "title": "Das öffentliche Leben. Gesammelte Aufsätze",
+            "container-title": null,
+            "collection-title": "Gesammelte Werke",
+            "collection-number": "10",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin Wien Leipzig",
+            "publisher": "P. Zsolnay",
+            "issued": {
+                "date-parts": [
+                    [
+                        1932
+                    ]
+                ],
+                "literal": "1932"
+            },
+            "page": null,
+            "number-of-pages": "359",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Heinrich",
+                    "family": "Mann"
+                }
+            ]
+        },
+        {
             "id": "T746JDHN",
             "citation-label": "mann_1903",
             "type": "book",
@@ -8954,9 +8954,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "3.-5.Tsd.",
+            "edition": "",
             "publisher-place": "München",
-            "publisher": "Albert Langen, Verlag für Litteratur und Kunst",
+            "publisher": "Albert Langen",
             "issued": {
                 "date-parts": [
                     [
@@ -8997,7 +8997,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Internationaler Arbeiter-Verlag",
             "issued": {
@@ -9085,7 +9085,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -9126,7 +9126,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "2. Ausg.",
+            "edition": "",
             "publisher-place": "Hamburg",
             "publisher": "Meißner",
             "issued": {
@@ -9255,9 +9255,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -9386,7 +9386,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "München",
-            "publisher": "Langen",
+            "publisher": "Albert Langen",
             "issued": {
                 "date-parts": [
                     [
@@ -9601,7 +9601,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "J. H. W. Dietz Nachf.",
+            "publisher": "J. H. W. Dietz Nachfolger",
             "issued": {
                 "date-parts": [
                     [
@@ -9642,9 +9642,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Internat. Arbeiter-Verlag",
+            "publisher": "Internationaler Arbeiter-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -9730,7 +9730,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Stuttgart",
-            "publisher": "J. Engelhorns Nachf.",
+            "publisher": "J. Engelhorns Nachfolger",
             "issued": {
                 "date-parts": [
                     [
@@ -10005,8 +10005,8 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Frankfurt a. M.",
-            "publisher": "Rütten u. Loening",
+            "publisher-place": "Frankfurt am Main",
+            "publisher": "Rütten und Loening",
             "issued": {
                 "date-parts": [
                     [
@@ -10090,7 +10090,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -10182,9 +10182,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "15.-20. Tsd.",
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -10225,7 +10225,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Adalbert Schultz",
             "issued": {
@@ -10262,7 +10262,7 @@
             "id": "L88KTT74",
             "citation-label": "pjatnizki_1927",
             "type": "book",
-            "title": "Aufzeichnungen eines Bolschewiks. Erinnergen aus den Jahren 1896-1917 Pjatnizki. [Vorw.. Paul Frölich]",
+            "title": "Aufzeichnungen eines Bolschewiks. Erinnerungen aus den Jahren 1896-1917",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -10302,49 +10302,6 @@
             ]
         },
         {
-            "id": "DL9U9S8T",
-            "citation-label": "plievier_1932",
-            "type": "book",
-            "title": "Der Kaiser ging, die Generäle blieben. Ein deutscher Roman",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "Malik-Verl.",
-            "issued": {
-                "date-parts": [
-                    [
-                        1932
-                    ]
-                ],
-                "literal": "1932"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Theodor",
-                    "family": "Plievier"
-                }
-            ]
-        },
-        {
             "id": "LXXRGNJ5",
             "citation-label": "plievier_1929",
             "type": "book",
@@ -10354,7 +10311,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -10388,6 +10345,49 @@
             ]
         },
         {
+            "id": "DL9U9S8T",
+            "citation-label": "plievier_1932",
+            "type": "book",
+            "title": "Der Kaiser ging, die Generäle blieben. Ein deutscher Roman",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Malik-Verlag",
+            "issued": {
+                "date-parts": [
+                    [
+                        1932
+                    ]
+                ],
+                "literal": "1932"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Theodor",
+                    "family": "Plievier"
+                }
+            ]
+        },
+        {
             "id": "GAWJQCNL",
             "citation-label": "polgar_1930",
             "type": "book",
@@ -10397,7 +10397,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "E. Rowohlt",
             "issued": {
@@ -10441,7 +10441,7 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "[Wien V, Rechte Wienzeile 95]",
+            "publisher-place": "Wien",
             "publisher": "[Sozialdemokrat. Frauenzentralkomitee]",
             "issued": {
                 "date-parts": [
@@ -10575,9 +10575,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Neuer Deutscher Verl.",
+            "publisher": "Neuer Deutscher Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -10661,7 +10661,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "3. erw. u. neubearb. Aufl., 16.-20. Tsd",
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Neuer Deutscher Verlag",
             "issued": {
@@ -10753,7 +10753,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Agis-Verlag",
             "issued": {
@@ -10884,7 +10884,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "E. Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -10968,9 +10968,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -11012,7 +11012,7 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Wien Berlin",
+            "publisher-place": "Wien - Berlin",
             "publisher": "Verlag für Literatur und Politik",
             "issued": {
                 "date-parts": [
@@ -11056,7 +11056,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "München",
-            "publisher": "Langen",
+            "publisher": "Albert Langen",
             "issued": {
                 "date-parts": [
                     [
@@ -11226,7 +11226,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Agis-Verlag",
             "issued": {
@@ -11355,9 +11355,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -11475,25 +11475,25 @@
             ]
         },
         {
-            "id": "7NB9VKIU",
-            "citation-label": "seghers_1930",
+            "id": "MBQUS9AW",
+            "citation-label": "seghers_1928",
             "type": "book",
-            "title": "Auf dem Wege zur Amerikanischen Botschaft und andere Erzählungen",
+            "title": "Aufstand der Fischer von St. Barbara",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "Kiepenheuer",
+            "edition": "",
+            "publisher-place": "Potsdam",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
-                        1930
+                        1928
                     ]
                 ],
-                "literal": "1930"
+                "literal": "1928"
             },
             "page": null,
             "number-of-pages": "",
@@ -11518,25 +11518,25 @@
             ]
         },
         {
-            "id": "MBQUS9AW",
-            "citation-label": "seghers_1928",
+            "id": "7NB9VKIU",
+            "citation-label": "seghers_1930",
             "type": "book",
-            "title": "Aufstand der Fischer von St. Barbara",
+            "title": "Auf dem Wege zur Amerikanischen Botschaft und andere Erzählungen",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
-                        1928
+                        1930
                     ]
                 ],
-                "literal": "1928"
+                "literal": "1930"
             },
             "page": null,
             "number-of-pages": "",
@@ -11619,7 +11619,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Neuer Deutscher Verlag",
             "issued": {
@@ -11711,7 +11711,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -11760,7 +11760,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -11897,7 +11897,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -11938,9 +11938,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Leipzig",
-            "publisher": "Prager",
+            "publisher": "E. Prager",
             "issued": {
                 "date-parts": [
                     [
@@ -12341,7 +12341,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Rowohlt",
+            "publisher": "Ernst Rowohlt",
             "issued": {
                 "date-parts": [
                     [
@@ -12382,7 +12382,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Stuttgart",
             "publisher": "Gundert",
             "issued": {
@@ -12556,7 +12556,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -12597,9 +12597,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -12685,7 +12685,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Verl. Neues Leben",
+            "publisher": "Verlag Neues Leben",
             "issued": {
                 "date-parts": [
                     [
@@ -12781,9 +12781,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -12821,6 +12821,49 @@
             ]
         },
         {
+            "id": "DQJQRB3C",
+            "citation-label": "tucholsky_1931",
+            "type": "book",
+            "title": "Lerne lachen ohne zu weinen",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Ernst Rowohlt",
+            "issued": {
+                "date-parts": [
+                    [
+                        1931
+                    ]
+                ],
+                "literal": "1931"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://de.wikisource.org/wiki/Lerne_lachen_ohne_zu_weinen",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Kurt",
+                    "family": "Tucholsky"
+                }
+            ]
+        },
+        {
             "id": "8HGGQX34",
             "citation-label": "tucholsky_1929",
             "type": "book",
@@ -12830,7 +12873,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Neuer Deutscher Verlag",
             "issued": {
@@ -12864,49 +12907,6 @@
             ]
         },
         {
-            "id": "DQJQRB3C",
-            "citation-label": "tucholsky_1931",
-            "type": "book",
-            "title": "Lerne lachen ohne zu weinen",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "Rowohlt",
-            "issued": {
-                "date-parts": [
-                    [
-                        1931
-                    ]
-                ],
-                "literal": "1931"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://de.wikisource.org/wiki/Lerne_lachen_ohne_zu_weinen",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Kurt",
-                    "family": "Tucholsky"
-                }
-            ]
-        },
-        {
             "id": "I4NZXKK9",
             "citation-label": "turek_1929",
             "type": "book",
@@ -12916,7 +12916,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Malik-Verlag",
             "issued": {
@@ -12961,7 +12961,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Agis-Verl.",
+            "publisher": "Agis-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -13004,7 +13004,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "München",
-            "publisher": "Langen",
+            "publisher": "Albert Langen",
             "issued": {
                 "date-parts": [
                     [
@@ -13045,7 +13045,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Reiß",
             "issued": {
@@ -13133,7 +13133,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "P. Cassirer",
+            "publisher": "Paul Cassirer",
             "issued": {
                 "date-parts": [
                     [
@@ -13165,49 +13165,6 @@
             ]
         },
         {
-            "id": "JB9G8IIT",
-            "citation-label": "wassermann_1929",
-            "type": "book",
-            "title": "Christoph Columbus, der Don Quichote des Ozeans. Ein Porträt",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl",
-            "issued": {
-                "date-parts": [
-                    [
-                        1929
-                    ]
-                ],
-                "literal": "1929"
-            },
-            "page": null,
-            "number-of-pages": "269",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://www.projekt-gutenberg.org/wasserma/columbus/columbus.html",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Jakob",
-                    "family": "Wassermann"
-                }
-            ]
-        },
-        {
             "id": "Q7K98R4K",
             "citation-label": "wassermann_1921",
             "type": "book",
@@ -13217,7 +13174,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "S. Fischer",
             "issued": {
@@ -13251,6 +13208,49 @@
             ]
         },
         {
+            "id": "JB9G8IIT",
+            "citation-label": "wassermann_1929",
+            "type": "book",
+            "title": "Christoph Columbus, der Don Quichote des Ozeans. Ein Porträt",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1929
+                    ]
+                ],
+                "literal": "1929"
+            },
+            "page": null,
+            "number-of-pages": "269",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://www.projekt-gutenberg.org/wasserma/columbus/columbus.html",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Jakob",
+                    "family": "Wassermann"
+                }
+            ]
+        },
+        {
             "id": "8AF6QCGC",
             "citation-label": "wedding_1931",
             "type": "book",
@@ -13262,7 +13262,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Malik-Verl.",
+            "publisher": "Malik-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -13383,15 +13383,15 @@
             "id": "U54BKB8G",
             "citation-label": "weiskopf_1931",
             "type": "book",
-            "title": "Das Slawenlied. Roman aus den letzten Tagen Österreichs und den ersten Jahren derTschechoslowakei",
+            "title": "Das Slawenlied. Roman aus den letzten Tagen Österreichs und den ersten Jahren der Tschechoslowakei",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -13432,7 +13432,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Wien",
             "publisher": "P. Zsolnay",
             "issued": {
@@ -13486,8 +13486,8 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Berlin Wien Leipzig",
-            "publisher": "Zsolnay",
+            "publisher-place": "Berlin - Wien - Leipzig",
+            "publisher": "P. Zsolnay",
             "issued": {
                 "date-parts": [
                     [
@@ -13530,7 +13530,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
+            "publisher": "Gustav Kiepenheuer",
             "issued": {
                 "date-parts": [
                     [
@@ -13573,7 +13573,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Wien München Leipzig",
-            "publisher": "Rikola Verlag",
+            "publisher": "Rikola",
             "issued": {
                 "date-parts": [
                     [
@@ -13616,7 +13616,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "J. H. W. Dietz Nachf.",
+            "publisher": "J. H. W. Dietz Nachfolger",
             "issued": {
                 "date-parts": [
                     [
@@ -13700,9 +13700,9 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Kronen-Verl.",
+            "publisher": "Kronen-Verlag",
             "issued": {
                 "date-parts": [
                     [
@@ -13743,7 +13743,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "Jubiläums-Ausg.",
+            "edition": "",
             "publisher-place": "Berlin",
             "publisher": "Vorwärts",
             "issued": {
@@ -13837,7 +13837,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "S. Fischer, Verl.",
+            "publisher": "S. Fischer",
             "issued": {
                 "date-parts": [
                     [
@@ -13865,94 +13865,6 @@
                 {
                     "given": "Hermynia",
                     "family": "Zur Mühlen"
-                }
-            ]
-        },
-        {
-            "id": "2EVP2J6N",
-            "citation-label": "zweig_1927",
-            "type": "book",
-            "title": "Caliban oder Politik und Leidenschaft. Versuch über die menschlichen Gruppenleidenschaften, dargetan am Antisemitismus",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Potsdam",
-            "publisher": "Kiepenheuer",
-            "issued": {
-                "date-parts": [
-                    [
-                        1927
-                    ]
-                ],
-                "literal": "1927"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30-180015018002",
-            "accessed": {
-                "date-parts": [
-                    [
-                        29,
-                        7,
-                        13
-                    ]
-                ],
-                "literal": "2023-01-24T10:30:08Z"
-            },
-            "language": "en",
-            "author": [
-                {
-                    "given": "Arnold",
-                    "family": "Zweig"
-                }
-            ]
-        },
-        {
-            "id": "GIYITTE4",
-            "citation-label": "zweig_1928",
-            "type": "book",
-            "title": "Der Streit um den Sergeanten Grischa",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": null,
-            "publisher-place": "Potsdam",
-            "publisher": "G. Kiepenheuer",
-            "issued": {
-                "date-parts": [
-                    [
-                        1928
-                    ]
-                ],
-                "literal": "1928"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Arnold",
-                    "family": "Zweig"
                 }
             ]
         },
@@ -14038,6 +13950,94 @@
             "author": [
                 {
                     "given": "Stefan",
+                    "family": "Zweig"
+                }
+            ]
+        },
+        {
+            "id": "2EVP2J6N",
+            "citation-label": "zweig_1927",
+            "type": "book",
+            "title": "Caliban oder Politik und Leidenschaft. Versuch über die menschlichen Gruppenleidenschaften, dargetan am Antisemitismus",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Potsdam",
+            "publisher": "Gustav Kiepenheuer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1927
+                    ]
+                ],
+                "literal": "1927"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30-180015018002",
+            "accessed": {
+                "date-parts": [
+                    [
+                        29,
+                        7,
+                        13
+                    ]
+                ],
+                "literal": "2023-01-24T10:30:08Z"
+            },
+            "language": "en",
+            "author": [
+                {
+                    "given": "Arnold",
+                    "family": "Zweig"
+                }
+            ]
+        },
+        {
+            "id": "GIYITTE4",
+            "citation-label": "zweig_1928",
+            "type": "book",
+            "title": "Der Streit um den Sergeanten Grischa",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Potsdam",
+            "publisher": "Gustav Kiepenheuer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1928
+                    ]
+                ],
+                "literal": "1928"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Arnold",
                     "family": "Zweig"
                 }
             ]

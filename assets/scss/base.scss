@@ -209,11 +209,17 @@ body {
     font-family: $font-stack-sans;
     font-size: 18px;
 
-    a{
+    a {
         color: $color-color-link;
         text-decoration: underline;
         &:hover {
             color: $color-color-spot;
+        }
+    }
+
+    .csl-bib-body {
+        .csl-entry {
+            margin-bottom: 1rem;
         }
     }
 }

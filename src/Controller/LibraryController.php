@@ -35,7 +35,7 @@ class LibraryController extends BaseController
      */
     public function buildBibliography($locale)
     {
-        $fname = 'apa-no-initials-place.csl';
+        $fname = 'style.csl';
         $cslLocale = 'en-US';
 
         switch ($locale) {
