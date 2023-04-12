@@ -58,25 +58,31 @@ class AdminPersonType extends AbstractType
             ])
             ->add('description_de', TextareaType::class, [
                 'label' => 'Description (German)',
-                'getter' => function (Person $person, FormInterface $form): string {
-                    $ret = $person->getDescriptionLocalized('de');
-
-                    return is_null($ret) ? '' : $ret;
+                'required' => false,
+                'getter' => function (Person $person, FormInterface $form): ?string {
+                    return $person->getDescriptionLocalized('de');
                 },
-                'setter' => function (Person &$person, string $val, FormInterface $form): void {
+                'setter' => function (Person &$person, ?string $val, FormInterface $form): void {
                     $locale = 'de';
 
                     // $person->setDescriptionLocalized($locale, $val) is missing - emulate
                     $description = $person->getDescription();
 
-                    $val = trim($val);
-                    if ('' === $val) {
+                    if (!is_null($val)) {
+                        $val = trim($val);
+                        if ('' === $val) {
+                            $val = null;
+                        }
+                    }
+
+                    if (is_null($val)) {
                         // clear if exists
                         if (is_array($description) && array_key_exists($locale, $description)) {
                             unset($description[$locale]);
                         }
                     }
                     else {
+                        // add or set
                         if (is_null($description)) {
                             $description = [];
                         }
