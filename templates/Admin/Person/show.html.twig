@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Person{% endblock %}
+
+{% block body %}
+    <h1>
+        {{ person.fullName(true) }}
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_person_edit', {'id': person.id}) }}">
+            bearbeiten
+        </a>
+        {{ include('Admin/Person/_delete_form.html.twig') }}
+    </h1>
+
+    <dl>
+
+    {% set birthPlace = person.birthPlaceInfo(app.request.locale) %}
+    {% if birthPlace is not empty or person.birthDate is not empty %}
+        <dt>{{ 'Born'|trans }}:</dt>
+        <dd>
+            {{ person.birthDate|dateincomplete -}}
+            {% if birthPlace is not empty %}{% if person.birthDate is not empty %}{{- ',' }}{% endif %}
+                {% if birthPlace.id is defined %}
+                    <a href="{% if birthPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : birthPlace.tgn }) }}{% else %}{{ path('place', { 'id' : birthPlace.id }) }}{% endif %}">
+                    {{ birthPlace['name'] }}
+                    </a>
+                {% else %}
+                    {{ birthPlace['name'] }}
+                {% endif %}
+            {% endif %}
+        </dd>
+    {% endif %}
+    {% set deathPlace = person.deathPlaceInfo(app.request.locale) %}
+    {% if deathPlace is not empty or person.deathDate is not empty %}
+        <dt>{{ 'Died'|trans }}:</dt>
+        <dd>
+            {{ person.deathDate|dateincomplete -}}
+            {% if deathPlace is not empty %}{% if person.deathDate is not empty %}{{- ',' }}{% endif %}
+                {% if deathPlace.id is defined %}
+                    <a href="{% if deathPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : deathPlace.tgn }) }}{% else %}{{ path('place', { 'id' : deathPlace.id }) }}{% endif %}">
+                    {{ deathPlace['name'] }}
+                    </a>
+                {% else %}
+                    {{ deathPlace['name'] }}
+                {% endif %}
+            {% endif %}
+        </dd>
+    {% endif %}
+
+    {% if person.url is not empty %}
+        <dt>{{ 'URL'|trans }}:</dt>
+        <dd>
+            <a href="{{ person.url }}" target="_blank">{{ person.url|prettifyurl }}</a>
+        </dd>
+    {% endif %}
+
+    {% if person.description is defined and person.description[app.request.locale] is defined %}
+    <p>{{ person.description[app.request.locale]|converturls|nl2br  }}</p>
+    {% endif %}
+
+    </dl>
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_person_index') }}">
+            Zurück zur Übersicht
+        </a>
+    </div>
+{% endblock %}

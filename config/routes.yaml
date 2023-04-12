@@ -11,6 +11,10 @@ app_logout:
     path: /autor_in/gnd/{gnd}
     controller: TeiEditionBundle\Controller\PersonController::detailAction
 
+'person':
+    path: /autor_in/{id}
+    controller: TeiEditionBundle\Controller\PersonController::detailAction
+
 'place-by-tgn':
     path: /ort/tgn/{tgn}
     controller: TeiEditionBundle\Controller\PlaceController::detailAction

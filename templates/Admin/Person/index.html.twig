@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Person index{% endblock %}
+
+{% block body %}
+    <h1>Personen</h1>
+
+    <a class="btn btn-sm btn-light" href="{{ path('app_admin_person_new') }}">
+        Neue Person hinzufügen
+    </a>
+
+    {% if people is not empty %}
+        <ul class="list-unstyled mt-2">
+        {% for person in people %}
+            <li>
+                <a href="{{ path('app_admin_person_show', {'id': person.id}) }}">
+                    {{ person.fullname }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info">Keine Personen gefunden</div>
+    {% endif %}
+{% endblock %}

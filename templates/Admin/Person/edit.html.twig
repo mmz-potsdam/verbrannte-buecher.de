@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Person bearbeiten{% endblock %}
+
+{% block body %}
+
+    <h1>
+        <a href="{{ path('app_admin_person_show', {'id': person.id}) }}">
+            {{ person.fullName(true) -}}
+        </a> {{ include('Admin/Person/_delete_form.html.twig') }}
+    </h1>
+
+    {{ include('Admin/Person/_form.html.twig', {'button_label': 'Update'}) }}
+{% endblock %}

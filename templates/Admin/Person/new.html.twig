@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Person{% endblock %}
+
+{% block body %}
+    <h1>Person hinzufügen</h1>
+
+    {{ include('Admin/Person/_form.html.twig') }}
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_person_index') }}">
+            Zurück zur Übersicht
+        </a>
+    </div>
+{% endblock %}

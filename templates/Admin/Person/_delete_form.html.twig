@@ -1,0 +1,4 @@
+<form style="display: inline-block" method="post" action="{{ path('app_admin_person_delete', {'id': person.id}) }}" onsubmit="return confirm('Sind Sie sicher, dass Sie diesen Eintrag löschen wollen?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ person.id) }}">
+    <button class="btn btn-sm btn-light">löschen</button>
+</form>
