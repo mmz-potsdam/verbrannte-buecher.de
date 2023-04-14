@@ -31,6 +31,8 @@ parameters:
     app.datacite.password: ~
     app.datacite.prefix: 10.23691
 
+    app.wordpress.url: 'http://verbrannte-buecher.juedische-geschichte-online.net/cms/'
+
     jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
 
 services:
@@ -42,6 +44,7 @@ services:
             $projectDir: '%kernel.project_dir%'
             $publicDir: '%app.public_dir%'
             $siteTheme: '%app.site_theme%'
+            $wordpressBaseUrl: '%app.wordpress.url%'
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
@@ -89,7 +92,7 @@ services:
             - [ setAdapter, [ "@= parameter('app.xsl_converter.saxonc_enable') ? service('app.xsl_converter.saxonc_adapter') : service('app.xsl_converter.commandline_adapter')" ]]
 
     TeiEditionBundle\Utils\PdfGenerator:
-        arguments:    [ "%app.pdf-generator.arguments%" ]
+        arguments: [ "%app.pdf-generator.arguments%" ]
 
     App\Menu\Builder:
         arguments: [ "@knp_menu.factory", "@translator.default", "@request_stack", "@router"  ]
@@ -97,3 +100,8 @@ services:
             # The alias is what is used to retrieve the menu
             - { name: knp_menu.menu_builder, method: createMainMenu, alias: main }
             - { name: knp_menu.menu_builder, method: createFooterMenu, alias: footer }
+
+    Vnn\WpApiClient\WpClient:
+        arguments:
+            - !service { class: Vnn\WpApiClient\Http\GuzzleAdapter, arguments: [ !service { class: 'GuzzleHttp\Client' } ] }
+            - '%app.wordpress.url%'

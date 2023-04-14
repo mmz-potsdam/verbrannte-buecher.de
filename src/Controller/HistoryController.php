@@ -14,8 +14,8 @@ use Vnn\WpApiClient\WpClient;
 class HistoryController extends BaseController
 {
     var $siteStructure = [
-        '1555' => 'Vorgeschichte',
-        '2172' => 'Bücherverbrennungen 1933',
+        'vorgeschichte' => 'Vorgeschichte', // '1555' => 'Vorgeschichte',
+        // '2172' => 'Bücherverbrennungen 1933',
     ];
 
     /**
@@ -59,6 +59,11 @@ class HistoryController extends BaseController
                     'page' => $matches[1],
                 ]));
             }
+            else if (strncmp($href, $this->wordpressBaseUrl, strlen($this->wordpressBaseUrl)) === 0){
+                $node->getNode(0)->setAttribute('href', $urlGenerator->generate('history-page', [
+                    'page' => rtrim(str_replace($this->wordpressBaseUrl, '', $href), '/'),
+                ]));
+            }
         });
 
         $crawler->filter('img')->each(function ($node, $i) use ($urlGenerator, $baseUrlComponents) {
@@ -87,12 +92,19 @@ class HistoryController extends BaseController
      * @Route("/geschichte/{page}", name="history-page")
      */
     public function pageAction(Request $request, $page,
+                               WpClient $wpClient,
                                UrlGeneratorInterface $urlGenerator)
     {
-        $client = new WpClient(new GuzzleAdapter(new \GuzzleHttp\Client()),
-                               $this->wordpressBaseUrl);
+        if (preg_match('/^\d+$/', $page)) {
+            $pageInfo = $wpClient->pages()->get($page);
+        }
+        else {
+            $pageInfo = $wpClient->pages()->get(null, [ 'slug' => $page ]);
+            if (array_key_exists('0', $pageInfo)) {
+                $pageInfo = $pageInfo[0];
+            }
+        }
 
-        $pageInfo = $client->pages()->get($page);
         $content = $this->adjustUrls($pageInfo['content']['rendered'], $urlGenerator);
 
         return $this->render('History/page.html.twig', [
