@@ -174,19 +174,59 @@
 {% endblock %}
 
 {% block body %}
-    <h1>{{ name }}</h1>
-    <div class="row">
-        <div id="image-viewer-container" class="col-xs-12 col-md-9">
-            <div id="image-viewer" style="width: 640px; height: 600px; position: relative;"></div>
+    <h1>
+        {% if article.author is not empty %}
+            {% for person in article.author %}
+                <a href="{% if person.gnd is not empty %}{{ path('person-by-gnd', { 'gnd' : person.gnd }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
+                    {{ person.fullname(true) -}}
+                </a>,
+            {% endfor %}
+        {% endif %}
+        {{ name }}, {{ article.dateCreatedDisplay }}
+    </h1>
+    <h3 class="pdf-link" style="float: right">
+        <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'PDF-Datei'|trans }}</a>
+    </h3>
 
-            {{ helper.source_description_footer(name, article, description, license) }}
-        </div><!-- .col -->
-
+    <div class="row" style="clear: right">
+        {#
         <div class="col-xs-12 col-md-3 sidebar">
             <h3 class="pdf-link">
                 <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
             </h3>
             {{ helper.source_sidebar(article, description, interpretations, related, mets) }}
         </div>
-    </div>
+        #}
+        <div id="image-viewer-container" class="col-xs-12 col-md-12">
+            <div id="image-viewer" style="width: 640px; height: 600px; position: relative; margin-bottom: 2rem;"></div>
+
+            {#{ helper.source_description_footer(name, article, description, license) }#}
+            {{ helper.source_description(description) }}
+
+            <h3 id="citation">{{ 'Recommended Citation'|trans }}</h3>
+            <p>
+                {% if article.author is not empty %}
+                    {% for person in article.author %}
+                        {{ person.fullname(true) -}},
+                    {% endfor %}
+                {% endif %}
+                {{ name }}{% if article.translator is not empty %} ({{ 'translated by'|trans }} {{ article.translator.fullname(true) }}){% endif %},
+                {{ article.dateCreatedDisplay }},
+                {{ 'edited in'|trans }}: {{ siteName|trans({}, 'additional') }},
+            &lt;{% if article.doi is not empty and not ('10.5072' in article.doi) %}<a href="https://dx.doi.org/{{ article.doi }}">https://dx.doi.org/{{ article.doi }}</a>{% else %}{{ url(app.request.attributes.get('_route')|replace({ '-pdf' : ''}), app.request.attributes.get('_route_params')) }}{% endif %}&gt; [{{ 'now'|date('F d, Y'|trans) }}].</p>
+
+            {% if license is not null %}
+            <div>
+                {% if license.url is defined %}
+                    {% if license.url == "http://creativecommons.org/licenses/by-nc-nd/4.0/" %}
+                    <a href="{{ license.url }}" target="_blank"><img src="{{ app.request.basepath }}/img/license/by-nc-nd.eu.svg" height="30" style="float: left; padding-right: 6px;" /></a>
+                    {% endif %}
+                {% endif %}
+                {{ license.text }}
+            </div>
+            {% endif %}
+        </div><!-- .col -->
+
+        {#{ dump(article) }#}
+    </div><!-- .row -->
 {% endblock %}
