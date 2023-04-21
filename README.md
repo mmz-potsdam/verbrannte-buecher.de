@@ -55,6 +55,9 @@ Requirements
 - sudo setfacl -R -m u:www-data:rwX ./var
 - sudo setfacl -dR -m u:www-data:rwX ./var
 
+- sudo setfacl -R -m u:www-data:rwX ./public/viewer
+- sudo setfacl -dR -m u:www-data:rwX ./public/viewer
+
 ### SCSS compilation
 In a `prod` environment, generate `public/css/base.css` and `public/css/print.css`
 
