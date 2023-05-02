@@ -340,4 +340,12 @@ body.route-home {
 
         font-size: 1rem;
     }
+
+    .library-entry {
+        border-radius: 6px;
+        a.name {
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
 }

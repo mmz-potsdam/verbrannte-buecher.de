@@ -1,24 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div class="p-5 text-body">
-        <p>
-            90 Jahre nach den Bücherverbrennungen im nationalsozialistischen Deutschland lassen wir in einer umfassend überarbeiteten Neuauflage des Projekts <a href="{{ path('home') }}">www.verbrannte-buecher.de</a> die Bücher in digitaler Form wieder auferstehen.
-        </p>
-        <p>
-            Zum Start finden Sie im Herzstück dieser Website, der <a href="{{ path('library') }}">digitalen Bibliothek</a>, eine Auswahl von 12 repräsentativen Büchern aus der Liste über 316 Schriften, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
-        </p>
-        <p>
-            Die Bücherverbrennungen des Jahres 1933 markieren ein Fanal, mit dem die Zerstörung einer ganzen Blüteepoche in Wissenschaft und Kultur durch die Nationalsozialist:innen vollzogen wurde. Mit den Büchern gingen auch die Hoffnungen und Errungenschaften der seit der Novemberrevolution 1918 entstandenen ersten deutschen Demokratie in Flammen auf.
-            Erfahren Sie mehr zur  <a href="{{ path('history-page', { 'page': 'geschichte' }) }}">Geschichte</a> und <a href="{{ path('history-page', { 'page': 'vorgeschichte' }) }}">Vorgeschichte</a> dieser Bücherverbrennungen .
-        </p>
-    </div>
+{% block container %}
+    {% block body %}
+    <div class="container my-5">
+        <div class="p-5 text-body">
+            <p>
+                90 Jahre nach den Bücherverbrennungen im nationalsozialistischen Deutschland lassen wir in einer umfassend überarbeiteten Neuauflage des Projekts <a href="{{ path('home') }}">www.verbrannte-buecher.de</a> die Bücher in digitaler Form wieder auferstehen.
+            </p>
+            <p>
+                Zum Start finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von 12 repräsentativen Büchern aus der Liste über 316 Schriften, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
+            </p>
+            <p>
+                Die Bücherverbrennungen des Jahres 1933 markieren ein Fanal, mit dem die Zerstörung einer ganzen Blüteepoche in Wissenschaft und Kultur durch die Nationalsozialist:innen vollzogen wurde. Mit den Büchern gingen auch die Hoffnungen und Errungenschaften der seit der Novemberrevolution 1918 entstandenen ersten deutschen Demokratie in Flammen auf.
+                Erfahren Sie mehr zur  <a href="{{ path('history-page', { 'page': 'geschichte' }) }}">Geschichte</a> und <a href="{{ path('history-page', { 'page': 'vorgeschichte' }) }}">Vorgeschichte</a> dieser Bücherverbrennungen .
+            </p>
+        </div><!-- .p-5 -->
 
     {% if events is not empty %}
         <h3>
             Events und Veranstaltungen
         </h3>
-    <div class="container-fluid">
+    </div>
+    <div class="container-fluid p-5">
         <div class="row">
             {% for event in events %}
             <div class="col-6 col-md-4 col-sm-3 event">
@@ -35,5 +38,29 @@
             {% endfor %}
         </div><!-- .row -->
     </div><!-- .container-fluid -->
+    <div class="container my-5">
+        {% if digitized is not empty %}
+        <h2 id="digital-library">
+            Digitale Bibliothek
+        </h2>
+        <div class="row">
+            {% for article in digitized %}
+            <div class="col-12 col-md-3 border border-white m-2 p-3 library-entry">
+                {% if article.author is not empty %}
+                    {% for person in article.author %}
+                        <a href="{% if person.gnd is not empty %}{{ path('person-by-gnd', { 'gnd' : person.gnd }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
+                            {{ person.fullname(true) -}}
+                        </a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}<br />
+                {% endif %}
+                <a class="name" href="{{ path('source', { uid: article.uid }) }}">{{ article.name }}</a><br />
+                {# TODO: set article.contentLocation #}
+                {{ article.dateCreatedDisplay }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
     {% endif %}
+    {% endblock %}
 {% endblock %}

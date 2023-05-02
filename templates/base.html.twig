@@ -55,9 +55,12 @@
                 </div><!-- #navbarCollapse -->
             </div><!-- .container-fluid -->
         </nav>
+
+        {% block container %}
         <div class="container my-5">
         {% block body %}{% endblock %}
         </div>
+        {% endblock %}
 
         {% block footer %}
         <footer class="page-footer font-small p-4">

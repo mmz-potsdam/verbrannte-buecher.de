@@ -4,6 +4,9 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+
+use Doctrine\ORM\EntityManagerInterface;
 
 use Vnn\WpApiClient\WpClient;
 
@@ -42,5 +45,34 @@ class BaseController extends AbstractController
         }
 
         return $events;
+    }
+
+    protected function buildDigitized(Request $request,
+                                      EntityManagerInterface $entityManager)
+    {
+        $criteria = [ 'status' => [ 1 ] ];
+
+        $locale = $request->getLocale();
+        if (!empty($locale)) {
+            $criteria['language'] = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
+        }
+
+        $queryBuilder = $entityManager
+                ->createQueryBuilder()
+                ->select('S, A')
+                ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
+                ->leftJoin('S.isPartOf', 'A')
+                ->orderBy('S.dateCreated', 'ASC')
+                ;
+
+        foreach ($criteria as $field => $cond) {
+            $queryBuilder->andWhere('S.' . $field
+                                    . (is_array($cond)
+                                       ? ' IN (:' . $field . ')'
+                                       : '= :' . $field))
+                ->setParameter($field, $cond);
+        }
+
+        return $queryBuilder->getQuery()->getResult();
     }
 }
