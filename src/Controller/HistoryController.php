@@ -13,8 +13,8 @@ use Vnn\WpApiClient\WpClient;
 class HistoryController extends BaseController
 {
     var $siteStructure = [
-        'vorgeschichte' => 'Vorgeschichte', // '1555' => 'Vorgeschichte',
-        // '2172' => 'Bücherverbrennungen 1933',
+        '1930-1933' => 'Historischer Kontext',
+        'buecherverbrennungen-1933' => 'Bücherverbrennungen 1933',
     ];
 
     /**
@@ -74,6 +74,15 @@ class HistoryController extends BaseController
             $srcComponents = parse_url($src);
 
             if ($baseUrlComponents['host'] == $srcComponents['host']) {
+                if ('/' != $baseUrlComponents['path']) {
+                    // chop of at beginning
+                    $pos = strpos($srcComponents['path'], $baseUrlComponents['path']);
+
+                    if ($pos === 0) {
+                        $srcComponents['path']= substr_replace($srcComponents['path'], '/', $pos, strlen($baseUrlComponents['path']));
+                    }
+                }
+
                 $node->getNode(0)->setAttribute('src', $urlGenerator->generate('imgproxy', [
                     'path' => $srcComponents['path'],
                 ]));
@@ -88,7 +97,7 @@ class HistoryController extends BaseController
     }
 
     /**
-     * @Route("/geschichte/{page}", name="history-page")
+     * @Route("/geschichte/{page}", name="history-page", requirements={"page"=".+"})
      */
     public function pageAction(Request $request, $page,
                                WpClient $wpClient,
@@ -98,7 +107,10 @@ class HistoryController extends BaseController
             $pageInfo = $wpClient->pages()->get($page);
         }
         else {
-            $pageInfo = $wpClient->pages()->get(null, [ 'slug' => $page ]);
+            $parts = explode('/', $page);
+            $slug = $parts[count($parts) - 1];
+            $pageInfo = $wpClient->pages()->get(null, [ 'slug' => $slug ]);
+
             if (array_key_exists('0', $pageInfo)) {
                 $pageInfo = $pageInfo[0];
             }
