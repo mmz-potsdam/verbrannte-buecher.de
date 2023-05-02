@@ -16,9 +16,10 @@ extends BaseController
 {
     private $client;
 
-    public function __construct(string $projectDir, HttpClientInterface $client)
+    public function __construct(string $projectDir, string $wordpressBaseUrl,
+                                HttpClientInterface $client)
     {
-        parent::__construct($projectDir);
+        parent::__construct($projectDir, $wordpressBaseUrl);
 
         $this->client = $client;
     }
@@ -28,7 +29,7 @@ extends BaseController
      */
     public function imgProxyAction(Request $request, $path)
     {
-        $url = $this-> wordpressBaseUrl . $path;
+        $url = $this->wordpressBaseUrl . $path;
 
         $clientResponse = $this->client->request('GET', $url);
 
