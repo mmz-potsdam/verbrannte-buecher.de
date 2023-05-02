@@ -1,9 +1,39 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="p-3 text-body bg-body rounded">
-        <p>Am 10. Mai 2023 jährt sich zum neunzigsten Mal der Tag der Bücherverbrennung im nationalsozialistischen Deutschland. Viele der Autorinnen und Autoren der damals verbrannten Bücher sind heute in Vergessenheit geraten.</p>
-        <p>In Erinnerung und im Gedenken an diesen Tag hat ein <a href="{{ path('about-project') }}#advisory-board">wissenschaftlicher Beirat</a> eine über 300 Titel umfassende <a href="{{ path('library') }}">„Bibliothek verbrannter Bücher“</a> zusammengestellt. Viele davon sind mittlerweile online frei zugänglich. 20 Titel haben wir anhand historischer Ausgaben digital neu ediert.</p>
-        <p>Ergänzt wird diese Bibliothek mit Hintergrundtexten zur <a href="{{ path('history-page', { 'page': 2172 }) }}">Geschichte</a> und <a href="{{ path('history-page', { 'page': 1555 }) }}">Vorgeschichte</a> der Bücherverbrennungen 1933 in Deutschland.</p>
+    <div class="p-5 text-body">
+        <p>
+            90 Jahre nach den Bücherverbrennungen im nationalsozialistischen Deutschland lassen wir in einer umfassend überarbeiteten Neuauflage des Projekts <a href="{{ path('home') }}">www.verbrannte-buecher.de</a> die Bücher in digitaler Form wieder auferstehen.
+        </p>
+        <p>
+            Zum Start finden Sie im Herzstück dieser Website, der <a href="{{ path('library') }}">digitalen Bibliothek</a>, eine Auswahl von 12 repräsentativen Büchern aus der Liste über 316 Schriften, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
+        </p>
+        <p>
+            Die Bücherverbrennungen des Jahres 1933 markieren ein Fanal, mit dem die Zerstörung einer ganzen Blüteepoche in Wissenschaft und Kultur durch die Nationalsozialist:innen vollzogen wurde. Mit den Büchern gingen auch die Hoffnungen und Errungenschaften der seit der Novemberrevolution 1918 entstandenen ersten deutschen Demokratie in Flammen auf.
+            Erfahren Sie mehr zur  <a href="{{ path('history-page', { 'page': 'geschichte' }) }}">Geschichte</a> und <a href="{{ path('history-page', { 'page': 'vorgeschichte' }) }}">Vorgeschichte</a> dieser Bücherverbrennungen .
+        </p>
     </div>
+
+    {% if events is not empty %}
+        <h3>
+            Events und Veranstaltungen
+        </h3>
+    <div class="container-fluid">
+        <div class="row">
+            {% for event in events %}
+            <div class="col-6 col-md-4 col-sm-3 event">
+                {% if event['acf']['date_start'] is not empty %}
+                    {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] == '2023-12-31 00:00:00' %}Ab {% endif %}
+                    {{ event['acf']['date_start']|format_datetime(pattern="d. MMM") }}
+                {% endif %}
+                {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] != '2023-12-31 00:00:00' %} - {{ event['acf']['date_end']|format_datetime(pattern="d. MMM") }}
+                {% endif %}
+                <h4>{{ event['title']['rendered']|raw }}</h4>
+                <p>{{ event['content']['rendered']|raw }}</p>
+                {#{ dump(event) }#}
+            </div>
+            {% endfor %}
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
+    {% endif %}
 {% endblock %}

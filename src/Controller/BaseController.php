@@ -5,6 +5,8 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+use Vnn\WpApiClient\WpClient;
+
 class BaseController extends AbstractController
 {
     private $projectDir;
@@ -24,5 +26,21 @@ class BaseController extends AbstractController
     public function getDataDir()
     {
         return $this->projectDir . '/data';
+    }
+
+    protected function buildEvents(WpClient $wpClient)
+    {
+        $events = $wpClient->events()->get(null, [
+            'per_page' => 4,
+        ]);
+
+        if (!empty($events)) {
+            usort($events, function ($eventA, $eventB) {
+                return strcmp($eventA['acf']['date_start'],
+                              $eventB['acf']['date_start']);
+            });
+        }
+
+        return $events;
     }
 }

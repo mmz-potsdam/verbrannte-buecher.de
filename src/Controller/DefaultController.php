@@ -7,14 +7,20 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+use Vnn\WpApiClient\WpClient;
+
 class DefaultController extends BaseController
 {
     /**
      * @Route("/", name="home", options={"sitemap" = true})
      */
-    public function homeAction(Request $request)
+    public function homeAction(Request $request, WpClient $wpClient)
     {
-        return $this->render('Default/index.html.twig');
+        $events = $this->buildEvents($wpClient);
+
+        return $this->render('Default/index.html.twig', [
+            'events' => $events,
+        ]);
     }
 
     /**

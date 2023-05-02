@@ -325,3 +325,19 @@ nav.navbar-dark {
         content: none;
     }
 }
+
+/* route-specific styles */
+body.route-home {
+    h3 {
+        color: $color-color-spot;
+    }
+
+    .event {
+        h4 {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        font-size: 1rem;
+    }
+}

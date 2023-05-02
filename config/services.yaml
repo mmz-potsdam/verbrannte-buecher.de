@@ -68,10 +68,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-    # Twig
-    Twig\Extra\String\StringExtension:
-        tags:
-            - { name: twig.extension }
+
+    # The following is now registered by twig/extra-bundle
+    # Twig\Extra\String\StringExtension:
+    #    tags:
+    #        - { name: twig.extension }
 
     # So we can inject @solr.client, see https://github.com/floriansemm/SolrBundle/issues/191#issuecomment-466101623
     FS\SolrBundle\SolrInterface: '@solr.client'
@@ -101,7 +102,9 @@ services:
             - { name: knp_menu.menu_builder, method: createMainMenu, alias: main }
             - { name: knp_menu.menu_builder, method: createFooterMenu, alias: footer }
 
-    Vnn\WpApiClient\WpClient:
+    App\Utils\CustomWpApiClient\CustomWpClient:
         arguments:
             - !service { class: Vnn\WpApiClient\Http\GuzzleAdapter, arguments: [ !service { class: 'GuzzleHttp\Client' } ] }
             - '%app.wordpress.url%'
+
+    Vnn\WpApiClient\WpClient: '@App\Utils\CustomWpApiClient\CustomWpClient'
