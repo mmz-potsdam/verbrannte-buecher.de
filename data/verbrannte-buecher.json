@@ -627,7 +627,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Stuttgart",
-            "publisher": "Verlag \"Öffentliches Leben\"",
+            "publisher": "Verlag „Öffentliches Leben“",
             "issued": {
                 "date-parts": [
                     [
@@ -719,7 +719,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Ullstein A.G.",
+            "publisher": "Ullstein",
             "issued": {
                 "date-parts": [
                     [
@@ -1181,59 +1181,6 @@
             ]
         },
         {
-            "id": "DYXD9IG7",
-            "citation-label": "bjelych-and-pantelejew_1929",
-            "type": "book",
-            "title": "Schkid, die Republik der Strolche",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Verlag der Jugendinternationale",
-            "issued": {
-                "date-parts": [
-                    [
-                        1929
-                    ]
-                ],
-                "literal": "1929"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Grigorij G.",
-                    "family": "Bjelych"
-                },
-                {
-                    "given": "Leonid A.",
-                    "family": "Pantelejew"
-                }
-            ],
-            "translator": [
-                {
-                    "given": "Maria",
-                    "family": "Einstein"
-                }
-            ]
-        },
-        {
             "id": "3V7926NZ",
             "citation-label": "blei_1930",
             "type": "book",
@@ -1358,7 +1305,7 @@
             "author": [
                 {
                     "given": "Helena",
-                    "family": "Bobińska"
+                    "family": "Bobinska"
                 }
             ],
             "translator": [
@@ -1370,7 +1317,7 @@
         },
         {
             "id": "CPZAUKVC",
-            "citation-label": "borochov_1932",
+            "citation-label": "borochow_1932",
             "type": "book",
             "title": "Sozialismus und Zionismus. Eine Synthese (Ausgewählte Schriften)",
             "container-title": null,
@@ -1407,7 +1354,7 @@
             "author": [
                 {
                     "given": "Ber",
-                    "family": "Borochov"
+                    "family": "Borochow"
                 }
             ],
             "editor": [
@@ -1679,7 +1626,7 @@
             "id": "4X3HUV2K",
             "citation-label": "brod_1925",
             "type": "book",
-            "title": "Rëubeni. Ein Renaissanceroman",
+            "title": "Rëubeni, Fürst der Juden. Ein Renaissanceroman",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -2071,49 +2018,6 @@
                 {
                     "given": "Bernhard",
                     "family": "Jolles"
-                }
-            ]
-        },
-        {
-            "id": "9VBFPJ8F",
-            "citation-label": "dannenberger_1931",
-            "type": "book",
-            "title": "Union der festen Hand. Roman einer Entwicklung",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Ernst Rowohlt",
-            "issued": {
-                "date-parts": [
-                    [
-                        1931
-                    ]
-                ],
-                "literal": "1931"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Hermann",
-                    "family": "Dannenberger"
                 }
             ]
         },
@@ -2994,7 +2898,7 @@
         },
         {
             "id": "RR5V697X",
-            "citation-label": "fehse-and-mann_1929",
+            "citation-label": "fehse-and-mann_1927",
             "type": "book",
             "title": "Anthologie jüngster Lyrik",
             "container-title": null,
@@ -3008,10 +2912,10 @@
             "issued": {
                 "date-parts": [
                     [
-                        1929
+                        1927
                     ]
                 ],
-                "literal": "1929"
+                "literal": "1927"
             },
             "page": null,
             "number-of-pages": "",
@@ -3206,7 +3110,7 @@
             "language": "",
             "author": [
                 {
-                    "given": "Wera",
+                    "given": "Vera",
                     "family": "Figner"
                 }
             ]
@@ -3890,7 +3794,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": "26.-36. Tsd",
+            "edition": "",
             "publisher-place": "Wien",
             "publisher": "Verlag für Literatur und Politik",
             "issued": {
@@ -3918,7 +3822,7 @@
             "language": "ger",
             "author": [
                 {
-                    "given": "Fëdor V.",
+                    "given": "Fjodor",
                     "family": "Gladkow"
                 }
             ],
@@ -4238,7 +4142,7 @@
         },
         {
             "id": "UXHSKYNF",
-            "citation-label": "gorki_1938",
+            "citation-label": "gorki_1926",
             "type": "book",
             "title": "Wanderer in den Morgen",
             "container-title": null,
@@ -4247,18 +4151,18 @@
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Zürich",
-            "publisher": "Büchergilde Gutenberg",
+            "publisher-place": "Berlin",
+            "publisher": "Ullstein",
             "issued": {
                 "date-parts": [
                     [
-                        1938
+                        1926
                     ]
                 ],
-                "literal": "1938"
+                "literal": "1926"
             },
             "page": null,
-            "number-of-pages": "303",
+            "number-of-pages": "377",
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
@@ -4332,7 +4236,7 @@
             "id": "RVFTY8VX",
             "citation-label": "grimm_1928",
             "type": "book",
-            "title": "Schlump. Geschichten und Abenteuer aus dem Leben des unbekannten Musketiers Emil Schulz, genannt \"Schlump\" ; von ihm selbst erzählt",
+            "title": "Schlump. Geschichten und Abenteuer aus dem Leben des unbekannten Musketiers Emil Schulz, genannt „Schlump“ ; von ihm selbst erzählt",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -4551,7 +4455,7 @@
             "id": "2H47S493",
             "citation-label": "gumbel_1929",
             "type": "book",
-            "title": "\"Verräter verfallen der Feme\". Opfer, Mörder, Richter 1919-1929",
+            "title": "„Verräter verfallen der Feme“. Opfer, Mörder, Richter 1919-1929",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -4769,49 +4673,6 @@
             ]
         },
         {
-            "id": "DKYLKL9R",
-            "citation-label": "hasenclever_1924",
-            "type": "book",
-            "title": "Dramen",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Verlag Die Schmiede",
-            "issued": {
-                "date-parts": [
-                    [
-                        1924
-                    ]
-                ],
-                "literal": "1924"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Walter",
-                    "family": "Hasenclever"
-                }
-            ]
-        },
-        {
             "id": "BFTWNETY",
             "citation-label": "hegemann_1930",
             "type": "book",
@@ -5001,7 +4862,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Ullstein A. G.",
+            "publisher": "Ullstein",
             "issued": {
                 "date-parts": [
                     [
@@ -5476,7 +5337,7 @@
             "id": "M49KS4V2",
             "citation-label": "hoelz_1929",
             "type": "book",
-            "title": "Vom \"Weissen Kreuz\" zur roten Fahne. Jugend-, Kampf- und Zuchthauserlebnisse",
+            "title": "Vom „Weissen Kreuz“ zur roten Fahne. Jugend-, Kampf- und Zuchthauserlebnisse",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -5729,7 +5590,7 @@
                 "literal": ""
             },
             "language": "",
-            "contributor": [
+            "author": [
                 {
                     "given": "Herbert",
                     "family": "Ihering"
@@ -5846,7 +5707,7 @@
             "id": "P4QH4I7G",
             "citation-label": "iwanow_1929",
             "type": "book",
-            "title": "Der Buchstabe \"G\". Ausgewählte Erzählungen",
+            "title": "Der Buchstabe „G“. Ausgewählte Erzählungen",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -5989,7 +5850,7 @@
             "id": "65JEMJPD",
             "citation-label": "johannsen_1929",
             "type": "book",
-            "title": "Vier von der Infanterie, ihre letzten Tage an der Westfront 1918 / Ernst Johannsen",
+            "title": "Vier von der Infanterie, ihre letzten Tage an der Westfront 1918",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -6400,7 +6261,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Ullstein A. G",
+            "publisher": "Ullstein",
             "issued": {
                 "date-parts": [
                     [
@@ -6514,6 +6375,49 @@
                 {
                     "given": "Bernhard",
                     "family": "Kellermann"
+                }
+            ]
+        },
+        {
+            "id": "UFTK65XV",
+            "citation-label": "kerloew-loewenstein_1924",
+            "type": "book",
+            "title": "Das Kind als Träger der werdenden Gesellschaft",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Wien",
+            "publisher": "„Jungbrunnen“ [Sozialdem. Erziehungs- u. Schulverein „Freie Schule – Kinderfreunde“]",
+            "issued": {
+                "date-parts": [
+                    [
+                        1924
+                    ]
+                ],
+                "literal": "1924"
+            },
+            "page": null,
+            "number-of-pages": "112",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1955048",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Kurt",
+                    "family": "Kerlöw-Löwenstein"
                 }
             ]
         },
@@ -7084,24 +6988,24 @@
         },
         {
             "id": "NKZTJK6G",
-            "citation-label": "korsch_1923",
+            "citation-label": "korsch_1919",
             "type": "book",
-            "title": "Marxismus und Philosophie",
+            "title": "Was ist Sozialisierung? Ein Programm des praktischen Sozialismus",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Leipzig",
-            "publisher": "C. L. Hirschfeld",
+            "publisher-place": "Hannover",
+            "publisher": "Freies Deutschland",
             "issued": {
                 "date-parts": [
                     [
-                        1923
+                        1919
                     ]
                 ],
-                "literal": "1923"
+                "literal": "1919"
             },
             "page": null,
             "number-of-pages": "",
@@ -7223,7 +7127,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Wien",
-            "publisher": "Verlag \"Die Fackel\"",
+            "publisher": "Verlag „Die Fackel“",
             "issued": {
                 "date-parts": [
                     [
@@ -7815,17 +7719,60 @@
         },
         {
             "id": "KWMVLTW9",
-            "citation-label": "lenin_1928",
+            "citation-label": "lenin_1921",
             "type": "book",
-            "title": "Sämtliche Werke. Ins Deutsche übertragen nach der 2. ergänzten und revidierten russischen Auflage",
+            "title": "Der Imperialismus als jüngste Etappe des Kapitalismus",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Moskau",
-            "publisher": "Verlag für Fremdsprachige Literatur",
+            "publisher-place": "Petrograd",
+            "publisher": "Verlag der Kommunistischen Internationale",
+            "issued": {
+                "date-parts": [
+                    [
+                        1921
+                    ]
+                ],
+                "literal": "1921"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Vladimir Iljic",
+                    "family": "Lenin"
+                }
+            ]
+        },
+        {
+            "id": "ZLVIBFSS",
+            "citation-label": "lenin-and-plechanow_1928",
+            "type": "book",
+            "title": "L. N. Tolstoi im Spiegel des Marxismus. Eine Sammlung von Aufsätzen",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Wien",
+            "publisher": "Verlag für Literatur und Politik",
             "issued": {
                 "date-parts": [
                     [
@@ -7853,6 +7800,10 @@
                 {
                     "given": "Vladimir Iljic",
                     "family": "Lenin"
+                },
+                {
+                    "given": "G. W.",
+                    "family": "Plechanow"
                 }
             ]
         },
@@ -8219,92 +8170,6 @@
             ]
         },
         {
-            "id": "ARFHFPVG",
-            "citation-label": "liebknecht_1919",
-            "type": "book",
-            "title": "Briefe aus dem Felde, aus der Untersuchungshaft und aus dem Zuchthaus",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin-Wilmersdorf",
-            "publisher": "\"Die Aktion\"",
-            "issued": {
-                "date-parts": [
-                    [
-                        1919
-                    ]
-                ],
-                "literal": "1919"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Karl",
-                    "family": "Liebknecht"
-                }
-            ]
-        },
-        {
-            "id": "MBIPEG5U",
-            "citation-label": "liebknecht_1921",
-            "type": "book",
-            "title": "Politische Aufzeichnungen aus seinem Nachlass. Geschrieben in den Jahren 1917-1918",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin-Wilmersdorf",
-            "publisher": "Verlag der Wochenschrift Die Aktion",
-            "issued": {
-                "date-parts": [
-                    [
-                        1921
-                    ]
-                ],
-                "literal": "1921"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://archive.org/details/karlli3",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Karl",
-                    "family": "Liebknecht"
-                }
-            ]
-        },
-        {
             "id": "UM4M7RZ5",
             "citation-label": "liebknecht_1894",
             "type": "book",
@@ -8343,6 +8208,92 @@
             "author": [
                 {
                     "given": "Wilhelm",
+                    "family": "Liebknecht"
+                }
+            ]
+        },
+        {
+            "id": "MBIPEG5U",
+            "citation-label": "liebknecht_1921",
+            "type": "book",
+            "title": "Politische Aufzeichnungen aus seinem Nachlass. Geschrieben in den Jahren 1917-1918",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin-Wilmersdorf",
+            "publisher": "Verlag der Wochenschrift „Die Aktion“",
+            "issued": {
+                "date-parts": [
+                    [
+                        1921
+                    ]
+                ],
+                "literal": "1921"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://archive.org/details/karlli3",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Karl",
+                    "family": "Liebknecht"
+                }
+            ]
+        },
+        {
+            "id": "ARFHFPVG",
+            "citation-label": "liebknecht_1919",
+            "type": "book",
+            "title": "Briefe aus dem Felde, aus der Untersuchungshaft und aus dem Zuchthaus",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin-Wilmersdorf",
+            "publisher": "Verlag der Wochenschrift „Die Aktion“",
+            "issued": {
+                "date-parts": [
+                    [
+                        1919
+                    ]
+                ],
+                "literal": "1919"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Karl",
                     "family": "Liebknecht"
                 }
             ]
@@ -8546,49 +8497,6 @@
             ]
         },
         {
-            "id": "UFTK65XV",
-            "citation-label": "loewenstein_1924",
-            "type": "book",
-            "title": "Das Kind als Träger der werdenden Gesellschaft",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Wien",
-            "publisher": "\"Jungbrunnen\" [Sozialdem. Erziehungs- u. Schulverein \"Freie Schule - Kinderfreunde\"]",
-            "issued": {
-                "date-parts": [
-                    [
-                        1924
-                    ]
-                ],
-                "literal": "1924"
-            },
-            "page": null,
-            "number-of-pages": "112",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1955048",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Kurt",
-                    "family": "Löwenstein"
-                }
-            ]
-        },
-        {
             "id": "S8ECJZ5I",
             "citation-label": "ludwig_1924",
             "type": "book",
@@ -8676,7 +8584,7 @@
         },
         {
             "id": "327L9AKG",
-            "citation-label": "lunatscharsky_1925",
+            "citation-label": "lunatscharski_1925",
             "type": "book",
             "title": "Der befreite Don Quichotte. Ein Schauspiel in 9 Bildern und enem Epilog",
             "container-title": null,
@@ -8712,8 +8620,8 @@
             "language": "",
             "author": [
                 {
-                    "given": "Anatoli Wassiljewitsch",
-                    "family": "Lunatscharsky"
+                    "given": "Anatoli",
+                    "family": "Lunatscharski"
                 }
             ],
             "translator": [
@@ -8768,7 +8676,7 @@
         },
         {
             "id": "LMPS6XL3",
-            "citation-label": "majakowski_1925",
+            "citation-label": "majakowski_1924",
             "type": "book",
             "title": "150 Millionen",
             "container-title": null,
@@ -8782,10 +8690,10 @@
             "issued": {
                 "date-parts": [
                     [
-                        1925
+                        1924
                     ]
                 ],
-                "literal": "1925"
+                "literal": "1924"
             },
             "page": null,
             "number-of-pages": "",
@@ -9418,49 +9326,6 @@
             ]
         },
         {
-            "id": "YAGI3RZV",
-            "citation-label": "muehsam_1920",
-            "type": "book",
-            "title": "Brennende Erde. Verse eines Kämpfers",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "München",
-            "publisher": "Wolff",
-            "issued": {
-                "date-parts": [
-                    [
-                        1920
-                    ]
-                ],
-                "literal": "1920"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Erich",
-                    "family": "Mühsam"
-                }
-            ]
-        },
-        {
             "id": "JR275B4V",
             "citation-label": "muehsam_1932",
             "type": "book",
@@ -9487,6 +9352,49 @@
             "ISBN": "",
             "ISSN": null,
             "URL": "https://de.wikisource.org/wiki/Die_Befreiung_der_Gesellschaft_vom_Staat",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Erich",
+                    "family": "Mühsam"
+                }
+            ]
+        },
+        {
+            "id": "YAGI3RZV",
+            "citation-label": "muehsam_1928",
+            "type": "book",
+            "title": "Sammlung 1898-1928",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "J. M. Spaeth",
+            "issued": {
+                "date-parts": [
+                    [
+                        1928
+                    ]
+                ],
+                "literal": "1928"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -9857,7 +9765,7 @@
             "id": "2JCY6H9F",
             "citation-label": "ognjew_1929",
             "type": "book",
-            "title": "Das Tagebuch des Schülers Kostja Rjabzew. Aufzeichnungen eines Fünfzehnjährigen /  . [Übers. von Maria Einstein]",
+            "title": "Das Tagebuch des Schülers Kostja Rjabzew. Aufzeichnungen eines Fünfzehnjährigen",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -9865,7 +9773,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Verlag der Jugend internationale",
+            "publisher": "Verlag der Jugendinternationale",
             "issued": {
                 "date-parts": [
                     [
@@ -10173,8 +10081,61 @@
             ]
         },
         {
+            "id": "DYXD9IG7",
+            "citation-label": "pantelejew-and-belych_1929",
+            "type": "book",
+            "title": "Schkid, die Republik der Strolche",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Verlag der Jugendinternationale",
+            "issued": {
+                "date-parts": [
+                    [
+                        1929
+                    ]
+                ],
+                "literal": "1929"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Leonid A.",
+                    "family": "Pantelejew"
+                },
+                {
+                    "given": "Grigorij Georgievic",
+                    "family": "Belych"
+                }
+            ],
+            "translator": [
+                {
+                    "given": "Maria",
+                    "family": "Einstein"
+                }
+            ]
+        },
+        {
             "id": "YPBFJUVE",
-            "citation-label": "pinthus_1922",
+            "citation-label": "pinthus_1920",
             "type": "book",
             "title": "Menschheitsdämmerung. Symphonie jüngster Dichtung",
             "container-title": null,
@@ -10188,10 +10149,10 @@
             "issued": {
                 "date-parts": [
                     [
-                        1922
+                        1920
                     ]
                 ],
-                "literal": "1922"
+                "literal": "1920"
             },
             "page": null,
             "number-of-pages": "",
@@ -10523,6 +10484,49 @@
             ]
         },
         {
+            "id": "4T5H2WL4",
+            "citation-label": "rathenau_1912",
+            "type": "book",
+            "title": "Zur Kritik der Zeit",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1912
+                    ]
+                ],
+                "literal": "1912"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Walther",
+                    "family": "Rathenau"
+                }
+            ]
+        },
+        {
             "id": "5WV95Z84",
             "citation-label": "reed_1922",
             "type": "book",
@@ -10562,6 +10566,49 @@
                 {
                     "given": "John",
                     "family": "Reed"
+                }
+            ]
+        },
+        {
+            "id": "9VBFPJ8F",
+            "citation-label": "reger_1931",
+            "type": "book",
+            "title": "Union der festen Hand. Roman einer Entwicklung",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Ernst Rowohlt",
+            "issued": {
+                "date-parts": [
+                    [
+                        1931
+                    ]
+                ],
+                "literal": "1931"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Erik",
+                    "family": "Reger"
                 }
             ]
         },
@@ -10609,51 +10656,8 @@
             ]
         },
         {
-            "id": "KBTN5SSF",
-            "citation-label": "reich_1933",
-            "type": "book",
-            "title": "Massenpsychologie des Faschismus. Zur Sexualökonomie der politischen Reaktion und zur proletarischen Sexualpolitik",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Kopenhagen",
-            "publisher": "Verlag für Sexualpolitik",
-            "issued": {
-                "date-parts": [
-                    [
-                        1933
-                    ]
-                ],
-                "literal": "1933"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://d-nb.info/992776880",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Wilhelm",
-                    "family": "Reich"
-                }
-            ]
-        },
-        {
             "id": "8YHUQH5N",
-            "citation-label": "reissner_1930",
+            "citation-label": "reissner_1926",
             "type": "book",
             "title": "Oktober. Ausgewählte Schriften",
             "container-title": null,
@@ -10667,13 +10671,13 @@
             "issued": {
                 "date-parts": [
                     [
-                        1930
+                        1926
                     ]
                 ],
-                "literal": "1930"
+                "literal": "1926"
             },
             "page": null,
-            "number-of-pages": "522",
+            "number-of-pages": "494",
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
@@ -10697,6 +10701,12 @@
                 {
                     "given": "Karl",
                     "family": "Radek"
+                }
+            ],
+            "translator": [
+                {
+                    "given": "Eduard",
+                    "family": "Schiemann"
                 }
             ]
         },
@@ -11045,6 +11055,49 @@
             ]
         },
         {
+            "id": "HS9NZDBB",
+            "citation-label": "rubiner_1919",
+            "type": "book",
+            "title": "Kameraden der Menschheit. Dichtungen zur Weltrevolution",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Potsdam",
+            "publisher": "Gustav Kiepenheuer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1919
+                    ]
+                ],
+                "literal": "1919"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Ludwig",
+                    "family": "Rubiner"
+                }
+            ]
+        },
+        {
             "id": "NAWTZ6ZN",
             "citation-label": "ruehle_1911",
             "type": "book",
@@ -11185,7 +11238,7 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Ullstein A. G",
+            "publisher": "Ullstein",
             "issued": {
                 "date-parts": [
                     [
@@ -11392,7 +11445,7 @@
             "id": "8CZZXD6Z",
             "citation-label": "schramek_1925",
             "type": "book",
-            "title": "\"Freiherr von Egloffstein\"",
+            "title": "„Freiherr von Egloffstein“",
             "container-title": null,
             "collection-title": "Außenseiter der Gesellschaft",
             "collection-number": "11",
@@ -12668,16 +12721,16 @@
             "language": "",
             "author": [
                 {
-                    "given": "B.",
+                    "given": "Bruno",
                     "family": "Traven"
                 }
             ]
         },
         {
             "id": "73W6IJNS",
-            "citation-label": "tretjakow_1958",
+            "citation-label": "tretjakow_1932",
             "type": "book",
-            "title": "Deng Schi-Hua. Ein chinesischer Student erzählt sein Leben",
+            "title": "Deng Schi-chua. Ein junger Chinese erzählt sein Leben",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -12685,14 +12738,14 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Verlag Neues Leben",
+            "publisher": "Malik-Verlag",
             "issued": {
                 "date-parts": [
                     [
-                        1958
+                        1932
                     ]
                 ],
-                "literal": "1958"
+                "literal": "1932"
             },
             "page": null,
             "number-of-pages": "",
@@ -13125,7 +13178,7 @@
             "id": "SZNAVNCT",
             "citation-label": "vorlaender_1920",
             "type": "book",
-            "title": "Kant, Fichte, Hegel und der Sozialismus / von Karl Vorländer",
+            "title": "Kant, Fichte, Hegel und der Sozialismus",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -13784,9 +13837,52 @@
         },
         {
             "id": "ELHR24M6",
-            "citation-label": "zetkin_1907",
+            "citation-label": "zetkin_1922",
             "type": "book",
-            "title": "Zur Frage des Frauenwahlrechts. Bearbeitet nach dem Referat auf der Konferenz sozialistischer Frauen zu Mannheim",
+            "title": "Um Rosa Luxemburgs Stellung zur russischen Revolution",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "[St. Petersburg]",
+            "publisher": "Verlag der Kommunistischen Internationale",
+            "issued": {
+                "date-parts": [
+                    [
+                        1922
+                    ]
+                ],
+                "literal": "1922"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://sites.google.com/site/sozialistischeklassiker2punkt0/zetkin/zetkin-russische-revolution/clara-zetkin-um-rosa-luxemburgs-stellung-zur-russischen-revolution",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Clara",
+                    "family": "Zetkin"
+                }
+            ]
+        },
+        {
+            "id": "RRZKIQMX",
+            "citation-label": "zetkin_1929",
+            "type": "book",
+            "title": "Erinnerungen an Lenin",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -13794,21 +13890,21 @@
             "number-of-volumes": "",
             "edition": "",
             "publisher-place": "Berlin",
-            "publisher": "Buchhandlung Vorwärts",
+            "publisher": "Verlag für Literatur und Politik",
             "issued": {
                 "date-parts": [
                     [
-                        1907
+                        1929
                     ]
                 ],
-                "literal": "1907"
+                "literal": "1929"
             },
             "page": null,
             "number-of-pages": "",
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://www.deutschestextarchiv.de/zetkin_frauenwahlrecht2_1907",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
