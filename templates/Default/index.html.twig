@@ -24,7 +24,7 @@
     <div class="container-fluid p-5">
         <div class="row">
             {% for event in events %}
-            <div class="col-6 col-md-4 col-sm-3 event">
+            <div class="col-12 col-sm-6 col-lg-3 event">
                 {% if event['acf']['date_start'] is not empty %}
                     {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] == '2023-12-31 00:00:00' %}Ab {% endif %}
                     {{ event['acf']['date_start']|format_datetime(pattern="d. MMM") }}
@@ -46,17 +46,27 @@
         </h2>
         <div class="row">
             {% for article in digitized %}
-            <div class="col-12 col-md-3 border border-white m-2 p-3 library-entry">
-                {% if article.author is not empty %}
-                    {% for person in article.author %}
-                        <a href="{% if person.gnd is not empty %}{{ path('person-by-gnd', { 'gnd' : person.gnd }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
-                            {{ person.fullname(true) -}}
-                        </a>{% if not loop.last %}, {% endif %}
-                    {% endfor %}<br />
-                {% endif %}
-                <a class="name" href="{{ path('source', { uid: article.uid }) }}">{{ article.name }}</a><br />
-                {# TODO: set article.contentLocation #}
-                {{ article.dateCreatedDisplay }}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="margin-top: 15px; margin-right: -15px">
+                <div class="border border-white library-entry p-3" style="height: 100%; width: 100%">
+                    <div class="upper">
+                    {% if article.author is not empty %}
+                        {% for person in article.author %}
+                            <a href="{% if person.gnd is not empty %}{{ path('person-by-gnd', { 'gnd' : person.gnd }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
+                                {{ person.fullname(true) -}}
+                            </a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}<br />
+                    {% endif %}
+                        <a class="name" href="{{ path('source', { uid: article.uid }) }}">{{ article.name }}</a><br />
+                        {# TODO: set article.contentLocation #}
+                        {{ article.dateCreatedDisplay }}
+                    </div><!-- .upper -->
+                    {% set thumb = "/viewer/source-%05d/thumb.jpg"|format(article.uid|replace({'source-' : ''})) %}
+                    {% if file_exists(webDir ~ thumb) %}
+                    <div class="bottom">
+                        <a href="{{ path('source', { uid: article.uid }) }}"><img src="{{ app.request.basepath }}{{ thumb }}" alt="" style="width: 100%; height: auto;"></a>
+                    </div>
+                    {% endif %}
+                </div>
             </div>
             {% endfor %}
         </div>

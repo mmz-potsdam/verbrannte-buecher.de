@@ -343,9 +343,22 @@ body.route-home {
 
     .library-entry {
         border-radius: 6px;
-        a.name {
-            font-weight: bold;
-            text-decoration: none;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .upper {
+            justify-content: normal;
+
+            a.name {
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+
+        .bottom {
+            padding-top: 1rem;
         }
     }
 }
