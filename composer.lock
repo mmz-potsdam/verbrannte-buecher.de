@@ -2601,12 +2601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "587702641773e70e1be5b121e240763528826101"
+                "reference": "8991b3a876e543ae26384489fa8d44244fe9de3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/587702641773e70e1be5b121e240763528826101",
-                "reference": "587702641773e70e1be5b121e240763528826101",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/8991b3a876e543ae26384489fa8d44244fe9de3c",
+                "reference": "8991b3a876e543ae26384489fa8d44244fe9de3c",
                 "shasum": ""
             },
             "require": {
@@ -2679,7 +2679,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/verbrannte-buecher.de"
             },
-            "time": "2023-04-25T13:49:15+00:00"
+            "time": "2023-05-05T13:17:38+00:00"
         },
         {
             "name": "jms/i18n-routing-bundle",

@@ -5,6 +5,7 @@ twig:
         siteTagline: ''
         slugify: "@cocur_slugify"
         public_dir: '%app.public_dir%'
+        webDir: '%app.public_dir%'  # global expected by TeiEditionBundle
     form_themes: ['bootstrap_4_horizontal_layout.html.twig']
 
 when@test:
