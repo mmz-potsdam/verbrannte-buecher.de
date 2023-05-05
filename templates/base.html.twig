@@ -35,7 +35,7 @@
         {% endblock %}
         {% block head %}{% endblock %}
     </head>
-    <body role="document" class="route-{{ app.request.get('_route') | replace({'_' : '-'}) }}{% if volume is defined %} {{ volume.getId(true) }}{% endif %}{% if document_class is defined %} {{ document_class }}{% endif %}">
+    <body role="document" class="d-flex flex-column min-vh-100 route-{{ app.request.get('_route') | replace({'_' : '-'}) }}{% if volume is defined %} {{ volume.getId(true) }}{% endif %}{% if document_class is defined %} {{ document_class }}{% endif %}">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ path('home') }}">
@@ -63,10 +63,10 @@
         {% endblock %}
 
         {% block footer %}
-        <footer class="page-footer font-small p-4">
+        <footer class="page-footer font-small mt-auto p-4">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 col-md-3">
+                    <div class="col-4 col-md-3 col-lg-2">
                         <a href="https://www.mmz-potsdam.de/" target="_blank"><img src="{{ app.request.basepath }}/img/mmz-inverse.de.svg" style="padding-left: 10px; width: 100%; height: auto; max-height: 120px" alt="Moses Mendelssohn Zentrum" /></a>
                     </div>
                     {#
@@ -89,15 +89,11 @@
                         </ul>
                     </div>
                     #}
-                    <div class="col-6 col-md-9">
-                        {# <h5 class="text-uppercase">Links</h5> #}
+                    <div class="col-8 col-md-9 col-lg-10 align-self-end">
                         {{ knp_menu_render('footer') }}
                     </div>
                 </div><!-- .row -->
             </div><!-- .container-fluid -->
-            {#
-            <div class="footer-copyright text-center py-3"></div>
-            #}
         </footer>
         {% endblock %}
     </body>

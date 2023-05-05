@@ -133,7 +133,7 @@ class Builder
     {
         $menu = $this->factory->createItem('footer', [
             'childrenAttributes' => [
-                'class' => 'list-unstyled text-right',
+                'class' => 'list-inline text-right small',
             ],
         ]);
 
@@ -141,16 +141,25 @@ class Builder
         $menu->addChild('contact', [
             'label' => $this->translator->trans('Kontakt'),
             'uri' => $this->router->generate('imprint') . '#contact',
+            'attributes' => [
+                'class' => 'list-inline-item',
+            ],
         ]);
 
         $menu->addChild('imprint', [
             'label' => $this->translator->trans('Impressum'),
             'route' => 'imprint',
+            'attributes' => [
+                'class' => 'list-inline-item',
+            ],
         ]);
 
         $menu->addChild('privacy', [
             'label' => $this->translator->trans('Datenschutz'),
             'uri' => $this->router->generate('imprint') . '#data-protection',
+            'attributes' => [
+                'class' => 'list-inline-item',
+            ],
         ]);
 
         return $menu;

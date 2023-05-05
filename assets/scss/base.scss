@@ -247,13 +247,15 @@ body {
 }
 
 footer {
-    background-color: $color-background;
+    background-color: $color-background-lighter;
+
     a {
-        color: $color-color-spot;
         text-decoration: none;
         &:hover {
             color: $color-body-text;
             text-decoration: underline;
+            text-decoration-color: $color-color-spot;
+            text-underline-offset: 6px;
         }
     }
 }
@@ -269,13 +271,15 @@ nav.navbar-dark {
             text-decoration: none;
 
             &:hover {
-                color: $color-color-spot;
+                color: $color-body-text;
+                text-decoration: underline;
+                text-decoration-color: $color-color-spot;
+                text-underline-offset: 6px;
             }
         }
 
         &.active a.nav-link {
             color: $color-color-spot;
-            text-decoration: underline;
         }
     }
 }
