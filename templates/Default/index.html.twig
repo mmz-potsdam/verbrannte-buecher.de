@@ -8,11 +8,11 @@
                 90 Jahre nach den Bücherverbrennungen im nationalsozialistischen Deutschland lassen wir in einer umfassend überarbeiteten Neuauflage des Projekts <a href="{{ path('home') }}">www.verbrannte-buecher.de</a> die Bücher in digitaler Form wieder auferstehen.
             </p>
             <p>
-                Zum Start finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von 12 repräsentativen Büchern aus der Liste über 316 Schriften, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
+                Zum Start finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von 10 repräsentativen Büchern aus der Liste über 316 Schriften, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
             </p>
             <p>
                 Die Bücherverbrennungen des Jahres 1933 markieren ein Fanal, mit dem die Zerstörung einer ganzen Blüteepoche in Wissenschaft und Kultur durch die Nationalsozialist:innen vollzogen wurde. Mit den Büchern gingen auch die Hoffnungen und Errungenschaften der seit der Novemberrevolution 1918 entstandenen ersten deutschen Demokratie in Flammen auf.
-                Erfahren Sie mehr zur  <a href="{{ path('history-page', { 'page': 'geschichte' }) }}">Geschichte</a> und <a href="{{ path('history-page', { 'page': 'vorgeschichte' }) }}">Vorgeschichte</a> dieser Bücherverbrennungen .
+                Erfahren Sie mehr zu den <a href="{{ path('history-page', { 'page': 'buecherverbrennungen-1933' }) }}">Bücherverbrennungen 1933</a> und zum <a href="{{ path('history-page', { 'page': '1930-1933' }) }}">Historischen Kontext</a>.
             </p>
         </div><!-- .p-5 -->
 
@@ -28,6 +28,7 @@
                 {% if event['acf']['date_start'] is not empty %}
                     {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] == '2023-12-31 00:00:00' %}Ab {% endif %}
                     {{ event['acf']['date_start']|format_datetime(pattern="d. MMM") }}
+                    {% if not (event['acf']['date_start'] matches '/00:00:00/') %}{{ event['acf']['date_start']|date('H:i') }}{% endif %}
                 {% endif %}
                 {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] != '2023-12-31 00:00:00' %} - {{ event['acf']['date_end']|format_datetime(pattern="d. MMM") }}
                 {% endif %}
