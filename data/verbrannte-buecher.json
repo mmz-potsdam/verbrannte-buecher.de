@@ -175,7 +175,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/572038070",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -1562,7 +1562,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/572518951",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -2219,7 +2219,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/572896298",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -3055,7 +3055,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/560470827",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -4741,7 +4741,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/580380149",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -4919,7 +4919,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/573769362",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -5359,7 +5359,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/57477937X",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -7528,7 +7528,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/580162095",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -9240,49 +9240,6 @@
             ]
         },
         {
-            "id": "TG2K4PNT",
-            "citation-label": "meyrink_1915",
-            "type": "book",
-            "title": "Der Golem",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Leipzig",
-            "publisher": "Wolff",
-            "issued": {
-                "date-parts": [
-                    [
-                        1915
-                    ]
-                ],
-                "literal": "1915"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://archive.org/details/bub_gb_zXo_AQAAMAAJ https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:sdcd.0/data http://www.zeno.org/Literatur/M/Meyrink,+Gustav/Roman/Der+Golem",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Gustav",
-                    "family": "Meyrink"
-                }
-            ]
-        },
-        {
             "id": "4LCY5W6B",
             "citation-label": "meyrink_1913",
             "type": "book",
@@ -9309,6 +9266,49 @@
             "ISBN": "",
             "ISSN": null,
             "URL": "http://www.zeno.org/nid/20005379598",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Gustav",
+                    "family": "Meyrink"
+                }
+            ]
+        },
+        {
+            "id": "TG2K4PNT",
+            "citation-label": "meyrink_1915",
+            "type": "book",
+            "title": "Der Golem",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Leipzig",
+            "publisher": "Wolff",
+            "issued": {
+                "date-parts": [
+                    [
+                        1915
+                    ]
+                ],
+                "literal": "1915"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "http://www.zeno.org/Literatur/M/Meyrink,+Gustav/Roman/Der+Golem",
             "accessed": {
                 "date-parts": [
                     [
@@ -10202,7 +10202,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/575381558",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -11639,7 +11639,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/576151726",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -13200,7 +13200,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://d-nb.info/576826561",
+            "URL": "https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11128580-6",
             "accessed": {
                 "date-parts": [
                     [
@@ -13661,7 +13661,7 @@
             "id": "8KTZSFW3",
             "citation-label": "woehrle_1929",
             "type": "book",
-            "title": "Querschläger. Das Bumserbuch. Aufzeichngn eines Kanoniers",
+            "title": "Querschläger. Das Bumserbuch. Aufzeichnungen eines Kanoniers",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
