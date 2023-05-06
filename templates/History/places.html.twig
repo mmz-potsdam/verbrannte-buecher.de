@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Orte der Bücherverbrennungen 1933</h2>
+    <div class="v-100 text-right">
+        <img id="zoom-out" style="width: 23px; height: 23px" src="{{ app.request.basepath }}/img/icon/search-minus.png" title="verkleinern" onClick="zoomOut()">
+        <img id="zoom-in" style="width: 23px; height: 23px"  src="{{ app.request.basepath }}/img/icon/search-plus.png" title="vergrößern" onClick="zoomIn()">
+        <img id="reset" style="width: 23px; height: 23px"  src="{{ app.request.basepath }}/img/icon/search-reset.png" title="zurücksetzen" onclick="svgPanZoomContainer.resetScale(document.getElementById('container'))">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom-container@0.6.1"></script>
+    <div id="container" data-pan-on-drag data-zoom-on-wheel="min-scale: 0.1; max-scale: 1000;" style="width: 100%; aspect-ratio: 1 / 1; overflow: hidden;">
+        <img src="{{ app.request.basepath }}/img/orte-der-buecherverbrennungen-1933.svg">Your browser does not support SVG</object>
+    </div><!-- #container -->
+    <p>
+        Die grafische Darstellung der Orte der Bücherverbrennungen 1933 in Deutschland sowie die Einteilung nach Phasen und Akteuren folgen den Arbeiten von Werner Treß:
+    </p>
+    <ul class="small">
+        <li>
+            Treß, Werner: Phasen und Akteure der Bücherverbrennungen in Deutschland 1933, in: Schoeps, Julius H./ Treß, Werner (Hrsg.): Orte der Bücherverbrennungen in Deutschland, Hildesheim/Zürich/New York 2008, Vorsatz und S. 9-28.
+        </li>
+        <li>
+            Treß, Werner: „Wer ist der eigentliche Feind?“ Die Bücherverbrennungen in Deutschland und der Beginn der Literaturindizierungen im Zeitumbruch des Jahres 1933 (Diss. FU Berlin), Berlin 2011. S. 40-72.
+        </li>
+    </ul>
+    <p>
+        Die Karte wurde von Peter Palm (<a href="https://palm-mapping.de" target="_blank">palm-mapping.de</a>)
+        im Auftrag der <a href="https://www.blz.bayern.de/verbrannte-buecher_v_191.html" target="_blank">Bayerischen Landeszentrale für politische Bildungsarbeit</a> erstellt.
+    </p>
+    <p>
+        <a href="{{ app.request.basepath }}/img/orte-der-buecherverbrennungen-1933.pdf">Karte herunterladen</a> (PDF)
+    </p>
+
+    <script>
+    var scale = 1.0;
+    var minScale = 0.5;
+
+    function zoomOut() {
+        if (scale < minScale) {
+            return;
+        }
+
+        var newScale = scale / 1.2;
+        if (newScale < minScale) {
+            newScale = minScale;
+        }
+
+        scale = newScale;
+
+        // update
+        window.inputting = true;
+        svgPanZoomContainer.setScale(
+            document.getElementById('container'),
+            scale,
+            {
+                minScale: minScale
+            }
+        );
+    }
+
+    function zoomIn() {
+        scale = 1.2 * scale;
+
+        // update
+        window.inputting = true;
+        svgPanZoomContainer.setScale(
+            document.getElementById('container'),
+            scale,
+            {
+                minScale: scale < minScale ? scale : minScale
+            }
+        );
+    }
+
+    new MutationObserver(function (mutations) {
+        if (window.inputting) {
+            delete window.inputting
+        }
+        else {
+            mutations.forEach(function (mutation) {
+                scale = svgPanZoomContainer.getScale(mutation.target.parentElement);
+            });
+        }
+    }).observe(document.getElementById('container').firstElementChild, {
+        attributes: true,
+        attributeFilter: ['transform'],
+    });
+    </script>
+{% endblock %}

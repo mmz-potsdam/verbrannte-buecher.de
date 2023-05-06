@@ -97,6 +97,15 @@ class HistoryController extends BaseController
     }
 
     /**
+     * @Route("/geschichte/orte", name="history-places", options={"sitemap" = true})
+     */
+    public function placesAction(Request $request)
+    {
+        return $this->render('History/places.html.twig', [
+        ]);
+    }
+
+    /**
      * @Route("/geschichte/{page}", name="history-page", requirements={"page"=".+"})
      */
     public function pageAction(Request $request, $page,
