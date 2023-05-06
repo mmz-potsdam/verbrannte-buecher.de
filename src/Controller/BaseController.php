@@ -100,7 +100,9 @@ class BaseController extends AbstractController
     /**
      * Load and render bibliography
      */
-    protected function buildBibliography($locale, $dataFname, $cslFname = 'style.csl')
+    protected function buildBibliography($locale, $dataFname,
+                                         $cslFname = 'style.csl',
+                                         $additionalMarkup = [])
     {
         $cslLocale = 'en-US';
 
@@ -127,9 +129,8 @@ class BaseController extends AbstractController
             $this->getDataDir(), $cslFname,
         ]);
 
-        $citeProc = new \Seboettg\CiteProc\CiteProc(file_get_contents($cslPath), $cslLocale);
+        $citeProc = new \Seboettg\CiteProc\CiteProc(file_get_contents($cslPath), $cslLocale, $additionalMarkup);
 
         return $this->postProcessBiblio(@$citeProc->render($dataAsObject->data), $cslLocale);
     }
-
 }

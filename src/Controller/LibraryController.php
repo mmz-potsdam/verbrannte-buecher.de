@@ -14,8 +14,33 @@ class LibraryController extends BaseController
      */
     public function libraryAction(Request $request)
     {
+        $additionalMarkup = [
+            'bibliography' => [
+                'csl-entry' => function($cslItem, $renderedText) {
+                    $dataAttr = '';
+
+                    if (property_exists($cslItem, 'citation-label')
+                        && !empty($cslItem->{'citation-label'}))
+                    {
+                        $dataAttr = sprintf(' data-csl-citation-label="%s"',
+                                            htmlspecialchars($cslItem->{'citation-label'}, ENT_COMPAT, 'utf-8'));
+                    }
+
+                    return '<div id="' . $cslItem->id . '"'
+                        . $dataAttr . '>'
+                        . $renderedText
+                        . '</div>';
+                },
+                'URL' => function($cslItem, $renderedText) {
+                    return '<a class="arrow" href="' . $renderedText . '" target="blank" title="' . $renderedText .'">&nbsp;</a>';
+                },
+            ],
+        ];
+
+        $bibliography = $this->buildBibliography($request->getLocale(), 'verbrannte-buecher.json', 'style.csl', $additionalMarkup);
+
         return $this->render('Library/index.html.twig', [
-            'bibliography' => $this->buildBibliography($request->getLocale(), 'verbrannte-buecher.json'),
+            'bibliography' => $bibliography,
         ]);
     }
 }

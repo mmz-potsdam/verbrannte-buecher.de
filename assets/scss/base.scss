@@ -366,3 +366,33 @@ body.route-home {
         }
     }
 }
+
+body.route-library {
+    .csl-bib-body {
+        border-top: 1px solid $color-gray-dark;
+        .csl-entry {
+            position: relative;
+
+            margin-bottom: 0;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+
+            border-bottom: 1px solid $color-gray-dark;
+            padding-left: 16%;
+            padding-right: 16%;
+
+            a.arrow {
+                text-decoration: none;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                right: 0;
+                width: 18px;
+                height: 18px;
+                background: url(../img/icon/arrow-external.svg);
+                background-size: contain;
+            }
+        }
+    }
+}
