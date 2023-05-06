@@ -106,6 +106,16 @@ class HistoryController extends BaseController
     }
 
     /**
+     * @Route("/geschichte/auswahlliteratur", name="bibliography", options={"sitemap" = true})
+     */
+    public function bibliographyAction(Request $request)
+    {
+        return $this->render('History/bibliography.html.twig', [
+            'bibliography' => $this->buildBibliography($request->getLocale(), 'bibliography.json'),
+        ]);
+    }
+
+    /**
      * @Route("/geschichte/{page}", name="history-page", requirements={"page"=".+"})
      */
     public function pageAction(Request $request, $page,

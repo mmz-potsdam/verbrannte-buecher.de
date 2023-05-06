@@ -14,6 +14,10 @@ use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 class ZoteroFetchCollectionCommand
 extends Command
 {
+    protected $collections = [
+        'library' => 'AD9KXU3Q',
+        'secondary' => 'DS2S9RPV',
+    ];
     protected $zoteroApiService;
 
     public function __construct(\App\Service\ZoteroApiService $zoteroApiService)
@@ -29,6 +33,12 @@ extends Command
         $this
             ->setName('zotero:fetch-collection')
             ->setDescription('Fetch items from Zotero collection')
+            ->addOption(
+                'secondary',
+                null,
+                InputOption::VALUE_NONE,
+                'If set, Secondary Literature is fetched'
+            )
             ;
     }
 
@@ -37,8 +47,11 @@ extends Command
         $api = $this->zoteroApiService->getInstance($groupId = '4750799');
         // $groupId = $this->zoteroApiService->getGroupId(); if it is set in options
 
-        $request = $api
-            ->collections($key = 'AD9KXU3Q');
+        $key = $input->getOption('secondary')
+            ? $this->collections['secondary']
+            : $this->collections['library'];
+
+        $request = $api->collections($key);
 
         try {
             $response = $request->send();

@@ -1,0 +1,620 @@
+{
+    "group-id": "4750799",
+    "key": "DS2S9RPV",
+    "data": [
+        {
+            "id": "SJJRY5F7",
+            "citation-label": "aigner_1971",
+            "type": "book",
+            "title": "Die Indizierung „schädlichen und unerwünschten Schrifttums“ im Dritten Reich",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Frankfurt am Main",
+            "publisher": "Buchhändler-Vereinigung",
+            "issued": {
+                "date-parts": [
+                    [
+                        1971
+                    ]
+                ],
+                "literal": "1971"
+            },
+            "page": null,
+            "number-of-pages": "933",
+            "DOI": null,
+            "ISBN": "978-3-7657-0382-9",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Dietrich",
+                    "family": "Aigner"
+                }
+            ]
+        },
+        {
+            "id": "HHM7BCK3",
+            "citation-label": "barbian_1995",
+            "type": "book",
+            "title": "Literaturpolitik im „Dritten Reich“. Institutionen, Kompetenzen, Betätigungsfelder",
+            "container-title": null,
+            "collection-title": "dtv",
+            "collection-number": "4668",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "Überarb. und aktualisierte Ausg",
+            "publisher-place": "München",
+            "publisher": "Dt. Taschenbuch-Verl",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ],
+                "literal": "1995"
+            },
+            "page": null,
+            "number-of-pages": "915",
+            "DOI": null,
+            "ISBN": "978-3-423-04668-8",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Jan-Pieter",
+                    "family": "Barbian"
+                }
+            ]
+        },
+        {
+            "id": "QTTWV73J",
+            "citation-label": "bircken-and-peitsch_2003",
+            "type": "book",
+            "title": "Brennende Bücher. Erinnerungen an den 10. Mai 1933",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Potsdam",
+            "publisher": "Brandenburgische Landeszentrale für Politische Bildung",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ],
+                "literal": "2003"
+            },
+            "page": null,
+            "number-of-pages": "159",
+            "DOI": null,
+            "ISBN": "978-3-932502-35-4",
+            "ISSN": null,
+            "URL": "https://www.politische-bildung-brandenburg.de/system/files/publikation/pdf/Brennende%20Buecher.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "editor": [
+                {
+                    "given": "Margrid",
+                    "family": "Bircken"
+                },
+                {
+                    "given": "Helmut",
+                    "family": "Peitsch"
+                }
+            ]
+        },
+        {
+            "id": "5IZPGVR8",
+            "citation-label": "endlich_2007",
+            "type": "book",
+            "title": "„Vernichtung“, „Giftschrank“, „zweifelhafte Fälle“. Vorgeschichte und Folgen der Bücherverbrennung für jüdische Autoren, Verleger, Buchhändler und Bibliothekare",
+            "container-title": null,
+            "collection-title": "Gegen Verdrängen und Vergessen : Berichte",
+            "collection-number": "3",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Teetz",
+            "publisher": "Hentrich & Hentrich",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ],
+                "literal": "2007"
+            },
+            "page": null,
+            "number-of-pages": "94",
+            "DOI": null,
+            "ISBN": "978-3-938485-48-4",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Stefanie",
+                    "family": "Endlich"
+                }
+            ]
+        },
+        {
+            "id": "W9B5J9PM",
+            "citation-label": "kaestner_2013",
+            "type": "book",
+            "title": "Über das Verbrennen von Büchern",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Zürich",
+            "publisher": "Atrium",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ],
+                "literal": "2013"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "978-3-85535-389-7",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Erich",
+                    "family": "Kästner"
+                }
+            ]
+        },
+        {
+            "id": "BI5PNYWU",
+            "citation-label": "rafetseder_1988",
+            "type": "book",
+            "title": "Bücherverbrennungen. Die öffentliche Hinrichtung von Schriften im historischen Wandel",
+            "container-title": null,
+            "collection-title": "Kulturstudien",
+            "collection-number": "12",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Wien",
+            "publisher": "Böhlau",
+            "issued": {
+                "date-parts": [
+                    [
+                        1988
+                    ]
+                ],
+                "literal": "1988"
+            },
+            "page": null,
+            "number-of-pages": "360",
+            "DOI": null,
+            "ISBN": "978-3-205-08858-5",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Hermann",
+                    "family": "Rafetseder"
+                }
+            ]
+        },
+        {
+            "id": "9TK2P65X",
+            "citation-label": "sauder_1985",
+            "type": "book",
+            "title": "Die Bücherverbrennung. 10. Mai 1933",
+            "container-title": null,
+            "collection-title": "Ullstein-Sachbuch",
+            "collection-number": "34269",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Frankfurt am Main",
+            "publisher": "Ullstein",
+            "issued": {
+                "date-parts": [
+                    [
+                        1985
+                    ]
+                ],
+                "literal": "1985"
+            },
+            "page": null,
+            "number-of-pages": "338",
+            "DOI": null,
+            "ISBN": "978-3-548-34269-6",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "editor": [
+                {
+                    "given": "Gerhard",
+                    "family": "Sauder"
+                }
+            ]
+        },
+        {
+            "id": "SDCDP7UX",
+            "citation-label": "schoeps-and-tress_2010",
+            "type": "book",
+            "title": "Verfemt und Verboten. Vorgeschichte und Folgen der Bücherverbrennungen 1933",
+            "container-title": null,
+            "collection-title": "Wissenschaftliche Begleitbände im Rahmen der Bibliothek verbrannter Bücher",
+            "collection-number": "2",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Hildesheim",
+            "publisher": "Olms",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ],
+                "literal": "2010"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "978-3-487-14383-5",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "editor": [
+                {
+                    "given": "Julius Hans",
+                    "family": "Schoeps"
+                },
+                {
+                    "given": "Werner",
+                    "family": "Tress"
+                }
+            ]
+        },
+        {
+            "id": "F8VXI6IU",
+            "citation-label": "schoeps-and-tress_2008",
+            "type": "book",
+            "title": "Orte der Bücherverbrennungen in Deutschland 1933",
+            "container-title": null,
+            "collection-title": "Wissenschaftliche Begleitbände im Rahmen der Bibliothek verbrannter Bücher",
+            "collection-number": "1",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Hildesheim",
+            "publisher": "Olms",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ],
+                "literal": "2008"
+            },
+            "page": null,
+            "number-of-pages": "848",
+            "DOI": null,
+            "ISBN": "978-3-487-13660-8",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "editor": [
+                {
+                    "given": "Julius H.",
+                    "family": "Schoeps"
+                },
+                {
+                    "given": "Werner",
+                    "family": "Treß"
+                }
+            ]
+        },
+        {
+            "id": "VNDYLA9U",
+            "citation-label": "serke_2002",
+            "type": "book",
+            "title": "Die verbrannten Dichter",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "Erweiterte Jubiläumsausgabe",
+            "publisher-place": "Weinheim",
+            "publisher": "Beltz & Gelberg",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002
+                    ]
+                ],
+                "literal": "2002"
+            },
+            "page": null,
+            "number-of-pages": "442",
+            "DOI": null,
+            "ISBN": "978-3-407-80899-8",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Jürgen",
+                    "family": "Serke"
+                }
+            ]
+        },
+        {
+            "id": "AUWYD3JX",
+            "citation-label": "tress_2003",
+            "type": "book",
+            "title": "Wider den undeutschen Geist. Bücherverbrennung 1933",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Parthas",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ],
+                "literal": "2003"
+            },
+            "page": null,
+            "number-of-pages": "247",
+            "DOI": null,
+            "ISBN": "978-3-932529-55-9",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Werner",
+                    "family": "Treß"
+                }
+            ]
+        },
+        {
+            "id": "2RZL7DD6",
+            "citation-label": "tress_2009",
+            "type": "book",
+            "title": "Verbrannte Bücher 1933. Mit Feuer gegen die Freiheit des Geistes",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Bonn",
+            "publisher": "Bundeszentrale für Politische Bildung",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ],
+                "literal": "2009"
+            },
+            "page": null,
+            "number-of-pages": "638",
+            "DOI": null,
+            "ISBN": "978-3-8389-0003-2",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "editor": [
+                {
+                    "given": "Werner",
+                    "family": "Treß"
+                }
+            ]
+        },
+        {
+            "id": "NKB87DYL",
+            "citation-label": "weidermann_2008",
+            "type": "book",
+            "title": "Das Buch der verbrannten Bücher",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Köln",
+            "publisher": "Kiepenheuer & Witsch",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ],
+                "literal": "2008"
+            },
+            "page": null,
+            "number-of-pages": "253",
+            "DOI": null,
+            "ISBN": "978-3-462-03962-7",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Volker",
+                    "family": "Weidermann"
+                }
+            ]
+        },
+        {
+            "id": "EQTI8QJM",
+            "citation-label": "ziegler_2007",
+            "type": "book",
+            "title": "Die verbrannten Dichterinnen. Schriftstellerinnen gegen den Nationalsozialismus",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Düsseldorf",
+            "publisher": "Artemis & Winkler",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ],
+                "literal": "2007"
+            },
+            "page": null,
+            "number-of-pages": "278",
+            "DOI": null,
+            "ISBN": "978-3-538-07253-4",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Edda",
+                    "family": "Ziegler"
+                }
+            ]
+        }
+    ]
+}

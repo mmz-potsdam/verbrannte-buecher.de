@@ -314,16 +314,16 @@
         },
         {
             "name": "citation-style-language/styles",
-            "version": "v0.0.229",
+            "version": "v0.0.237",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/styles.git",
-                "reference": "af38aba0e9b08406c8827abfc888e5f3e3fa1d65"
+                "reference": "77a61c0d82481b99edc24f39aa519d25df37ac0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/af38aba0e9b08406c8827abfc888e5f3e3fa1d65",
-                "reference": "af38aba0e9b08406c8827abfc888e5f3e3fa1d65",
+                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/77a61c0d82481b99edc24f39aa519d25df37ac0c",
+                "reference": "77a61c0d82481b99edc24f39aa519d25df37ac0c",
                 "shasum": ""
             },
             "type": "library",
@@ -341,7 +341,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/styles/issues",
-                "source": "https://github.com/citation-style-language/styles/tree/v0.0.229"
+                "source": "https://github.com/citation-style-language/styles/tree/v0.0.237"
             },
             "funding": [
                 {
@@ -349,7 +349,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-16T03:08:50+00:00"
+            "time": "2023-05-05T03:37:15+00:00"
         },
         {
             "name": "cocur/slugify",
