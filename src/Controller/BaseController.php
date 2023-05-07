@@ -13,11 +13,15 @@ use Vnn\WpApiClient\WpClient;
 class BaseController extends AbstractController
 {
     private $projectDir;
+    protected $publicDir;
     protected $wordpressBaseUrl;
 
-    public function __construct(string $projectDir, string $wordpressBaseUrl)
+    public function __construct(string $projectDir,
+                                string $publicDir,
+                                string $wordpressBaseUrl)
     {
         $this->projectDir = $projectDir;
+        $this->publicDir = $publicDir;
         $this->wordpressBaseUrl = $wordpressBaseUrl;
     }
 

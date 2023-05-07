@@ -381,6 +381,20 @@ body.route-library {
             padding-left: 16%;
             padding-right: 16%;
 
+            .thumb {
+                text-decoration: none;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                left: 0;
+                height: 48px;
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
             a.arrow {
                 text-decoration: none;
                 position: absolute;
@@ -391,7 +405,17 @@ body.route-library {
                 width: 18px;
                 height: 18px;
                 background: url(../img/icon/arrow-external.svg);
+                background-repeat: no-repeat;
                 background-size: contain;
+            }
+
+            > .digital-library {
+                min-height: 48px; /* for thumb to fit */
+                a.arrow {
+                    width: 24px;
+                    height: 20px;
+                    background: url(../img/icon/arrow-right.svg);
+                }
             }
         }
     }
