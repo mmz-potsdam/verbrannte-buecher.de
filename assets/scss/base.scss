@@ -234,6 +234,8 @@ body {
     a {
         color: $color-color-link;
         text-decoration: underline;
+        text-underline-offset: 3px;
+
         &:hover {
             color: $color-color-spot;
         }
@@ -337,7 +339,24 @@ body.route-home {
     }
 
     .event {
+        h5 {
+            font-size: 1rem;
+            line-height: 160%;
+
+            span {
+                color: $color-background;
+                background-color: $color-color-spot;
+                padding-left: 0.2rem;
+                padding-right: 0.3rem;
+
+                &.date {
+                    font-weight: bold;
+                }
+            }
+        }
+
         h4 {
+            margin-top: 8px;
             font-size: 1rem;
             font-weight: bold;
         }
@@ -365,13 +384,28 @@ body.route-home {
             padding-top: 1rem;
         }
     }
+
+    a.arrow {
+        text-decoration: none;
+        padding-right: 32px;
+        background: url(../img/icon/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: right;
+        &:hover {
+            background: url(../img/icon/arrow-right-spot.svg);
+            background-repeat: no-repeat;
+            background-size: auto 80%;
+            background-position: right;
+        }
+    }
 }
 
 body.route-library {
     .filter {
         li {
             border: 1px solid $color-body-text;
-            border-radius: 8px;
+            border-radius: 6px;
             font-size: 85%;
             padding-top: 4px;
             padding-bottom: 4px;
@@ -425,6 +459,9 @@ body.route-library {
                 background: url(../img/icon/arrow-external.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
+                &:hover {
+                    background: url(../img/icon/arrow-external-spot.svg);
+                }
             }
 
             > .digital-library {
@@ -433,6 +470,9 @@ body.route-library {
                     width: 24px;
                     height: 20px;
                     background: url(../img/icon/arrow-right.svg);
+                    &:hover {
+                        background: url(../img/icon/arrow-right-spot.svg);
+                    }
                 }
             }
         }
