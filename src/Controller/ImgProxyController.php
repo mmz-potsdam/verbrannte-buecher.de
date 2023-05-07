@@ -16,10 +16,12 @@ extends BaseController
 {
     private $client;
 
-    public function __construct(string $projectDir, string $wordpressBaseUrl,
+    public function __construct(string $projectDir,
+                                string $publicDir,
+                                string $wordpressBaseUrl,
                                 HttpClientInterface $client)
     {
-        parent::__construct($projectDir, $wordpressBaseUrl);
+        parent::__construct($projectDir, $publicDir, $wordpressBaseUrl);
 
         $this->client = $client;
     }
