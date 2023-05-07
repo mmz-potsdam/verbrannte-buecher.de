@@ -15,6 +15,7 @@ class HistoryController extends BaseController
     var $siteStructure = [
         '1930-1933' => 'Historischer Kontext',
         'buecherverbrennungen-1933' => 'Bücherverbrennungen 1933',
+        'literaturpolitische-motive' => 'Literaturpolitische Motive der Bücherverbrennungen 1933'
     ];
 
     /**
