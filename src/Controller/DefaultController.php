@@ -20,7 +20,7 @@ class DefaultController extends BaseController
                                WpClient $wpClient,
                                EntityManagerInterface $entityManager)
     {
-        $events = $this->buildEvents($wpClient);
+        $events = $this->buildEvents($wpClient, 4);
 
         $digitized = $this->buildDigitized($request, $entityManager);
 

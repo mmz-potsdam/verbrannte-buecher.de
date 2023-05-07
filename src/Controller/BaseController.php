@@ -35,10 +35,10 @@ class BaseController extends AbstractController
         return $this->projectDir . '/data';
     }
 
-    protected function buildEvents(WpClient $wpClient)
+    protected function buildEvents(WpClient $wpClient, $limit = 4)
     {
         $events = $wpClient->events()->get(null, [
-            'per_page' => 4,
+            'per_page' => 10, // TODO: add proper order
         ]);
 
         if (!empty($events)) {
@@ -46,6 +46,10 @@ class BaseController extends AbstractController
                 return strcmp($eventA['acf']['date_start'],
                               $eventB['acf']['date_start']);
             });
+        }
+
+        if (count($events) > $limit) {
+            return array_slice($events, 0, $limit);
         }
 
         return $events;
