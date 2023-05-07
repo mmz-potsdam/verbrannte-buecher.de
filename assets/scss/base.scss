@@ -368,8 +368,26 @@ body.route-home {
 }
 
 body.route-library {
+    .filter {
+        li {
+            border: 1px solid $color-body-text;
+            border-radius: 8px;
+            font-size: 85%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            &.active, &:hover {
+                border-color: $color-color-spot;
+                color: $color-color-spot;
+            }
+        }
+    }
+
     .csl-bib-body {
         border-top: 1px solid $color-gray-dark;
+
         .csl-entry {
             position: relative;
 

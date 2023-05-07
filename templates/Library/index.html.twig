@@ -1,5 +1,55 @@
 {% extends 'base.html.twig' %}
 
+{% block head %}
+    <script>
+        function updateFilter (which) {
+            $('.filter > li').removeClass('active');
+            $('.filter > #' + which).addClass('active');
+
+            if ('all' == which) {
+                $('.csl-entry').removeClass('d-none');
+            }
+            else if ('online' == which) {
+                $('.csl-entry > div').each(function(idx) {
+                    var classAttr = $(this).attr('class');
+
+                    if (typeof classAttr != 'undefined'
+                        && (classAttr.indexOf('online') >= 0
+                            || classAttr.indexOf('digital-library') >= 0))
+                    {
+                        $(this).parent().removeClass('d-none');
+                    }
+                    else {
+                        $(this).parent().addClass('d-none');
+                    }
+                });
+            }
+            else if ('digital-library' == which) {
+                $('.csl-entry > div').each(function(idx) {
+                    var classAttr = $(this).attr('class');
+
+                    if (typeof classAttr != 'undefined'
+                        && (classAttr.indexOf('digital-library') >= 0))
+                    {
+                        $(this).parent().removeClass('d-none');
+                    }
+                    else {
+                        $(this).parent().addClass('d-none');
+                    }
+                });
+            }
+
+            return false;
+        }
+    </script>
+{% endblock %}
+
 {% block body %}
+    <h1>Bibliothek verbrannter Bücher</h1>
+    <ul class="list-inline filter">
+        <li id="all" class="list-inline-item active" onclick="updateFilter('all')">Alle Bücher</li>
+        <li id="online" class="list-inline-item" onclick="updateFilter('online')">Online verfügbar</li>
+        <li id="digital-library" class="list-inline-item" onclick="updateFilter('digital-library')">Digitale Bibliothek</li>
+    </ul>
     {{ bibliography|raw }}
 {% endblock %}
