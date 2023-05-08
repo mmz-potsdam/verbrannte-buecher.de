@@ -336,6 +336,20 @@ nav.navbar-dark {
 body.route-home {
     h3 {
         color: $color-color-spot;
+        position: relative;
+
+        a {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 50%;
+            text-decoration: none;
+            color: $color-color-spot;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     .event {
