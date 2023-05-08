@@ -3,6 +3,8 @@ twig:
     globals:
         siteName: '%app.site.name%'
         siteTagline: ''
+        sitePublisher: '%app.site.publisher%'
+        siteEmail: '%app.site.email%'
         slugify: "@cocur_slugify"
         public_dir: '%app.public_dir%'
         webDir: '%app.public_dir%'  # global expected by TeiEditionBundle

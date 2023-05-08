@@ -68,3 +68,7 @@ tei2html:
 'bibliography-index':
     path: /bibliothek
     controller: TeiEditionBundle\Controller\LibraryController::indexAction
+
+oai:
+    path: /oai
+    controller: TeiEditionBundle\Controller\OaiController::dispatchAction
