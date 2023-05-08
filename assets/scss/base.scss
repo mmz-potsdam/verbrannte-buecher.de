@@ -325,6 +325,16 @@ nav.navbar-dark {
     color: black;
 }
 
+.seealso-ul {
+    font-size: 80%;
+
+    li {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
 @media print {
     /* http://drupal.stackexchange.com/a/59908*/
     a[href]:after {
