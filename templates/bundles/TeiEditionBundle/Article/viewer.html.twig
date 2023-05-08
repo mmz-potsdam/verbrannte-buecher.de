@@ -184,9 +184,11 @@
         {% endif %}
         {{ name }}, {{ article.dateCreatedDisplay }}
     </h1>
+    {#
     <h3 class="pdf-link" style="float: right">
         <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'PDF-Datei'|trans }}</a>
     </h3>
+    #}
 
     <div class="row" style="clear: right">
         {#

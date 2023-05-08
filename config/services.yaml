@@ -7,7 +7,7 @@ parameters:
     app.locales: [de]
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
-    app.site.name: "Digitale Bibliothek Verbrannter Bücher"
+    app.site.name: "Digitale Bibliothek verbrannter Bücher"
     app.site_theme: null
     app.public_dir: '%kernel.project_dir%/public'
     app.zotero.options:
