@@ -268,7 +268,7 @@ nav.navbar-dark {
     .navbar-nav .nav-item {
         position: relative;
 
-        a.nav-link {
+        a.nav-link, .dropdown-item {
             color: $color-body-text;
             text-decoration: none;
 
@@ -282,6 +282,14 @@ nav.navbar-dark {
 
         &.active a.nav-link {
             color: $color-color-spot;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $color-background;
+        border: 1px solid $color-color-spot;
+        .dropdown-item {
+            background-color: inherit;
         }
     }
 }
