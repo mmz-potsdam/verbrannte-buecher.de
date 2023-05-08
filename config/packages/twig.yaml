@@ -6,6 +6,7 @@ twig:
         slugify: "@cocur_slugify"
         public_dir: '%app.public_dir%'
         webDir: '%app.public_dir%'  # global expected by TeiEditionBundle
+        site_matomo_id: '%app.site.matomo.id%'
     form_themes: ['bootstrap_4_horizontal_layout.html.twig']
 
 when@test:

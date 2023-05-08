@@ -9,6 +9,7 @@ parameters:
     default_locale: 'de' # without app. prefix for TeiEditionBundle
     app.site.name: "Digitale Bibliothek verbrannter Bücher"
     app.site_theme: null
+    app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
     app.public_dir: '%kernel.project_dir%/public'
     app.zotero.options:
         api-key: "%env(string:ZOTERO_API_KEY)%"
