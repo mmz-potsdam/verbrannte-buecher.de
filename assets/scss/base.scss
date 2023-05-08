@@ -333,6 +333,13 @@ nav.navbar-dark {
     color: black;
 }
 
+@media (max-width: 620px) {
+    /* override display:none */
+    /* TODO: switch to mobile viewer */
+    .mycoreViewer .navbar div[data-id=ImageChangeControllGroup] {
+        display: flex !important;
+    }
+}
 .seealso-ul {
     font-size: 80%;
 
@@ -429,6 +436,23 @@ body.route-home {
             background-repeat: no-repeat;
             background-size: auto 80%;
             background-position: right;
+        }
+    }
+}
+
+body.route-source {
+    #description,
+    .sidebar > .box > .row > .col-sm-12 > h4
+    {
+        display: none; /* hide Quellenbeschreibung / Quelle */
+    }
+
+    .sidebar > .box {
+        border: 1px solid $color-body-text;
+        border-radius: 6px;
+
+        dl {
+            margin-top: 1rem;
         }
     }
 }

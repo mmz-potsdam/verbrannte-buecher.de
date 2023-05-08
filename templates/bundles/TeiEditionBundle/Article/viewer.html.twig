@@ -4,6 +4,7 @@
 {% import '@TeiEdition/Shared/entity-lookup.html.twig' as entityLookup %}
 {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
 
+{% set min_viewer_width = 320 %}
 {% block head %}
     {{ map.head() }}
 
@@ -66,8 +67,8 @@
 
         function resizeViewerDiv() {
             var parentWidth = $( '#image-viewer' ).parent().width();
-            if (parentWidth < 640) {
-                parentWidth = 640;
+            if (parentWidth < {{ min_viewer_width }}) {
+                parentWidth = {{ min_viewer_width }};
             }
             // console.log('Set #image-viewer.width(): ' + parentWidth + '-' + $('#image-viewer').parent().width());
             $( '#image-viewer' ).width(parentWidth);
@@ -184,24 +185,15 @@
         {% endif %}
         {{ name }}, {{ article.dateCreatedDisplay }}
     </h1>
-    {#
-    <h3 class="pdf-link" style="float: right">
-        <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'PDF-Datei'|trans }}</a>
-    </h3>
-    #}
 
-    <div class="row" style="clear: right">
-        {#
-        <div class="col-xs-12 col-md-3 sidebar">
-            <h3 class="pdf-link">
-                <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
-            </h3>
-            {{ helper.source_sidebar(article, description, interpretations, related, mets) }}
-        </div>
-        #}
+    <div class="row">
         <div id="image-viewer-container" class="col-xs-12 col-md-12">
-            <div id="image-viewer" style="width: 640px; height: 600px; position: relative; margin-bottom: 2rem;"></div>
+            <div id="image-viewer" style="width: {{ min_viewer_width }}px; height: 600px; position: relative; margin-bottom: 2rem;"></div>
+        </div><!-- #image-viewer-container -->
+    </div><!-- .row -->
 
+    <div class="row">
+        <div class="col-12 col-md-8 col-xl-9">
             {#{ helper.source_description_footer(name, article, description, license) }#}
             {{ helper.source_description(description) }}
 
@@ -227,8 +219,14 @@
                 {{ license.text }}
             </div>
             {% endif %}
-        </div><!-- .col -->
 
-        {#{ dump(article) }#}
+            {#{ dump(article) }#}
+        </div>
+        <div class="col-12 col-md-4 col-xl-3 sidebar">
+            {#<h3 class="pdf-link">
+                <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
+            </h3>#}
+            {{ helper.source_sidebar(article, description, interpretations, related, mets) }}
+        </div>
     </div><!-- .row -->
 {% endblock %}
