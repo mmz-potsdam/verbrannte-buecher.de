@@ -371,7 +371,9 @@
                                 {% if mets is not empty %}
                                 <li><a target="_blank" href="{{ url('source-mets', { 'uid': meta.uid }) }}">METS-XML</a></li>
                                 {% endif %}
+                                {#
                                 <li><a target="_blank" href="{{ url('oai', { 'verb': 'GetRecord', 'metadataPrefix': 'oai_dc', 'identifier': 'oai:' ~ meta.uid ~ '.' ~ app.request.locale }) }}">OAI-PMH</a></li>
+                                #}
                                 </ul>
                             </dd>
                             {% endif %}

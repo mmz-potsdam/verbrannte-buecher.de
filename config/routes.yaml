@@ -19,8 +19,26 @@ app_logout:
     path: /ort/tgn/{tgn}
     controller: TeiEditionBundle\Controller\PlaceController::detailAction
 
+'source-tei':
+    path: /bibliothek/{uid}.tei.xml
+    controller: TeiEditionBundle\Controller\SourceController::teiAction
+    requirements:
+        uid: 'source\-\d+'
+
+'source-mets':
+    path: /bibliothek/{uid}.mets.xml
+    controller: TeiEditionBundle\Controller\SourceController::metsAction
+    requirements:
+        uid: 'source\-\d+'
+
 'source-pdf':
     path: /bibliothek/{uid}.pdf
+    controller: TeiEditionBundle\Controller\SourceController::sourceViewerAction
+    requirements:
+        uid: 'source\-\d+'
+
+'source-jsonld':
+    path: /bibliothek/{uid}.jsonld
     controller: TeiEditionBundle\Controller\SourceController::sourceViewerAction
     requirements:
         uid: 'source\-\d+'
