@@ -226,6 +226,12 @@
     {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
     {% import _self as helper %}
                         <dl{% if printview %} class="dl-horizontal"{% endif %}>
+                        {% if meta.creator is not empty %}
+                            <dt>{{ 'Creator'|trans }}</dt>
+                            <dd>
+                                {{ meta.creator  }}
+                            </dd>
+                        {% endif %}
                         {% if meta.dateCreated is not empty %}
                             <dt>{{ 'Date'|trans }}</dt>
                             <dd>
@@ -298,12 +304,6 @@
                             <dt>{{ 'Source Type'|trans }}</dt>
                             <dd>{{ meta.sourceType }}</dd>
                         {% endif %#}
-                        {% if meta.creator is not empty %}
-                            <dt>{{ 'Creator'|trans }}</dt>
-                            <dd>
-                                {{ meta.creator  }}
-                            </dd>
-                        {% endif %}
                         {% if meta.provider is not empty %}
                             <dt>Verlag</dt>
                             <dd>
