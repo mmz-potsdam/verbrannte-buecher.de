@@ -305,9 +305,9 @@
                             </dd>
                         {% endif %}
                         {% if meta.provider is not empty %}
-                            <dt>{{ 'Holding Institution'|trans }}</dt>
+                            <dt>Verlag</dt>
                             <dd>
-                                {% if meta.provider.gnd is not empty %}
+                                {% if false and meta.provider.gnd is not empty %}
                                 <a href="{{ path('organization-by-gnd', { 'gnd' : meta.provider.gnd }) }}">{{ meta.provider.nameLocalized(app.request.locale) }}</a>
                                 {% else %}
                                 {{ meta.provider.nameLocalized(app.request.locale) }}

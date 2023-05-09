@@ -340,8 +340,9 @@ nav.navbar-dark {
         display: flex !important;
     }
 }
+
 .seealso-ul {
-    font-size: 80%;
+    font-size: .875em; /* .small */
 
     li {
         a {
@@ -450,6 +451,8 @@ body.route-source {
     .sidebar > .box {
         border: 1px solid $color-body-text;
         border-radius: 6px;
+
+        font-size: .875em; /* .small */
 
         dl {
             margin-top: 1rem;
