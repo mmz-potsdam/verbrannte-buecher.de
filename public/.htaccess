@@ -68,3 +68,13 @@ DirectoryIndex index.php
         # RedirectTemp cannot be used instead
     </IfModule>
 </IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ############################################
+    ## Add default Expires header
+    ## http://developer.yahoo.com/performance/rules.html#expires
+    <FilesMatch "\.(ico||jpg|jpeg|png|gif|svg|woff|woff2|css|js)$">
+        ExpiresDefault "access plus 1 month"
+    </FilesMatch>
+</IfModule>
