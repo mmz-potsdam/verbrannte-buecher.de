@@ -363,6 +363,22 @@
                                 </a>
                             </dd>#}
                             {% if not printview %}
+                            {% set pdf = "/viewer/source-%05d/source-%05d.pdf"|format(meta.uid|replace({'source-' : ''}), meta.uid|replace({'source-' : ''})) %}
+                            {% if file_exists(webDir ~ pdf) or mets is not empty %}
+                            <dt>Digitalisat</dt>
+                            <dd>
+                                {% if file_exists(webDir ~ pdf) %}
+                                <a style="display: block" href="{{ app.request.basepath ~ pdf }}">
+                                    Herunterladen (PDF)</a>
+                                </a>
+                                {% endif %}
+                                {% if mets is not empty %}
+                                <a href="{{ 'http://dfg-viewer.de/en/v3/'|trans }}?tx_dlf[id]={{ url('source-mets', { 'uid': meta.uid })|url_encode }}" target="_blank">
+                                    Im DFG-Viewer anzeigen
+                                </a>
+                                {% endif %}
+                            </dd>
+                            {% endif %}
                             <dt><a href="#" onClick="$('#metadata').toggle(); return false">{{ 'Download Research Data'|trans }}</a></dt>
                             <dd id="metadata" style="display: none;">
                                 <ul class="list-unstyled" style="margin-bottom: 0">
@@ -373,14 +389,6 @@
                                 {% endif %}
                                 <li><a target="_blank" href="{{ url('oai', { 'verb': 'GetRecord', 'metadataPrefix': 'oai_dc', 'identifier': 'oai:' ~ meta.uid ~ '.' ~ app.request.locale }) }}">OAI-PMH</a></li>
                                 </ul>
-                            </dd>
-                            {% endif %}
-                            {% if mets is not empty %}
-                            <dt>{{ 'DFG-Viewer'|trans }}</dt>
-                            <dd>
-                                <a href="{{ 'http://dfg-viewer.de/en/v3/'|trans }}?tx_dlf[id]={{ url('source-mets', { 'uid': meta.uid })|url_encode }}" target="_blank">
-                                    {{ 'Browse digitized images in DFG-Viewer'|trans }}
-                                </a>
                             </dd>
                             {% endif %}
                         {% endif %}
