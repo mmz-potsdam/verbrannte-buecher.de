@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
+use Cocur\Slugify\SlugifyInterface;
+
 use Doctrine\ORM\EntityManagerInterface;
 
 class LibraryController extends BaseController
@@ -17,14 +19,15 @@ class LibraryController extends BaseController
      */
     public function libraryAction(Request $request,
                                   EntityManagerInterface $entityManager,
-                                  UrlGeneratorInterface $urlGenerator)
+                                  UrlGeneratorInterface $urlGenerator,
+                                  SlugifyInterface $slugify)
     {
         $digitized = $this->buildDigitized($request, $entityManager);
         $sourcesByCitationLabel = [];
         foreach ($digitized as $source) {
             $creatorParts = explode(', ', $source->getCreator());
             $citationLabel = join('_', [
-                mb_strtolower($creatorParts[0], 'utf-8'),
+                $slugify->slugify($creatorParts[0]),
                 $source->getDateCreatedDisplay(),
             ]);
             $sourcesByCitationLabel[$citationLabel] = $source;
