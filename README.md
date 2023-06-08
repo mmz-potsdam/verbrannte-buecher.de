@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of verbrannte-buecher.de
 
-    (C) 2023 Moses Mendelssohn Center for European-Jewish Studies
+    (C) 2023 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
         Daniel Burckhardt
 
 
@@ -14,7 +14,8 @@ License
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
-    You may run your copy of the code under the logos of GHIS/GHDI.
+    A public copy of the site must not give the impression of being
+    operated by the MMZ.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -34,7 +35,7 @@ The XSLT-Stylesheets are based on the files from
 
 Installation
 ------------
-Requirements
+### Requirements
 
 - PHP >= 7.3 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
@@ -46,7 +47,7 @@ Requirements
 
 - vi .env.local (not commited)
 
-## Database
+### Database
 
 - bin/console doctrine:database:create
 - bin/console doctrine:schema:create
@@ -71,7 +72,7 @@ corresponding `tei` or `img/source-xxxxx` folders.
 
 Follow the following commands to add the first source to the site:
 
-Add the author (Franz Kafka, by GND 118559230) to the `Person` table:
+Add the author (if set) to the `Person` table:
 
     ./bin/console article:author --insert-missing data/tei/source-00001.de.xml
 
@@ -114,13 +115,10 @@ It should now show up connected to the author.
 
 Development Notes
 -----------------
-
 ### Local Web Server
 
 - symfony server:start
 - Listening on https://127.0.0.1:8000
-
-### Translate templates
 
 Tweaking the site
 -----------------
