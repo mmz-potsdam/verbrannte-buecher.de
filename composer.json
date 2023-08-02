@@ -53,6 +53,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/jtl-software/connector-iso-639.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
@@ -76,7 +80,9 @@
         "armin/scssphp-bundle": "^1.2",
         "cocur/slugify": "^4.3",
         "doctrine/annotations": "^1.4|^2.0",
-        "eko/feedbundle": "^2.1",
+        "eko/feedbundle": "dev-master",
+        "gmo/iso-639": "dev-master#4834357 as 1.0",
+        "igdj/tei-edition-bundle": "dev-solarium-6",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-verbrannte-buecher.de",
         "liip/url-auto-converter-bundle": "dev-master",
@@ -96,8 +102,8 @@
         "symfony/translation": "5.4.*",
         "symfony/twig-bundle": "5.4.*",
         "symfony/yaml": "5.4.*",
-        "twig/extra-bundle": "^3.5",
-        "twig/intl-extra": "^3.5",
+        "twig/extra-bundle": "^3.6",
+        "twig/intl-extra": "^3.6",
         "vnn/wordpress-rest-api-client": "dev-use_rest_route"
     },
     "require-dev": {
