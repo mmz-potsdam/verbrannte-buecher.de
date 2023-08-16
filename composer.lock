@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8838aedfbe5b5a08644d54b7b3cbb39b",
+    "content-hash": "3d07fd32519a4743544b02d908682773",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -270,16 +270,16 @@
         },
         {
             "name": "citation-style-language/locales",
-            "version": "v0.0.5",
+            "version": "v0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/locales.git",
-                "reference": "d704bf80afe8a692373e11f670b08553b9f74a31"
+                "reference": "8bbac89b216f551ca3d4f77860818938d678badd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/locales/zipball/d704bf80afe8a692373e11f670b08553b9f74a31",
-                "reference": "d704bf80afe8a692373e11f670b08553b9f74a31",
+                "url": "https://api.github.com/repos/citation-style-language/locales/zipball/8bbac89b216f551ca3d4f77860818938d678badd",
+                "reference": "8bbac89b216f551ca3d4f77860818938d678badd",
                 "shasum": ""
             },
             "type": "library",
@@ -290,7 +290,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Creative Commons Attribution-ShareAlike 3.0 License"
+                "CC-BY-SA-3.0"
             ],
             "authors": [
                 {
@@ -302,7 +302,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/locales/issues",
-                "source": "https://github.com/citation-style-language/locales/tree/v0.0.5"
+                "source": "https://github.com/citation-style-language/locales/tree/v0.0.6"
             },
             "funding": [
                 {
@@ -310,20 +310,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-23T02:23:08+00:00"
+            "time": "2023-07-31T14:30:14+00:00"
         },
         {
             "name": "citation-style-language/styles",
-            "version": "v0.0.282",
+            "version": "v0.0.287",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/styles.git",
-                "reference": "0749a19b8306f2e8dcb9bf1a2e3a6992666030ac"
+                "reference": "795ad0c77258cb7e01f3413123b5b556b4cb6a98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/0749a19b8306f2e8dcb9bf1a2e3a6992666030ac",
-                "reference": "0749a19b8306f2e8dcb9bf1a2e3a6992666030ac",
+                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/795ad0c77258cb7e01f3413123b5b556b4cb6a98",
+                "reference": "795ad0c77258cb7e01f3413123b5b556b4cb6a98",
                 "shasum": ""
             },
             "type": "library",
@@ -341,7 +341,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/styles/issues",
-                "source": "https://github.com/citation-style-language/styles/tree/v0.0.282"
+                "source": "https://github.com/citation-style-language/styles/tree/v0.0.287"
             },
             "funding": [
                 {
@@ -349,20 +349,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-24T09:29:49+00:00"
+            "time": "2023-08-10T21:21:11+00:00"
         },
         {
             "name": "cocur/slugify",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
-                "reference": "652234ef5f1be844a2ae1c36ad1b4c88b05160f9"
+                "reference": "4c6ed14a087ca061b220ffda640c07644946e2a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/652234ef5f1be844a2ae1c36ad1b4c88b05160f9",
-                "reference": "652234ef5f1be844a2ae1c36ad1b4c88b05160f9",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/4c6ed14a087ca061b220ffda640c07644946e2a0",
+                "reference": "4c6ed14a087ca061b220ffda640c07644946e2a0",
                 "shasum": ""
             },
             "require": {
@@ -421,9 +421,9 @@
             ],
             "support": {
                 "issues": "https://github.com/cocur/slugify/issues",
-                "source": "https://github.com/cocur/slugify/tree/v4.3.0"
+                "source": "https://github.com/cocur/slugify/tree/v4.4.0"
             },
-            "time": "2022-12-07T19:48:48+00:00"
+            "time": "2023-08-05T09:42:11+00:00"
         },
         {
             "name": "ddeboer/data-import",
@@ -1436,16 +1436,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.16.0",
+            "version": "2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "495cd06b9a630f9c38a21ceb249ed008edbe8414"
+                "reference": "597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/495cd06b9a630f9c38a21ceb249ed008edbe8414",
-                "reference": "495cd06b9a630f9c38a21ceb249ed008edbe8414",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a",
+                "reference": "597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a",
                 "shasum": ""
             },
             "require": {
@@ -1474,14 +1474,14 @@
                 "doctrine/annotations": "^1.13 || ^2",
                 "doctrine/coding-standard": "^9.0.2 || ^12.0",
                 "phpbench/phpbench": "^0.16.10 || ^1.0",
-                "phpstan/phpstan": "~1.4.10 || 1.10.25",
+                "phpstan/phpstan": "~1.4.10 || 1.10.28",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6",
                 "psr/log": "^1 || ^2 || ^3",
                 "squizlabs/php_codesniffer": "3.7.2",
                 "symfony/cache": "^4.4 || ^5.4 || ^6.0",
                 "symfony/var-exporter": "^4.4 || ^5.4 || ^6.2",
                 "symfony/yaml": "^3.4 || ^4.0 || ^5.0 || ^6.0",
-                "vimeo/psalm": "4.30.0 || 5.13.1"
+                "vimeo/psalm": "4.30.0 || 5.14.1"
             },
             "suggest": {
                 "ext-dom": "Provides support for XSD validation for XML mapping files",
@@ -1531,9 +1531,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.16.0"
+                "source": "https://github.com/doctrine/orm/tree/2.16.1"
             },
-            "time": "2023-08-01T12:07:04+00:00"
+            "time": "2023-08-09T13:05:08+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2282,16 +2282,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "3a494dc7dc1d7d12e511890177ae2d0e6c107da6"
+                "reference": "111166291a0f8130081195ac4556a5587d7f1b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/3a494dc7dc1d7d12e511890177ae2d0e6c107da6",
-                "reference": "3a494dc7dc1d7d12e511890177ae2d0e6c107da6",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/111166291a0f8130081195ac4556a5587d7f1b5d",
+                "reference": "111166291a0f8130081195ac4556a5587d7f1b5d",
                 "shasum": ""
             },
             "require": {
@@ -2345,7 +2345,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.0"
+                "source": "https://github.com/guzzle/promises/tree/2.0.1"
             },
             "funding": [
                 {
@@ -2361,7 +2361,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-21T13:50:22+00:00"
+            "time": "2023-08-03T15:11:55+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -2673,26 +2673,26 @@
         },
         {
             "name": "igdj/tei-edition-bundle",
-            "version": "dev-verbrannte-buecher.de",
+            "version": "dev-solarium-6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "cabffe4354681031c4859cf8d2f5e829efc29f5b"
+                "reference": "717bb213f630756ac00dfbcaf5a4d81633aadd4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/cabffe4354681031c4859cf8d2f5e829efc29f5b",
-                "reference": "cabffe4354681031c4859cf8d2f5e829efc29f5b",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/717bb213f630756ac00dfbcaf5a4d81633aadd4a",
+                "reference": "717bb213f630756ac00dfbcaf5a4d81633aadd4a",
                 "shasum": ""
             },
             "require": {
-                "beberlei/doctrineextensions": "^1.2",
+                "beberlei/doctrineextensions": "^1.3",
                 "boppy/solr-bundle": "dev-solarium-6",
                 "brunty/relax-ng-domdocument": "~0.2",
-                "cocur/slugify": "^4.0",
+                "cocur/slugify": "^4.3",
                 "ddeboer/data-import": "0.20.*",
-                "doctrine/doctrine-bundle": "^2.1",
-                "doctrine/orm": "^2.7",
+                "doctrine/doctrine-bundle": "^2.7",
+                "doctrine/orm": "^2.15",
                 "ext-curl": "*",
                 "fale/isbn": "^3.1",
                 "fluentdom/fluentdom": "^8.0",
@@ -2704,12 +2704,12 @@
                 "jms/i18n-routing-bundle": "^3.0",
                 "jms/translation-bundle": "^1.7",
                 "knplabs/knp-menu-bundle": "^3.2",
-                "knplabs/knp-paginator-bundle": "^5.3",
-                "laminas/laminas-diactoros": "^2.2",
+                "knplabs/knp-paginator-bundle": "^5.9",
+                "laminas/laminas-diactoros": "^2.14",
                 "liip/url-auto-converter-bundle": "dev-master",
-                "mpdf/mpdf": "^8.0",
+                "mpdf/mpdf": "^8.1",
                 "nategood/httpful": "*",
-                "oro/doctrine-extensions": "^1.3",
+                "oro/doctrine-extensions": "^2.0",
                 "php": "^7.3|^8.0",
                 "phpoffice/phpexcel": "1.8.*",
                 "picturae/oai-pmh": "0.5.20",
@@ -2728,7 +2728,7 @@
                 "symfony/http-foundation": "^5.4",
                 "symfony/intl": "^5.4",
                 "symfony/mime": "^5.4",
-                "symfony/psr-http-message-bridge": "^1.1",
+                "symfony/psr-http-message-bridge": "^2.0",
                 "symfony/routing": "^5.4",
                 "symfony/security-core": "^5.4",
                 "symfony/serializer": "^5.4",
@@ -2739,8 +2739,8 @@
                 "symfony/var-exporter": "^5.4",
                 "symfony/yaml": "^5.4",
                 "technosophos/libris": "dev-master",
-                "twig/string-extra": "^3.0",
-                "twig/twig": "^3.0",
+                "twig/string-extra": "^3.6",
+                "twig/twig": "^3.6",
                 "wikimedia/utfnormal": "^3.0"
             },
             "type": "symfony-bundle",
@@ -2753,9 +2753,9 @@
                 ]
             },
             "support": {
-                "source": "https://github.com/burki/tei-edition-bundle/tree/verbrannte-buecher.de"
+                "source": "https://github.com/burki/tei-edition-bundle/tree/solarium-6"
             },
-            "time": "2023-06-01T08:34:41+00:00"
+            "time": "2023-07-29T15:52:10+00:00"
         },
         {
             "name": "jms/i18n-routing-bundle",
@@ -4060,16 +4060,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.16.0",
+            "version": "v4.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "19526a33fb561ef417e822e85f08a00db4059c17"
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/19526a33fb561ef417e822e85f08a00db4059c17",
-                "reference": "19526a33fb561ef417e822e85f08a00db4059c17",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
+                "reference": "a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d",
                 "shasum": ""
             },
             "require": {
@@ -4110,41 +4110,39 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.16.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.17.1"
             },
-            "time": "2023-06-25T14:52:30+00:00"
+            "time": "2023-08-13T19:53:39+00:00"
         },
         {
             "name": "oro/doctrine-extensions",
-            "version": "1.3.2",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oroinc/doctrine-extensions.git",
-                "reference": "529d239d065eb6843025f901d402379bb551cd75"
+                "reference": "478101fdb37e7a3bd4efad78b6e36fc49c26055f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oroinc/doctrine-extensions/zipball/529d239d065eb6843025f901d402379bb551cd75",
-                "reference": "529d239d065eb6843025f901d402379bb551cd75",
+                "url": "https://api.github.com/repos/oroinc/doctrine-extensions/zipball/478101fdb37e7a3bd4efad78b6e36fc49c26055f",
+                "reference": "478101fdb37e7a3bd4efad78b6e36fc49c26055f",
                 "shasum": ""
             },
             "require": {
-                "doctrine/orm": ">=2.2.3",
-                "php": ">=5.4.0"
+                "doctrine/orm": ">=2.6",
+                "php": ">=7.3"
             },
             "require-dev": {
-                "doctrine/common": "<3.0.0",
-                "doctrine/data-fixtures": "^1.0",
-                "doctrine/orm": "<2.5.0",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "2.8.*",
-                "symfony/yaml": "2.*"
+                "doctrine/data-fixtures": "^1.3",
+                "phpunit/phpunit": "9.*",
+                "squizlabs/php_codesniffer": "3.5.*",
+                "symfony/yaml": "5.*"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Oro\\ORM": "src/",
-                    "Oro\\DBAL": "src/"
+                "psr-4": {
+                    "Oro\\ORM\\": "src/Oro/ORM",
+                    "Oro\\DBAL\\": "src/Oro/DBAL"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4154,11 +4152,11 @@
             "authors": [
                 {
                     "name": "Oro, Inc",
-                    "homepage": "http://www.orocrm.com"
+                    "homepage": "https://oroinc.com/"
                 }
             ],
             "description": "Doctrine Extensions for MySQL and PostgreSQL.",
-            "homepage": "https://github.com/orocrm/doctrine-extensions/",
+            "homepage": "https://github.com/oroinc/doctrine-extensions/",
             "keywords": [
                 "database",
                 "doctrine",
@@ -4170,9 +4168,9 @@
             ],
             "support": {
                 "issues": "https://github.com/oroinc/doctrine-extensions/issues",
-                "source": "https://github.com/oroinc/doctrine-extensions/tree/1.3.2"
+                "source": "https://github.com/oroinc/doctrine-extensions/tree/2.0.2"
             },
-            "time": "2021-09-02T13:33:38+00:00"
+            "time": "2022-05-10T14:09:20+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -7036,16 +7034,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.20.1",
+            "version": "v1.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "039bb47ec15d80b21db41a480e0d6fdaf65528be"
+                "reference": "a2554c7e1b669f5049c1b67bc56f13aa1c4bf7da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/039bb47ec15d80b21db41a480e0d6fdaf65528be",
-                "reference": "039bb47ec15d80b21db41a480e0d6fdaf65528be",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/a2554c7e1b669f5049c1b67bc56f13aa1c4bf7da",
+                "reference": "a2554c7e1b669f5049c1b67bc56f13aa1c4bf7da",
                 "shasum": ""
             },
             "require": {
@@ -7081,7 +7079,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.20.1"
+                "source": "https://github.com/symfony/flex/tree/v1.20.2"
             },
             "funding": [
                 {
@@ -7097,7 +7095,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-02T08:51:10+00:00"
+            "time": "2023-08-04T09:02:01+00:00"
         },
         {
             "name": "symfony/form",
@@ -8861,27 +8859,33 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v1.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "9d3e80d54d9ae747ad573cad796e8e247df7b796"
+                "reference": "581ca6067eb62640de5ff08ee1ba6850a0ee472e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/9d3e80d54d9ae747ad573cad796e8e247df7b796",
-                "reference": "9d3e80d54d9ae747ad573cad796e8e247df7b796",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/581ca6067eb62640de5ff08ee1ba6850a0ee472e",
+                "reference": "581ca6067eb62640de5ff08ee1ba6850a0ee472e",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
-                "psr/http-message": "^1.0",
-                "symfony/http-foundation": "^4.4 || ^5.0"
+                "php": ">=7.2.5",
+                "psr/http-message": "^1.0 || ^2.0",
+                "symfony/deprecation-contracts": "^2.5 || ^3.0",
+                "symfony/http-foundation": "^5.4 || ^6.0"
             },
             "require-dev": {
                 "nyholm/psr7": "^1.1",
-                "symfony/phpunit-bridge": "^4.4 || ^5.0",
-                "zendframework/zend-diactoros": "^1.4.1 || ^2.0"
+                "psr/log": "^1.1 || ^2 || ^3",
+                "symfony/browser-kit": "^5.4 || ^6.0",
+                "symfony/config": "^5.4 || ^6.0",
+                "symfony/event-dispatcher": "^5.4 || ^6.0",
+                "symfony/framework-bundle": "^5.4 || ^6.0",
+                "symfony/http-kernel": "^5.4 || ^6.0",
+                "symfony/phpunit-bridge": "^6.2"
             },
             "suggest": {
                 "nyholm/psr7": "For a super lightweight PSR-7/17 implementation"
@@ -8889,7 +8893,7 @@
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-main": "2.3-dev"
                 }
             },
             "autoload": {
@@ -8924,9 +8928,23 @@
             ],
             "support": {
                 "issues": "https://github.com/symfony/psr-http-message-bridge/issues",
-                "source": "https://github.com/symfony/psr-http-message-bridge/tree/master"
+                "source": "https://github.com/symfony/psr-http-message-bridge/tree/v2.3.1"
             },
-            "time": "2019-11-25T19:33:50+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-26T11:53:26+00:00"
         },
         {
             "name": "symfony/routing",
@@ -11263,8 +11281,8 @@
     "stability-flags": {
         "eko/feedbundle": 20,
         "gmo/iso-639": 20,
-        "igdj/tei-edition-bundle": 20,
         "hedii/zotero-api": 20,
+        "igdj/tei-edition-bundle": 20,
         "liip/url-auto-converter-bundle": 20,
         "vnn/wordpress-rest-api-client": 20
     },

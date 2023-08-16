@@ -37,23 +37,23 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/converter.git"
+            "url": "https://github.com/burki/converter"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/LibRIS.git"
+            "url": "https://github.com/burki/LibRIS"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/SolrBundle.git"
+            "url": "https://github.com/burki/SolrBundle"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/LiipUrlAutoConverterBundle.git"
+            "url": "https://github.com/burki/LiipUrlAutoConverterBundle"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/jtl-software/connector-iso-639.git"
+            "url": "https://github.com/jtl-software/connector-iso-639"
         },
         {
             "type": "vcs",
@@ -82,9 +82,8 @@
         "doctrine/annotations": "^1.4|^2.0",
         "eko/feedbundle": "dev-master",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
-        "igdj/tei-edition-bundle": "dev-solarium-6",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
-        "igdj/tei-edition-bundle": "dev-verbrannte-buecher.de",
+        "igdj/tei-edition-bundle": "dev-solarium-6",
         "liip/url-auto-converter-bundle": "dev-master",
         "presta/sitemap-bundle": "^3.3",
         "sensio/framework-extra-bundle": "^6.2",
