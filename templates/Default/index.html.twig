@@ -16,7 +16,6 @@
             </p>
         </div><!-- .p-5 -->
 
-    {% if events is not empty %}
         <h3>
             Events und Veranstaltungen
             <a href="{{ app.request.basepath }}/viewer/Flyer_Gedenken-Buecherverbrennungen.pdf">
@@ -24,6 +23,7 @@
             </a>
         </h3>
     </div>
+    {% if events is not empty %}
     <div class="container-fluid pl-5 pr-5">
         <div class="row">
             {% for event in events %}
@@ -49,6 +49,7 @@
             {% endfor %}
         </div><!-- .row -->
     </div><!-- .container-fluid -->
+    {% endif %}
     <div class="container my-5">
         {% if digitized is not empty %}
         <h2 id="digital-library">
@@ -85,6 +86,5 @@
         </div>
         {% endif %}
     </div>
-    {% endif %}
     {% endblock %}
 {% endblock %}
