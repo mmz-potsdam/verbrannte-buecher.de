@@ -34,7 +34,7 @@ parameters:
     app.datacite.password: ~
     app.datacite.prefix: 10.23691
 
-    app.wordpress.url: 'http://verbrannte-buecher.juedische-geschichte-online.net/cms/'
+    app.wordpress.url: 'https://verbrannte-buecher.juedische-geschichte-online.net/cms/'
 
     jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
 
