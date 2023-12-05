@@ -690,7 +690,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://resolver.obvsg.at/urn:nbn:at:AT-WBR-127227",
             "accessed": {
                 "date-parts": [
                     [
@@ -926,7 +926,7 @@
             "id": "HQIVCQWV",
             "citation-label": "beer-hofmann_1900",
             "type": "book",
-            "title": "Der Tod Georg",
+            "title": "Der Tod Georgs",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
@@ -4166,7 +4166,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://www.ub.uni-koeln.de/cdm/ref/collection/mono20/id/20081",
             "accessed": {
                 "date-parts": [
                     [
@@ -7270,7 +7270,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://doi.org/10.20375/0000-000b-ca4d-c",
+            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30:1-111350",
             "accessed": {
                 "date-parts": [
                     [
@@ -9584,49 +9584,6 @@
             ]
         },
         {
-            "id": "7RKBS4HU",
-            "citation-label": "neumann_1930",
-            "type": "book",
-            "title": "Der Held. Roman eines politischen Mordes",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Stuttgart",
-            "publisher": "Deutsche Verlags-Anstalt",
-            "issued": {
-                "date-parts": [
-                    [
-                        1930
-                    ]
-                ],
-                "literal": "1930"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Alfred",
-                    "family": "Neumann"
-                }
-            ]
-        },
-        {
             "id": "U7AB5SJR",
             "citation-label": "neumann_1929",
             "type": "book",
@@ -9665,6 +9622,49 @@
             "author": [
                 {
                     "given": "Robert",
+                    "family": "Neumann"
+                }
+            ]
+        },
+        {
+            "id": "7RKBS4HU",
+            "citation-label": "neumann_1930",
+            "type": "book",
+            "title": "Der Held. Roman eines politischen Mordes",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Stuttgart",
+            "publisher": "Deutsche Verlags-Anstalt",
+            "issued": {
+                "date-parts": [
+                    [
+                        1930
+                    ]
+                ],
+                "literal": "1930"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://www.projekt-gutenberg.org/neumanna/held/held.html",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Alfred",
                     "family": "Neumann"
                 }
             ]
@@ -11166,7 +11166,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://digital.staatsbibliothek-berlin.de/werkansicht/?PPN=PPN890690723",
+            "URL": "http://resolver.staatsbibliothek-berlin.de/SBB000201A200000000",
             "accessed": {
                 "date-parts": [
                     [
@@ -11737,7 +11737,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://digibus.ub.uni-stuttgart.de/viewer/image/1657195642104/1/",
             "accessed": {
                 "date-parts": [
                     [
@@ -12120,31 +12120,29 @@
             "id": "FNAK5FEW",
             "citation-label": "sternheim_1911",
             "type": "book",
-            "title": "Aus dem bürgerlichen Heldenleben",
+            "title": "Die Hose. Ein bürgerliches Lustspiel",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "München",
-            "publisher": "",
+            "publisher-place": "Berlin",
+            "publisher": "Cassirer",
             "issued": {
                 "date-parts": [
                     [
-                        1911,
-                        1,
-                        1
+                        1911
                     ]
                 ],
-                "literal": "1911-1923"
+                "literal": "1911"
             },
             "page": null,
-            "number-of-pages": "",
+            "number-of-pages": "196",
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://de.wikisource.org/wiki/Carl_Sternheim",
+            "URL": "",
             "accessed": {
                 "date-parts": [
                     [
@@ -12666,7 +12664,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://www.projekt-gutenberg.org/toller/vormorge/vormorge.html",
             "accessed": {
                 "date-parts": [
                     [
@@ -13218,49 +13216,6 @@
             ]
         },
         {
-            "id": "Q7K98R4K",
-            "citation-label": "wassermann_1921",
-            "type": "book",
-            "title": "Mein Weg als Deutscher und Jude",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "S. Fischer",
-            "issued": {
-                "date-parts": [
-                    [
-                        1921
-                    ]
-                ],
-                "literal": "1921"
-            },
-            "page": null,
-            "number-of-pages": "126",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "http://www.jakob-wassermann.de/old/werke_mein_weg_als_deutscher_1.htm",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Jakob",
-                    "family": "Wassermann"
-                }
-            ]
-        },
-        {
             "id": "JB9G8IIT",
             "citation-label": "wassermann_1929",
             "type": "book",
@@ -13287,6 +13242,49 @@
             "ISBN": "",
             "ISSN": null,
             "URL": "https://www.projekt-gutenberg.org/wasserma/columbus/columbus.html",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Jakob",
+                    "family": "Wassermann"
+                }
+            ]
+        },
+        {
+            "id": "Q7K98R4K",
+            "citation-label": "wassermann_1921",
+            "type": "book",
+            "title": "Mein Weg als Deutscher und Jude",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1921
+                    ]
+                ],
+                "literal": "1921"
+            },
+            "page": null,
+            "number-of-pages": "126",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30:1-141059",
             "accessed": {
                 "date-parts": [
                     [
@@ -13947,7 +13945,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://www.ub.uni-koeln.de/cdm/ref/collection/mono20/id/22857",
             "accessed": {
                 "date-parts": [
                     [
