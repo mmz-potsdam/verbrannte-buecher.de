@@ -25,10 +25,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/gjuric/JMSI18nRoutingBundle"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/burki/tei-edition-bundle"
         },
         {
@@ -139,8 +135,8 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "*",
-        "cocur/slugify": "4.5.0"
+        "cocur/slugify": "4.5.0",
+        "symfony/symfony": "*"
     },
     "extra": {
         "symfony": {
