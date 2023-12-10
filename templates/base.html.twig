@@ -12,7 +12,6 @@
             {% endblock %}
         </title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/css/bootstrap.min.css">
@@ -25,13 +24,11 @@
                 as in Symfony\Component\Asset\PathPackage
             #}
             <link href="{{ app.request.basepath }}{{ asset('css/base.css') }}" rel="stylesheet">
-            {#{ encore_entry_link_tags('app') }#}
         {% endblock %}
         <script src="{{ app.request.basepath }}/vendor/jquery-3.5.1.min.js"></script>
         {% block javascripts %}
             <!-- Latest compiled and minified JavaScript -->
             <script src="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
-            {#{ encore_entry_script_tags('app') }#}
         {% endblock %}
         {% block head %}{% endblock %}
     </head>
