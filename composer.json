@@ -11,7 +11,7 @@
         },
         "optimize-autoloader": true,
         "platform": {
-            "php": "7.4.0"
+            "php": "8.1.0"
         },
         "preferred-install": {
             "*": "dist"
@@ -69,7 +69,7 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.1",
+        "php": "^8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
@@ -79,33 +79,33 @@
         "eko/feedbundle": "dev-master",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
-        "igdj/tei-edition-bundle": "dev-solarium-6",
+        "igdj/tei-edition-bundle": "dev-symfony-6",
         "liip/url-auto-converter-bundle": "dev-master",
         "presta/sitemap-bundle": "^3.3",
         "sensio/framework-extra-bundle": "^6.2",
         "symfony/apache-pack": "^1.0",
-        "symfony/console": "5.4.*",
-        "symfony/css-selector": "5.4.*",
-        "symfony/dom-crawler": "5.4.*",
-        "symfony/dotenv": "5.4.*",
+        "symfony/console": "6.4.*",
+        "symfony/css-selector": "6.4.*",
+        "symfony/dom-crawler": "6.4.*",
+        "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",
-        "symfony/form": "5.4.*",
-        "symfony/framework-bundle": "5.4.*",
-        "symfony/http-client": "5.4.*",
-        "symfony/runtime": "5.4.*",
-        "symfony/security-bundle": "5.4.*",
-        "symfony/translation": "5.4.*",
-        "symfony/twig-bundle": "5.4.*",
-        "symfony/yaml": "5.4.*",
+        "symfony/form": "6.4.*",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/http-client": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/security-bundle": "6.4.*",
+        "symfony/translation": "6.4.*",
+        "symfony/twig-bundle": "6.4.*",
+        "symfony/yaml": "6.4.*",
         "twig/extra-bundle": "^3.6",
         "twig/intl-extra": "^3.6",
         "vnn/wordpress-rest-api-client": "dev-use_rest_route"
     },
     "require-dev": {
-        "symfony/debug-bundle": "5.4.*",
+        "symfony/debug-bundle": "6.4.*",
         "symfony/maker-bundle": "^1.43",
-        "symfony/stopwatch": "5.4.*",
-        "symfony/web-profiler-bundle": "5.4.*"
+        "symfony/stopwatch": "6.4.*",
+        "symfony/web-profiler-bundle": "6.4.*"
     },
     "autoload": {
         "psr-4": {
@@ -135,13 +135,12 @@
         ]
     },
     "conflict": {
-        "cocur/slugify": "4.5.0",
         "symfony/symfony": "*"
     },
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.4.*"
+            "require": "6.4.*"
         }
     }
 }
