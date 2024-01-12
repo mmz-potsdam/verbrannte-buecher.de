@@ -3518,7 +3518,7 @@
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
-            "edition": null,
+            "edition": "",
             "publisher-place": "Hannover",
             "publisher": "P. Steegemann",
             "issued": {
@@ -6853,7 +6853,7 @@
         },
         {
             "id": "NJU4W33U",
-            "citation-label": "kollontaj_1925",
+            "citation-label": "kollontay_1925",
             "type": "book",
             "title": "Wege der Liebe. 3 Erzählungen",
             "container-title": null,
@@ -6889,8 +6889,8 @@
             "language": "ger",
             "author": [
                 {
-                    "given": "Aleksandra Michajlovna",
-                    "family": "Kollontaj"
+                    "given": "Alexandra",
+                    "family": "Kollontay"
                 }
             ],
             "translator": [
