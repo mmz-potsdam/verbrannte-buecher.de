@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of verbrannte-buecher.de
 
-    (C) 2023 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
+    (C) 2023-2024 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
         Daniel Burckhardt
 
 
@@ -112,6 +112,10 @@ If you are happy with the display, you can publish it:
 
 It should now show up connected to the author.
 
+Updating Zotero Bibliography
+----------------------------
+
+    ./bin/console zotero:fetch-collection > data/verbrannte-buecher.json
 
 Development Notes
 -----------------
