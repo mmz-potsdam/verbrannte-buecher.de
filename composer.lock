@@ -314,16 +314,16 @@
         },
         {
             "name": "citation-style-language/styles",
-            "version": "v0.0.343",
+            "version": "v0.0.345",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/styles.git",
-                "reference": "eedecef83f6a02dfc2068fc382b561045653b4b2"
+                "reference": "564597481789c7627861c1c7fc837bc1e38ae307"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/eedecef83f6a02dfc2068fc382b561045653b4b2",
-                "reference": "eedecef83f6a02dfc2068fc382b561045653b4b2",
+                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/564597481789c7627861c1c7fc837bc1e38ae307",
+                "reference": "564597481789c7627861c1c7fc837bc1e38ae307",
                 "shasum": ""
             },
             "type": "library",
@@ -341,7 +341,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/styles/issues",
-                "source": "https://github.com/citation-style-language/styles/tree/v0.0.343"
+                "source": "https://github.com/citation-style-language/styles/tree/v0.0.345"
             },
             "funding": [
                 {
@@ -349,7 +349,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-29T21:50:10+00:00"
+            "time": "2024-01-11T19:39:58+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -1219,16 +1219,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff"
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/2930cd5ef353871c821d5c43ed030d39ac8cfe65",
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65",
                 "shasum": ""
             },
             "require": {
@@ -1290,7 +1290,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.8"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.9"
             },
             "funding": [
                 {
@@ -1306,7 +1306,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-16T13:40:37+00:00"
+            "time": "2024-01-15T18:05:13+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -1458,16 +1458,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.17.2",
+            "version": "2.17.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "393679a4795e49b0b3ac317dce84d0f8888f2b77"
+                "reference": "398ab0547aaf90bdb352b560a94c24f44ff00670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/393679a4795e49b0b3ac317dce84d0f8888f2b77",
-                "reference": "393679a4795e49b0b3ac317dce84d0f8888f2b77",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/398ab0547aaf90bdb352b560a94c24f44ff00670",
+                "reference": "398ab0547aaf90bdb352b560a94c24f44ff00670",
                 "shasum": ""
             },
             "require": {
@@ -1553,9 +1553,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.17.2"
+                "source": "https://github.com/doctrine/orm/tree/2.17.3"
             },
-            "time": "2023-12-20T21:47:52+00:00"
+            "time": "2024-01-16T21:32:04+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2695,12 +2695,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "515726e892381e49551270100a77db1654347d5e"
+                "reference": "982881617494e2053b3ec0e1114de4cdd4301438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/515726e892381e49551270100a77db1654347d5e",
-                "reference": "515726e892381e49551270100a77db1654347d5e",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/982881617494e2053b3ec0e1114de4cdd4301438",
+                "reference": "982881617494e2053b3ec0e1114de4cdd4301438",
                 "shasum": ""
             },
             "require": {
@@ -2774,7 +2774,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/symfony-6"
             },
-            "time": "2024-01-12T10:57:55+00:00"
+            "time": "2024-01-19T13:05:16+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -3402,16 +3402,16 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.18.0",
+            "version": "3.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "e85b29076c6216e7fc98e72b42dbe1bbc3b95ecf"
+                "reference": "6a192dd0882b514e45506f533b833b623b78fff3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/e85b29076c6216e7fc98e72b42dbe1bbc3b95ecf",
-                "reference": "e85b29076c6216e7fc98e72b42dbe1bbc3b95ecf",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/6a192dd0882b514e45506f533b833b623b78fff3",
+                "reference": "6a192dd0882b514e45506f533b833b623b78fff3",
                 "shasum": ""
             },
             "require": {
@@ -3422,10 +3422,10 @@
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "^2.5",
-                "phpbench/phpbench": "^1.2.14",
-                "phpunit/phpunit": "^10.3.3",
+                "phpbench/phpbench": "^1.2.15",
+                "phpunit/phpunit": "^10.5.8",
                 "psalm/plugin-phpunit": "^0.18.4",
-                "vimeo/psalm": "^5.15.0"
+                "vimeo/psalm": "^5.20.0"
             },
             "type": "library",
             "autoload": {
@@ -3457,7 +3457,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-09-19T10:15:21+00:00"
+            "time": "2024-01-19T12:39:49+00:00"
         },
         {
             "name": "league/iso3166",
@@ -5193,16 +5193,16 @@
         },
         {
             "name": "scssphp/scssphp",
-            "version": "v1.12.0",
+            "version": "v1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scssphp/scssphp.git",
-                "reference": "a6b20c170ddb95f116b3d148a466a7bed1e85c35"
+                "reference": "394ed1e960138710a60d035c1a85d43d0bf0faeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/a6b20c170ddb95f116b3d148a466a7bed1e85c35",
-                "reference": "a6b20c170ddb95f116b3d148a466a7bed1e85c35",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/394ed1e960138710a60d035c1a85d43d0bf0faeb",
+                "reference": "394ed1e960138710a60d035c1a85d43d0bf0faeb",
                 "shasum": ""
             },
             "require": {
@@ -5267,9 +5267,9 @@
             ],
             "support": {
                 "issues": "https://github.com/scssphp/scssphp/issues",
-                "source": "https://github.com/scssphp/scssphp/tree/v1.12.0"
+                "source": "https://github.com/scssphp/scssphp/tree/v1.12.1"
             },
-            "time": "2023-11-14T14:56:09+00:00"
+            "time": "2024-01-13T12:36:40+00:00"
         },
         {
             "name": "seboettg/citeproc-php",
