@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67f17d8f408f26cdfcfa4a98bf81caaf",
+    "content-hash": "85a6e30fc187cb29e70aff7df57e86fb",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -1012,16 +1012,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.11.1",
+            "version": "2.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "4089f1424b724786c062aea50aae5f773449b94b"
+                "reference": "fb22c9320383caa2829c32dc3b84c1b5e0f1ceaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/4089f1424b724786c062aea50aae5f773449b94b",
-                "reference": "4089f1424b724786c062aea50aae5f773449b94b",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/fb22c9320383caa2829c32dc3b84c1b5e0f1ceaf",
+                "reference": "fb22c9320383caa2829c32dc3b84c1b5e0f1ceaf",
                 "shasum": ""
             },
             "require": {
@@ -1042,18 +1042,18 @@
             },
             "conflict": {
                 "doctrine/annotations": ">=3.0",
-                "doctrine/orm": "<2.14 || >=4.0",
+                "doctrine/orm": "<2.17 || >=4.0",
                 "twig/twig": "<1.34 || >=2.0 <2.4"
             },
             "require-dev": {
                 "doctrine/annotations": "^1 || ^2",
                 "doctrine/coding-standard": "^12",
                 "doctrine/deprecations": "^1.0",
-                "doctrine/orm": "^2.14 || ^3.0",
+                "doctrine/orm": "^2.17 || ^3.0",
                 "friendsofphp/proxy-manager-lts": "^1.0",
-                "phpunit/phpunit": "^9.5.26 || ^10.0",
+                "phpunit/phpunit": "^9.5.26",
                 "psalm/plugin-phpunit": "^0.18.4",
-                "psalm/plugin-symfony": "^4",
+                "psalm/plugin-symfony": "^5",
                 "psr/log": "^1.1.4 || ^2.0 || ^3.0",
                 "symfony/phpunit-bridge": "^6.1 || ^7.0",
                 "symfony/property-info": "^5.4 || ^6.0 || ^7.0",
@@ -1066,7 +1066,7 @@
                 "symfony/web-profiler-bundle": "^5.4 || ^6.0 || ^7.0",
                 "symfony/yaml": "^5.4 || ^6.0 || ^7.0",
                 "twig/twig": "^1.34 || ^2.12 || ^3.0",
-                "vimeo/psalm": "^4.30"
+                "vimeo/psalm": "^5.15"
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
@@ -1111,7 +1111,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.11.1"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.11.2"
             },
             "funding": [
                 {
@@ -1127,7 +1127,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-15T20:01:50+00:00"
+            "time": "2024-02-06T15:41:25+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -2781,20 +2781,20 @@
         },
         {
             "name": "jms/translation-bundle",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "da38bd07cf3bc375a0db8aa5b839514faae70810"
+                "reference": "ad89a56dfe9de9485b10dc5d8893665101cd2fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/da38bd07cf3bc375a0db8aa5b839514faae70810",
-                "reference": "da38bd07cf3bc375a0db8aa5b839514faae70810",
+                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/ad89a56dfe9de9485b10dc5d8893665101cd2fa3",
+                "reference": "ad89a56dfe9de9485b10dc5d8893665101cd2fa3",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.9",
+                "nikic/php-parser": "^4.9 || ^5",
                 "php": "^7.4 || ^8.0",
                 "psr/log": "^1.0 || ^2.0",
                 "symfony/config": "^4.3 || ^5.4 || ^6.2",
@@ -2863,9 +2863,9 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/JMSTranslationBundle/issues",
-                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.1.0"
+                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.2.0"
             },
-            "time": "2023-12-12T09:42:26+00:00"
+            "time": "2024-02-06T10:14:05+00:00"
         },
         {
             "name": "knplabs/knp-components",
@@ -3525,21 +3525,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/LiipUrlAutoConverterBundle.git",
-                "reference": "3b1500cd177531876e77b1b235ccd04766ac5194"
+                "reference": "c539c4a0db461939aedd2df6b6e990ef904576b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/LiipUrlAutoConverterBundle/zipball/3b1500cd177531876e77b1b235ccd04766ac5194",
-                "reference": "3b1500cd177531876e77b1b235ccd04766ac5194",
+                "url": "https://api.github.com/repos/burki/LiipUrlAutoConverterBundle/zipball/c539c4a0db461939aedd2df6b6e990ef904576b9",
+                "reference": "c539c4a0db461939aedd2df6b6e990ef904576b9",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0|^8.0",
-                "symfony/framework-bundle": "~3.0|~4.0|~5.0|~6.0",
+                "php": "^7.1|^8.0",
+                "symfony/framework-bundle": "~3.0|~4.0|~5.0|~6.0|~7.0",
                 "twig/twig": "~1.43|~2.0|~3.0"
             },
             "require-dev": {
-                "symfony/symfony": "~2.3|~3.0|~4.0|~5.0|~6.0"
+                "symfony/symfony": "~2.3|~3.0|~4.0|~5.0|~6.0|~7.0"
             },
             "default-branch": true,
             "type": "symfony-bundle",
@@ -3574,7 +3574,7 @@
             "support": {
                 "source": "https://github.com/burki/LiipUrlAutoConverterBundle/tree/master"
             },
-            "time": "2023-01-04T14:20:29+00:00"
+            "time": "2024-02-06T11:50:40+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -4151,25 +4151,27 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.18.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1bcbb2179f97633e98bbbc87044ee2611c7d7999"
+                "reference": "4a21235f7e56e713259a6f76bf4b5ea08502b9dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bcbb2179f97633e98bbbc87044ee2611c7d7999",
-                "reference": "1bcbb2179f97633e98bbbc87044ee2611c7d7999",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4a21235f7e56e713259a6f76bf4b5ea08502b9dc",
+                "reference": "4a21235f7e56e713259a6f76bf4b5ea08502b9dc",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=7.0"
+                "php": ">=7.4"
             },
             "require-dev": {
                 "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -4177,7 +4179,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.9-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "autoload": {
@@ -4201,9 +4203,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.18.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.0.0"
             },
-            "time": "2023-12-10T21:03:43+00:00"
+            "time": "2024-01-07T17:17:35+00:00"
         },
         {
             "name": "oro/doctrine-extensions",
@@ -4377,38 +4379,38 @@
         },
         {
             "name": "presta/sitemap-bundle",
-            "version": "v3.3.1",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
-                "reference": "29f14e0fb97ae4cb1b37dce7cee828871ad9be19"
+                "reference": "6c5d03dd268f514c29f2760aae8b907e714be762"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/29f14e0fb97ae4cb1b37dce7cee828871ad9be19",
-                "reference": "29f14e0fb97ae4cb1b37dce7cee828871ad9be19",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/6c5d03dd268f514c29f2760aae8b907e714be762",
+                "reference": "6c5d03dd268f514c29f2760aae8b907e714be762",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
-                "php": ">=7.1.3",
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/framework-bundle": "^4.4|^5.0|^6.0"
+                "php": ">=7.2.5|>=8.0.2",
+                "symfony/console": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0"
             },
             "require-dev": {
                 "doctrine/annotations": "^1.0",
                 "phpstan/phpstan": "^1.4",
                 "phpunit/phpunit": "^7.5|^8.0",
-                "sensio/framework-extra-bundle": "^5.5|^6.1",
                 "squizlabs/php_codesniffer": "^3.5",
-                "symfony/browser-kit": "^4.4|^5.0|^6.0",
-                "symfony/messenger": "^4.4|^5.0|^6.0",
-                "symfony/phpunit-bridge": "^4.4|^5.0|^6.0",
-                "symfony/yaml": "^4.4|^5.0|^6.0"
+                "symfony/browser-kit": "^5.4|^6.0|^7.0",
+                "symfony/messenger": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
+                "symfony/yaml": "^5.4|^6.0|^7.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
+                    "4.x": "4.x-dev",
                     "3.x": "3.x-dev",
                     "2.x": "2.x-dev",
                     "1.x": "1.x-dev"
@@ -4439,9 +4441,9 @@
             ],
             "support": {
                 "issues": "https://github.com/prestaconcept/PrestaSitemapBundle/issues",
-                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v3.3.1"
+                "source": "https://github.com/prestaconcept/PrestaSitemapBundle/tree/v4.0.0"
             },
-            "time": "2023-04-24T07:19:47+00:00"
+            "time": "2024-01-10T15:37:12+00:00"
         },
         {
             "name": "psr/cache",
