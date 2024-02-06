@@ -1,5 +1,7 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    file_name_pattern: '*.twig'
+    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
     globals:
         siteName: '%app.site.name%'
         siteTagline: ''
@@ -9,7 +11,6 @@ twig:
         public_dir: '%app.public_dir%'
         webDir: '%app.public_dir%'  # global expected by TeiEditionBundle
         site_matomo_id: '%app.site.matomo.id%'
-    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
 
 when@test:
     twig:
