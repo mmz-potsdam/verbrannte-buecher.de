@@ -360,8 +360,13 @@ nav.navbar-dark {
 
 /* route-specific styles */
 body.route-home {
-    h3 {
-        color: $color-color-spot;
+    .jumbotron {
+        background-color: $color-background-lighter;
+        padding: 0;
+    }
+
+    h2#events {
+        /* color: $color-color-spot; */
         position: relative;
 
         a {

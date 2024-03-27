@@ -8,48 +8,19 @@
                 90 Jahre nach den Bücherverbrennungen im nationalsozialistischen Deutschland lassen wir in einer umfassend überarbeiteten Neuauflage des Projekts <a href="{{ path('home') }}">www.verbrannte-buecher.de</a> die Bücher in digitaler Form wieder auferstehen.
             </p>
             <p>
-                Zum Start finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von 10 repräsentativen Büchern aus der <a href="{{ path('library') }}">Liste über 316 Schriften</a>, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
+                Aktuell finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von 17 repräsentativen Büchern aus der <a href="{{ path('library') }}">Liste über 316 Schriften</a>, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird in den nächsten Monaten weiter ergänzt.
             </p>
+        </div><!-- .p-5 -->
+    </div>
+    <div class="jumbotron">
+        <div class="container my-5">
+            <h2>Geschichte und Orte der Bücherverbrennungen 1933</h2>
             <p>
                 Die Bücherverbrennungen des Jahres 1933 markieren ein Fanal, mit dem die Zerstörung einer ganzen Blüteepoche in Wissenschaft und Kultur durch die Nationalsozialist:innen vollzogen wurde. Mit den Büchern gingen auch die Hoffnungen und Errungenschaften der seit der Novemberrevolution 1918 entstandenen ersten deutschen Demokratie in Flammen auf.<br />
                 Erfahren Sie mehr zu den <a href="{{ path('history-page', { 'page': 'buecherverbrennungen-1933' }) }}">Bücherverbrennungen 1933</a>, ihren <a href="{{ path('history-places') }}">Orten</a> und zum <a href="{{ path('history-page', { 'page': '1930-1933' }) }}">Historischen Kontext</a>.
             </p>
-        </div><!-- .p-5 -->
-
-        <h3>
-            Events und Veranstaltungen
-            <a href="{{ app.request.basepath }}/viewer/Flyer_Gedenken-Buecherverbrennungen.pdf">
-                Alle Termine (PDF-Datei)
-            </a>
-        </h3>
+        </div>
     </div>
-    {% if events is not empty %}
-    <div class="container-fluid pl-5 pr-5">
-        <div class="row">
-            {% for event in events %}
-            <div class="col-12 col-sm-6 col-lg-3 event">
-                <h5>
-                <span class="date">{% if event['acf']['date_start'] is not empty %}
-                    {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] == '2023-12-31 00:00:00' %}Ab {% endif %}
-                    {{ event['acf']['date_start']|format_datetime(pattern="d. MMM") }}
-                {% endif %}
-                {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] != '2023-12-31 00:00:00' %} – {{ event['acf']['date_end']|format_datetime(pattern="d. MMM") }}
-                {% endif %}</span>
-                <br />
-                    {% if event['acf']['date_start'] is not empty and not (event['acf']['date_start'] matches '/00:00:00/') %}
-                    <span>{{ event['acf']['date_start']|date('H:i') }}</span>
-                    {% else %}
-                        &nbsp;
-                    {% endif %}
-                </h5>
-                <h4>{{ event['title']['rendered']|raw }}</h4>
-                <p>{{ event['content']['rendered']|raw }}</p>
-                {#{ dump(event) }#}
-            </div>
-            {% endfor %}
-        </div><!-- .row -->
-    </div><!-- .container-fluid -->
-    {% endif %}
     <div class="container my-5">
         {% if digitized is not empty %}
         <h2 id="digital-library">
@@ -86,5 +57,40 @@
         </div>
         {% endif %}
     </div>
+    <div class="container mt-5 mb-3">
+        <h2 id="events">
+            Events und Veranstaltungen 2023
+            <a href="{{ app.request.basepath }}/viewer/Flyer_Gedenken-Buecherverbrennungen.pdf">
+                Alle Termine (PDF-Datei)
+            </a>
+        </h2>
+    </div>
+    {% if events is not empty %}
+    <div class="container-fluid pl-5 pr-5">
+        <div class="row">
+            {% for event in events %}
+            <div class="col-12 col-sm-6 col-lg-3 event">
+                <h5>
+                <span class="date">{% if event['acf']['date_start'] is not empty %}
+                    {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] == '2023-12-31 00:00:00' %}Ab {% endif %}
+                    {{ event['acf']['date_start']|format_datetime(pattern="d. MMM") }}
+                {% endif %}
+                {% if event['acf']['date_end'] is not empty and event['acf']['date_end'] != '2023-12-31 00:00:00' %} – {{ event['acf']['date_end']|format_datetime(pattern="d. MMM") }}
+                {% endif %}</span>
+                <br />
+                    {% if event['acf']['date_start'] is not empty and not (event['acf']['date_start'] matches '/00:00:00/') %}
+                    <span>{{ event['acf']['date_start']|date('H:i') }}</span>
+                    {% else %}
+                        &nbsp;
+                    {% endif %}
+                </h5>
+                <h4>{{ event['title']['rendered']|raw }}</h4>
+                <p>{{ event['content']['rendered']|raw }}</p>
+                {#{ dump(event) }#}
+            </div>
+            {% endfor %}
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
+    {% endif %}
     {% endblock %}
 {% endblock %}
