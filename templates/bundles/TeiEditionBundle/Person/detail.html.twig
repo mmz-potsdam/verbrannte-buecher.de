@@ -1,15 +1,16 @@
 {% extends '@TeiEdition/Default/base.html.twig' %}
 
 {% import '@TeiEdition/Shared/helper.html.twig' as helper %}
-{% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
-
-{% block head %}
-    {{ map.head() }}
+{# the following macro should be move to helper #}
+{% macro seealso_head_gnd(services = { 'gnd-entityfacts': 'https://juedische-geschichte-online.net/lod-resolver/seealso/entityfacts/gnd' }) %}
+    <!-- https://verbundwiki.gbv.de/display/VZG/SeeAlso -->
     <script src="{{ app.request.basepath }}/js/seealso.js"></script>
     <script>
         var service = new SeeAlsoCollection();
         service.services = {
-            'pndaks' : new SeeAlsoService("{{ path('beacon', { 'path': '/seealso/pnd-aks/-lemo@ap' }) }}")
+            {% for key, url in services %}
+            {{ key|json_encode|raw }} : new SeeAlsoService({{ url|json_encode|raw }}){% if not loop.last %}, {% endif %}
+            {% endfor %}
         };
         service.views = {
             'seealso-ul' : new SeeAlsoUL({
@@ -19,6 +20,14 @@
         };
         service.replaceTagsOnLoad();
     </script>
+{% endmacro %}
+
+{% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+
+{% block head %}
+    {{ map.head() }}
+
+    {{ _self.seealso_head_gnd() }}
 {% endblock %}
 
 {% block body %}
@@ -167,7 +176,7 @@
                     {% endif %}
                     {% if person.gnd is not empty %}
                     <div class="col-sm-12">
-                        <div title="{{ person.gnd }}" class="pndaks seealso-ul"></div>
+                        <div title="{{ person.gnd }}" class="gnd-entityfacts seealso-ul"></div>
                     </div>
                     {% endif %}
                 </div>
