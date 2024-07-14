@@ -214,7 +214,8 @@ $screen-lg-max:              ($screen-xl-min - 1) !default;
             }
         }
 
-        h2 + br, h3 + br, p > br:first-child {
+        h2 + br, h3 + br, p > br:first-child,
+        span:has(span.et) + br, span:has(span.et2) + br, span:has(span.et3) + br {
             display: none;
         }
 }
