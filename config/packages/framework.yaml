@@ -1,7 +1,7 @@
 # see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
     secret: '%env(APP_SECRET)%'
-    annotations: true # deprecated TODO: move to attributes and set to false
+    annotations: false
     http_method_override: false
     default_locale: '%app.default_locale%'
     handle_all_throwables: true
