@@ -18,9 +18,7 @@ class HistoryController extends BaseController
         'literaturpolitische-motive' => 'Literaturpolitische Motive der Bücherverbrennungen 1933'
     ];
 
-    /**
-     * @Route("/geschichte", name="history", options={"sitemap" = true})
-     */
+    #[Route(path: '/geschichte', name: 'history', options: ['sitemap' => true])]
     public function indexAction(Request $request)
     {
         return $this->render('History/index.html.twig', [
@@ -97,18 +95,14 @@ class HistoryController extends BaseController
         return $this->extractContent($crawler);
     }
 
-    /**
-     * @Route("/geschichte/orte", name="history-places", options={"sitemap" = true})
-     */
+    #[Route(path: '/geschichte/orte', name: 'history-places', options: ['sitemap' => true])]
     public function placesAction(Request $request)
     {
         return $this->render('History/places.html.twig', [
         ]);
     }
 
-    /**
-     * @Route("/geschichte/auswahlliteratur", name="bibliography", options={"sitemap" = true})
-     */
+    #[Route(path: '/geschichte/auswahlliteratur', name: 'bibliography', options: ['sitemap' => true])]
     public function bibliographyAction(Request $request)
     {
         return $this->render('History/bibliography.html.twig', [
@@ -116,9 +110,7 @@ class HistoryController extends BaseController
         ]);
     }
 
-    /**
-     * @Route("/geschichte/{page}", name="history-page", requirements={"page"=".+"})
-     */
+    #[Route(path: '/geschichte/{page}', name: 'history-page', requirements: ['page' => '.+'])]
     public function pageAction(Request $request, $page,
                                WpClient $wpClient,
                                UrlGeneratorInterface $urlGenerator)
