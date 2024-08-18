@@ -10,14 +10,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use TeiEditionBundle\Entity\Person;
 use App\Form\AdminPersonType;
 
-/**
- * @Route("/admin/person")
- */
+#[Route(path: '/admin/person')]
 class AdminPersonController extends AbstractController
 {
-    /**
-     * @Route("/", name="app_admin_person_index", methods={"GET"})
-     */
+    #[Route(path: '/', name: 'app_admin_person_index', methods: ['GET'])]
     public function index(EntityManagerInterface $entityManager): Response
     {
         $people = $entityManager
@@ -32,9 +28,7 @@ class AdminPersonController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/new", name="app_admin_person_new", methods={"GET", "POST"})
-     */
+    #[Route(path: '/new', name: 'app_admin_person_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $person = new Person();
@@ -56,9 +50,7 @@ class AdminPersonController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_person_show", methods={"GET"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_person_show', methods: ['GET'])]
     public function show(Person $person): Response
     {
         return $this->render('Admin/Person/show.html.twig', [
@@ -66,9 +58,7 @@ class AdminPersonController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}/edit", name="app_admin_person_edit", methods={"GET", "POST"})
-     */
+    #[Route(path: '/{id}/edit', name: 'app_admin_person_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Person $person, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(AdminPersonType::class, $person);
@@ -88,9 +78,7 @@ class AdminPersonController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_person_delete", methods={"POST"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_person_delete', methods: ['POST'])]
     public function delete(Request $request, Person $person, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$person->getId(), $request->request->get('_token'))) {

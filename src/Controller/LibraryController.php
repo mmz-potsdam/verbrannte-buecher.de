@@ -14,9 +14,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class LibraryController extends BaseController
 {
-    /**
-     * @Route("/bibliothek", name="library", options={"sitemap" = true})
-     */
+    #[Route(path: '/bibliothek', name: 'library', options: ['sitemap' => true])]
     public function libraryAction(Request $request,
                                   EntityManagerInterface $entityManager,
                                   UrlGeneratorInterface $urlGenerator,
