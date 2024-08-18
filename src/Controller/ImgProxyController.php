@@ -25,9 +25,7 @@ class ImgProxyController extends BaseController
         $this->client = $client;
     }
 
-    /**
-     * @Route("/helper/imgproxy{path}", name="imgproxy", requirements={"path"=".+"})
-     */
+    #[Route(path: '/helper/imgproxy{path}', name: 'imgproxy', requirements: ['path' => '.+'])]
     public function imgProxyAction(Request $request, $path)
     {
         $url = $this->wordpressBaseUrl . $path;
