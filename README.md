@@ -40,8 +40,20 @@ Installation
 - PHP >= 8.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
-- Java 1.8 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-8-jdk`)
+- Java 1.11 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-11-jdk`)
 - bin/saxon9he.jar (Download from https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-8J.zip/download)
+
+In a fitting directory (e.g. `/var/www`), clone the project
+
+    git clone https://github.com/mmz-potsdam/verbrannte-buecher.de.git
+
+If you don't have `git` installed, you can also download the project as ZIP-file
+and extract it manually.
+
+Change into the newly created project-directory
+
+    cd verbrannte-buecher.de
+    composer install
 
 ### Adjust Local Settings
 
@@ -64,6 +76,43 @@ Installation
 In a `prod` environment, generate `public/css/base.css` and `public/css/print.css`
 
 - ./bin/console scss:compile
+
+### Solr Setup
+You can skip this installation in the first step. Everything except the
+search field should still work.
+
+First, download
+
+    https://archive.apache.org/dist/solr/solr/9.5.0/solr-9.5.0.tgz
+
+and extract the contents of `solr-9.5.0.tgz` into the existing `solr/` folder.
+
+Start solr by
+
+    ./solr/bin/solr start
+
+and then create the `gdr_de` core
+
+    ./solr/bin/solr create -c bvb_de
+
+You can clear the core and re-index existing entities
+
+    ./bin/console solr:index:clear
+
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Person"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Organization"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Place"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Bibitem"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Event"
+    ./bin/console solr:index:populate "TeiEditionBundle\\Entity\\Article"
+
+For trouble-shooting, you can access the Solr admin interface at
+
+    http://localhost:8983/solr/
+
+To stop it again, call
+
+    ./solr/bin/solr stop -all
 
 Adding and updating Content
 ---------------------------
@@ -92,7 +141,7 @@ We can now generate the tiles
 
     ./bin/console source:tiles data/tei/source-00001.de.xml
 
-(`convert` from the ImageMagick packaged is called to generate the tiles in `public/viewer/source-00001/`)
+(`convert` from the ImageMagick package is called to generate the tiles in `public/viewer/source-00001/`)
 
 And generate the METS-container needed for `iview`
 
@@ -134,4 +183,4 @@ Tweaking the site
 -----------------
 ### Translate messages and routes
 
-    ./bin/console translation:extract de --dir=./src/ --dir=vendor/igdj/tei-edition-bundle --output-dir=./translations --enable-extractor=jms_i18n_routing
+    ./bin/console jms:translation:extract de --dir=./src/ --dir=vendor/igdj/tei-edition-bundle --output-dir=./translations --enable-extractor=jms_i18n_routing
