@@ -9,11 +9,14 @@ parameters:
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
 
-    app.site.name: "Digitale Bibliothek verbrannter Bücher"
+    app.site.key: 'bvb'
+
+    app.site.name: 'Digitale Bibliothek verbrannter Bücher'
     app.site.email: 'info@verbrannte-buecher.de'
-    app.site.publisher: "Moses Mendelssohn Zentrum für europäisch-jüdische Studien"
-    app.site.publisher_url: "https://www.mmz-potsdam.de/"
-    app.site.publisher_logo: "https://www.mmz-potsdam.de/media/logo.de.svg"
+    app.site.publisher: 'Moses Mendelssohn Zentrum für europäisch-jüdische Studien'
+    app.site.publisher.address: 'Am Neuen Markt 8, 14467 Potsdam'
+    app.site.publisher_url: 'https://www.mmz-potsdam.de/'
+    app.site.publisher_logo: 'https://www.mmz-potsdam.de/media/logo.de.svg'
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
     app.site_theme: null
     app.public_dir: '%kernel.project_dir%/public'
@@ -90,6 +93,14 @@ services:
 
     # So we can inject @solr.client, see https://github.com/floriansemm/SolrBundle/issues/191#issuecomment-466101623
     FS\SolrBundle\SolrInterface: '@solr.client'
+
+    # Switch to attributes
+    solr.doctrine.annotation.attribute_reader:
+        class: FS\SolrBundle\Doctrine\Annotation\AttributeReader
+
+    solr.meta.information.factory:
+        class: FS\SolrBundle\Doctrine\Mapper\MetaInformationFactory
+        arguments: [ '@solr.doctrine.annotation.attribute_reader' ]
 
     App\Service\ZoteroApiService:
         arguments:
