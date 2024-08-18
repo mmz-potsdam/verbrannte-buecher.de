@@ -11,7 +11,7 @@
         },
         "optimize-autoloader": true,
         "platform": {
-            "php": "8.1.0"
+            "php": "8.2.0"
         },
         "preferred-install": {
             "*": "dist"
@@ -57,6 +57,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/JMSTranslationBundle"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/OaiPmh"
         },
         {
@@ -81,34 +85,34 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
         "fluentdom/fluentdom": "dev-master as 8.0",
-        "gjuric/i18n-routing-bundle": "3.2.2",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-attributes",
+        "jms/translation-bundle": "dev-master as 2.3",
         "presta/sitemap-bundle": "^4.0",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
-        "symfony/dotenv": "6.4.*",
+        "symfony/dotenv": "7.2.*",
         "symfony/flex": "^1.17|^2",
-        "symfony/form": "6.4.*",
-        "symfony/http-client": "6.4.*",
-        "symfony/runtime": "6.4.*",
-        "symfony/security-bundle": "6.4.*",
+        "symfony/form": "7.2.*",
+        "symfony/http-client": "7.2.*",
+        "symfony/runtime": "7.2.*",
+        "symfony/security-bundle": "7.2.*",
         "vnn/wordpress-rest-api-client": "dev-use_rest_route"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.69",
         "phpstan/phpstan": "^2.1",
-        "symfony/debug-bundle": "6.4.*",
+        "symfony/debug-bundle": "7.2.*",
         "symfony/maker-bundle": "^1.43",
-        "symfony/stopwatch": "6.4.*",
-        "symfony/web-profiler-bundle": "6.4.*"
+        "symfony/stopwatch": "7.2.*",
+        "symfony/web-profiler-bundle": "7.2.*"
     },
     "autoload": {
         "psr-4": {
@@ -143,7 +147,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.4.*"
+            "require": "7.2.*"
         }
     }
 }
