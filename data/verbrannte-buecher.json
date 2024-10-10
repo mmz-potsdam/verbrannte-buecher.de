@@ -1077,7 +1077,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://archive.org/details/bub_gb_foIqAQAAIAAJ",
+            "URL": "https://archive.org/details/erinnerungeneine01bern",
             "accessed": {
                 "date-parts": [
                     [
@@ -1120,7 +1120,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30-180014938006",
             "accessed": {
                 "date-parts": [
                     [
@@ -5377,49 +5377,6 @@
             ]
         },
         {
-            "id": "ETQKW47A",
-            "citation-label": "holitscher_1921",
-            "type": "book",
-            "title": "Drei Monate in Sowjet-Russland",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "S. Fischer",
-            "issued": {
-                "date-parts": [
-                    [
-                        1921
-                    ]
-                ],
-                "literal": "1921"
-            },
-            "page": null,
-            "number-of-pages": "255",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://www.projekt-gutenberg.org/holitsch/3monate/3monate.html",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Arthur",
-                    "family": "Holitscher"
-                }
-            ]
-        },
-        {
             "id": "27X4TGPL",
             "citation-label": "holitscher_1925",
             "type": "book",
@@ -5465,6 +5422,49 @@
                 {
                     "given": "Frans",
                     "family": "Masereel"
+                }
+            ]
+        },
+        {
+            "id": "ETQKW47A",
+            "citation-label": "holitscher_1921",
+            "type": "book",
+            "title": "Drei Monate in Sowjet-Russland",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "S. Fischer",
+            "issued": {
+                "date-parts": [
+                    [
+                        1921
+                    ]
+                ],
+                "literal": "1921"
+            },
+            "page": null,
+            "number-of-pages": "255",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://www.projekt-gutenberg.org/holitsch/3monate/3monate.html",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Arthur",
+                    "family": "Holitscher"
                 }
             ]
         },
@@ -6001,7 +6001,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "http://www.zeno.org/Literatur/M/Kafka,+Franz/Erz%C3%A4hlungen+und+andere+Prosa",
+            "URL": "https://de.wikisource.org/wiki/Beim_Bau_der_Chinesischen_Mauer_(Sammelband)",
             "accessed": {
                 "date-parts": [
                     [
@@ -10926,49 +10926,6 @@
             ]
         },
         {
-            "id": "YM98B8F3",
-            "citation-label": "roth_1927",
-            "type": "book",
-            "title": "Juden auf der Wanderschaft",
-            "container-title": null,
-            "collection-title": "Berichte aus der Wirklichkeit",
-            "collection-number": "Bd. 4",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Verlag Die Schmiede",
-            "issued": {
-                "date-parts": [
-                    [
-                        1927
-                    ]
-                ],
-                "literal": "1927"
-            },
-            "page": null,
-            "number-of-pages": "104",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30-180015005005",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Joseph",
-                    "family": "Roth"
-                }
-            ]
-        },
-        {
             "id": "Q6RVMNGI",
             "citation-label": "roth_1930",
             "type": "book",
@@ -10995,6 +10952,49 @@
             "ISBN": "",
             "ISSN": null,
             "URL": "https://portal.dnb.de/bookviewer/view/1032828773",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Joseph",
+                    "family": "Roth"
+                }
+            ]
+        },
+        {
+            "id": "YM98B8F3",
+            "citation-label": "roth_1927",
+            "type": "book",
+            "title": "Juden auf Wanderschaft",
+            "container-title": null,
+            "collection-title": "Berichte aus der Wirklichkeit",
+            "collection-number": "Bd. 4",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Verlag Die Schmiede",
+            "issued": {
+                "date-parts": [
+                    [
+                        1927
+                    ]
+                ],
+                "literal": "1927"
+            },
+            "page": null,
+            "number-of-pages": "104",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://nbn-resolving.org/urn:nbn:de:hebis:30-180015005005",
             "accessed": {
                 "date-parts": [
                     [
