@@ -6,6 +6,5 @@
     {% for page,title in structure %}
         <li><a href="{{ path('history-page', { 'page' : page }) }}">{{ title }}</a></li>
     {% endfor %}
-        <li><a href="{{ path('history-places') }}">Orte der Bücherverbrennungen 1933</a></li>
     </ul>
 {% endblock %}

@@ -15,19 +15,24 @@ class HistoryController extends BaseController
     var $siteStructure = [
         '1930-1933' => 'Historischer Kontext',
         'buecherverbrennungen-1933' => 'Bücherverbrennungen 1933',
-        'literaturpolitische-motive' => 'Literaturpolitische Motive der Bücherverbrennungen 1933'
+        'literaturpolitische-motive' => 'Literaturpolitische Motive',
+        'orte' => 'Orte der Bücherverbrennungen',
+        'auswahlliteratur' => 'Sekundärliteratur',
     ];
 
     /**
      * @Route("/geschichte", name="history", options={"sitemap" = true})
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request): Response
     {
         return $this->render('History/index.html.twig', [
             'structure' => $this->siteStructure,
         ]);
     }
 
+    /**
+     * Convert $crawler to plain HTML (without body-tag)
+     */
     protected function extractContent($crawler)
     {
         // we don't wont the body-tag
@@ -100,16 +105,16 @@ class HistoryController extends BaseController
     /**
      * @Route("/geschichte/orte", name="history-places", options={"sitemap" = true})
      */
-    public function placesAction(Request $request)
+    public function placesAction(Request $request): Response
     {
         return $this->render('History/places.html.twig', [
         ]);
     }
 
     /**
-     * @Route("/geschichte/auswahlliteratur", name="bibliography", options={"sitemap" = true})
+     * @Route("/geschichte/auswahlliteratur", name="history-bibliography", options={"sitemap" = true})
      */
-    public function bibliographyAction(Request $request)
+    public function bibliographyAction(Request $request): Response
     {
         return $this->render('History/bibliography.html.twig', [
             'bibliography' => $this->buildBibliography($request->getLocale(), 'bibliography.json'),
@@ -121,7 +126,7 @@ class HistoryController extends BaseController
      */
     public function pageAction(Request $request, $page,
                                WpClient $wpClient,
-                               UrlGeneratorInterface $urlGenerator)
+                               UrlGeneratorInterface $urlGenerator): Response
     {
         if (preg_match('/^\d+$/', $page)) {
             $pageInfo = $wpClient->pages()->get($page);
