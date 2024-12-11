@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% import "History/helper.html.twig" as history_helper %}
+
 {% block body %}
+    {{ history_helper.pills(pills) }}
+
     <h2>Sekundärliteratur (Auswahl)</h2>
     {{ bibliography|raw|converturls }}
 {% endblock %}

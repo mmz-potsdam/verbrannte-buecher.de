@@ -1,0 +1,10 @@
+{% macro pills(pills, section = null) %}
+    {% set pathInfo = app.request.getPathInfo() %}
+    <ul class="list-inline">
+    {% for page,label in pills %}
+        <li class="list-inline-item rounded-pill pl-3 pr-3 mb-2{% if '/geschichte/' ~ page == pathInfo or (section is defined and section is not empty and section.slug == page) %} active{% endif %}">
+            <a href="{{ path('history-page', { 'page' : page }) }}" class="small">{{ label }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endmacro %}

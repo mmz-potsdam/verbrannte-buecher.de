@@ -1,6 +1,28 @@
 {% extends 'base.html.twig' %}
 
+{% import "History/helper.html.twig" as history_helper %}
+
 {% block body %}
-    <h2>{{ title|raw }}</h2>
-    {{ content|raw }}
+    {{ history_helper.pills(pills, section) }}
+
+    {% if section is not empty %}
+        <div class="row">
+            <div class="col-md-8 col-lg-9">
+                <h3>{{ title|raw }}</h3>
+                {{ content|raw }}
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <ul class="rounded-lg list-inline p-3 sidebar">
+                {% for slug,title in section.children %}
+                <li{% if not loop.last %} class="mb-2"{% endif %}>
+                    <a href="{{ path('history-page', { 'page': slug }) }}" class="small">{{ title|raw }}</a>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% else %}
+        <h2>{{ title|raw }}</h2>
+        {{ content|raw }}
+    {% endif %}
 {% endblock %}

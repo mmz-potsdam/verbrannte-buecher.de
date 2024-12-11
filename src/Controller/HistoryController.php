@@ -64,7 +64,7 @@ class HistoryController extends BaseController
                     'page' => $matches[1],
                 ]));
             }
-            else if (strncmp($href, $this->wordpressBaseUrl, strlen($this->wordpressBaseUrl)) === 0){
+            else if (strncmp($href, $this->wordpressBaseUrl, strlen($this->wordpressBaseUrl)) === 0) {
                 $node->getNode(0)->setAttribute('href', $urlGenerator->generate('history-page', [
                     'page' => rtrim(str_replace($this->wordpressBaseUrl, '', $href), '/'),
                 ]));
@@ -103,11 +103,43 @@ class HistoryController extends BaseController
     }
 
     /**
+     * Extract page slugs and titles
+     */
+    protected function extractPages($html)
+    {
+        $crawler = new \Symfony\Component\DomCrawler\Crawler();
+        $crawler->addHtmlContent($html);
+
+        $pages = [];
+
+        $crawler->filter('a')->each(function ($node, $i) use (& $pages) {
+            $href = $node->attr('href');
+            if (empty($href)) {
+                return;
+            }
+
+            $urlComponents = parse_url($href);
+
+            if (!empty($urlComponents['query'])
+                && preg_match('/page_id=(\d+)/', $urlComponents['query'], $matches))
+            {
+                $pages[$matches[1]] = $node->html();
+            }
+            else if (strncmp($href, $this->wordpressBaseUrl, strlen($this->wordpressBaseUrl)) === 0) {
+                $pages[rtrim(str_replace($this->wordpressBaseUrl, '', $href), '/')] = $node->html();
+            }
+        });
+
+        return $pages;
+    }
+
+    /**
      * @Route("/geschichte/orte", name="history-places", options={"sitemap" = true})
      */
     public function placesAction(Request $request): Response
     {
         return $this->render('History/places.html.twig', [
+            'pills' => $this->siteStructure,
         ]);
     }
 
@@ -118,6 +150,7 @@ class HistoryController extends BaseController
     {
         return $this->render('History/bibliography.html.twig', [
             'bibliography' => $this->buildBibliography($request->getLocale(), 'bibliography.json'),
+            'pills' => $this->siteStructure,
         ]);
     }
 
@@ -135,9 +168,39 @@ class HistoryController extends BaseController
             $parts = explode('/', $page);
             $slug = $parts[count($parts) - 1];
             $pageInfo = $wpClient->pages()->get(null, [ 'slug' => $slug ]);
+            $section = null;
 
             if (array_key_exists('0', $pageInfo)) {
                 $pageInfo = $pageInfo[0];
+            }
+
+            if (array_key_exists($slug, $this->siteStructure)) {
+                $sections = $this->extractPages($pageInfo['content']['rendered']);
+                if (count($sections) > 1) {
+                    return $this->redirectToRoute('history-page', [ 'page' => key($sections) ]);
+                }
+            }
+
+            if (array_key_exists($parts[0], $this->siteStructure)) {
+                $structureInfo = $wpClient->pages()->get(null, [ 'slug' => $parts[0] ]);
+                if (array_key_exists('0', $structureInfo)) {
+                    $structureInfo = $structureInfo[0];
+                }
+
+                $children = $this->extractPages($structureInfo['content']['rendered']);
+                if (count($parts) == 1) {
+                    if (count($children) > 1) {
+                        // redirect overview to first page in section
+                        return $this->redirectToRoute('history-page', [ 'page' => key($children) ]);
+                    }
+                }
+                else {
+                    $section = [
+                        'title' => $structureInfo['title']['rendered'],
+                        'slug' => $parts[0],
+                        'children' => $children,
+                    ];
+                }
             }
         }
 
@@ -146,6 +209,8 @@ class HistoryController extends BaseController
         return $this->render('History/page.html.twig', [
             'title' => $pageInfo['title']['rendered'],
             'content' => $content,
+            'pills' => $this->siteStructure,
+            'section' => $section,
         ]);
     }
 }

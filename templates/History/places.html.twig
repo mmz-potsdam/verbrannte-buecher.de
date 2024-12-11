@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% import "History/helper.html.twig" as history_helper %}
+
 {% block body %}
+    {{ history_helper.pills(pills) }}
+
     <h2>Orte der Bücherverbrennungen 1933</h2>
     <div class="v-100 text-right">
         <img id="zoom-out" style="width: 23px; height: 23px" src="{{ app.request.basepath }}/img/icon/search-minus.png" title="verkleinern" onClick="zoomOut()">
