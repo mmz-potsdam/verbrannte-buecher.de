@@ -544,28 +544,30 @@ body.route-library {
     }
 }
 
-.rounded-pill {
-    background-color: $color-background-lighter;
-    a {
-        text-decoration: none;
-    }
-
-    &.active {
-        background-color: $color-color-spot;
-        a {
-            color: $color-background;
-        }
-    }
-}
-
-.sidebar {
-    background-color: $color-background-lighter;
-
-    li {
-        line-height: 1.15;
-
+body.route-history-page {
+    .rounded-pill {
+        background-color: $color-background-lighter;
         a {
             text-decoration: none;
+        }
+
+        &.active {
+            background-color: $color-color-spot;
+            a {
+                color: $color-background;
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: $color-background-lighter;
+
+        li {
+            line-height: 1.15;
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 }
