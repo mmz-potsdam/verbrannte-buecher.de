@@ -544,7 +544,7 @@ body.route-library {
     }
 }
 
-body.route-history-page {
+body[class*='route-history'] {
     .rounded-pill {
         background-color: $color-background-lighter;
         a {
