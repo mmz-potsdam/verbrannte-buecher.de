@@ -57,6 +57,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/OaiPmh"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/jtl-software/connector-iso-639"
         },
         {
@@ -87,6 +91,7 @@
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-symfony-6",
         "presta/sitemap-bundle": "^4.0",
+        "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^1.17|^2",
