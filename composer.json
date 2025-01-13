@@ -49,6 +49,14 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/FluentDOM"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/scssphp-bundle"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/jtl-software/connector-iso-639"
         },
         {
@@ -73,7 +81,8 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-intl": "*",
-        "armin/scssphp-bundle": "^1.2",
+        "armin/scssphp-bundle": "dev-master",
+        "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-symfony-6",
