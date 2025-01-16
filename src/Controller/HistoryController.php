@@ -137,7 +137,7 @@ class HistoryController extends BaseController
         ]);
     }
 
-    #[Route(path: '/geschichte/auswahlliteratur', name: 'bibliography', options: ['sitemap' => true])]
+    #[Route(path: '/geschichte/auswahlliteratur', name: 'history-bibliography', options: ['sitemap' => true])]
     public function bibliographyAction(Request $request): Response
     {
         return $this->render('History/bibliography.html.twig', [
