@@ -26,9 +26,10 @@ class LibraryController extends BaseController
         $sourcesByCitationLabel = [];
         foreach ($digitized as $source) {
             $creatorParts = explode(', ', $source->getCreator());
+            $dateCreatedParts = explode('-', $source->getDateCreated());
             $citationLabel = join('_', [
                 $slugify->slugify($creatorParts[0]),
-                $source->getDateCreatedDisplay(),
+                $dateCreatedParts[0],
             ]);
             $sourcesByCitationLabel[$citationLabel] = $source;
         }
