@@ -83,7 +83,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://doi.org/10.6094/UNIFR/224692",
             "accessed": {
                 "date-parts": [
                     [
@@ -1341,7 +1341,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/SozialismusZionismus",
             "accessed": {
                 "date-parts": [
                     [
@@ -3577,7 +3577,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://resolver.sub.uni-hamburg.de/kitodo/PPN1042361207",
             "accessed": {
                 "date-parts": [
                     [
@@ -3706,7 +3706,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://nemesis.marxists.org/germanetto-genosse-kupferbart1.htm",
             "accessed": {
                 "date-parts": [
                     [
@@ -4012,49 +4012,6 @@
             ]
         },
         {
-            "id": "V3NPM2VU",
-            "citation-label": "goldschmidt_1927",
-            "type": "book",
-            "title": "Auf den Spuren der Azteken. Ein mexikanisches Reisebuch",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Universum-Bücherei für Alle",
-            "issued": {
-                "date-parts": [
-                    [
-                        1927
-                    ]
-                ],
-                "literal": "1927"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Alfons",
-                    "family": "Goldschmidt"
-                }
-            ]
-        },
-        {
             "id": "JNZZKJJK",
             "citation-label": "goldschmidt_1928",
             "type": "book",
@@ -4081,6 +4038,49 @@
             "ISBN": "",
             "ISSN": null,
             "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Alfons",
+                    "family": "Goldschmidt"
+                }
+            ]
+        },
+        {
+            "id": "V3NPM2VU",
+            "citation-label": "goldschmidt_1927",
+            "type": "book",
+            "title": "Auf den Spuren der Azteken. Ein mexikanisches Reisebuch",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Universum-Bücherei für Alle",
+            "issued": {
+                "date-parts": [
+                    [
+                        1927
+                    ]
+                ],
+                "literal": "1927"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://archive.org/details/aufdenspurendera00gold",
             "accessed": {
                 "date-parts": [
                     [
@@ -6926,7 +6926,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "https://www.projekt-gutenberg.org/koeppene/heeresbe/heeresbe.html",
+            "URL": "https://nbn-resolving.org/urn:nbn:de:bvb:384-uba007569-2",
             "accessed": {
                 "date-parts": [
                     [
@@ -8473,7 +8473,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://resolver.sub.uni-hamburg.de/kitodo/PPN1760768456",
             "accessed": {
                 "date-parts": [
                     [
@@ -9394,7 +9394,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://hdl.handle.net/11858/00-1734-0000-0004-450D-B",
             "accessed": {
                 "date-parts": [
                     [
@@ -10509,7 +10509,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/zurkritikderzeit00rathuoft",
             "accessed": {
                 "date-parts": [
                     [
@@ -13902,7 +13902,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://www.projekt-gutenberg.org/zetkin/lenin/titlepage.html",
             "accessed": {
                 "date-parts": [
                     [
