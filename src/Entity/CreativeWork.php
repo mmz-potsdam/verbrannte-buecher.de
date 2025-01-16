@@ -342,7 +342,7 @@ extends SchemaOrg
     /**
      * Sets series.
      *
-     * @param string $series
+     * @param string|null $series
      *
      * @return $this
      */
@@ -366,7 +366,7 @@ extends SchemaOrg
     /**
      * Sets series number.
      *
-     * @param string $seriesNumber
+     * @param string|null $seriesNumber
      *
      * @return $this
      */
@@ -390,7 +390,7 @@ extends SchemaOrg
     /**
      * Sets volume.
      *
-     * @param string $volume
+     * @param string|null $volume
      *
      * @return $this
      */
@@ -414,7 +414,7 @@ extends SchemaOrg
     /**
      * Sets number of volumes.
      *
-     * @param string $numberOfVolumes
+     * @param string|null $numberOfVolumes
      *
      * @return $this
      */
@@ -438,7 +438,7 @@ extends SchemaOrg
     /**
      * Sets issue.
      *
-     * @param string $issue
+     * @param string|null $issue
      *
      * @return $this
      */
@@ -462,7 +462,7 @@ extends SchemaOrg
     /**
      * Sets edition of the book.
      *
-     * @param string $bookEdition
+     * @param string|null $bookEdition
      *
      * @return $this
      */
@@ -486,7 +486,7 @@ extends SchemaOrg
     /**
      * Sets publication location.
      *
-     * @param string $publicationLocation
+     * @param string|null $publicationLocation
      *
      * @return $this
      */
@@ -510,7 +510,7 @@ extends SchemaOrg
     /**
      * Sets publisher.
      *
-     * @param string $publisher
+     * @param string|null $publisher
      *
      * @return $this
      */
@@ -534,7 +534,7 @@ extends SchemaOrg
     /**
      * Sets datePublished.
      *
-     * @param string $datePublished
+     * @param string|null $datePublished
      *
      * @return $this
      */
@@ -558,7 +558,7 @@ extends SchemaOrg
     /**
      * Sets pagination.
      *
-     * @param string $pagination
+     * @param string|null $pagination
      *
      * @return $this
      */
@@ -582,7 +582,7 @@ extends SchemaOrg
     /**
      * Sets number of pages.
      *
-     * @param string $numberOfPages
+     * @param string|null $numberOfPages
      *
      * @return $this
      */
@@ -606,7 +606,7 @@ extends SchemaOrg
     /**
      * Sets the DOI of the publication.
      *
-     * @param string $doi
+     * @param string|null $doi
      *
      * @return $this
      */
@@ -630,7 +630,7 @@ extends SchemaOrg
     /**
      * Sets the ISBN of the book.
      *
-     * @param string $isbn
+     * @param string|null $isbn
      *
      * @return $this
      */
@@ -688,11 +688,11 @@ extends SchemaOrg
     /**
      * Sets isPartOf.
      *
-     * @param CreativeWork $isPartOf
+     * @param CreativeWork|null $isPartOf
      *
      * @return $this
      */
-    public function setIsPartOf(CreativeWork $isPartOf = null)
+    public function setIsPartOf(?CreativeWork $isPartOf = null)
     {
         $this->isPartOf = $isPartOf;
 
@@ -702,7 +702,7 @@ extends SchemaOrg
     /**
      * Gets isPartOf.
      *
-     * @return CreativeWork
+     * @return CreativeWork|null
      */
     public function getIsPartOf()
     {
@@ -712,11 +712,11 @@ extends SchemaOrg
     /**
      * Sets container name.
      *
-     * @param string $containerName
+     * @param string|null $containerName
      *
      * @return $this
      */
-    public function setContainerName($containerName)
+    public function setContainerName($containerName = null)
     {
         $this->containerName = $containerName;
         if (isset($this->isPartOf)) {
@@ -743,11 +743,11 @@ extends SchemaOrg
     /**
      * Sets ISSN.
      *
-     * @param string $issn
+     * @param string|null $issn
      *
      * @return $this
      */
-    public function setIssn($issn)
+    public function setIssn($issn = null)
     {
         if (isset($this->isPartOf) && $this->isPartOf instanceof Periodical) {
             $this->isPartOf->setIssn($issn);
@@ -771,11 +771,11 @@ extends SchemaOrg
     /**
      * Sets language.
      *
-     * @param string $language
+     * @param string|null $language
      *
      * @return $this
      */
-    public function setLanguage($language)
+    public function setLanguage($language = null)
     {
         $this->language = $language;
 
@@ -785,7 +785,7 @@ extends SchemaOrg
     /**
      * Gets language.
      *
-     * @return string
+     * @return string|null
      */
     public function getLanguage()
     {
@@ -795,7 +795,7 @@ extends SchemaOrg
     /**
      * Sets dateAccessed.
      *
-     * @param string $dateAccessed
+     * @param string|null $dateAccessed
      *
      * @return $this
      */
@@ -809,7 +809,7 @@ extends SchemaOrg
     /**
      * Gets dateAccessed.
      *
-     * @return string
+     * @return string|null
      */
     public function getDateAccessed()
     {
@@ -819,11 +819,11 @@ extends SchemaOrg
     /**
      * Sets slug.
      *
-     * @param string $slug
+     * @param string|null $slug
      *
      * @return $this
      */
-    public function setSlug($slug)
+    public function setSlug($slug = null)
     {
         $this->slug = $slug;
 
@@ -833,7 +833,7 @@ extends SchemaOrg
     /**
      * Gets slug.
      *
-     * @return string
+     * @return string|null
      */
     public function getSlug($fallback = false)
     {
@@ -843,11 +843,11 @@ extends SchemaOrg
     /**
      * Sets version.
      *
-     * @param string $version
+     * @param string|null $version
      *
      * @return $this
      */
-    public function setVersion($version)
+    public function setVersion($version = null)
     {
         $this->version = $version;
 
@@ -857,7 +857,7 @@ extends SchemaOrg
     /**
      * Gets version.
      *
-     * @return string
+     * @return string|null
      */
     public function getVersion()
     {
@@ -867,7 +867,7 @@ extends SchemaOrg
     /**
      * Gets cover URL.
      *
-     * @return string
+     * @return string|null
      */
     public function getCoverUrl()
     {
