@@ -5,8 +5,11 @@ twig:
     globals:
         siteName: '%app.site.name%'
         siteTagline: ''
-        sitePublisher: '%app.site.publisher%'
         siteEmail: '%app.site.email%'
+        sitePublisher: '%app.site.publisher%'
+        # the following two are used by TeiEditionBundle for for dfg-viewer
+        sitePublisherUrl: '%app.site.publisher_url%'
+        sitePublisherLogo: '%app.site.publisher_logo%'
         slugify: "@cocur_slugify"
         public_dir: '%app.public_dir%'
         webDir: '%app.public_dir%'  # global expected by TeiEditionBundle
