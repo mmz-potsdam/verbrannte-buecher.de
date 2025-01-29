@@ -365,7 +365,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://nbn-resolving.org/urn:nbn:de:bvb:29-bv005679761-1",
             "accessed": {
                 "date-parts": [
                     [
@@ -966,6 +966,59 @@
             ]
         },
         {
+            "id": "DYXD9IG7",
+            "citation-label": "belych-and-pantelejew_1929",
+            "type": "book",
+            "title": "Schkid, die Republik der Strolche",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Verlag der Jugendinternationale",
+            "issued": {
+                "date-parts": [
+                    [
+                        1929
+                    ]
+                ],
+                "literal": "1929"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "http://ds.ub.uni-bielefeld.de/viewer/resolver?urn=urn:nbn:de:0070-disa-8494154",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Grigorij Georgievic",
+                    "family": "Belych"
+                },
+                {
+                    "given": "Leonid A.",
+                    "family": "Pantelejew"
+                }
+            ],
+            "translator": [
+                {
+                    "given": "Maria",
+                    "family": "Einstein"
+                }
+            ]
+        },
+        {
             "id": "EA69GDNN",
             "citation-label": "beradt_1929",
             "type": "book",
@@ -1390,7 +1443,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://resolver.staatsbibliothek-berlin.de/SBB00037C0500000000",
             "accessed": {
                 "date-parts": [
                     [
@@ -2691,7 +2744,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://purl.ox.ac.uk/uuid/f6161fd3325945409f451662910d4e30",
             "accessed": {
                 "date-parts": [
                     [
@@ -3534,7 +3587,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://jmb01.intranda.com/mets/friekant_00131864_fullpdf/friekant_00131864.pdf",
             "accessed": {
                 "date-parts": [
                     [
@@ -4301,7 +4354,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://portal.dnb.de/bookviewer/view/1163615285",
             "accessed": {
                 "date-parts": [
                     [
@@ -5220,7 +5273,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://resolver.obvsg.at/redirect/urn:nbn:at:AT-OOeLB-3190203",
             "accessed": {
                 "date-parts": [
                     [
@@ -5958,7 +6011,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://sdrc.lib.uiowa.edu/dada/Die_Rote_Woche/index.htm",
             "accessed": {
                 "date-parts": [
                     [
@@ -6748,7 +6801,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://polona.pl/preview/131c1c63-ee48-4a62-8c53-3907b309ab19",
             "accessed": {
                 "date-parts": [
                     [
@@ -7657,7 +7710,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/Lazarsfeld_1931_Wie_die_Frau_den_Mann_erlebt_k",
             "accessed": {
                 "date-parts": [
                     [
@@ -7743,7 +7796,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb11128148-7",
             "accessed": {
                 "date-parts": [
                     [
@@ -8011,7 +8064,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb00111842-2",
             "accessed": {
                 "date-parts": [
                     [
@@ -8170,49 +8223,6 @@
             ]
         },
         {
-            "id": "UM4M7RZ5",
-            "citation-label": "liebknecht_1894",
-            "type": "book",
-            "title": "W. Liebknechts Volks-Fremdwörterbuch",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "7. Aufl., neu bearb., berichtigt u. verm.",
-            "publisher-place": "Stuttgart",
-            "publisher": "Dietz",
-            "issued": {
-                "date-parts": [
-                    [
-                        1894
-                    ]
-                ],
-                "literal": "1894"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Wilhelm",
-                    "family": "Liebknecht"
-                }
-            ]
-        },
-        {
             "id": "MBIPEG5U",
             "citation-label": "liebknecht_1921",
             "type": "book",
@@ -8281,7 +8291,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/briefeausdemfeld00lieb",
             "accessed": {
                 "date-parts": [
                     [
@@ -8294,6 +8304,49 @@
             "author": [
                 {
                     "given": "Karl",
+                    "family": "Liebknecht"
+                }
+            ]
+        },
+        {
+            "id": "UM4M7RZ5",
+            "citation-label": "liebknecht_1894",
+            "type": "book",
+            "title": "W. Liebknechts Volks-Fremdwörterbuch",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "7. Aufl., neu bearb., berichtigt u. verm.",
+            "publisher-place": "Stuttgart",
+            "publisher": "Dietz",
+            "issued": {
+                "date-parts": [
+                    [
+                        1894
+                    ]
+                ],
+                "literal": "1894"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "https://books.google.de/books?id=nYUXAAAAYAAJ&printsec=frontcover",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Wilhelm",
                     "family": "Liebknecht"
                 }
             ]
@@ -8565,7 +8618,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/georg-lukacs-geschichte-und-klassenbewusstsein",
             "accessed": {
                 "date-parts": [
                     [
@@ -9480,7 +9533,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/WirtschaftsdemokratieIhrWesenWegUndZiel",
             "accessed": {
                 "date-parts": [
                     [
@@ -10077,59 +10130,6 @@
                 {
                     "given": "Edith",
                     "family": "Hajós"
-                }
-            ]
-        },
-        {
-            "id": "DYXD9IG7",
-            "citation-label": "pantelejew-and-belych_1929",
-            "type": "book",
-            "title": "Schkid, die Republik der Strolche",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Verlag der Jugendinternationale",
-            "issued": {
-                "date-parts": [
-                    [
-                        1929
-                    ]
-                ],
-                "literal": "1929"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Leonid A.",
-                    "family": "Pantelejew"
-                },
-                {
-                    "given": "Grigorij Georgievic",
-                    "family": "Belych"
-                }
-            ],
-            "translator": [
-                {
-                    "given": "Maria",
-                    "family": "Einstein"
                 }
             ]
         },
@@ -10779,7 +10779,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://portal.dnb.de/bookviewer/view/1032490284",
             "accessed": {
                 "date-parts": [
                     [
@@ -11964,7 +11964,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://resolver.sub.uni-hamburg.de/goobi/PPN1702947211",
             "accessed": {
                 "date-parts": [
                     [
@@ -12535,7 +12535,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb00140632-6",
             "accessed": {
                 "date-parts": [
                     [
@@ -13069,7 +13069,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://www.archive.org/details/araratroman00ulituoft",
             "accessed": {
                 "date-parts": [
                     [
@@ -13112,7 +13112,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://www.archive.org/details/opfergang00unrugoog",
             "accessed": {
                 "date-parts": [
                     [
@@ -13595,7 +13595,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://doi.org/10.11588/diglit.61674",
             "accessed": {
                 "date-parts": [
                     [
