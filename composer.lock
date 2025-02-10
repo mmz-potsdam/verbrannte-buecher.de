@@ -269,16 +269,16 @@
         },
         {
             "name": "citation-style-language/styles",
-            "version": "v0.0.580",
+            "version": "v0.0.587",
             "source": {
                 "type": "git",
                 "url": "https://github.com/citation-style-language/styles.git",
-                "reference": "2e90b3afc1aa6fc90c46d674798936cd438af1fa"
+                "reference": "efc310c60dd435a14dbbe798c7bea9a388177781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/2e90b3afc1aa6fc90c46d674798936cd438af1fa",
-                "reference": "2e90b3afc1aa6fc90c46d674798936cd438af1fa",
+                "url": "https://api.github.com/repos/citation-style-language/styles/zipball/efc310c60dd435a14dbbe798c7bea9a388177781",
+                "reference": "efc310c60dd435a14dbbe798c7bea9a388177781",
                 "shasum": ""
             },
             "type": "library",
@@ -296,7 +296,7 @@
             "homepage": "http://citationstyles.org/",
             "support": {
                 "issues": "https://github.com/citation-style-language/styles/issues",
-                "source": "https://github.com/citation-style-language/styles/tree/v0.0.580"
+                "source": "https://github.com/citation-style-language/styles/tree/v0.0.587"
             },
             "funding": [
                 {
@@ -304,7 +304,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-22T19:16:26+00:00"
+            "time": "2025-02-07T12:20:08+00:00"
         },
         {
             "name": "cocur/slugify",
@@ -1410,16 +1410,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.20.1",
+            "version": "2.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "e3cabade99ebccc6ba078884c1c5f250866a494e"
+                "reference": "19912de9270fa6abb3d25a1a37784af6b818d534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/e3cabade99ebccc6ba078884c1c5f250866a494e",
-                "reference": "e3cabade99ebccc6ba078884c1c5f250866a494e",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/19912de9270fa6abb3d25a1a37784af6b818d534",
+                "reference": "19912de9270fa6abb3d25a1a37784af6b818d534",
                 "shasum": ""
             },
             "require": {
@@ -1506,9 +1506,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.20.1"
+                "source": "https://github.com/doctrine/orm/tree/2.20.2"
             },
-            "time": "2024-12-19T06:48:36+00:00"
+            "time": "2025-02-04T19:17:01+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -1835,25 +1835,24 @@
         },
         {
             "name": "gedmo/doctrine-extensions",
-            "version": "v3.17.1",
+            "version": "v3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine-extensions/DoctrineExtensions.git",
-                "reference": "eabb45018c5a4362b46c5beae3881261da89f900"
+                "reference": "964db6c4fb5b0fc8aa25cc31b17471b4963460c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine-extensions/DoctrineExtensions/zipball/eabb45018c5a4362b46c5beae3881261da89f900",
-                "reference": "eabb45018c5a4362b46c5beae3881261da89f900",
+                "url": "https://api.github.com/repos/doctrine-extensions/DoctrineExtensions/zipball/964db6c4fb5b0fc8aa25cc31b17471b4963460c6",
+                "reference": "964db6c4fb5b0fc8aa25cc31b17471b4963460c6",
                 "shasum": ""
             },
             "require": {
                 "behat/transliterator": "^1.2",
                 "doctrine/collections": "^1.2 || ^2.0",
-                "doctrine/common": "^2.13 || ^3.0",
                 "doctrine/deprecations": "^1.0",
                 "doctrine/event-manager": "^1.2 || ^2.0",
-                "doctrine/persistence": "^2.2 || ^3.0",
+                "doctrine/persistence": "^2.2 || ^3.0 || ^4.0",
                 "php": "^7.4 || ^8.0",
                 "psr/cache": "^1 || ^2 || ^3",
                 "psr/clock": "^1",
@@ -1861,6 +1860,7 @@
             },
             "conflict": {
                 "doctrine/annotations": "<1.13 || >=3.0",
+                "doctrine/common": "<2.13 || >=4.0",
                 "doctrine/dbal": "<3.7 || >=5.0",
                 "doctrine/mongodb-odm": "<2.3 || >=3.0",
                 "doctrine/orm": "<2.14.0 || 2.16.0 || 2.16.1 || >=4.0"
@@ -1868,17 +1868,18 @@
             "require-dev": {
                 "doctrine/annotations": "^1.13 || ^2.0",
                 "doctrine/cache": "^1.11 || ^2.0",
+                "doctrine/common": "^2.13 || ^3.0",
                 "doctrine/dbal": "^3.7 || ^4.0",
                 "doctrine/doctrine-bundle": "^2.3",
                 "doctrine/mongodb-odm": "^2.3",
                 "doctrine/orm": "^2.14.0 || ^3.0",
                 "friendsofphp/php-cs-fixer": "^3.14.0",
                 "nesbot/carbon": "^2.71 || ^3.0",
-                "phpstan/phpstan": "^1.11",
-                "phpstan/phpstan-doctrine": "^1.4",
-                "phpstan/phpstan-phpunit": "^1.4",
+                "phpstan/phpstan": "^2.1.1",
+                "phpstan/phpstan-doctrine": "^2.0.1",
+                "phpstan/phpstan-phpunit": "^2.0.3",
                 "phpunit/phpunit": "^9.6",
-                "rector/rector": "^1.1",
+                "rector/rector": "^2.0.6",
                 "symfony/console": "^5.4 || ^6.0 || ^7.0",
                 "symfony/doctrine-bridge": "^5.4 || ^6.0 || ^7.0",
                 "symfony/phpunit-bridge": "^6.0 || ^7.0",
@@ -1940,7 +1941,7 @@
             "support": {
                 "email": "gediminas.morkevicius@gmail.com",
                 "issues": "https://github.com/doctrine-extensions/DoctrineExtensions/issues",
-                "source": "https://github.com/doctrine-extensions/DoctrineExtensions/tree/v3.17.1",
+                "source": "https://github.com/doctrine-extensions/DoctrineExtensions/tree/v3.18.0",
                 "wiki": "https://github.com/Atlantic18/DoctrineExtensions/tree/main/doc"
             },
             "funding": [
@@ -1961,7 +1962,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-07T22:30:27+00:00"
+            "time": "2025-02-01T22:28:13+00:00"
         },
         {
             "name": "geissler/converter",
@@ -2609,16 +2610,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/igdj/lod-service.git",
-                "reference": "a3ecaa81bb648f77f418b2413f3c63f833ba315e"
+                "reference": "12c5243f72cd4750ecf863d39be790fcdde24200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/igdj/lod-service/zipball/a3ecaa81bb648f77f418b2413f3c63f833ba315e",
-                "reference": "a3ecaa81bb648f77f418b2413f3c63f833ba315e",
+                "url": "https://api.github.com/repos/igdj/lod-service/zipball/12c5243f72cd4750ecf863d39be790fcdde24200",
+                "reference": "12c5243f72cd4750ecf863d39be790fcdde24200",
                 "shasum": ""
             },
             "require": {
-                "league/iso3166": "^3.0",
+                "league/iso3166": "^3.0|^4.0",
                 "ml/json-ld": "^1.1",
                 "php": "^7.3|^8.1",
                 "sweetrdf/easyrdf": "^1.1",
@@ -2642,7 +2643,7 @@
                 "source": "https://github.com/igdj/lod-service/tree/master",
                 "issues": "https://github.com/igdj/lod-service/issues"
             },
-            "time": "2024-07-29T16:15:54+00:00"
+            "time": "2025-02-05T15:59:57+00:00"
         },
         {
             "name": "igdj/tei-edition-bundle",
@@ -2735,49 +2736,46 @@
         },
         {
             "name": "jms/translation-bundle",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "280f0e951dae2a0b445a06619155b5a6cc70fe98"
+                "reference": "2a51f8a4c17422ad36bc408e0b286aa2d5e5c003"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/280f0e951dae2a0b445a06619155b5a6cc70fe98",
-                "reference": "280f0e951dae2a0b445a06619155b5a6cc70fe98",
+                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/2a51f8a4c17422ad36bc408e0b286aa2d5e5c003",
+                "reference": "2a51f8a4c17422ad36bc408e0b286aa2d5e5c003",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^5",
                 "php": "^8.1",
-                "psr/log": "^1.0 || ^2.0",
-                "symfony/config": "^5.4 || ^6.4",
-                "symfony/console": "^5.4 || ^6.4",
-                "symfony/expression-language": "^5.4 || ^6.4",
-                "symfony/framework-bundle": "^5.4 || ^6.4",
-                "symfony/translation": "^5.4 || ^6.4",
+                "psr/log": "^1.0 || ^2.0 || ^3.0",
+                "symfony/config": "^5.4 || ^6.4 || ^7.1",
+                "symfony/console": "^5.4 || ^6.4 || ^7.1",
+                "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.1",
+                "symfony/translation": "^5.4 || ^6.4 || ^7.1",
                 "symfony/translation-contracts": "^2.0 || ^3.0",
-                "symfony/validator": "^5.4 || ^6.4",
+                "symfony/validator": "^5.4 || ^6.4 || ^7.1",
                 "twig/twig": "^3.15"
             },
             "require-dev": {
                 "doctrine/annotations": "^1.11",
-                "doctrine/coding-standard": "^8.2.1",
-                "matthiasnoback/symfony-dependency-injection-test": "^4.1",
+                "doctrine/coding-standard": "^9.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^6.0",
                 "nyholm/nsa": "^1.0.1",
                 "sensio/framework-extra-bundle": "^6.2.4",
-                "symfony/asset": "^5.4 || ^6.4",
-                "symfony/browser-kit": "^5.4 || ^6.4",
-                "symfony/css-selector": "^5.4 || ^6.4",
-                "symfony/filesystem": "^5.4 || ^6.4",
-                "symfony/flex": "^1.19 || ^2.0",
-                "symfony/form": "^5.4 || ^6.4",
-                "symfony/phpunit-bridge": "^5.4 || ^6.4",
-                "symfony/property-access": "^5.4 || ^6.4",
-                "symfony/routing": "^5.4 || ^6.4",
-                "symfony/security-csrf": "^5.4 || ^6.4",
-                "symfony/templating": "^5.4 || ^6.4",
-                "symfony/twig-bundle": "^5.4 || ^6.4"
+                "symfony/asset": "^5.4 || ^6.4 || ^7.1",
+                "symfony/browser-kit": "^5.4 || ^6.4 || ^7.1",
+                "symfony/css-selector": "^5.4 || ^6.4 || ^7.1",
+                "symfony/filesystem": "^5.4 || ^6.4 || ^7.1",
+                "symfony/form": "^5.4 || ^6.4 || ^7.1",
+                "symfony/phpunit-bridge": "^7.2",
+                "symfony/property-access": "^5.4 || ^6.4 || ^7.1",
+                "symfony/routing": "^5.4 || ^6.4 || ^7.1",
+                "symfony/security-csrf": "^5.4 || ^6.4 || ^7.1",
+                "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.1"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2817,9 +2815,9 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/JMSTranslationBundle/issues",
-                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.5.0"
+                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.6.0"
             },
-            "time": "2025-01-07T21:06:05+00:00"
+            "time": "2025-02-09T16:27:51+00:00"
         },
         {
             "name": "knplabs/knp-components",
@@ -3420,28 +3418,32 @@
         },
         {
             "name": "league/iso3166",
-            "version": "3.0.0",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alcohol/iso3166.git",
-                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e"
+                "reference": "5133fed7d54728222f4058702487dccedda20472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alcohol/iso3166/zipball/9976d382f270ad3f3df8a68719beb7a7179ffa1e",
-                "reference": "9976d382f270ad3f3df8a68719beb7a7179ffa1e",
+                "url": "https://api.github.com/repos/alcohol/iso3166/zipball/5133fed7d54728222f4058702487dccedda20472",
+                "reference": "5133fed7d54728222f4058702487dccedda20472",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8.0"
+                "ext-mbstring": "*",
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0"
+                "phpstan/phpstan": "^1.12.6",
+                "phpstan/phpstan-deprecation-rules": "^1.2.1",
+                "phpstan/phpstan-strict-rules": "^1.6.1",
+                "phpunit/phpunit": "^9.6.21"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.x-dev"
+                    "dev-master": "4.x-dev"
                 }
             },
             "autoload": {
@@ -3460,7 +3462,7 @@
                 }
             ],
             "description": "ISO 3166-1 PHP Library",
-            "homepage": "https://github.com/thephpleague/iso3166",
+            "homepage": "https://github.com/alcohol/iso3166",
             "keywords": [
                 "3166",
                 "3166-1",
@@ -3470,8 +3472,8 @@
                 "library"
             ],
             "support": {
-                "issues": "https://github.com/thephpleague/iso3166/issues",
-                "source": "https://github.com/thephpleague/iso3166"
+                "issues": "https://github.com/alcohol/iso3166/issues",
+                "source": "https://github.com/alcohol/iso3166"
             },
             "funding": [
                 {
@@ -3479,7 +3481,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-05T06:50:42+00:00"
+            "time": "2024-10-10T07:39:24+00:00"
         },
         {
             "name": "liip/url-auto-converter-bundle",
@@ -5432,31 +5434,31 @@
         },
         {
             "name": "setasign/fpdi",
-            "version": "v2.6.2",
+            "version": "v2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Setasign/FPDI.git",
-                "reference": "9e013b376939c0d4029f54150d2a16f3c67a5797"
+                "reference": "67c31f5e50c93c20579ca9e23035d8c540b51941"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/9e013b376939c0d4029f54150d2a16f3c67a5797",
-                "reference": "9e013b376939c0d4029f54150d2a16f3c67a5797",
+                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/67c31f5e50c93c20579ca9e23035d8c540b51941",
+                "reference": "67c31f5e50c93c20579ca9e23035d8c540b51941",
                 "shasum": ""
             },
             "require": {
                 "ext-zlib": "*",
-                "php": "^5.6 || ^7.0 || ^8.0"
+                "php": "^7.1 || ^8.0"
             },
             "conflict": {
                 "setasign/tfpdf": "<1.31"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7",
+                "phpunit/phpunit": "^7",
                 "setasign/fpdf": "~1.8.6",
                 "setasign/tfpdf": "~1.33",
                 "squizlabs/php_codesniffer": "^3.5",
-                "tecnickcom/tcpdf": "~6.2"
+                "tecnickcom/tcpdf": "^6.2"
             },
             "suggest": {
                 "setasign/fpdf": "FPDI will extend this class but as it is also possible to use TCPDF or tFPDF as an alternative. There's no fixed dependency configured."
@@ -5492,7 +5494,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Setasign/FPDI/issues",
-                "source": "https://github.com/Setasign/FPDI/tree/v2.6.2"
+                "source": "https://github.com/Setasign/FPDI/tree/v2.6.3"
             },
             "funding": [
                 {
@@ -5500,7 +5502,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-10T13:12:19+00:00"
+            "time": "2025-02-05T13:22:35+00:00"
         },
         {
             "name": "solarium/solarium",
