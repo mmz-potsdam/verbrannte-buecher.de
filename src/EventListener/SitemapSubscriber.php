@@ -54,13 +54,13 @@ class SitemapSubscriber implements EventSubscriberInterface
             ->createQueryBuilder();
 
         $qb->select([
-                'P',
-                "CONCAT(COALESCE(P.familyName,P.givenName), ' ', COALESCE(P.givenName, '')) HIDDEN nameSort"
-            ])
+            'P',
+            "CONCAT(COALESCE(P.familyName,P.givenName), ' ', COALESCE(P.givenName, '')) HIDDEN nameSort",
+        ])
             ->from('\TeiEditionBundle\Entity\Person', 'P')
             ->where('P.status IN (0,1)')
             ->orderBy('nameSort')
-            ;
+        ;
 
         foreach ($qb->getQuery()->getResult() as $person) {
             $routeName = 'person';
@@ -104,7 +104,7 @@ class SitemapSubscriber implements EventSubscriberInterface
                 ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
                 ->leftJoin('S.isPartOf', 'A')
                 ->orderBy('S.dateCreated', 'ASC')
-                ;
+        ;
 
         foreach ($criteria as $field => $cond) {
             $queryBuilder->andWhere('S.' . $field

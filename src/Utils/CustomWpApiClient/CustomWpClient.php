@@ -22,13 +22,15 @@ class CustomWpClient extends \Vnn\WpApiClient\WpClient
             $class = 'Vnn\WpApiClient\Endpoint\\' . ucfirst($endpoint);
             if (class_exists($class)) {
                 $this->endPoints[$endpoint] = new $class($this);
-            } else {
+            }
+            else {
                 // look for custom endpoint
                 $class = 'App\Utils\CustomWpApiClient\Endpoint\\' . ucfirst($endpoint);
 
                 if (class_exists($class)) {
                     $this->endPoints[$endpoint] = new $class($this);
-                } else {
+                }
+                else {
                     throw new RuntimeException('Endpoint "' . $endpoint . '" does not exist"');
                 }
             }

@@ -1,4 +1,5 @@
 <?php
+
 // src/Command/ArticleAuthorCommand.php
 
 namespace App\Command;
@@ -7,15 +8,13 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 /**
  * Lookup author(s) and translator and insert/update corresponding Person.
  */
-class ArticleAuthorCommand
-extends BaseCommand
+class ArticleAuthorCommand extends BaseCommand
 {
     protected function configure(): void
     {
@@ -106,8 +105,10 @@ extends BaseCommand
                 // either insert or update
                 if (is_null($person)) {
                     $value = !empty($slug) ? $slug : $gnd;
-                    $output->writeln(sprintf('<error>No user found for %s</error>',
-                                             trim($value)));
+                    $output->writeln(sprintf(
+                        '<error>No user found for %s</error>',
+                        trim($value)
+                    ));
                     continue;
                 }
             }

@@ -1,14 +1,13 @@
 <?php
 
 // src/Controller/DefaultController.php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
 use Doctrine\ORM\EntityManagerInterface;
-
 use Vnn\WpApiClient\WpClient;
 
 class DefaultController extends BaseController
@@ -16,10 +15,11 @@ class DefaultController extends BaseController
     /**
      * @Route("/", name="home", options={"sitemap" = true})
      */
-    public function homeAction(Request $request,
-                               WpClient $wpClient,
-                               EntityManagerInterface $entityManager)
-    {
+    public function homeAction(
+        Request $request,
+        WpClient $wpClient,
+        EntityManagerInterface $entityManager
+    ) {
         $events = $this->buildEvents($wpClient, 4);
 
         $digitized = $this->buildDigitized($request, $entityManager);

@@ -1,4 +1,5 @@
 <?php
+
 // src/TeiEditionBundle/Command/ArticleRefreshCommand.php
 
 namespace App\Command;
@@ -10,15 +11,13 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
-
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 /**
  * Meta command that calls article:* commands in a single run.
  */
-class ArticleRefreshCommand
-extends BaseCommand
+class ArticleRefreshCommand extends BaseCommand
 {
     protected function configure(): void
     {
@@ -63,8 +62,10 @@ extends BaseCommand
 
         $ext = pathinfo($fnameInput, PATHINFO_EXTENSION);
         if ('xml' != $ext) {
-            $output->writeln(sprintf('<error>Invalid file extension for %s (must be .xml)</error>',
-                                     $fnameInput));
+            $output->writeln(sprintf(
+                '<error>Invalid file extension for %s (must be .xml)</error>',
+                $fnameInput
+            ));
 
             return 1;
         }
@@ -97,8 +98,12 @@ extends BaseCommand
                     $call => null,
                 ];
 
-                $output->write(sprintf('<info>Running %s %s %s: </info>',
-                                       $name, $call, $fnameInput));
+                $output->write(sprintf(
+                    '<info>Running %s %s %s: </info>',
+                    $name,
+                    $call,
+                    $fnameInput
+                ));
 
                 $returnCode = $command->run(new ArrayInput($arguments), $intermediateOutput);
 

@@ -12,16 +12,14 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @see http://schema.org/CreativeWork and derived documents Documentation on Schema.org
  *
  */
-class CreativeWork
-extends SchemaOrg
+class CreativeWork extends SchemaOrg
 {
     protected static function buildCorresp($zoteroData, $zoteroMeta)
     {
         $slugify = new \Cocur\Slugify\Slugify();
 
         if (!empty($zoteroData['extra'])
-            && preg_match('/[a-z\-0-9]+_[0-9][0-9a-z]*/', $zoteroData['extra']))
-        {
+            && preg_match('/[a-z\-0-9]+_[0-9][0-9a-z]*/', $zoteroData['extra'])) {
             // manually set
             return $zoteroData['extra'];
         }
@@ -30,8 +28,7 @@ extends SchemaOrg
             ? $zoteroMeta['creatorSummary'] : 'NN';
 
         if (!empty($zoteroMeta['parsedDate'])
-            && preg_match('/^(\d+)/', $zoteroMeta['parsedDate'], $matches))
-        {
+            && preg_match('/^(\d+)/', $zoteroMeta['parsedDate'], $matches)) {
             $date = $matches[1];
         }
         else {
@@ -55,36 +52,35 @@ extends SchemaOrg
         }
 
         foreach ([
-                'key' => 'id',
-                'version' => 'version',
-                'itemType' => 'itemType',
-                'title' => 'name',
-                'bookTitle' => 'containerName',
-                'encyclopediaTitle' => 'containerName',
-                'publicationTitle' => 'containerName',
-                'creators' => 'creators',
-                'ISSN' => 'issn',
-                'series' => 'series',
-                'seriesNumber' => 'seriesNumber',
-                'volume' => 'volume',
-                'numberOfVolumes' => 'numberOfVolumes',
-                'issue' => 'issue',
-                'edition' => 'bookEdition',
-                'place' => 'publicationLocation',
-                'publisher' => 'publisher',
-                'date' => 'datePublished',
-                'pages' => 'pagination',
-                'numPages' => 'numberOfPages',
-                'language' => 'language',
-                'DOI' => 'doi',
-                'ISBN' => 'isbn',
-                'url' => 'url',
-                'accessDate' => 'dateAccessed',
+            'key' => 'id',
+            'version' => 'version',
+            'itemType' => 'itemType',
+            'title' => 'name',
+            'bookTitle' => 'containerName',
+            'encyclopediaTitle' => 'containerName',
+            'publicationTitle' => 'containerName',
+            'creators' => 'creators',
+            'ISSN' => 'issn',
+            'series' => 'series',
+            'seriesNumber' => 'seriesNumber',
+            'volume' => 'volume',
+            'numberOfVolumes' => 'numberOfVolumes',
+            'issue' => 'issue',
+            'edition' => 'bookEdition',
+            'place' => 'publicationLocation',
+            'publisher' => 'publisher',
+            'date' => 'datePublished',
+            'pages' => 'pagination',
+            'numPages' => 'numberOfPages',
+            'language' => 'language',
+            'DOI' => 'doi',
+            'ISBN' => 'isbn',
+            'url' => 'url',
+            'accessDate' => 'dateAccessed',
 
-                'dateAdded' => 'createdAt',
-                'dateModified' => 'changedAt',
-            ] as $src => $target)
-        {
+            'dateAdded' => 'createdAt',
+            'dateModified' => 'changedAt',
+        ] as $src => $target) {
             $val = array_key_exists($src, $zoteroData) ? $zoteroData[$src] : null;
             if (is_null($val) && 'containerName' == $target) {
                 // skip on null since multiple $src can set this
@@ -881,8 +877,11 @@ extends SchemaOrg
         /* vertical-align: super doesn't render nicely:
            http://stackoverflow.com/a/1530819/2114681
         */
-        $ret = preg_replace('/style="([^"]*)vertical\-align\:\s*super;([^"]*)"/',
-                            'style="\1vertical-align: top; font-size: 66%;\2"', $ret);
+        $ret = preg_replace(
+            '/style="([^"]*)vertical\-align\:\s*super;([^"]*)"/',
+            'style="\1vertical-align: top; font-size: 66%;\2"',
+            $ret
+        );
 
         if ($purgeSeparator) {
             if (preg_match('/, <span class="citeproc\-in">/', $ret, $matches)) {
@@ -902,24 +901,34 @@ extends SchemaOrg
             }
 
             // make links clickable
-            $ret = preg_replace_callback('/(<span class="citeproc\-URL">&lt;)(.*?)(&gt;)/',
+            $ret = preg_replace_callback(
+                '/(<span class="citeproc\-URL">&lt;)(.*?)(&gt;)/',
                 function ($matches) {
                     return $matches[1]
-                        . sprintf('<a href="%s" target="_blank">%s</a>',
-                                  $matches[2], $matches[2])
+                        . sprintf(
+                            '<a href="%s" target="_blank">%s</a>',
+                            $matches[2],
+                            $matches[2]
+                        )
                         . $matches[3];
                 },
-                $ret);
+                $ret
+            );
 
             // make doi: clickable
-            $ret = preg_replace_callback('/(<span class="citeproc\-DOI">&lt;)doi\:(.*?)(&gt;)/',
+            $ret = preg_replace_callback(
+                '/(<span class="citeproc\-DOI">&lt;)doi\:(.*?)(&gt;)/',
                 function ($matches) {
                     return $matches[1]
-                        . sprintf('<a href="https://dx.doi.org/%s" target="_blank">doi:%s</a>',
-                                  $matches[2], $matches[2])
+                        . sprintf(
+                            '<a href="https://dx.doi.org/%s" target="_blank">doi:%s</a>',
+                            $matches[2],
+                            $matches[2]
+                        )
                         . $matches[3];
                 },
-                $ret);
+                $ret
+            );
         }
 
         return $ret;
@@ -963,9 +972,9 @@ extends SchemaOrg
             $dateObj = \DateTime::createFromFormat('U', $formatter->parse($dateStr));
             if (false !== $dateObj) {
                 return [
-                    'year' => (int)$dateObj->format('Y'),
-                    'month' =>  (int)$dateObj->format('m'),
-                    'day' => (int)$dateObj->format('d'),
+                    'year' => (int) $dateObj->format('Y'),
+                    'month' =>  (int) $dateObj->format('m'),
+                    'day' => (int) $dateObj->format('d'),
                 ];
             }
         }
@@ -1013,7 +1022,7 @@ extends SchemaOrg
         }
 
         if (!filter_var($dateStr, FILTER_VALIDATE_INT) === false) {
-            $parts[] = (int)$dateStr;
+            $parts[] = (int) $dateStr;
 
             return $parts;
         }
@@ -1103,9 +1112,7 @@ extends SchemaOrg
                     $targetEntry['family'] = $creator['name'];
                 }
                 else {
-                    foreach ([ 'firstName' => 'given', 'lastName' => 'family']
-                             as $src => $dst)
-                    {
+                    foreach ([ 'firstName' => 'given', 'lastName' => 'family'] as $src => $dst) {
                         if (array_key_exists($src, $creator)) {
                             $targetEntry[$dst] = $creator[$src];
                         }
@@ -1162,7 +1169,7 @@ extends SchemaOrg
                 $type = 'CreativeWork';
                 break;
 
-            // just for building isPartOf
+                // just for building isPartOf
             case 'issue':
                 $type = 'PublicationIssue';
                 break;
@@ -1199,8 +1206,7 @@ extends SchemaOrg
             foreach ($this->creators as $creator) {
                 if (array_key_exists('creatorType', $creator) && in_array($creator['creatorType'], [ 'author', 'editor', 'translator' ])) {
                     if ('author' == $creator['creatorType']
-                        && in_array($type, [ 'PublicationIssue', 'Periodical' ]))
-                    {
+                        && in_array($type, [ 'PublicationIssue', 'Periodical' ])) {
                         continue;
                     }
                     else if ('editor' == $creator['creatorType'] && in_array($type, [ 'Chapter' ])) {
@@ -1262,7 +1268,7 @@ extends SchemaOrg
             }
 
             if (!empty($this->numberOfPages) && preg_match('/^\d+$/', $this->numberOfPages)) {
-                $ret['numberOfPages'] = (int)$this->numberOfPages;
+                $ret['numberOfPages'] = (int) $this->numberOfPages;
             }
         }
         else if (in_array($type, [ 'ScholarlyArticle', 'Chapter' ])) {
@@ -1322,8 +1328,7 @@ extends SchemaOrg
         }
 
         if (!is_null($this->datePublished)
-            && !in_array($type, [ 'ScholarlyArticle', 'Chapter', 'Periodical' ]))
-        {
+            && !in_array($type, [ 'ScholarlyArticle', 'Chapter', 'Periodical' ])) {
             $ret['datePublished'] = \App\Utils\JsonLd::formatDate8601($this->datePublished);
         }
 

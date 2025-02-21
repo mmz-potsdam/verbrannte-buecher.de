@@ -5,22 +5,21 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\Routing\Annotation\Route;
-
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /*
  * Simple pass-through proxy to fetch from non https site
  */
-class ImgProxyController
-extends BaseController
+class ImgProxyController extends BaseController
 {
     private $client;
 
-    public function __construct(string $projectDir,
-                                string $publicDir,
-                                string $wordpressBaseUrl,
-                                HttpClientInterface $client)
-    {
+    public function __construct(
+        string $projectDir,
+        string $publicDir,
+        string $wordpressBaseUrl,
+        HttpClientInterface $client
+    ) {
         parent::__construct($projectDir, $publicDir, $wordpressBaseUrl);
 
         $this->client = $client;

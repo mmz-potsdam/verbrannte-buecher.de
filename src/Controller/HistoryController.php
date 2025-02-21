@@ -1,13 +1,13 @@
 <?php
 
 // src/Controller/HistoryController.php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-
 use Vnn\WpApiClient\WpClient;
 
 class HistoryController extends BaseController
@@ -36,7 +36,7 @@ class HistoryController extends BaseController
     protected function extractContent($crawler)
     {
         // we don't wont the body-tag
-        return preg_replace('/<\/?body>/', '',  $crawler->html());
+        return preg_replace('/<\/?body>/', '', $crawler->html());
     }
 
     /**
@@ -58,8 +58,7 @@ class HistoryController extends BaseController
             $urlComponents = parse_url($href);
 
             if (!empty($urlComponents['query'])
-                && preg_match('/page_id=(\d+)/', $urlComponents['query'], $matches))
-            {
+                && preg_match('/page_id=(\d+)/', $urlComponents['query'], $matches)) {
                 $node->getNode(0)->setAttribute('href', $urlGenerator->generate('history-page', [
                     'page' => $matches[1],
                 ]));
@@ -85,7 +84,7 @@ class HistoryController extends BaseController
                     $pos = strpos($srcComponents['path'], $baseUrlComponents['path']);
 
                     if ($pos === 0) {
-                        $srcComponents['path']= substr_replace($srcComponents['path'], '/', $pos, strlen($baseUrlComponents['path']));
+                        $srcComponents['path'] = substr_replace($srcComponents['path'], '/', $pos, strlen($baseUrlComponents['path']));
                     }
                 }
 
@@ -121,8 +120,7 @@ class HistoryController extends BaseController
             $urlComponents = parse_url($href);
 
             if (!empty($urlComponents['query'])
-                && preg_match('/page_id=(\d+)/', $urlComponents['query'], $matches))
-            {
+                && preg_match('/page_id=(\d+)/', $urlComponents['query'], $matches)) {
                 $pages[$matches[1]] = $node->html();
             }
             else if (strncmp($href, $this->wordpressBaseUrl, strlen($this->wordpressBaseUrl)) === 0) {
@@ -157,10 +155,12 @@ class HistoryController extends BaseController
     /**
      * @Route("/geschichte/{page}", name="history-page", requirements={"page"=".+"})
      */
-    public function pageAction(Request $request, $page,
-                               WpClient $wpClient,
-                               UrlGeneratorInterface $urlGenerator): Response
-    {
+    public function pageAction(
+        Request $request,
+        $page,
+        WpClient $wpClient,
+        UrlGeneratorInterface $urlGenerator
+    ): Response {
         if (preg_match('/^\d+$/', $page)) {
             $pageInfo = $wpClient->pages()->get($page);
         }

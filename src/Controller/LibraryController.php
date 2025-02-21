@@ -1,15 +1,14 @@
 <?php
 
 // src/Controller/LibraryController.php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-
 use Cocur\Slugify\SlugifyInterface;
-
 use Doctrine\ORM\EntityManagerInterface;
 
 class LibraryController extends BaseController
@@ -17,11 +16,12 @@ class LibraryController extends BaseController
     /**
      * @Route("/bibliothek", name="library", options={"sitemap" = true})
      */
-    public function libraryAction(Request $request,
-                                  EntityManagerInterface $entityManager,
-                                  UrlGeneratorInterface $urlGenerator,
-                                  SlugifyInterface $slugify)
-    {
+    public function libraryAction(
+        Request $request,
+        EntityManagerInterface $entityManager,
+        UrlGeneratorInterface $urlGenerator,
+        SlugifyInterface $slugify
+    ) {
         $digitized = $this->buildDigitized($request, $entityManager);
         $sourcesByCitationLabel = [];
         foreach ($digitized as $source) {
@@ -47,15 +47,13 @@ class LibraryController extends BaseController
                     $thumb = '';
 
                     if (property_exists($cslItem, 'URL')
-                        && !empty($cslItem->{'URL'}))
-                    {
+                        && !empty($cslItem->{'URL'})) {
                         // so we can filter
                         $classes[] = 'online';
                     }
 
                     if (property_exists($cslItem, 'citation-label')
-                        && !empty($cslItem->{'citation-label'}))
-                    {
+                        && !empty($cslItem->{'citation-label'})) {
                         if (array_key_exists($cslItem->{'citation-label'}, $sourcesByCitationLabel)) {
                             $source = $sourcesByCitationLabel[$cslItem->{'citation-label'}];
                             $classes[] = 'digital-library';
@@ -69,11 +67,16 @@ class LibraryController extends BaseController
                             }
 
                             // thumb
-                            $thumbPath =  sprintf('/viewer/source-%05d/thumb.jpg',
-                                                  str_replace('source-', '', $source->getUid()));
+                            $thumbPath =  sprintf(
+                                '/viewer/source-%05d/thumb.jpg',
+                                str_replace('source-', '', $source->getUid())
+                            );
                             if (file_exists($options['publicDir'] . $thumbPath)) {
-                                $thumb = sprintf('<div class="thumb"><a href="%s"><img src="%s" /></a></div>',
-                                                 $url, $options['basePath'] . $thumbPath);
+                                $thumb = sprintf(
+                                    '<div class="thumb"><a href="%s"><img src="%s" /></a></div>',
+                                    $url,
+                                    $options['basePath'] . $thumbPath
+                                );
                             }
                         }
                     }
@@ -99,7 +102,7 @@ class LibraryController extends BaseController
                         $target = '';
                     }
 
-                    return '<a class="arrow" href="' . $url . '" title="' . $renderedText .'"' . $target . '>&nbsp;</a>';
+                    return '<a class="arrow" href="' . $url . '" title="' . $renderedText . '"' . $target . '>&nbsp;</a>';
                 },
             ],
         ];

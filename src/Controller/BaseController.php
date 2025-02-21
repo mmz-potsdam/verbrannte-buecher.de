@@ -1,13 +1,12 @@
 <?php
 
 // src/Controller/BaseController.php
+
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-
 use Doctrine\ORM\EntityManagerInterface;
-
 use Vnn\WpApiClient\WpClient;
 
 class BaseController extends AbstractController
@@ -16,10 +15,11 @@ class BaseController extends AbstractController
     protected $publicDir;
     protected $wordpressBaseUrl;
 
-    public function __construct(string $projectDir,
-                                string $publicDir,
-                                string $wordpressBaseUrl)
-    {
+    public function __construct(
+        string $projectDir,
+        string $publicDir,
+        string $wordpressBaseUrl
+    ) {
         $this->projectDir = $projectDir;
         $this->publicDir = $publicDir;
         $this->wordpressBaseUrl = $wordpressBaseUrl;
@@ -43,8 +43,10 @@ class BaseController extends AbstractController
 
         if (!empty($events)) {
             usort($events, function ($eventA, $eventB) {
-                return strcmp($eventA['acf']['date_start'],
-                              $eventB['acf']['date_start']);
+                return strcmp(
+                    $eventA['acf']['date_start'],
+                    $eventB['acf']['date_start']
+                );
             });
         }
 
@@ -55,9 +57,10 @@ class BaseController extends AbstractController
         return $events;
     }
 
-    protected function buildDigitized(Request $request,
-                                      EntityManagerInterface $entityManager)
-    {
+    protected function buildDigitized(
+        Request $request,
+        EntityManagerInterface $entityManager
+    ) {
         $criteria = [ 'status' => [ 1 ] ];
 
         $locale = $request->getLocale();
@@ -71,7 +74,7 @@ class BaseController extends AbstractController
                 ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
                 ->leftJoin('S.isPartOf', 'A')
                 ->orderBy('S.dateCreated', 'ASC')
-                ;
+        ;
 
         foreach ($criteria as $field => $cond) {
             $queryBuilder->andWhere('S.' . $field
@@ -99,8 +102,11 @@ class BaseController extends AbstractController
         /* vertical-align: super doesn't render nicely:
            http://stackoverflow.com/a/1530819/2114681
         */
-        $biblio = preg_replace('/style="([^"]*)vertical\-align\:\s*super;([^"]*)"/',
-                               'style="\1vertical-align: top; font-size: 66%;\2"', $biblio);
+        $biblio = preg_replace(
+            '/style="([^"]*)vertical\-align\:\s*super;([^"]*)"/',
+            'style="\1vertical-align: top; font-size: 66%;\2"',
+            $biblio
+        );
 
         return $biblio;
     }
@@ -108,10 +114,12 @@ class BaseController extends AbstractController
     /**
      * Load and render bibliography
      */
-    protected function buildBibliography($locale, $dataFname,
-                                         $cslFname = 'style.csl',
-                                         $additionalMarkup = [])
-    {
+    protected function buildBibliography(
+        $locale,
+        $dataFname,
+        $cslFname = 'style.csl',
+        $additionalMarkup = []
+    ) {
         $cslLocale = 'en-US';
 
         switch ($locale) {

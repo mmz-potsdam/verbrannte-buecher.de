@@ -46,8 +46,8 @@ class AdminPersonController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_person_show', [
-                    'id' => $person->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $person->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Person/new.html.twig', [
@@ -78,8 +78,8 @@ class AdminPersonController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_person_show', [
-                    'id' => $person->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $person->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Person/edit.html.twig', [
@@ -93,7 +93,7 @@ class AdminPersonController extends AbstractController
      */
     public function delete(Request $request, Person $person, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$person->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $person->getId(), $request->request->get('_token'))) {
             $entityManager->remove($person);
             $entityManager->flush();
         }
