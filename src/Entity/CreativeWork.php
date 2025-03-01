@@ -3,6 +3,9 @@
 namespace App\Entity;
 
 use Symfony\Component\Validator\Constraints as Assert;
+use TeiEditionBundle\Entity\Organization;
+use TeiEditionBundle\Entity\Person;
+use TeiEditionBundle\Entity\Place;
 
 /**
  * Bibliographic Item
