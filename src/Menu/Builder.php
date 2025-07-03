@@ -81,6 +81,17 @@ class Builder
             ],
         ]);
 
+        $menu->addChild('teaching', [
+            'label' => $this->translator->trans('Bildung'),
+            'route' => 'teaching',
+            'attributes' => [
+                'class' => 'nav-item',
+            ],
+            'linkAttributes' => [
+                'class' => 'nav-link',
+            ],
+        ]);
+
         $menu->addChild('about', [
             'label' => $this->translator->trans('Über'),
             'uri' => '#',

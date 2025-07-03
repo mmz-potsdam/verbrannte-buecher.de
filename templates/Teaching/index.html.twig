@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Lernpodcast</h1>
+    <p>Für unser Bildungsprojekt zu den Verbrannten Büchern in Brandenburg hat das MMZ mit Unterstützung des <a href="https://mik.brandenburg.de/mik/de/ministerium/stabs-und-geschaeftsstellen/landespraeventionsrat/" target="_blank">Landespräventionsrats Brandenburg</a> einen dreiteiligen Lernpodcast produzieren lassen.</p>
+    <p>Die Radiojournalistin Stefanie Schuster erklärt darin Hintergründe, Abläufe und Autor:innen der verbrannten Bücher für die schulische und außerschulische Bildungsarbeit. In drei Teilen widmen sich die Podcasts dem deutschen Kontext der Bücherverbrennungen in Brandenburg und beleuchten, welche Auswirkungen die Zensur und Praxis öffentlicher Autodafés im Nationalsozialismus auf die Autor:innenlandschaft hatten – sowohl mittel- als auch langfristig.</p>
+
+    <ul>
+        <li>
+            <p>1. Teil: Der Weg zum Scheiterhaufen</p>
+            <p><audio controls preload="metadata" src="{{ app.request.basepath }}/viewer/teaching/1-einleitung.mp3"></audio></p>
+        </li>
+        <li>
+            <p>2. Teil: Die Bücher brennen</p>
+            <p><audio controls preload="metadata" src="{{ app.request.basepath }}/viewer/teaching/2-buecherverbrennungen.mp3"></audio></p>
+        </li>
+        <li>
+            <p>3. Teil: Deutsche Literatur im Exil</p>
+            <p><audio controls preload="metadata" src="{{ app.request.basepath }}/viewer/teaching/3-literatur-im-exil.mp3"></audio></p>
+        </li>
+    </ul>
+{% endblock %}
