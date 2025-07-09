@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of verbrannte-buecher.de
 
-    (C) 2023-2024 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
+    (C) 2023-2025 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
         Daniel Burckhardt
 
 
@@ -37,7 +37,7 @@ Installation
 ------------
 ### Requirements
 
-- PHP >= 8.1 (check with `php -v`)
+- PHP >= 8.2 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 - Java 1.11 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-11-jdk`)
@@ -91,7 +91,7 @@ Start solr by
 
     ./solr/bin/solr start
 
-and then create the `gdr_de` core
+and then create the `bvb_de` core
 
     ./solr/bin/solr create -c bvb_de
 
@@ -165,7 +165,7 @@ Generate Facsimile from PDF
 ---------------------------
     mkdir data/img/source-00001
     # -scene 1 for starting at f0001.jpg
-    convert  -limit memory 10MB -limit map 10MB -density 300 public/viewer/source-00001/source-00001.pdf -quality 95 -scene 1 data/img/source-00001/f%04d.jpg
+    convert  -limit memory 100MB -limit map 100MB -density 300 public/viewer/source-00001/source-00001.pdf -quality 95 -scene 1 data/img/source-00001/f%04d.jpg
 
 Updating Zotero Bibliography
 ----------------------------
