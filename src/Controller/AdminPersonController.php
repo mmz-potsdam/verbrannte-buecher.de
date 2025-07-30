@@ -44,7 +44,7 @@ class AdminPersonController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Person/new.html.twig', [
+        return $this->render('Admin/Person/new.html.twig', [
             'person' => $person,
             'form' => $form,
         ]);
@@ -72,7 +72,7 @@ class AdminPersonController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Person/edit.html.twig', [
+        return $this->render('Admin/Person/edit.html.twig', [
             'person' => $person,
             'form' => $form,
         ]);
