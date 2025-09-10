@@ -193,6 +193,55 @@
             ]
         },
         {
+            "id": "CV6NXTES",
+            "citation-label": "asch_1930",
+            "type": "book",
+            "title": "Der 22. August",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Berlin",
+            "publisher": "Ernst Rowohlt",
+            "issued": {
+                "date-parts": [
+                    [
+                        1930
+                    ]
+                ],
+                "literal": "1930"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Nathan",
+                    "family": "Asch"
+                }
+            ],
+            "translator": [
+                {
+                    "given": "Hermynia",
+                    "family": "Zur Mühlen"
+                }
+            ]
+        },
+        {
             "id": "CSFQJIJC",
             "citation-label": "asch_1926",
             "type": "book",
@@ -287,55 +336,6 @@
                 {
                     "given": "Siegfried",
                     "family": "Schmitz"
-                }
-            ]
-        },
-        {
-            "id": "CV6NXTES",
-            "citation-label": "asch_1930",
-            "type": "book",
-            "title": "Der 22. August",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Berlin",
-            "publisher": "Ernst Rowohlt",
-            "issued": {
-                "date-parts": [
-                    [
-                        1930
-                    ]
-                ],
-                "literal": "1930"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Nathan",
-                    "family": "Asch"
-                }
-            ],
-            "translator": [
-                {
-                    "given": "Hermynia",
-                    "family": "Zur Mühlen"
                 }
             ]
         },
@@ -794,25 +794,25 @@
             ]
         },
         {
-            "id": "3Z2N85SX",
-            "citation-label": "becher_1929",
+            "id": "FBT3C8SC",
+            "citation-label": "becher_1926",
             "type": "book",
-            "title": "Ein Mensch unserer Zeit. Gesammelte Gedichte",
+            "title": "[CH Cl-CH]3 As (Levisite) oder Der einzig gerechte Krieg",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Rudolstadt",
-            "publisher": "Greifenverlag",
+            "publisher-place": "Wien",
+            "publisher": "Agis-Verlag",
             "issued": {
                 "date-parts": [
                     [
-                        1929
+                        1926
                     ]
                 ],
-                "literal": "1929"
+                "literal": "1926"
             },
             "page": null,
             "number-of-pages": "",
@@ -837,25 +837,25 @@
             ]
         },
         {
-            "id": "FBT3C8SC",
-            "citation-label": "becher_1926",
+            "id": "3Z2N85SX",
+            "citation-label": "becher_1929",
             "type": "book",
-            "title": "[CH Cl-CH]3 As (Levisite) oder Der einzig gerechte Krieg",
+            "title": "Ein Mensch unserer Zeit. Gesammelte Gedichte",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Wien",
-            "publisher": "Agis-Verlag",
+            "publisher-place": "Rudolstadt",
+            "publisher": "Greifenverlag",
             "issued": {
                 "date-parts": [
                     [
-                        1926
+                        1929
                     ]
                 ],
-                "literal": "1926"
+                "literal": "1929"
             },
             "page": null,
             "number-of-pages": "",
@@ -1087,7 +1087,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/Sisyphos_oder_die_Grenzen_der_Erziehung",
             "accessed": {
                 "date-parts": [
                     [
@@ -5162,49 +5162,6 @@
             ]
         },
         {
-            "id": "3G74887K",
-            "citation-label": "hirsch_1929",
-            "type": "book",
-            "title": "Vorbestraft",
-            "container-title": null,
-            "collection-title": "Die fesselnden Romane des Merlin-Verlages",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Baden-Baden",
-            "publisher": "Merlin-Verlag",
-            "issued": {
-                "date-parts": [
-                    [
-                        1929
-                    ]
-                ],
-                "literal": "1929"
-            },
-            "page": null,
-            "number-of-pages": "260",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Leo",
-                    "family": "Hirsch"
-                }
-            ]
-        },
-        {
             "id": "RZUYZC2M",
             "citation-label": "hirsch_1931",
             "type": "book",
@@ -5243,6 +5200,49 @@
             "author": [
                 {
                     "given": "Karl Jakob",
+                    "family": "Hirsch"
+                }
+            ]
+        },
+        {
+            "id": "3G74887K",
+            "citation-label": "hirsch_1929",
+            "type": "book",
+            "title": "Vorbestraft",
+            "container-title": null,
+            "collection-title": "Die fesselnden Romane des Merlin-Verlages",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Baden-Baden",
+            "publisher": "Merlin-Verlag",
+            "issued": {
+                "date-parts": [
+                    [
+                        1929
+                    ]
+                ],
+                "literal": "1929"
+            },
+            "page": null,
+            "number-of-pages": "260",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Leo",
                     "family": "Hirsch"
                 }
             ]
@@ -6168,25 +6168,25 @@
             ]
         },
         {
-            "id": "6P4ATHMP",
-            "citation-label": "kaestner_1931",
+            "id": "TB29S62S",
+            "citation-label": "kaestner_1928",
             "type": "book",
-            "title": "Fabian. Die Geschichte eines Moralisten",
+            "title": "Herz auf Taille / Lärm im Spiegel",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Stuttgart",
-            "publisher": "Deutsche Verlags Anstalt",
+            "publisher-place": "Leipzig",
+            "publisher": "C. Weller & Co.",
             "issued": {
                 "date-parts": [
                     [
-                        1931
+                        1929
                     ]
                 ],
-                "literal": "1931"
+                "literal": "1928 / 1929"
             },
             "page": null,
             "number-of-pages": "",
@@ -6211,25 +6211,25 @@
             ]
         },
         {
-            "id": "TB29S62S",
-            "citation-label": "kaestner_1928",
+            "id": "6P4ATHMP",
+            "citation-label": "kaestner_1931",
             "type": "book",
-            "title": "Herz auf Taille / Lärm im Spiegel",
+            "title": "Fabian. Die Geschichte eines Moralisten",
             "container-title": null,
             "collection-title": "",
             "collection-number": "",
             "volume": "",
             "number-of-volumes": "",
             "edition": "",
-            "publisher-place": "Leipzig",
-            "publisher": "C. Weller & Co.",
+            "publisher-place": "Stuttgart",
+            "publisher": "Deutsche Verlags Anstalt",
             "issued": {
                 "date-parts": [
                     [
-                        1929
+                        1931
                     ]
                 ],
-                "literal": "1928 / 1929"
+                "literal": "1931"
             },
             "page": null,
             "number-of-pages": "",
@@ -7381,6 +7381,12 @@
                     "given": "Michail",
                     "family": "Kusmin"
                 }
+            ],
+            "translator": [
+                {
+                    "given": "Johannes von",
+                    "family": "Guenther"
+                }
             ]
         },
         {
@@ -7839,7 +7845,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/l-n-tolstoi-im-spiegel-des-marxismus",
             "accessed": {
                 "date-parts": [
                     [
@@ -9637,49 +9643,6 @@
             ]
         },
         {
-            "id": "U7AB5SJR",
-            "citation-label": "neumann_1929",
-            "type": "book",
-            "title": "Sintflut",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Stuttgart",
-            "publisher": "J. Engelhorns Nachfolger",
-            "issued": {
-                "date-parts": [
-                    [
-                        1929
-                    ]
-                ],
-                "literal": "1929"
-            },
-            "page": null,
-            "number-of-pages": "",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "",
-            "author": [
-                {
-                    "given": "Robert",
-                    "family": "Neumann"
-                }
-            ]
-        },
-        {
             "id": "7RKBS4HU",
             "citation-label": "neumann_1930",
             "type": "book",
@@ -9718,6 +9681,49 @@
             "author": [
                 {
                     "given": "Alfred",
+                    "family": "Neumann"
+                }
+            ]
+        },
+        {
+            "id": "U7AB5SJR",
+            "citation-label": "neumann_1929",
+            "type": "book",
+            "title": "Sintflut",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Stuttgart",
+            "publisher": "J. Engelhorns Nachfolger",
+            "issued": {
+                "date-parts": [
+                    [
+                        1929
+                    ]
+                ],
+                "literal": "1929"
+            },
+            "page": null,
+            "number-of-pages": "",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "",
+            "author": [
+                {
+                    "given": "Robert",
                     "family": "Neumann"
                 }
             ]
@@ -11012,49 +11018,6 @@
             ]
         },
         {
-            "id": "8NICACJM",
-            "citation-label": "rubiner_1931",
-            "type": "book",
-            "title": "Der grosse Strom. Eine unromantische Wolgafahrt",
-            "container-title": null,
-            "collection-title": "",
-            "collection-number": "",
-            "volume": "",
-            "number-of-volumes": "",
-            "edition": "",
-            "publisher-place": "Wien - Berlin",
-            "publisher": "Verlag für Literatur und Politik",
-            "issued": {
-                "date-parts": [
-                    [
-                        1931
-                    ]
-                ],
-                "literal": "1931"
-            },
-            "page": null,
-            "number-of-pages": "319",
-            "DOI": null,
-            "ISBN": "",
-            "ISSN": null,
-            "URL": "",
-            "accessed": {
-                "date-parts": [
-                    [
-                        ""
-                    ]
-                ],
-                "literal": ""
-            },
-            "language": "ger",
-            "author": [
-                {
-                    "given": "Frida",
-                    "family": "Rubiner"
-                }
-            ]
-        },
-        {
             "id": "HS9NZDBB",
             "citation-label": "rubiner_1919",
             "type": "book",
@@ -11093,6 +11056,49 @@
             "author": [
                 {
                     "given": "Ludwig",
+                    "family": "Rubiner"
+                }
+            ]
+        },
+        {
+            "id": "8NICACJM",
+            "citation-label": "rubiner_1931",
+            "type": "book",
+            "title": "Der grosse Strom. Eine unromantische Wolgafahrt",
+            "container-title": null,
+            "collection-title": "",
+            "collection-number": "",
+            "volume": "",
+            "number-of-volumes": "",
+            "edition": "",
+            "publisher-place": "Wien - Berlin",
+            "publisher": "Verlag für Literatur und Politik",
+            "issued": {
+                "date-parts": [
+                    [
+                        1931
+                    ]
+                ],
+                "literal": "1931"
+            },
+            "page": null,
+            "number-of-pages": "319",
+            "DOI": null,
+            "ISBN": "",
+            "ISSN": null,
+            "URL": "",
+            "accessed": {
+                "date-parts": [
+                    [
+                        ""
+                    ]
+                ],
+                "literal": ""
+            },
+            "language": "ger",
+            "author": [
+                {
+                    "given": "Frida",
                     "family": "Rubiner"
                 }
             ]
@@ -12056,7 +12062,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/stalin-lenin-und-der-leninismus",
             "accessed": {
                 "date-parts": [
                     [
@@ -13155,7 +13161,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "http://nbn-resolving.de/urn:nbn:de:bsz:14-db-id4954784584",
             "accessed": {
                 "date-parts": [
                     [
@@ -13499,7 +13505,7 @@
             "DOI": null,
             "ISBN": "",
             "ISSN": null,
-            "URL": "",
+            "URL": "https://archive.org/details/wells-die-geschichte-unserer-welt",
             "accessed": {
                 "date-parts": [
                     [
