@@ -12,7 +12,7 @@ use Vnn\WpApiClient\WpClient;
 
 class HistoryController extends BaseController
 {
-    var $siteStructure = [
+    protected $siteStructure = [
         '1930-1933' => 'Historischer Kontext',
         'buecherverbrennungen-1933' => 'Bücherverbrennungen 1933',
         'literaturpolitische-motive' => 'Literaturpolitische Motive',

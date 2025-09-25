@@ -8,7 +8,7 @@ namespace App\Entity;
  */
 abstract class SchemaOrg
 {
-    static function formatDateIncomplete($dateStr)
+    public static function formatDateIncomplete($dateStr)
     {
         if (preg_match('/^\d{4}$/', $dateStr)) {
             $dateStr .= '-00-00';
@@ -23,7 +23,7 @@ abstract class SchemaOrg
         return $dateStr;
     }
 
-    static function stripAt($name)
+    public static function stripAt($name)
     {
         return preg_replace('/(\s+)@/', '\1', $name);
     }
