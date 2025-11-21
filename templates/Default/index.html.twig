@@ -7,9 +7,11 @@
             <p>
                 90 Jahre nach den Bücherverbrennungen im nationalsozialistischen Deutschland lassen wir in einer umfassend überarbeiteten Neuauflage des Projekts <a href="{{ path('home') }}">www.verbrannte-buecher.de</a> am <a href="https://www.mmz-potsdam.de/" target="_blank">Moses Mendelssohn Zentrum für europäisch-jüdische Studien</a> in Potsdam die Bücher in digitaler Form wieder auferstehen.
             </p>
+            {% if digitized is not empty %}
             <p>
-                Aktuell finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von 28 gemeinfreien Büchern aus der <a href="{{ path('library') }}">Liste über 316 Schriften</a>, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird laufend ergänzt.
+                Aktuell finden Sie im Herzstück dieser Website, der <a href="#digital-library">digitalen Bibliothek</a>, eine Auswahl von {{ digitized|length }} gemeinfreien Büchern aus der <a href="{{ path('library') }}">Liste über 316 Schriften</a>, die gemeinsam mit einer <a href="{{ path('about-project') }}#advisory-board">Expert:innenkommission</a> zusammengestellt wurde. Diese Auswahl wird laufend ergänzt.
             </p>
+            {% endif %}
         </div><!-- .p-5 -->
     </div>
     <div class="jumbotron">
