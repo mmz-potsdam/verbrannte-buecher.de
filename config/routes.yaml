@@ -1,4 +1,16 @@
+# yaml-language-server: $schema=../vendor/symfony/routing/Loader/schema/routing.schema.json
+
+# This file is the entry point to configure the routes of your app.
+# Methods with the #[Route] attribute are automatically imported.
+# See also https://symfony.com/doc/current/routing.html
+
+# To list all registered routes, run the following command:
+#   bin/console debug:router
 controllers:
+    # resource: routing.controllers
+    # as described in https://symfony.com/blog/new-in-symfony-7-4-attribute-improvements#route-attribute-auto-registration
+    # doesn't seem to work yet gjuric/i18n-routing-bundle
+    # therefore keep as
     resource:
         path: ../src/Controller/
         namespace: App\Controller
@@ -13,7 +25,7 @@ app_logout:
 'person-index':
     path: /autor_in
     controller: TeiEditionBundle\Controller\PersonController::indexAction
-    
+
 'person-by-gnd':
     path: /autor_in/gnd/{gnd}
     controller: TeiEditionBundle\Controller\PersonController::detailAction
@@ -49,7 +61,7 @@ app_logout:
     controller: TeiEditionBundle\Controller\SourceController::sourceViewerAction
     requirements:
         uid: 'source\-\d+'
- 
+
 source:
     path: /bibliothek/{uid}
     controller: TeiEditionBundle\Controller\SourceController::sourceViewerAction
