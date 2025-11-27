@@ -94,21 +94,21 @@
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
-        "symfony/dotenv": "7.3.*",
-        "symfony/flex": "^1.17|^2",
-        "symfony/form": "7.3.*",
-        "symfony/http-client": "7.3.*",
-        "symfony/runtime": "7.3.*",
-        "symfony/security-bundle": "7.3.*",
+        "symfony/dotenv": "7.4.*",
+        "symfony/flex": "^2",
+        "symfony/form": "7.4.*",
+        "symfony/http-client": "7.4.*",
+        "symfony/runtime": "7.4.*",
+        "symfony/security-bundle": "7.4.*",
         "vnn/wordpress-rest-api-client": "dev-use_rest_route"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.70",
         "phpstan/phpstan": "^2.1",
-        "symfony/debug-bundle": "7.3.*",
+        "symfony/debug-bundle": "7.4.*",
         "symfony/maker-bundle": "^1.43",
-        "symfony/stopwatch": "7.3.*",
-        "symfony/web-profiler-bundle": "7.3.*"
+        "symfony/stopwatch": "7.4.*",
+        "symfony/web-profiler-bundle": "7.4.*"
     },
     "autoload": {
         "psr-4": {
@@ -148,7 +148,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.3.*"
+            "require": "7.4.*"
         }
     }
 }
