@@ -130,7 +130,7 @@ class Builder
 
 
         // attempt to set the current item for hierarchical entries
-        $currentRoute = $this->requestStack->getCurrentRequest()->get('_route');
+        $currentRoute = $this->requestStack->getCurrentRequest()->attributes->get('_route');
 
         if (!is_null($currentRoute)) {
             if (preg_match('/^(history|about|person)\-/', $currentRoute, $matches)) {
