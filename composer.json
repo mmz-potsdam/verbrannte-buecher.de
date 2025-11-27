@@ -57,10 +57,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/JMSTranslationBundle"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/burki/OaiPmh"
         },
         {
@@ -94,7 +90,7 @@
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-attributes",
-        "jms/translation-bundle": "dev-master as 2.3",
+        "jms/translation-bundle": "^2.6",
         "presta/sitemap-bundle": "^4.1",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
