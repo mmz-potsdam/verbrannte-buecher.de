@@ -165,7 +165,7 @@ Generate Facsimile from PDF
 ---------------------------
     mkdir data/img/source-00001
     # -scene 1 for starting at f0001.jpg
-    convert  -limit memory 100MB -limit map 100MB -density 300 public/viewer/source-00001/source-00001.pdf -quality 95 -scene 1 data/img/source-00001/f%04d.jpg
+    magick  -limit memory 100MB -limit map 100MB -density 300 public/viewer/source-00001/source-00001.pdf -quality 95 -colorspace sRGB -scene 1 data/img/source-00001/f%04d.jpg
 
 Updating Zotero Bibliography
 ----------------------------
