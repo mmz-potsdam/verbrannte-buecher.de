@@ -6,7 +6,7 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Cocur\Slugify\SlugifyInterface;
 use Doctrine\ORM\EntityManagerInterface;
@@ -19,7 +19,7 @@ class LibraryController extends BaseController
         EntityManagerInterface $entityManager,
         UrlGeneratorInterface $urlGenerator,
         SlugifyInterface $slugify
-    ) {
+    ): Response {
         $digitized = $this->buildDigitized($request, $entityManager);
         $sourcesByCitationLabel = [];
         foreach ($digitized as $source) {

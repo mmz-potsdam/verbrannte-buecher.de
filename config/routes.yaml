@@ -7,14 +7,7 @@
 # To list all registered routes, run the following command:
 #   bin/console debug:router
 controllers:
-    # resource: routing.controllers
-    # as described in https://symfony.com/blog/new-in-symfony-7-4-attribute-improvements#route-attribute-auto-registration
-    # doesn't seem to work yet gjuric/i18n-routing-bundle
-    # therefore keep as
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+    resource: routing.controllers
 
 # logout
 app_logout:

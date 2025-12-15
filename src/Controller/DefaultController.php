@@ -6,7 +6,7 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 use Doctrine\ORM\EntityManagerInterface;
 use Vnn\WpApiClient\WpClient;
 
@@ -17,7 +17,7 @@ class DefaultController extends BaseController
         Request $request,
         WpClient $wpClient,
         EntityManagerInterface $entityManager
-    ) {
+    ): Response {
         $events = $this->buildEvents($wpClient, 4);
 
         $digitized = $this->buildDigitized($request, $entityManager);
@@ -29,19 +29,19 @@ class DefaultController extends BaseController
     }
 
     #[Route(path: '/ueber/projekt', name: 'about-project', options: ['sitemap' => true])]
-    public function aboutTeamAction(Request $request)
+    public function aboutTeamAction(Request $request): Response
     {
         return $this->render('Default/about-project.html.twig');
     }
 
     #[Route(path: '/ueber/initiativen', name: 'about-related', options: ['sitemap' => true])]
-    public function aboutRelatedAction(Request $request)
+    public function aboutRelatedAction(Request $request): Response
     {
         return $this->render('Default/about-related.html.twig');
     }
 
     #[Route(path: '/impressum', name: 'imprint')]
-    public function imprintAction(Request $request)
+    public function imprintAction(Request $request): Response
     {
         return $this->render('Default/imprint.html.twig');
     }
