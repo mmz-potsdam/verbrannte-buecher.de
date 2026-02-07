@@ -68,6 +68,10 @@
             "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/burki/FeedBundle"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "citation-style-language/styles-distribution",
@@ -86,6 +90,7 @@
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
+        "eko/feedbundle": "dev-symfony-8 as 2.3",
         "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
