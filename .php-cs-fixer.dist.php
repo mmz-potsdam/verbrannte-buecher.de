@@ -3,9 +3,13 @@
 $finder = (new PhpCsFixer\Finder())
     ->in(__DIR__)
     ->exclude([
-        'vendor',
-        'config',
         'var',
+        'vendor',
+    ])
+    ->notPath([
+        'config/bundles.php',
+        'config/preload.php',
+        'config/reference.php',
     ])
 ;
 
