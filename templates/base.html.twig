@@ -31,6 +31,13 @@
             <script src="{{ app.request.basepath }}/vendor/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
         {% endblock %}
         {% block head %}{% endblock %}
+
+        {#% set frankenphpHotReload = app.request.server.get('FRANKENPHP_HOT_RELOAD') %}
+        {% if frankenphpHotReload %}
+        <meta name="frankenphp-hot-reload:url" content="{{ frankenphpHotReload }}">
+        <script src="https://cdn.jsdelivr.net/npm/idiomorph"></script>
+        <script src="https://cdn.jsdelivr.net/npm/frankenphp-hot-reload/+esm" type="module"></script>
+        {% endif %#}
     </head>
     <body role="document" class="d-flex flex-column min-vh-100 route-{{ app.request.attributes.get('_route') | replace({'_' : '-'}) }}{% if document_class is defined %} {{ document_class }}{% endif %}">
         <nav class="navbar navbar-expand-lg navbar-dark">
