@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a0a1c4a8912c254c72f75b66ebfaef9",
+    "content-hash": "7de004a3f304aa0430574a2d401009e9",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -3091,7 +3091,7 @@
         },
         {
             "name": "jms/translation-bundle",
-            "version": "2.x-dev",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
@@ -3171,7 +3171,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/JMSTranslationBundle/issues",
-                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.x"
+                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.7.0"
             },
             "time": "2025-12-20T19:44:43+00:00"
         },
@@ -13895,12 +13895,6 @@
             "alias_normalized": "1.0.0.0"
         },
         {
-            "package": "jms/translation-bundle",
-            "version": "2.9999999.9999999.9999999-dev",
-            "alias": "2.6",
-            "alias_normalized": "2.6.0.0"
-        },
-        {
             "package": "square-bit/oai-pmh",
             "version": "9999999-dev",
             "alias": "0.3",
@@ -13915,7 +13909,6 @@
         "gmo/iso-639": 20,
         "hedii/zotero-api": 20,
         "igdj/tei-edition-bundle": 20,
-        "jms/translation-bundle": 20,
         "square-bit/oai-pmh": 20,
         "vnn/wordpress-rest-api-client": 20
     },
