@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7de004a3f304aa0430574a2d401009e9",
+    "content-hash": "6c75a6accef2361f20a77287e6be890b",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -120,33 +120,31 @@
         },
         {
             "name": "boppy/solr-bundle",
-            "version": "dev-attributes",
+            "version": "dev-attributes-only",
             "target-dir": "FS/SolrBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/SolrBundle.git",
-                "reference": "02a91ff865a9ecfff025baee83400c3f10949660"
+                "reference": "9037d66bbbc470284790c3624ab489dbcd2158bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/SolrBundle/zipball/02a91ff865a9ecfff025baee83400c3f10949660",
-                "reference": "02a91ff865a9ecfff025baee83400c3f10949660",
+                "url": "https://api.github.com/repos/burki/SolrBundle/zipball/9037d66bbbc470284790c3624ab489dbcd2158bc",
+                "reference": "9037d66bbbc470284790c3624ab489dbcd2158bc",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "^1.7",
-                "minimalcode/search": "^1.0",
+                "burki/minimalcode-search": "^1.0",
                 "myclabs/deep-copy": "^1.6",
                 "php": "^8.1",
                 "ramsey/uuid": "^3.5|^4.1",
                 "solarium/solarium": "^6.4",
-                "symfony/config": "^5.4|^6.4|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.4|^7.0",
-                "symfony/doctrine-bridge": "^5.4|^6.4|^7.0",
-                "symfony/http-kernel": "^5.4|^6.4|^7.0"
+                "symfony/config": "^5.4|^6.4|^7.0|^8.0",
+                "symfony/dependency-injection": "^5.4|^6.4|^7.0|^8.0",
+                "symfony/doctrine-bridge": "^5.4|^6.4|^7.0|^8.0",
+                "symfony/http-kernel": "^5.4|^6.4|^7.0|^8.0"
             },
             "require-dev": {
-                "doctrine/mongodb-odm-bundle": "^4.2",
                 "doctrine/orm": "^2.9",
                 "phpunit/phpunit": "^9.0"
             },
@@ -159,16 +157,11 @@
                     "FS\\SolrBundle": ""
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Doctrine\\ODM\\MongoDB\\": "vendor/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB/"
-                }
-            },
             "license": [
                 "MIT"
             ],
             "description": "Forked from floriansemm/solr-bundle - Symfony >= 5.4 Solr integration bundle",
-            "homepage": "https://github.com/boppy/SolrBundle",
+            "homepage": "https://github.com/burki/SolrBundle",
             "keywords": [
                 "index",
                 "search",
@@ -176,9 +169,9 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/burki/SolrBundle/tree/attributes"
+                "source": "https://github.com/burki/SolrBundle/tree/attributes-only"
             },
-            "time": "2025-10-17T15:30:23+00:00"
+            "time": "2026-05-07T14:20:15+00:00"
         },
         {
             "name": "brick/math",
@@ -241,27 +234,78 @@
             "time": "2026-02-10T14:33:43+00:00"
         },
         {
-            "name": "carbonphp/carbon-doctrine-types",
-            "version": "2.1.0",
+            "name": "burki/minimalcode-search",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/CarbonPHP/carbon-doctrine-types.git",
-                "reference": "99f76ffa36cce3b70a4a6abce41dba15ca2e84cb"
+                "url": "https://github.com/burki/minimalcode-search.git",
+                "reference": "6ae30ae6115af4d81934c2e92fbb18e0bef9d3be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon-doctrine-types/zipball/99f76ffa36cce3b70a4a6abce41dba15ca2e84cb",
-                "reference": "99f76ffa36cce3b70a4a6abce41dba15ca2e84cb",
+                "url": "https://api.github.com/repos/burki/minimalcode-search/zipball/6ae30ae6115af4d81934c2e92fbb18e0bef9d3be",
+                "reference": "6ae30ae6115af4d81934c2e92fbb18e0bef9d3be",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
-            },
-            "conflict": {
-                "doctrine/dbal": "<3.7.0 || >=4.0.0"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "doctrine/dbal": "^3.7.0",
+                "phpunit/phpunit": "8.5.*"
+            },
+            "suggest": {
+                "solarium/solarium": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Minimalcode\\Search\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabio Piro",
+                    "email": "pirofabio@gmail.com"
+                }
+            ],
+            "description": "Fluent Lucene-Sorl Query Builder for PHP, forked from minimalcode/search",
+            "keywords": [
+                "builder",
+                "lucene",
+                "query",
+                "solr"
+            ],
+            "support": {
+                "source": "https://github.com/burki/minimalcode-search/tree/v1.0.2"
+            },
+            "time": "2026-04-10T16:27:36+00:00"
+        },
+        {
+            "name": "carbonphp/carbon-doctrine-types",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CarbonPHP/carbon-doctrine-types.git",
+                "reference": "18ba5ddfec8976260ead6e866180bd5d2f71aa1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon-doctrine-types/zipball/18ba5ddfec8976260ead6e866180bd5d2f71aa1d",
+                "reference": "18ba5ddfec8976260ead6e866180bd5d2f71aa1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "conflict": {
+                "doctrine/dbal": "<4.0.0 || >=5.0.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^4.0.0",
                 "nesbot/carbon": "^2.71.0 || ^3.0.0",
                 "phpunit/phpunit": "^10.3"
             },
@@ -291,7 +335,7 @@
             ],
             "support": {
                 "issues": "https://github.com/CarbonPHP/carbon-doctrine-types/issues",
-                "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/2.1.0"
+                "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/3.2.0"
             },
             "funding": [
                 {
@@ -307,7 +351,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-11T17:09:12+00:00"
+            "time": "2024-02-09T16:56:22+00:00"
         },
         {
             "name": "citation-style-language/locales",
@@ -467,177 +511,6 @@
             "time": "2025-11-27T18:57:36+00:00"
         },
         {
-            "name": "doctrine/annotations",
-            "version": "1.14.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/annotations.git",
-                "reference": "253dca476f70808a5aeed3a47cc2cc88c5cab915"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/253dca476f70808a5aeed3a47cc2cc88c5cab915",
-                "reference": "253dca476f70808a5aeed3a47cc2cc88c5cab915",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/lexer": "^1 || ^2",
-                "ext-tokenizer": "*",
-                "php": "^7.1 || ^8.0",
-                "psr/cache": "^1 || ^2 || ^3"
-            },
-            "require-dev": {
-                "doctrine/cache": "^1.11 || ^2.0",
-                "doctrine/coding-standard": "^9 || ^12",
-                "phpstan/phpstan": "~1.4.10 || ^1.10.28",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-                "symfony/cache": "^4.4 || ^5.4 || ^6.4 || ^7",
-                "vimeo/psalm": "^4.30 || ^5.14"
-            },
-            "suggest": {
-                "php": "PHP 8.0 or higher comes with attributes, a native replacement for annotations"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "Docblock Annotations Parser",
-            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
-            "keywords": [
-                "annotations",
-                "docblock",
-                "parser"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.14.4"
-            },
-            "abandoned": true,
-            "time": "2024-09-05T10:15:52+00:00"
-        },
-        {
-            "name": "doctrine/cache",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/cache.git",
-                "reference": "1ca8f21980e770095a31456042471a57bc4c68fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/1ca8f21980e770095a31456042471a57bc4c68fb",
-                "reference": "1ca8f21980e770095a31456042471a57bc4c68fb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~7.1 || ^8.0"
-            },
-            "conflict": {
-                "doctrine/common": ">2.2,<2.4"
-            },
-            "require-dev": {
-                "cache/integration-tests": "dev-master",
-                "doctrine/coding-standard": "^9",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-                "psr/cache": "^1.0 || ^2.0 || ^3.0",
-                "symfony/cache": "^4.4 || ^5.4 || ^6",
-                "symfony/var-exporter": "^4.4 || ^5.4 || ^6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "PHP Doctrine Cache library is a popular cache implementation that supports many different drivers such as redis, memcache, apc, mongodb and others.",
-            "homepage": "https://www.doctrine-project.org/projects/cache.html",
-            "keywords": [
-                "abstraction",
-                "apcu",
-                "cache",
-                "caching",
-                "couchdb",
-                "memcached",
-                "php",
-                "redis",
-                "xcache"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/2.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
-                    "type": "tidelift"
-                }
-            ],
-            "abandoned": true,
-            "time": "2022-05-20T20:07:39+00:00"
-        },
-        {
             "name": "doctrine/collections",
             "version": "2.6.0",
             "source": {
@@ -724,140 +597,41 @@
             "time": "2026-01-15T10:01:58+00:00"
         },
         {
-            "name": "doctrine/common",
-            "version": "3.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/common.git",
-                "reference": "d9ea4a54ca2586db781f0265d36bea731ac66ec5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/d9ea4a54ca2586db781f0265d36bea731ac66ec5",
-                "reference": "d9ea4a54ca2586db781f0265d36bea731ac66ec5",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/persistence": "^2.0 || ^3.0 || ^4.0",
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^9.0 || ^10.0",
-                "doctrine/collections": "^1",
-                "phpstan/phpstan": "^1.4.1",
-                "phpstan/phpstan-phpunit": "^1",
-                "phpunit/phpunit": "^7.5.20 || ^8.5 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.0",
-                "symfony/phpunit-bridge": "^6.1",
-                "vimeo/psalm": "^4.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                },
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                }
-            ],
-            "description": "PHP Doctrine Common project is a library that provides additional functionality that other Doctrine projects depend on such as better reflection support, proxies and much more.",
-            "homepage": "https://www.doctrine-project.org/projects/common.html",
-            "keywords": [
-                "common",
-                "doctrine",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/common/issues",
-                "source": "https://github.com/doctrine/common/tree/3.5.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcommon",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2025-01-01T22:12:03+00:00"
-        },
-        {
             "name": "doctrine/dbal",
-            "version": "3.10.5",
+            "version": "4.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "95d84866bf3c04b2ddca1df7c049714660959aef"
+                "reference": "61e730f1658814821a85f2402c945f3883407dec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/95d84866bf3c04b2ddca1df7c049714660959aef",
-                "reference": "95d84866bf3c04b2ddca1df7c049714660959aef",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/61e730f1658814821a85f2402c945f3883407dec",
+                "reference": "61e730f1658814821a85f2402c945f3883407dec",
                 "shasum": ""
             },
             "require": {
-                "composer-runtime-api": "^2",
-                "doctrine/deprecations": "^0.5.3|^1",
-                "doctrine/event-manager": "^1|^2",
-                "php": "^7.4 || ^8.0",
+                "doctrine/deprecations": "^1.1.5",
+                "php": "^8.2",
                 "psr/cache": "^1|^2|^3",
                 "psr/log": "^1|^2|^3"
             },
-            "conflict": {
-                "doctrine/cache": "< 1.11"
-            },
             "require-dev": {
-                "doctrine/cache": "^1.11|^2.0",
                 "doctrine/coding-standard": "14.0.0",
                 "fig/log-test": "^1",
-                "jetbrains/phpstorm-stubs": "2023.1",
+                "jetbrains/phpstorm-stubs": "2023.2",
                 "phpstan/phpstan": "2.1.30",
+                "phpstan/phpstan-phpunit": "2.0.7",
                 "phpstan/phpstan-strict-rules": "^2",
-                "phpunit/phpunit": "9.6.34",
+                "phpunit/phpunit": "11.5.50",
                 "slevomat/coding-standard": "8.27.1",
                 "squizlabs/php_codesniffer": "4.0.1",
-                "symfony/cache": "^5.4|^6.0|^7.0|^8.0",
-                "symfony/console": "^4.4|^5.4|^6.0|^7.0|^8.0"
+                "symfony/cache": "^6.3.8|^7.0|^8.0",
+                "symfony/console": "^5.4|^6.3|^7.0|^8.0"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
-            "bin": [
-                "bin/doctrine-dbal"
-            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -910,7 +684,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.10.5"
+                "source": "https://github.com/doctrine/dbal/tree/4.4.3"
             },
             "funding": [
                 {
@@ -926,7 +700,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-24T08:03:57+00:00"
+            "time": "2026-03-20T08:52:12+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1350,28 +1124,27 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "2.1.1",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6"
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6",
-                "reference": "861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
                 "shasum": ""
             },
             "require": {
-                "doctrine/deprecations": "^1.0",
-                "php": "^7.1 || ^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12",
-                "phpstan/phpstan": "^1.3",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6",
+                "doctrine/coding-standard": "^12",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5",
                 "psalm/plugin-phpunit": "^0.18.3",
-                "vimeo/psalm": "^4.11 || ^5.21"
+                "vimeo/psalm": "^5.21"
             },
             "type": "library",
             "autoload": {
@@ -1408,7 +1181,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/2.1.1"
+                "source": "https://github.com/doctrine/lexer/tree/3.0.1"
             },
             "funding": [
                 {
@@ -1424,65 +1197,52 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-05T11:35:39+00:00"
+            "time": "2024-02-05T11:56:58+00:00"
         },
         {
             "name": "doctrine/orm",
-            "version": "2.20.12",
+            "version": "3.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "5fc5b1991d6a4301cbab8ee4d47e90401235be09"
+                "reference": "156f3b5a984e7eaa72d440bb6de1d3b6f8d2d6fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/5fc5b1991d6a4301cbab8ee4d47e90401235be09",
-                "reference": "5fc5b1991d6a4301cbab8ee4d47e90401235be09",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/156f3b5a984e7eaa72d440bb6de1d3b6f8d2d6fd",
+                "reference": "156f3b5a984e7eaa72d440bb6de1d3b6f8d2d6fd",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2",
-                "doctrine/cache": "^1.12.1 || ^2.1.1",
-                "doctrine/collections": "^1.5 || ^2.1",
-                "doctrine/common": "^3.0.3",
-                "doctrine/dbal": "^2.13.1 || ^3.2",
+                "doctrine/collections": "^2.2",
+                "doctrine/dbal": "^3.8.2 || ^4",
                 "doctrine/deprecations": "^0.5.3 || ^1",
                 "doctrine/event-manager": "^1.2 || ^2",
                 "doctrine/inflector": "^1.4 || ^2.0",
                 "doctrine/instantiator": "^1.3 || ^2",
-                "doctrine/lexer": "^2 || ^3",
-                "doctrine/persistence": "^2.4 || ^3",
+                "doctrine/lexer": "^3",
+                "doctrine/persistence": "^3.3.1 || ^4",
                 "ext-ctype": "*",
-                "php": "^7.1 || ^8.0",
+                "php": "^8.1",
                 "psr/cache": "^1 || ^2 || ^3",
-                "symfony/console": "^4.2 || ^5.0 || ^6.0 || ^7.0 || ^8.0",
-                "symfony/polyfill-php72": "^1.23",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "conflict": {
-                "doctrine/annotations": "<1.13 || >= 3.0"
+                "symfony/console": "^5.4 || ^6.0 || ^7.0 || ^8.0",
+                "symfony/var-exporter": "^6.3.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.13 || ^2",
-                "doctrine/coding-standard": "^9.0.2 || ^14.0",
-                "phpbench/phpbench": "^0.16.10 || ^1.0",
-                "phpstan/extension-installer": "~1.1.0 || ^1.4",
-                "phpstan/phpstan": "~1.4.10 || 2.1.23",
-                "phpstan/phpstan-deprecation-rules": "^1 || ^2",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6",
+                "doctrine/coding-standard": "^14.0",
+                "phpbench/phpbench": "^1.0",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "2.1.23",
+                "phpstan/phpstan-deprecation-rules": "^2",
+                "phpunit/phpunit": "^10.5.0 || ^11.5",
                 "psr/log": "^1 || ^2 || ^3",
-                "symfony/cache": "^4.4 || ^5.4 || ^6.4 || ^7.0",
-                "symfony/var-exporter": "^4.4 || ^5.4 || ^6.2 || ^7.0",
-                "symfony/yaml": "^3.4 || ^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0"
+                "symfony/cache": "^5.4 || ^6.2 || ^7.0 || ^8.0"
             },
             "suggest": {
                 "ext-dom": "Provides support for XSD validation for XML mapping files",
-                "symfony/cache": "Provides cache support for Setup Tool with doctrine/cache 2.0",
-                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
+                "symfony/cache": "Provides cache support for Setup Tool with doctrine/cache 2.0"
             },
-            "bin": [
-                "bin/doctrine"
-            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1523,40 +1283,38 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.20.12"
+                "source": "https://github.com/doctrine/orm/tree/3.6.4"
             },
-            "time": "2026-05-08T11:18:45+00:00"
+            "time": "2026-05-07T07:04:34+00:00"
         },
         {
             "name": "doctrine/persistence",
-            "version": "3.4.4",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-                "reference": "5785dc79a0553ba41b0dda8a7ee792053e6186c8"
+                "reference": "49ab73e0d3e2ac8d1f5ecda3dd8acd5503781e8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/persistence/zipball/5785dc79a0553ba41b0dda8a7ee792053e6186c8",
-                "reference": "5785dc79a0553ba41b0dda8a7ee792053e6186c8",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/49ab73e0d3e2ac8d1f5ecda3dd8acd5503781e8b",
+                "reference": "49ab73e0d3e2ac8d1f5ecda3dd8acd5503781e8b",
                 "shasum": ""
             },
             "require": {
+                "doctrine/deprecations": "^1",
                 "doctrine/event-manager": "^1 || ^2",
-                "php": "^7.2 || ^8.0",
+                "php": "^8.1",
                 "psr/cache": "^1.0 || ^2.0 || ^3.0"
             },
-            "conflict": {
-                "doctrine/common": "<2.10"
-            },
             "require-dev": {
-                "doctrine/coding-standard": "^12 || ^14",
-                "doctrine/common": "^3.0",
-                "phpstan/phpstan": "^1 || 2.1.30",
-                "phpstan/phpstan-phpunit": "^1 || ^2",
-                "phpstan/phpstan-strict-rules": "^1 || ^2",
-                "phpunit/phpunit": "^8.5.38 || ^9.5",
-                "symfony/cache": "^4.4 || ^5.4 || ^6.0 || ^7.0"
+                "doctrine/coding-standard": "^14",
+                "phpstan/phpstan": "2.1.30",
+                "phpstan/phpstan-phpunit": "^2",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "^10.5.58 || ^12",
+                "symfony/cache": "^4.4 || ^5.4 || ^6.0 || ^7.0 || ^8.0",
+                "symfony/finder": "^4.4 || ^5.4 || ^6.0 || ^7.0 || ^8.0"
             },
             "type": "library",
             "autoload": {
@@ -1605,7 +1363,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/persistence/issues",
-                "source": "https://github.com/doctrine/persistence/tree/3.4.4"
+                "source": "https://github.com/doctrine/persistence/tree/4.2.0"
             },
             "funding": [
                 {
@@ -1621,7 +1379,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-04T19:40:43+00:00"
+            "time": "2026-04-26T12:12:52+00:00"
         },
         {
             "name": "doctrine/sql-formatter",
@@ -2665,25 +2423,24 @@
         },
         {
             "name": "igdj/tei-edition-bundle",
-            "version": "dev-attributes",
+            "version": "dev-attributes-only",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "531e9188b454351653d1ed4e524a70385a7f0560"
+                "reference": "bd7ecd2ac6890dfde54531b661336064ec494ea0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/531e9188b454351653d1ed4e524a70385a7f0560",
-                "reference": "531e9188b454351653d1ed4e524a70385a7f0560",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/bd7ecd2ac6890dfde54531b661336064ec494ea0",
+                "reference": "bd7ecd2ac6890dfde54531b661336064ec494ea0",
                 "shasum": ""
             },
             "require": {
                 "beberlei/doctrineextensions": "^1.5",
-                "boppy/solr-bundle": "dev-attributes",
-                "cocur/slugify": "^4.6",
-                "doctrine/annotations": "^1.4|^2.0",
-                "doctrine/doctrine-bundle": "^2.13",
-                "doctrine/orm": "^2.19",
+                "boppy/solr-bundle": "dev-attributes-only",
+                "cocur/slugify": "^4.7",
+                "doctrine/doctrine-bundle": "^2.18",
+                "doctrine/orm": "^3.6",
                 "eko/feedbundle": "^2.2",
                 "ext-curl": "*",
                 "fale/isbn": "^3.1",
@@ -2694,16 +2451,16 @@
                 "guzzlehttp/guzzle": "^7.10",
                 "html2text/html2text": "^4.3",
                 "igdj/lod-service": "@dev",
-                "jms/translation-bundle": "^2.6",
+                "jms/translation-bundle": "^2.7",
                 "knplabs/knp-menu-bundle": "^3.7",
                 "knplabs/knp-paginator-bundle": "^6.10",
-                "laminas/laminas-diactoros": "^3.7",
+                "laminas/laminas-diactoros": "^3.8",
                 "liip/url-auto-converter-bundle": "dev-master",
-                "mpdf/mpdf": "^8.2",
+                "mpdf/mpdf": "^8.3",
                 "nategood/httpful": "^1.0",
-                "oro/doctrine-extensions": "^2.0",
+                "oro/doctrine-extensions": "^3.0",
                 "php": "^8.2",
-                "sabre/xml": "^4.0",
+                "sabre/xml": "^4.1",
                 "scienta/doctrine-json-functions": "^6.5",
                 "seboettg/citeproc-php": "^2.6",
                 "servo/fluidxml": "^2.0",
@@ -2754,9 +2511,9 @@
             ],
             "description": "Symfony bundle to provide TEI edition functionality.",
             "support": {
-                "source": "https://github.com/burki/tei-edition-bundle/tree/attributes"
+                "source": "https://github.com/burki/tei-edition-bundle/tree/attributes-only"
             },
-            "time": "2026-03-26T05:25:54+00:00"
+            "time": "2026-05-08T14:58:25+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -3962,59 +3719,6 @@
             "time": "2025-07-25T09:04:22+00:00"
         },
         {
-            "name": "minimalcode/search",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/minimalcode-org/search.git",
-                "reference": "7cd5c61e4ae8c29e3043297e2368bd479d115b3a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/minimalcode-org/search/zipball/7cd5c61e4ae8c29e3043297e2368bd479d115b3a",
-                "reference": "7cd5c61e4ae8c29e3043297e2368bd479d115b3a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.8.*"
-            },
-            "suggest": {
-                "solarium/solarium": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Minimalcode\\Search\\": "src/Minimalcode/Search/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Fabio Piro",
-                    "email": "pirofabio@gmail.com"
-                }
-            ],
-            "description": "Fluent Lucene-Sorl Query Builder for PHP",
-            "homepage": "http://minimalcode.org",
-            "keywords": [
-                "builder",
-                "lucene",
-                "query",
-                "solr"
-            ],
-            "support": {
-                "issues": "https://github.com/minimalcode-org/search/issues",
-                "source": "https://github.com/minimalcode-org/search/tree/master"
-            },
-            "time": "2017-02-05T00:00:15+00:00"
-        },
-        {
             "name": "ml/iri",
             "version": "1.1.4",
             "target-dir": "ML/IRI",
@@ -4727,31 +4431,29 @@
         },
         {
             "name": "oro/doctrine-extensions",
-            "version": "2.0.5",
+            "version": "3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oroinc/doctrine-extensions.git",
-                "reference": "98dea7afc2637a6f1434b94a90d3d807155fe34e"
+                "reference": "eba6790c8f1e7d07de4888b3252670e0a37cde4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oroinc/doctrine-extensions/zipball/98dea7afc2637a6f1434b94a90d3d807155fe34e",
-                "reference": "98dea7afc2637a6f1434b94a90d3d807155fe34e",
+                "url": "https://api.github.com/repos/oroinc/doctrine-extensions/zipball/eba6790c8f1e7d07de4888b3252670e0a37cde4b",
+                "reference": "eba6790c8f1e7d07de4888b3252670e0a37cde4b",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^2.6|^3",
-                "doctrine/lexer": "^2|^3",
-                "doctrine/orm": "^2.6",
-                "php": ">=8.0"
+                "doctrine/orm": "^3.0",
+                "php": ">=8.1"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.0|^2.0",
-                "doctrine/data-fixtures": "^1.3",
-                "phpunit/phpunit": "9.*",
-                "squizlabs/php_codesniffer": "3.5.*",
-                "symfony/cache": "5.*",
-                "symfony/yaml": "5.*"
+                "doctrine/annotations": "^2.0",
+                "doctrine/data-fixtures": "^1.8",
+                "phpunit/phpunit": "~10",
+                "squizlabs/php_codesniffer": "3.9.*",
+                "symfony/cache": "^5 || ^6 || ^7",
+                "symfony/yaml": "^5 || ^6 || ^7"
             },
             "type": "library",
             "autoload": {
@@ -4783,9 +4485,9 @@
             ],
             "support": {
                 "issues": "https://github.com/oroinc/doctrine-extensions/issues",
-                "source": "https://github.com/oroinc/doctrine-extensions/tree/2.0.5"
+                "source": "https://github.com/oroinc/doctrine-extensions/tree/3.0"
             },
-            "time": "2024-11-20T13:22:34+00:00"
+            "time": "2025-02-14T18:44:04+00:00"
         },
         {
             "name": "paragonie/random_compat",
