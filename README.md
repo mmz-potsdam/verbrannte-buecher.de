@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of verbrannte-buecher.de
 
-    (C) 2023-2025 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
+    (C) 2023-2026 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
         Daniel Burckhardt
 
 
