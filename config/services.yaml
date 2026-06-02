@@ -25,6 +25,7 @@ parameters:
     app.public_dir: '%kernel.project_dir%/public'
     app.zotero.options:
         api-key: "%env(string:ZOTERO_API_KEY)%"
+        group-id: 4750799 # https://www.zotero.org/groups/4750799/b%C3%BCcherverbrennungen/library
     app.xsl_converter.saxonc_enable: "%env(bool:SAXONC_ENABLE)%"
     app.xsl_converter_adapter.arguments: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
     # imagemagick settings

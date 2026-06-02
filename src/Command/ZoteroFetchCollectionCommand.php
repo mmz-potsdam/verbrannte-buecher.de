@@ -5,12 +5,9 @@
 namespace App\Command;
 
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 class ZoteroFetchCollectionCommand extends Command
 {
@@ -44,8 +41,8 @@ class ZoteroFetchCollectionCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $api = $this->zoteroApiService->getInstance($groupId = '4750799');
-        // $groupId = $this->zoteroApiService->getGroupId(); if it is set in options
+        $groupId = $this->zoteroApiService->getGroupId(); // set in config/services.yaml
+        $api = $this->zoteroApiService->getInstance($groupId);
 
         $key = $input->getOption('secondary')
             ? $this->collections['secondary']
@@ -69,7 +66,7 @@ class ZoteroFetchCollectionCommand extends Command
                 return false;
             }
             */
-            return -1;
+            return Command::FAILURE;
         }
 
         $info = $response->getBody();
@@ -134,7 +131,7 @@ class ZoteroFetchCollectionCommand extends Command
             $res = true; // file_put_contents($fnameOut, $out);
 
             if (false !== $res) {
-                return 0;
+                return Command::SUCCESS;
             }
 
             $output->writeln(sprintf(
@@ -142,11 +139,11 @@ class ZoteroFetchCollectionCommand extends Command
                 $fnameOut
             ));
 
-            return -2;
+            return Command::FAILURE;
         }
 
         $output->writeln(sprintf('<info>Empty collection</info>'));
 
-        return -3;
+        return Command::FAILURE;
     }
 }
