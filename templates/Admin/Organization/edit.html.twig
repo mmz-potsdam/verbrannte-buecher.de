@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Organisation bearbeiten{% endblock %}
+
+{% block body %}
+
+    <h1>
+        <a href="{{ path('app_admin_organization_show', {'id': organization.id}) }}">
+            {{ organization.name -}}
+        </a> {{ include('Admin/Organization/_delete_form.html.twig') }}
+    </h1>
+
+    {{ include('Admin/Organization/_form.html.twig', {'button_label': 'Update'}) }}
+{% endblock %}

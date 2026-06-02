@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Organisation{% endblock %}
+
+{% block body %}
+    <h1>
+        {{ organization.name }}
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_organization_edit', {'id': organization.id}) }}">
+            bearbeiten
+        </a>
+        {{ include('Admin/Organization/_delete_form.html.twig') }}
+    </h1>
+
+    <dl>
+    {% if organization.url is not empty %}
+        <dt>{{ 'URL'|trans }}:</dt>
+        <dd>
+            <a href="{{ organization.url }}" target="_blank">{{ organization.url|prettifyurl }}</a>
+        </dd>
+    {% endif %}
+
+    {% if organization.description is defined and organization.description[app.request.locale] is defined %}
+    <p>{{ organization.description[app.request.locale]|converturls|nl2br  }}</p>
+    {% endif %}
+
+    </dl>
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_organization_index') }}">
+            Zurück zur Übersicht
+        </a>
+    </div>
+{% endblock %}

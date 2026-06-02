@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Person index{% endblock %}
+
+{% block body %}
+    <h1>Organisationen</h1>
+
+    <a class="btn btn-sm btn-light" href="{{ path('app_admin_organization_new') }}">
+        Neue Organisation hinzufügen
+    </a>
+
+    {% if results is not empty %}
+        <ul class="list-unstyled mt-2">
+        {% for organization in results %}
+            <li>
+                <a href="{{ path('app_admin_organization_show', {'id': organization.id}) }}">
+                    {{ organization.name }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info">Keine Organisationen gefunden</div>
+    {% endif %}
+{% endblock %}
