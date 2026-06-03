@@ -8,7 +8,6 @@ return [
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
     JMS\TranslationBundle\JMSTranslationBundle::class => ['all' => true],
-    JMS\I18nRoutingBundle\JMSI18nRoutingBundle::class => ['all' => true],
     Doctrine\Bundle\DoctrineBundle\DoctrineBundle::class => ['all' => true],
     FS\SolrBundle\FSSolrBundle::class => ['all' => true],
     TeiEditionBundle\TeiEditionBundle::class => ['all' => true],

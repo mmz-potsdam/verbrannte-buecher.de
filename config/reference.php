@@ -825,25 +825,27 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     convert_exception?: bool|Param, // Default: false
  *     remove_first_page_param?: bool|Param, // Default: false
  * }
- * @psalm-type JmsI18nRoutingConfig = array{
- *     default_locale?: scalar|Param|null,
- *     locales?: string|list<scalar|Param|null>,
- *     catalogue?: scalar|Param|null, // Default: "routes"
- *     strategy?: scalar|Param|null, // Default: "custom"
- *     prefix_with_locale?: bool|Param, // Default: false
- *     omit_prefix_when_default?: bool|Param, // Default: true
- *     hosts?: array<string, scalar|Param|null>,
- *     redirect_to_host?: bool|Param, // Default: true
- *     use_cookie?: bool|Param, // DEPRECATED! Please use: cookie.enabled // Default: true
- *     cookie?: array{
- *         enabled?: bool|Param, // Default: true
- *         name?: scalar|Param|null, // Default: "hl"
- *         lifetime?: scalar|Param|null, // Default: 31536000
- *         path?: scalar|Param|null, // Default: null
- *         domain?: scalar|Param|null, // Default: null
- *         secure?: bool|Param, // Default: false
- *         httponly?: bool|Param, // Default: false
+ * @psalm-type JmsTranslationConfig = array{
+ *     locales?: list<scalar|Param|null>,
+ *     dumper?: array{
+ *         add_date?: bool|Param, // Default: true
+ *         add_references?: bool|Param, // Default: true
  *     },
+ *     source_language?: scalar|Param|null, // Default: "en"
+ *     configs?: array<string, array{ // Default: []
+ *         extractors?: list<scalar|Param|null>,
+ *         dirs?: list<scalar|Param|null>,
+ *         excluded_dirs?: list<scalar|Param|null>,
+ *         excluded_names?: list<scalar|Param|null>,
+ *         external_translations_dirs?: list<scalar|Param|null>,
+ *         output_format?: scalar|Param|null,
+ *         default_output_format?: scalar|Param|null,
+ *         intl_icu?: scalar|Param|null, // Default: false
+ *         ignored_domains?: list<scalar|Param|null>,
+ *         domains?: list<scalar|Param|null>,
+ *         output_dir?: scalar|Param|null,
+ *         keep?: scalar|Param|null, // Default: false
+ *     }>,
  * }
  * @psalm-type DoctrineConfig = array{
  *     dbal?: array{
@@ -1546,7 +1548,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     liip_url_auto_converter?: LiipUrlAutoConverterConfig,
  *     stof_doctrine_extensions?: StofDoctrineExtensionsConfig,
  *     knp_paginator?: KnpPaginatorConfig,
- *     jms_i18n_routing?: JmsI18nRoutingConfig,
+ *     jms_translation?: JmsTranslationConfig,
  *     doctrine?: DoctrineConfig,
  *     fs_solr?: FsSolrConfig,
  *     eko_feed?: EkoFeedConfig,
@@ -1566,7 +1568,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         liip_url_auto_converter?: LiipUrlAutoConverterConfig,
  *         stof_doctrine_extensions?: StofDoctrineExtensionsConfig,
  *         knp_paginator?: KnpPaginatorConfig,
- *         jms_i18n_routing?: JmsI18nRoutingConfig,
+ *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
  *         eko_feed?: EkoFeedConfig,
@@ -1590,7 +1592,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         liip_url_auto_converter?: LiipUrlAutoConverterConfig,
  *         stof_doctrine_extensions?: StofDoctrineExtensionsConfig,
  *         knp_paginator?: KnpPaginatorConfig,
- *         jms_i18n_routing?: JmsI18nRoutingConfig,
+ *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
  *         eko_feed?: EkoFeedConfig,
@@ -1611,7 +1613,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         liip_url_auto_converter?: LiipUrlAutoConverterConfig,
  *         stof_doctrine_extensions?: StofDoctrineExtensionsConfig,
  *         knp_paginator?: KnpPaginatorConfig,
- *         jms_i18n_routing?: JmsI18nRoutingConfig,
+ *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
  *         eko_feed?: EkoFeedConfig,

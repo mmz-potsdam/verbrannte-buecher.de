@@ -65,6 +65,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/JmsTranslationBundle"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
@@ -94,7 +98,8 @@
         "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
-        "igdj/tei-edition-bundle": "dev-attributes-only",
+        "igdj/tei-edition-bundle": "dev-symfony-8",
+        "jms/translation-bundle": "dev-symfony-8 as 2.7.99",
         "presta/sitemap-bundle": "^4.3",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "137b67fc704f71fc15e12bb5568d4553",
+    "content-hash": "ccc6f11639377fb2dfa95b311c172223",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -509,6 +509,83 @@
                 "source": "https://github.com/cocur/slugify/tree/v4.7.1"
             },
             "time": "2025-11-27T18:57:36+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "901c2ee5d26eb64ff43c47976e114bf00843acf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/901c2ee5d26eb64ff43c47976e114bf00843acf7",
+                "reference": "901c2ee5d26eb64ff43c47976e114bf00843acf7",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "^2 || ^3",
+                "ext-tokenizer": "*",
+                "php": "^7.2 || ^8.0",
+                "psr/cache": "^1 || ^2 || ^3"
+            },
+            "require-dev": {
+                "doctrine/cache": "^2.0",
+                "doctrine/coding-standard": "^10",
+                "phpstan/phpstan": "^1.10.28",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
+                "symfony/cache": "^5.4 || ^6.4 || ^7",
+                "vimeo/psalm": "^4.30 || ^5.14"
+            },
+            "suggest": {
+                "php": "PHP 8.0 or higher comes with attributes, a native replacement for annotations"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/2.0.2"
+            },
+            "abandoned": true,
+            "time": "2024-09-05T10:17:24+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -1792,66 +1869,6 @@
             "time": "2020-11-27T09:00:35+00:00"
         },
         {
-            "name": "gjuric/i18n-routing-bundle",
-            "version": "3.2.7",
-            "target-dir": "JMS/I18nRoutingBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gjuric/JMSI18nRoutingBundle.git",
-                "reference": "8dc10b8185506137c66c9af8126a8463270681a8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gjuric/JMSI18nRoutingBundle/zipball/8dc10b8185506137c66c9af8126a8463270681a8",
-                "reference": "8dc10b8185506137c66c9af8126a8463270681a8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "symfony/framework-bundle": ">=4.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.0|^9.0",
-                "sensio/framework-extra-bundle": "*",
-                "symfony/symfony": "^4.4|^5.0|^6.0"
-            },
-            "suggest": {
-                "jms/translation-bundle": "If you want to use the RouteTranslation extractor"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "JMS\\I18nRoutingBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                },
-                {
-                    "name": "Albert Casademont",
-                    "email": "albertcasademont@gmail.com"
-                }
-            ],
-            "description": "This bundle allows you to create i18n routes.",
-            "homepage": "http://jmsyst.com/bundles/JMSI18nRoutingBundle",
-            "keywords": [
-                "multilanguage",
-                "routing",
-                "translation"
-            ],
-            "support": {
-                "source": "https://github.com/gjuric/JMSI18nRoutingBundle/tree/3.2.7"
-            },
-            "abandoned": true,
-            "time": "2026-01-29T10:27:19+00:00"
-        },
-        {
             "name": "gmo/iso-639",
             "version": "dev-master",
             "source": {
@@ -2427,16 +2444,16 @@
         },
         {
             "name": "igdj/tei-edition-bundle",
-            "version": "dev-attributes-only",
+            "version": "dev-symfony-8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "3a4d1f44b5da85a179eedc7f1233c191d0b9f857"
+                "reference": "fd411a52cc93e68b666ab9f5db9f3335a738c234"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/3a4d1f44b5da85a179eedc7f1233c191d0b9f857",
-                "reference": "3a4d1f44b5da85a179eedc7f1233c191d0b9f857",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/fd411a52cc93e68b666ab9f5db9f3335a738c234",
+                "reference": "fd411a52cc93e68b666ab9f5db9f3335a738c234",
                 "shasum": ""
             },
             "require": {
@@ -2450,7 +2467,6 @@
                 "fale/isbn": "^3.1",
                 "fluentdom/fluentdom": "^8.0",
                 "geissler/converter": "dev-master",
-                "gjuric/i18n-routing-bundle": "^3.2",
                 "gmo/iso-639": "^1.0",
                 "guzzlehttp/guzzle": "^7.10",
                 "html2text/html2text": "^4.3",
@@ -2515,9 +2531,9 @@
             ],
             "description": "Symfony bundle to provide TEI edition functionality.",
             "support": {
-                "source": "https://github.com/burki/tei-edition-bundle/tree/attributes-only"
+                "source": "https://github.com/burki/tei-edition-bundle/tree/symfony-8"
             },
-            "time": "2026-05-28T11:38:56+00:00"
+            "time": "2026-06-03T15:19:15+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -2851,55 +2867,54 @@
         },
         {
             "name": "jms/translation-bundle",
-            "version": "2.7.0",
+            "version": "dev-symfony-8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "826b29282b1d784cba362a7b98236dfb6fe8a9da"
+                "url": "https://github.com/burki/JMSTranslationBundle.git",
+                "reference": "e5eae5c445276cd465680a838b29d14725d183a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/826b29282b1d784cba362a7b98236dfb6fe8a9da",
-                "reference": "826b29282b1d784cba362a7b98236dfb6fe8a9da",
+                "url": "https://api.github.com/repos/burki/JMSTranslationBundle/zipball/e5eae5c445276cd465680a838b29d14725d183a2",
+                "reference": "e5eae5c445276cd465680a838b29d14725d183a2",
                 "shasum": ""
             },
             "require": {
+                "doctrine/annotations": "^1.11|^2.0",
                 "nikic/php-parser": "^5",
-                "php": "^8.1",
-                "psr/log": "^1.0 || ^2.0 || ^3.0",
-                "symfony/config": "^5.4 || ^6.4 || ^7.1",
-                "symfony/console": "^5.4 || ^6.4 || ^7.1",
-                "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.1",
-                "symfony/translation": "^5.4 || ^6.4 || ^7.1",
-                "symfony/translation-contracts": "^2.0 || ^3.0",
-                "symfony/validator": "^5.4 || ^6.4 || ^7.1",
+                "php": "^8.3",
+                "psr/log": "^3.0",
+                "symfony/config": "^6.4 || ^7.1 || ^8.0",
+                "symfony/console": "^6.4 || ^7.1 || ^8.0",
+                "symfony/framework-bundle": "^6.4 || ^7.1 || ^8.0",
+                "symfony/translation": "^6.4 || ^7.1 || ^8.0",
+                "symfony/translation-contracts": "^3.0",
+                "symfony/validator": "^6.4 || ^7.1 || ^8.0",
                 "twig/twig": "^3.15"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.11",
                 "doctrine/coding-standard": "^9.0",
                 "matthiasnoback/symfony-dependency-injection-test": "^6.0",
                 "nyholm/nsa": "^1.0.1",
                 "phpunit/phpunit": "^11.5",
-                "sensio/framework-extra-bundle": "^6.2.4",
-                "symfony/asset": "^5.4 || ^6.4 || ^7.1",
-                "symfony/browser-kit": "^5.4 || ^6.4 || ^7.1",
-                "symfony/css-selector": "^5.4 || ^6.4 || ^7.1",
-                "symfony/filesystem": "^5.4 || ^6.4 || ^7.1",
-                "symfony/form": "^5.4 || ^6.4 || ^7.1",
-                "symfony/phpunit-bridge": "^7.2",
-                "symfony/property-access": "^5.4 || ^6.4 || ^7.1",
-                "symfony/routing": "^5.4 || ^6.4 || ^7.1",
-                "symfony/security-csrf": "^5.4 || ^6.4 || ^7.1",
-                "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.1"
+                "symfony/asset": "^6.4 || ^7.1 || ^8.0",
+                "symfony/browser-kit": "^6.4 || ^7.1 || ^8.0",
+                "symfony/css-selector": "^6.4 || ^7.1 || ^8.0",
+                "symfony/filesystem": "^6.4 || ^7.1 || ^8.0",
+                "symfony/form": "^6.4 || ^7.1 || ^8.0",
+                "symfony/phpunit-bridge": "^7.2 || ^8.0",
+                "symfony/property-access": "^6.4 || ^7.1 || ^8.0",
+                "symfony/routing": "^6.4 || ^7.1 || ^8.0",
+                "symfony/security-csrf": "^6.4 || ^7.1 || ^8.0",
+                "symfony/twig-bundle": "^6.4 || ^7.1 || ^8.0"
             },
             "type": "symfony-bundle",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
                 "symfony": {
                     "allow-contrib": true
-                },
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -2907,7 +2922,12 @@
                     "JMS\\TranslationBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "auto-scripts": {
+                    "cache:clear": "symfony-cmd",
+                    "assets:install %PUBLIC_DIR%": "symfony-cmd"
+                }
+            },
             "license": [
                 "Apache-2.0"
             ],
@@ -2930,10 +2950,9 @@
                 "webinterface"
             ],
             "support": {
-                "issues": "https://github.com/schmittjoh/JMSTranslationBundle/issues",
-                "source": "https://github.com/schmittjoh/JMSTranslationBundle/tree/2.7.0"
+                "source": "https://github.com/burki/JMSTranslationBundle/tree/symfony-8"
             },
-            "time": "2025-12-20T19:44:43+00:00"
+            "time": "2026-06-03T15:57:14+00:00"
         },
         {
             "name": "knplabs/knp-components",
@@ -13543,6 +13562,12 @@
             "alias_normalized": "1.0.0.0"
         },
         {
+            "package": "jms/translation-bundle",
+            "version": "dev-symfony-8",
+            "alias": "2.7.99",
+            "alias_normalized": "2.7.99.0"
+        },
+        {
             "package": "square-bit/oai-pmh",
             "version": "9999999-dev",
             "alias": "0.3",
@@ -13557,6 +13582,7 @@
         "gmo/iso-639": 20,
         "hedii/zotero-api": 20,
         "igdj/tei-edition-bundle": 20,
+        "jms/translation-bundle": 20,
         "square-bit/oai-pmh": 20,
         "vnn/wordpress-rest-api-client": 20
     },

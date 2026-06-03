@@ -15,6 +15,15 @@
     "boppy/solr-bundle": {
         "version": "dev-solarium-6"
     },
+    "doctrine/annotations": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.10",
+            "ref": "64d8583af5ea57b7afa4aba4b159907f3a148b05"
+        }
+    },
     "doctrine/deprecations": {
         "version": "1.1",
         "recipe": {
@@ -61,9 +70,6 @@
         "files": [
             ".php-cs-fixer.dist.php"
         ]
-    },
-    "gjuric/i18n-routing-bundle": {
-        "version": "3.2.2"
     },
     "igdj/tei-edition-bundle": {
         "version": "dev-solarium-6"

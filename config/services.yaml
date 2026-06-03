@@ -54,8 +54,6 @@ parameters:
 
     app.wordpress.url: 'https://verbrannte-buecher.juedische-geschichte-online.net/cms/'
 
-    jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
-
 services:
     # default configuration for services in *this* file
     _defaults:

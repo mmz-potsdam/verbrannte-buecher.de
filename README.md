@@ -37,7 +37,7 @@ Installation
 ------------
 ### Requirements
 
-- PHP >= 8.2 (check with `php -v`)
+- PHP >= 8.4 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 - Java 1.11 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-11-jdk`)
@@ -183,4 +183,4 @@ Tweaking the site
 -----------------
 ### Translate messages and routes
 
-    ./bin/console jms:translation:extract de --dir=./src/ --dir=vendor/igdj/tei-edition-bundle --output-dir=./translations --enable-extractor=jms_i18n_routing
+    ./bin/console jms:translation:extract de --dir=./src/ --dir=vendor/igdj/tei-edition-bundle --output-dir=./translations
