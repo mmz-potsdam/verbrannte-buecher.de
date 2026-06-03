@@ -14,7 +14,7 @@ class CustomWpClient extends \Vnn\WpApiClient\WpClient
     /**
      * @param $endpoint
      * @param array $args
-     * @return Endpoint\AbstractWpEndpoint
+     * @return \Vnn\WpApiClient\Endpoint\AbstractWpEndpoint
      */
     public function __call($endpoint, array $args)
     {

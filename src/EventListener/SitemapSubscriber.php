@@ -17,7 +17,7 @@ class SitemapSubscriber implements EventSubscriberInterface
     private $entityManager;
 
     /**
-     * @param BlogPostRepository $blogPostRepository
+     * @param EntityManagerInterface $entityManager
      */
     public function __construct(EntityManagerInterface $entityManager)
     {
@@ -93,10 +93,12 @@ class SitemapSubscriber implements EventSubscriberInterface
         // TODO: share the following logic with BaseController
         $criteria = [ 'status' => [ 1 ] ];
 
-        $locale = null;
+        /*
+        $locale = null; // we might force to 'de' once we have non-german texts
         if (!empty($locale)) {
             $criteria['language'] = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
         }
+        */
 
         $queryBuilder = $this->entityManager
                 ->createQueryBuilder()

@@ -37,7 +37,7 @@ class JsonLd
         }
 
         if (empty($ret)) {
-            return;
+            return null;
         }
 
         return count($ret) < 3 ? $ret[0] : implode('-', $ret);

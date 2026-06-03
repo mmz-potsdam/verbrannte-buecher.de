@@ -185,87 +185,87 @@ class CreativeWork extends SchemaOrg
     protected $itemType;
 
     /**
-     * @var array The author/contributor/editor of this CreativeWork.
+     * @var array|null The author/contributor/editor of this CreativeWork.
      */
     protected $creators;
 
     /**
-     * @var string The series of books the book was published in
+     * @var string|null The series of books the book was published in
      */
     protected $series;
 
     /**
-     * @var string The number within the series of books the book was published in
+     * @var string|null The number within the series of books the book was published in
      */
     protected $seriesNumber;
 
     /**
-     * @var string The volume of a journal or multi-volume book
+     * @var string|null The volume of a journal or multi-volume book
      */
     protected $volume;
 
     /**
-     * @var string The number of volumes of a multi-volume book
+     * @var string|null The number of volumes of a multi-volume book
      */
     protected $numberOfVolumes;
 
     /**
-     * @var string The issue of a journal, magazine, or tech-report, if applicable
+     * @var string|null The issue of a journal, magazine, or tech-report, if applicable
      */
     protected $issue;
 
     /**
-     * @var string The edition of a book
+     * @var string|null The edition of a book
      */
     protected $bookEdition;
 
     /**
-     * @var string The place(s) of publication
+     * @var string|null The place(s) of publication
      */
     protected $publicationLocation; /* map to contentLocation in Schema.org */
 
     /**
-     * @var string The publisher's name
+     * @var string|null The publisher's name
      */
     protected $publisher;
 
     /**
-     * @var string Date of first broadcast/publication.
+     * @var string|null Date of first broadcast/publication.
      */
     protected $datePublished;
 
     /**
-     * @var string The Page numbers, separated either by commas or as range by hyphen
+     * @var string|null The Page numbers, separated either by commas or as range by hyphen
      */
     protected $pagination;
 
     /**
-     * @var string The number of pages of the book
+     * @var string|null The number of pages of the book
      */
     protected $numberOfPages;
 
     /**
-     * @var string The doi of the article
+     * @var string|null The doi of the article
      */
     protected $doi;
 
     /**
-     * @var string The isbn of the book
+     * @var string|null The isbn of the book
      */
     protected $isbn;
 
     /**
-     * @var array
+     * @var array|null
      */
     protected $additional;
 
     /**
-     * @var CreativeWork Indicates a Bibitem that this Bibitem is (in some sense) part of.
+     * @var CreativeWork|null Indicates a Bibitem that this Bibitem is (in some sense) part of.
      */
     protected $isPartOf;
 
     /**
-     * @var string The title of the book or journal for bookSection / journalArticle.
+     * @var string|null The title of the book or journal for bookSection / journalArticle.
      */
     protected $containerName;
 
@@ -295,7 +295,6 @@ class CreativeWork extends SchemaOrg
 
     /**
      * @var string
-     *
      */
     protected $version;
 
@@ -314,7 +313,7 @@ class CreativeWork extends SchemaOrg
     /**
      * Sets creators.
      *
-     * @param array $creators
+     * @param array|null $creators
      *
      * @return $this
      */
@@ -328,7 +327,7 @@ class CreativeWork extends SchemaOrg
     /**
      * Gets creators.
      *
-     * @return array
+     * @return array|null
      */
     public function getCreators()
     {
@@ -558,9 +557,9 @@ class CreativeWork extends SchemaOrg
      *
      * @return $this
      */
-    public function setPagination($pagionation = null)
+    public function setPagination($pagination = null)
     {
-        $this->pagination = $pagionation;
+        $this->pagination = $pagination;
 
         return $this;
     }
@@ -762,6 +761,8 @@ class CreativeWork extends SchemaOrg
         if (isset($this->isPartOf) && $this->isPartOf instanceof Periodical) {
             return $this->isPartOf->getIssn();
         }
+
+        return null;
     }
 
     /**
@@ -1049,7 +1050,7 @@ class CreativeWork extends SchemaOrg
      * We transfer to Citeproc JSON
      * see https://github.com/citation-style-language/schema/blob/master/csl-data.json
      */
-    public function jsonSerialize($locale = 'de_DE')
+    public function jsonSerialize($locale = 'de_DE'): mixed
     {
         // see http://aurimasv.github.io/z2csl/typeMap.xml
         static $typeMap = [
@@ -1083,8 +1084,8 @@ class CreativeWork extends SchemaOrg
             'publisher-place' => self::adjustPublisherPlace($this->publicationLocation, $locale),
             'publisher' => $this->publisher,
             'issued' => [
-                "date-parts" => [ $this->buildDateParts($this->datePublished) ],
-                "literal" => $this->datePublished,
+                'date-parts' => [ $this->buildDateParts($this->datePublished) ],
+                'literal' => $this->datePublished,
             ],
             'page' => $this->pagination,
             'number-of-pages' => $this->numberOfPages,
@@ -1093,8 +1094,8 @@ class CreativeWork extends SchemaOrg
             'ISSN' => $this->getIssn(),
             'URL' => $this->url,
             'accessed' => [
-                "date-parts" => [ $this->buildDateParts($this->dateAccessed) ],
-                "literal" => $this->dateAccessed,
+                'date-parts' => [ $this->buildDateParts($this->dateAccessed) ],
+                'literal' => $this->dateAccessed,
             ],
             'language' => $this->language,
         ];
@@ -1303,6 +1304,7 @@ class CreativeWork extends SchemaOrg
                         }
                         $parent->setCreators($creatorsParent);
                     }
+
                     $ret['isPartOf'] = $parent->jsonLdSerialize($locale, true);
                 }
             }

@@ -23,7 +23,7 @@ class Builder
      * @param FactoryInterface $factory
      * @param TranslatorInterface $translator
      * @param RequestStack $requestStack
-     * @param Router $router
+     * @param RouterInterface $router
      *
      * Add any other dependency you need
      */

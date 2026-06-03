@@ -153,6 +153,8 @@ class HistoryController extends BaseController
         WpClient $wpClient,
         UrlGeneratorInterface $urlGenerator
     ): Response {
+        $section = null;
+
         if (preg_match('/^\d+$/', $page)) {
             $pageInfo = $wpClient->pages()->get($page);
         }
@@ -160,7 +162,6 @@ class HistoryController extends BaseController
             $parts = explode('/', $page);
             $slug = $parts[count($parts) - 1];
             $pageInfo = $wpClient->pages()->get(null, [ 'slug' => $slug ]);
-            $section = null;
 
             if (array_key_exists('0', $pageInfo)) {
                 $pageInfo = $pageInfo[0];
