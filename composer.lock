@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd4f747c899b52fea9a342826331f014",
+    "content-hash": "5b7e891fd79be9774f4c2a6bd4bdfe88",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -121,16 +121,15 @@
         {
             "name": "boppy/solr-bundle",
             "version": "dev-attributes-only",
-            "target-dir": "FS/SolrBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/SolrBundle.git",
-                "reference": "9037d66bbbc470284790c3624ab489dbcd2158bc"
+                "reference": "8db213d63a61ecf7fe70340e6023a6976ab7ffce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/SolrBundle/zipball/9037d66bbbc470284790c3624ab489dbcd2158bc",
-                "reference": "9037d66bbbc470284790c3624ab489dbcd2158bc",
+                "url": "https://api.github.com/repos/burki/SolrBundle/zipball/8db213d63a61ecf7fe70340e6023a6976ab7ffce",
+                "reference": "8db213d63a61ecf7fe70340e6023a6976ab7ffce",
                 "shasum": ""
             },
             "require": {
@@ -153,8 +152,13 @@
             },
             "type": "symfony-bundle",
             "autoload": {
-                "psr-0": {
-                    "FS\\SolrBundle": ""
+                "psr-4": {
+                    "FS\\SolrBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "FS\\SolrBundle\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -171,7 +175,7 @@
             "support": {
                 "source": "https://github.com/burki/SolrBundle/tree/attributes-only"
             },
-            "time": "2026-05-07T14:20:15+00:00"
+            "time": "2026-06-04T09:12:06+00:00"
         },
         {
             "name": "brick/math",
@@ -2442,12 +2446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "fe756b1951563230fae2a81dc947bc991cbb30f2"
+                "reference": "9302fd907b1bfcfee19fae1cf81ce4a357f842ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/fe756b1951563230fae2a81dc947bc991cbb30f2",
-                "reference": "fe756b1951563230fae2a81dc947bc991cbb30f2",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/9302fd907b1bfcfee19fae1cf81ce4a357f842ca",
+                "reference": "9302fd907b1bfcfee19fae1cf81ce4a357f842ca",
                 "shasum": ""
             },
             "require": {
@@ -2465,7 +2469,7 @@
                 "guzzlehttp/guzzle": "^7.10",
                 "html2text/html2text": "^4.3",
                 "igdj/lod-service": "@dev",
-                "jms/translation-bundle": "^2.7",
+                "jms/translation-bundle": "dev-symfony-8",
                 "knplabs/knp-menu-bundle": "^3.7",
                 "knplabs/knp-paginator-bundle": "^6.10",
                 "laminas/laminas-diactoros": "^3.8",
@@ -2527,7 +2531,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/symfony-8"
             },
-            "time": "2026-06-04T07:55:28+00:00"
+            "time": "2026-06-04T08:52:46+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -13416,12 +13420,6 @@
     ],
     "aliases": [
         {
-            "package": "eko/feedbundle",
-            "version": "dev-symfony-8",
-            "alias": "2.3",
-            "alias_normalized": "2.3.0.0"
-        },
-        {
             "package": "fluentdom/fluentdom",
             "version": "9999999-dev",
             "alias": "8.0",
@@ -13432,12 +13430,6 @@
             "version": "9999999-dev",
             "alias": "1.0",
             "alias_normalized": "1.0.0.0"
-        },
-        {
-            "package": "jms/translation-bundle",
-            "version": "dev-symfony-8",
-            "alias": "2.7.99",
-            "alias_normalized": "2.7.99.0"
         },
         {
             "package": "square-bit/oai-pmh",
