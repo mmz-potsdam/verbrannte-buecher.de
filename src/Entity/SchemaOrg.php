@@ -3,8 +3,7 @@
 namespace App\Entity;
 
 /**
- * Shared method for Schema.org entities
- *
+ * Shared properties and static helpers for Schema.org entities
  */
 abstract class SchemaOrg
 {
@@ -34,32 +33,32 @@ abstract class SchemaOrg
     }
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $id;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $name;
 
     /**
      * @var int
      */
-    protected $status;
+    protected $status = 0;
 
     /**
-     * @var string URL of the item.
+     * @var string|null URL of the item.
      */
     protected $url;
 
     /**
-     * @var \DateTime
+     * @var \DateTime|null
      */
     protected $createdAt;
 
     /**
-     * @var \DateTime
+     * @var \DateTime|null
      */
     protected $changedAt;
 
@@ -114,7 +113,7 @@ abstract class SchemaOrg
     /**
      * Sets url.
      *
-     * @param string $url
+     * @param string|null $url
      *
      * @return $this
      */
@@ -128,7 +127,7 @@ abstract class SchemaOrg
     /**
      * Gets url.
      *
-     * @return string
+     * @return string|null
      */
     public function getUrl()
     {
@@ -162,15 +161,14 @@ abstract class SchemaOrg
     /**
      * Sets createdAt
      *
-     * @param string|\DateTime $createdAt
+     * @param string|\DateTime|null $createdAt
      */
     public function setCreatedAt($createdAt)
     {
         if (is_object($createdAt)) {
             $this->createdAt = $createdAt;
         }
-
-        if (!empty($createdAt)) {
+        else if (!empty($createdAt)) {
             $this->createdAt = \DateTime::createFromFormat(\DateTime::ISO8601, $createdAt);
         }
 
@@ -180,7 +178,7 @@ abstract class SchemaOrg
     /**
      * Gets createdAt
      *
-     * @return \DateTime
+     * @return \DateTime|null
      */
     public function getCreatedAt()
     {
@@ -199,8 +197,7 @@ abstract class SchemaOrg
         if (is_object($changedAt)) {
             $this->changedAt = $changedAt;
         }
-
-        if (!empty($changedAt)) {
+        else if (!empty($changedAt)) {
             $this->changedAt = \DateTime::createFromFormat(\DateTime::ISO8601, $changedAt);
         }
 

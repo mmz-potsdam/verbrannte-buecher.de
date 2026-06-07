@@ -15,7 +15,7 @@ use TeiEditionBundle\Entity\Place;
  * @see http://schema.org/CreativeWork and derived documents Documentation on Schema.org
  *
  */
-class CreativeWork extends SchemaOrg
+class CreativeWork extends SchemaOrg implements \JsonSerializable
 {
     protected static function buildCorresp($zoteroData, $zoteroMeta)
     {
@@ -260,7 +260,7 @@ class CreativeWork extends SchemaOrg
     protected $additional;
 
     /**
-     * @var CreativeWork|null Indicates a Bibitem that this Bibitem is (in some sense) part of.
+     * @var CreativeWork|null Indicates a CreativeWork that this CreativeWork is (in some sense) part of.
      */
     protected $isPartOf;
 
@@ -277,13 +277,14 @@ class CreativeWork extends SchemaOrg
     protected $language;
 
     /**
-     * @var string URL of the item.
+     * @var string|null URL of the item.
+     *
      */
     #[Assert\Url]
     protected $url;
 
     /**
-     * @var string Non-Schema.org Date of URL-access.
+     * @var string|null Non-Schema.org Date of URL-access.
      */
     protected $dateAccessed;
 
