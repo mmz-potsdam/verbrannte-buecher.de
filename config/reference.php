@@ -127,7 +127,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  * }
  * @psalm-type ServicesConfig = array{
  *     _defaults?: DefaultsType,
- *     _instanceof?: InstanceofType,
+ *     _instanceof?: array<class-string, InstanceofType>,
  *     ...<string, DefinitionType|AliasType|PrototypeType|StackType|ArgumentsType|null>
  * }
  * @psalm-type ExtensionType = array<string, mixed>
@@ -883,7 +883,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             servicename?: scalar|Param|null, // Overrules dbname parameter if given and used as SERVICE_NAME or SID connection parameter for Oracle depending on the service parameter.
  *             sessionMode?: scalar|Param|null, // The session mode to use for the oci8 driver
  *             server?: scalar|Param|null, // The name of a running database server to connect to for SQL Anywhere.
- *             default_dbname?: scalar|Param|null, // Override the default database (postgres) to connect to for PostgreSQL connexion.
+ *             default_dbname?: scalar|Param|null, // Override the default database (postgres) to connect to for PostgreSQL connection.
  *             sslmode?: scalar|Param|null, // Determines whether or with what priority a SSL TCP/IP connection will be negotiated with the server for PostgreSQL.
  *             sslrootcert?: scalar|Param|null, // The name of a file containing SSL certificate authority (CA) certificate(s). If the file exists, the server's certificate will be verified to be signed by one of these authorities.
  *             sslcert?: scalar|Param|null, // The path to the SSL client certificate file for PostgreSQL.
@@ -929,7 +929,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                 servicename?: scalar|Param|null, // Overrules dbname parameter if given and used as SERVICE_NAME or SID connection parameter for Oracle depending on the service parameter.
  *                 sessionMode?: scalar|Param|null, // The session mode to use for the oci8 driver
  *                 server?: scalar|Param|null, // The name of a running database server to connect to for SQL Anywhere.
- *                 default_dbname?: scalar|Param|null, // Override the default database (postgres) to connect to for PostgreSQL connexion.
+ *                 default_dbname?: scalar|Param|null, // Override the default database (postgres) to connect to for PostgreSQL connection.
  *                 sslmode?: scalar|Param|null, // Determines whether or with what priority a SSL TCP/IP connection will be negotiated with the server for PostgreSQL.
  *                 sslrootcert?: scalar|Param|null, // The name of a file containing SSL certificate authority (CA) certificate(s). If the file exists, the server's certificate will be verified to be signed by one of these authorities.
  *                 sslcert?: scalar|Param|null, // The path to the SSL client certificate file for PostgreSQL.
@@ -1008,7 +1008,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *                     lock_path?: scalar|Param|null, // Default: "%kernel.cache_dir%/doctrine/orm/slc/filelock"
  *                     lock_lifetime?: scalar|Param|null, // Default: 60
  *                     type?: scalar|Param|null, // Default: "default"
- *                     lifetime?: scalar|Param|null, // Default: 0
+ *                     lifetime?: scalar|Param|null, // Default: null
  *                     service?: scalar|Param|null,
  *                     name?: scalar|Param|null,
  *                 }>,
@@ -1053,6 +1053,23 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         active?: bool|Param, // Default: true
  *     }>,
  *     auto_index?: bool|Param, // Default: true
+ * }
+ * @psalm-type TeiEditionConfig = array{
+ *     imagemagick?: array{
+ *         processor?: array{
+ *             path?: string|Param,
+ *         },
+ *     },
+ *     pdf_generator?: mixed,
+ *     xsl?: array{
+ *         cache?: string|Param,
+ *         commandline?: array{
+ *             template?: string|Param,
+ *         },
+ *         saxon?: array{
+ *             enabled?: bool|Param, // When enabled, built-in saxonc-extension will be use. // Default: false
+ *         },
+ *     },
  * }
  * @psalm-type EkoFeedConfig = array{
  *     hydrator?: scalar|Param|null, // Default: "Eko\\FeedBundle\\Hydrator\\DefaultHydrator"
@@ -1514,6 +1531,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     jms_translation?: JmsTranslationConfig,
  *     doctrine?: DoctrineConfig,
  *     fs_solr?: FsSolrConfig,
+ *     tei_edition?: TeiEditionConfig,
  *     eko_feed?: EkoFeedConfig,
  *     cocur_slugify?: CocurSlugifyConfig,
  *     knp_menu?: KnpMenuConfig,
@@ -1534,6 +1552,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
+ *         tei_edition?: TeiEditionConfig,
  *         eko_feed?: EkoFeedConfig,
  *         cocur_slugify?: CocurSlugifyConfig,
  *         knp_menu?: KnpMenuConfig,
@@ -1558,6 +1577,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
+ *         tei_edition?: TeiEditionConfig,
  *         eko_feed?: EkoFeedConfig,
  *         cocur_slugify?: CocurSlugifyConfig,
  *         knp_menu?: KnpMenuConfig,
@@ -1579,6 +1599,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
+ *         tei_edition?: TeiEditionConfig,
  *         eko_feed?: EkoFeedConfig,
  *         cocur_slugify?: CocurSlugifyConfig,
  *         knp_menu?: KnpMenuConfig,
