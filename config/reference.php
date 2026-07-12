@@ -1055,6 +1055,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     auto_index?: bool|Param, // Default: true
  * }
  * @psalm-type TeiEditionConfig = array{
+ *     public_dir?: string|Param, // Path to the public directory (default: %kernel.project_dir%/public) // Default: "%kernel.project_dir%/public"
  *     imagemagick?: array{
  *         processor?: array{
  *             path?: string|Param,

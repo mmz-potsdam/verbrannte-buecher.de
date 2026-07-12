@@ -27,24 +27,13 @@ parameters:
         api-key: "%env(string:ZOTERO_API_KEY)%"
         group-id: 4750799 # https://www.zotero.org/groups/4750799/b%C3%BCcherverbrennungen/library
     app.xsl_converter.saxonc_enable: "%env(bool:SAXONC_ENABLE)%"
-    app.xsl_converter_adapter.arguments: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
+    app.xsl_converter.commandline.template: "%env(string:JAVA_BIN)% -jar %kernel.project_dir%/bin/saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
     # imagemagick settings
-    app.imagemagick.processor.arguments:
-        # on linux, check with
-        #   which convert -> /usr/bin/convert
-        # on windows, set IMAGEMAGICK_PATH to your proper path,
-        #   e.g. "C:/Progra~1/ImageMagick-7.1.0/"
-        path: "%env(string:IMAGEMAGICK_PATH)%"
-    app.pdf-generator.arguments:
-        tempDir: "%kernel.project_dir%/var/cache/mpdf"
-        fontDir: [ "%kernel.project_dir%/data/font" ]
-        fontdata:
-            book_typeface:
-                R: 'NotoSerif-Regular.ttf'
-                B: 'NotoSerif-Bold.ttf'
-                I: 'NotoSerif-Italic.ttf'
-                BI: 'NotoSerif-BoldItalic.ttf'
-        default_font: book_typeface
+    # on linux, check with
+    #   which convert -> /usr/bin/convert
+    # on windows, set IMAGEMAGICK_PATH to your proper path,
+    #   e.g. "C:/Progra~1/ImageMagick-7.1.0/"
+    app.imagemagick.processor.path: "%env(string:IMAGEMAGICK_PATH)%"
     app.datacite.url: "%env(string:DATACITE_URL)%"
     app.datacite.user: SUBGOE.IGDJ
     app.datacite.password: "%env(string:DATACITE_PASSWORD)%"
@@ -65,17 +54,17 @@ services:
             $siteTheme: '%app.site_theme%'
             $wordpressBaseUrl: '%app.wordpress.url%'
 
+    # make Controller classes in TeiEditionBundle available to be used as services
+    # since we don't import them in config/routes.yaml
+    # this creates a service per class whose id is the fully-qualified class name
+    # must come before App\ so we can override routes in App\ below
+    TeiEditionBundle\Controller\:
+        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src/Controller'
+
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/'
-
-    # makes classes in TeiEditionBundle available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
-    # TODO: expose this in bundle configuration: https://symfony.com/doc/current/bundles/extension.html
-    TeiEditionBundle\:
-        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src'
-        exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src/{Entity,Migrations,Tests}'
 
     # override command in bundle, see https://stackoverflow.com/a/57107379
     App\Command\ArticleRefreshCommand:
@@ -95,23 +84,6 @@ services:
     App\Service\ZoteroApiService:
         arguments:
             $options: "%app.zotero.options%"
-
-    app.xsl_converter.commandline_adapter:
-        class: TeiEditionBundle\Utils\Xsl\XsltCommandlineAdapter
-        arguments: [ '%app.xsl_converter_adapter.arguments%', { xslpath: '%kernel.project_dir%/data/styles' } ]
-
-    app.xsl_converter.saxonc_adapter:
-        class: TeiEditionBundle\Utils\Xsl\XsltSaxonProcessorAdapter
-
-    TeiEditionBundle\Utils\Xsl\XsltProcessor:
-        calls:
-            - [ setAdapter, [ "@= parameter('app.xsl_converter.saxonc_enable') ? service('app.xsl_converter.saxonc_adapter') : service('app.xsl_converter.commandline_adapter')" ]]
-
-    TeiEditionBundle\Utils\ImageMagick\ImageMagickProcessor:
-        arguments: [ "%app.imagemagick.processor.arguments%" ]
-
-    TeiEditionBundle\Utils\PdfGenerator:
-        arguments: [ "%app.pdf-generator.arguments%" ]
 
     App\Menu\Builder:
         arguments: [ "@knp_menu.factory", "@translator.default", "@request_stack", "@router" ]

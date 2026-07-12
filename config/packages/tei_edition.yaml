@@ -1,0 +1,20 @@
+tei_edition:
+    xsl:
+        saxon:
+            enabled: "%app.xsl_converter.saxonc_enable%"
+        commandline:
+            template: "%app.xsl_converter.commandline.template%"
+        cache:  '@app.xslt_cache_pool'
+    imagemagick:
+        processor:
+            path: "%app.imagemagick.processor.path%"
+    pdf_generator:
+        tempDir: "%kernel.project_dir%/var/cache/mpdf"
+        fontDir: [ "%kernel.project_dir%/data/font" ]
+        fontdata:
+            book_typeface:
+                R: 'NotoSerif-Regular.ttf'
+                B: 'NotoSerif-Bold.ttf'
+                I: 'NotoSerif-Italic.ttf'
+                BI: 'NotoSerif-BoldItalic.ttf'
+        default_font: book_typeface
