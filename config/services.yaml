@@ -55,7 +55,6 @@ services:
             $wordpressBaseUrl: '%app.wordpress.url%'
 
     # make Controller classes in TeiEditionBundle available to be used as services
-    # since we don't import them in config/routes.yaml
     # this creates a service per class whose id is the fully-qualified class name
     # must come before App\ so we can override routes in App\ below
     TeiEditionBundle\Controller\:
