@@ -21,10 +21,6 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/dikastes/zotero-api"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/burki/tei-edition-bundle"
         },
         {
@@ -53,15 +49,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/scssphp-bundle"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/burki/OaiPmh"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/jtl-software/connector-iso-639"
+            "url": "https://github.com/lfiweb/OaiPmh"
         },
         {
             "type": "vcs",
@@ -69,11 +57,23 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/wordpress-rest-api-client"
+            "url": "https://github.com/burki/FeedBundle"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/FeedBundle"
+            "url": "https://github.com/jtl-software/connector-iso-639"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dikastes/zotero-api"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/scssphp-bundle"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
             "type": "package",
@@ -96,12 +96,10 @@
         "armin/scssphp-bundle": "dev-master",
         "dikastes/zotero-api": "dev-main#df24826a60f3a4aba413b66bdd5bdf504fa232eb",
         "eko/feedbundle": "dev-symfony-8",
-        "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "igdj/tei-edition-bundle": "dev-bundle-configuration",
         "jms/translation-bundle": "dev-symfony-8",
         "presta/sitemap-bundle": "^4.3",
-        "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",
         "symfony/dotenv": "8.1.*",
         "symfony/flex": "^2",
