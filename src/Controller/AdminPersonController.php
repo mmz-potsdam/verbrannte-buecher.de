@@ -19,8 +19,8 @@ class AdminPersonController extends AbstractController
         $people = $entityManager
             ->getRepository(Person::class)
             ->findBy([], [
-                'familyName' => 'ASC',
-                'givenName' => 'ASC',
+                'familyName' => \SortDirection::Ascending,
+                'givenName' => \SortDirection::Ascending,
             ]);
 
         return $this->render('Admin/Person/index.html.twig', [

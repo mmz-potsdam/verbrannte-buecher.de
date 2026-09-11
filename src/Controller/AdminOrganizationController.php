@@ -19,7 +19,7 @@ class AdminOrganizationController extends AbstractController
         $results = $entityManager
             ->getRepository(Organization::class)
             ->findBy([], [
-                'name' => 'ASC',
+                'name' => \SortDirection::Ascending,
             ]);
 
         return $this->render('Admin/Organization/index.html.twig', [

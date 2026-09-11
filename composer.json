@@ -96,6 +96,7 @@
         "armin/scssphp-bundle": "dev-master",
         "dikastes/zotero-api": "dev-main#df24826a60f3a4aba413b66bdd5bdf504fa232eb",
         "eko/feedbundle": "dev-symfony-8",
+        "gedmo/doctrine-extensions": "^3.22",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "igdj/tei-edition-bundle": "dev-bundle-configuration",
         "jms/translation-bundle": "dev-symfony-8",
