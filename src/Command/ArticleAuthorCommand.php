@@ -4,12 +4,12 @@
 
 namespace App\Command;
 
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 /**
  * Lookup author(s) and translator and insert/update corresponding Person.
@@ -50,7 +50,7 @@ class ArticleAuthorCommand extends BaseCommand
         if (!$fs->exists($fname)) {
             $output->writeln(sprintf('<error>%s does not exist</error>', $fname));
 
-            return 1;
+            return Command::FAILURE;
         }
 
         $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
@@ -63,13 +63,13 @@ class ArticleAuthorCommand extends BaseCommand
                 $output->writeln(sprintf('<error>  %s</error>', trim($error->message)));
             }
 
-            return 1;
+            return Command::FAILURE;
         }
 
         if (empty($article->author) && empty($article->translator)) {
             $output->writeln(sprintf('<info>No author or translator found in %s</info>', $fname));
 
-            return 0;
+            return Command::FAILURE;
         }
 
         $persons = !empty($article->author) ? $article->author : [];
@@ -79,6 +79,8 @@ class ArticleAuthorCommand extends BaseCommand
 
         $output->writeln($this->jsonPrettyPrint($persons));
 
+        $ret = Command::SUCCESS;
+
         if ($input->getOption('insert-missing')) {
             foreach ($persons as $author) {
                 $person = null;
@@ -87,34 +89,36 @@ class ArticleAuthorCommand extends BaseCommand
                 if (empty($slug)) {
                     // check if we have gnd
                     $gnd = $author->getGnd();
-                    if (!empty($gnd)) {
-                        $uri = 'https://d-nb.info/gnd/' . $gnd;
-                        $this->insertMissingPerson($uri);
-                        $person = $this->findPersonByUri($uri);
-                    }
 
-                    if (is_null($person)) {
-                        $output->writeln(sprintf('<info>Skip author with empty slug and gnd in %s</info>', $fname));
+                    if (empty($gnd)) {
+                        $ret = Command::FAILURE;
+
+                        $output->writeln(sprintf('<info>Skip author with empty slug and GND in %s</info>', $fname));
                         continue;
                     }
+
+                    $uri = 'https://d-nb.info/gnd/' . $gnd;
+                    $this->insertMissingPerson($uri);
+                    $person = $this->findPersonByUri($uri);
                 }
                 else {
                     $person = $this->findPersonBySlug($slug);
                 }
 
-                // either insert or update
                 if (is_null($person)) {
+                    // neither find nor insert (if GND was given) succeeded
+                    $ret = Command::FAILURE;
+
                     $value = !empty($slug) ? $slug : $gnd;
                     $output->writeln(sprintf(
                         '<error>No user found for %s</error>',
                         trim($value)
                     ));
-                    continue;
                 }
             }
         }
 
-        return 0;
+        return $ret;
     }
 
     protected function findPersonBySlug($slug)
