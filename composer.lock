@@ -1697,7 +1697,7 @@
         },
         {
             "name": "fluentdom/fluentdom",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/FluentDOM.git",
@@ -1725,7 +1725,6 @@
                 "ext-xmlwriter": "XMLWriter, Write large XMLs",
                 "fluentdom/css-selector": "Allows to use css selectors."
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -1755,7 +1754,7 @@
                 "xpath"
             ],
             "support": {
-                "source": "https://github.com/burki/FluentDOM/tree/master"
+                "source": "https://github.com/burki/FluentDOM/tree/main"
             },
             "time": "2026-03-15T20:37:40+00:00"
         },
@@ -2462,12 +2461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "64e79686cf030887627a47834f58fdba3656bef4"
+                "reference": "7665f8e052b40c430b2669583fabfed681f31844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/64e79686cf030887627a47834f58fdba3656bef4",
-                "reference": "64e79686cf030887627a47834f58fdba3656bef4",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/7665f8e052b40c430b2669583fabfed681f31844",
+                "reference": "7665f8e052b40c430b2669583fabfed681f31844",
                 "shasum": ""
             },
             "require": {
@@ -2479,7 +2478,7 @@
                 "eko/feedbundle": "dev-symfony-8",
                 "ext-curl": "*",
                 "fale/isbn": "^3.1",
-                "fluentdom/fluentdom": "dev-master as 8.0",
+                "fluentdom/fluentdom": "dev-main as 8.0",
                 "geissler/converter": "dev-master",
                 "gmo/iso-639": "^1.0",
                 "guzzlehttp/guzzle": "^7.10",
@@ -2528,7 +2527,9 @@
                 "twig/twig": "^3.24"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.95"
+                "friendsofphp/php-cs-fixer": "^3.95",
+                "phpstan/phpstan": "^2.2",
+                "phpstan/phpstan-doctrine": "^2.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2549,7 +2550,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/bundle-configuration"
             },
-            "time": "2026-09-11T10:58:40+00:00"
+            "time": "2026-10-12T14:15:00+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -3134,31 +3135,30 @@
         },
         {
             "name": "knplabs/knp-menu-bundle",
-            "version": "v3.7.0",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "aa22e57f8f41c34ad5e382aae4d0c12998c0eb5a"
+                "reference": "52407da3ac631077fc64f1c2641f35e06e07bbf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/aa22e57f8f41c34ad5e382aae4d0c12998c0eb5a",
-                "reference": "aa22e57f8f41c34ad5e382aae4d0c12998c0eb5a",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/52407da3ac631077fc64f1c2641f35e06e07bbf8",
+                "reference": "52407da3ac631077fc64f1c2641f35e06e07bbf8",
                 "shasum": ""
             },
             "require": {
                 "knplabs/knp-menu": "^3.8",
-                "php": "^8.1",
-                "symfony/config": "^6.4 | ^7.0 | ^8.0",
-                "symfony/dependency-injection": "^6.4 | ^7.0 | ^8.0",
-                "symfony/deprecation-contracts": "^2.5 | ^3.3",
-                "symfony/http-kernel": "^6.4 | ^7.0 | ^8.0"
+                "php": "^8.2",
+                "symfony/config": "^6.4 || ^7.4 || ^8.0",
+                "symfony/dependency-injection": "^6.4 || ^7.4 || ^8.0",
+                "symfony/deprecation-contracts": "^2.5 || ^3.3",
+                "symfony/http-kernel": "^6.4 || ^7.4 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.5 | ^11.5 | ^12.4",
-                "symfony/expression-language": "^6.4 | ^7.0 | ^8.0",
-                "symfony/phpunit-bridge": "^7.0 | ^8.0",
-                "symfony/templating": "^6.4 | ^7.0 | ^8.0"
+                "phpunit/phpunit": "^11.5 || ^12.5 || ^13.2",
+                "symfony/expression-language": "^6.4 || ^7.4 || ^8.0",
+                "symfony/phpunit-bridge": "^7.4 || ^8.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -3195,9 +3195,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpMenuBundle/issues",
-                "source": "https://github.com/KnpLabs/KnpMenuBundle/tree/v3.7.0"
+                "source": "https://github.com/KnpLabs/KnpMenuBundle/tree/v3.8.0"
             },
-            "time": "2025-11-30T08:30:04+00:00"
+            "time": "2026-10-11T15:22:17+00:00"
         },
         {
             "name": "knplabs/knp-paginator-bundle",

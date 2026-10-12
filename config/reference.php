@@ -1111,7 +1111,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     twig?: array{
  *         template?: scalar|Param|null, // Default: "@KnpMenu/menu.html.twig"
  *     },
- *     templating?: bool|Param, // Default: false
+ *     route_voter?: bool|Param, // Default: true
  *     default_renderer?: scalar|Param|null, // Default: "twig"
  * }
  * @psalm-type SyliusThemeConfig = array{
