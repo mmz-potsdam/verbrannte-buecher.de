@@ -37,9 +37,10 @@ class BaseController extends AbstractController
 
     protected function buildEvents(WpClient $wpClient, $limit = 4)
     {
-        $events = $wpClient->events()->get(null, [
-            'per_page' => 10, // TODO: add proper order
-        ]);
+        $events = $wpClient->events() // @phpstan-ignore method.notFound
+            ->get(null, [
+                'per_page' => 10, // TODO: add proper order
+            ]);
 
         if (!empty($events)) {
             usort($events, function ($eventA, $eventB) {
